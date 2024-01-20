@@ -1,3 +1,5 @@
+------Text based version of the guide---------------
+
 H Al-Hadikhia with the Mastermind
 D Only one jinxed character can be in play. Evil players start knowing which player and character it is.
 
