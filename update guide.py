@@ -1,6 +1,13 @@
+#!/usr/bin/env python3
+"""
+Updates the guide.
+Takes the data from botc.txt
+Injects the appropriate HTML tags and tries to make it pretty.
+Output is an updated BotC Guide.html file
+"""
+
 from bs4 import BeautifulSoup
 import re
-#import os
 import json
 
  
@@ -23,13 +30,12 @@ def surround_keywords_with_span(html_content, keywords, character_type):
 
         # Loop through each match and surround with <span class='character'>
         for match in matches:
-            #new_tag = soup.new_tag('span', **{'class': character_type})
             content = str(match)
             replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
-            #replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="'+character_type+'">{keyword}</span>', content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
 
     return str(soup)
+
 
 def botc_to_nodes(input_path, output_path):
     output_lines = []
@@ -63,16 +69,14 @@ def botc_to_nodes(input_path, output_path):
 
             # question time
             if line.startswith('Q ') or line.startswith('P ') or line.startswith('H ') or line.startswith('J '):
-                #print("Q!")
                 if first_question:
                     first_question = False
                     print("First:" + line)
                 else:
-                    #print("Not First:" + line)
                     output_lines.append('        </div>\n')   # close paragraph
                     output_lines.append('      </div>\n')     # close answer
                     output_lines.append('    </div>\n')       # close node
-                #print(line)
+
                 answer_mode = False;
                 
                 id += 1
@@ -112,7 +116,6 @@ def botc_to_nodes(input_path, output_path):
                     output_lines.append('<ol><li>')
                     in_ordered_list = True
                     in_list_item = True
-                #output_lines.append( f'<li>{line.strip()[1:]}</li>' )
                 elif in_list_item:
                     output_lines.append("</li><li>")
 
@@ -122,32 +125,21 @@ def botc_to_nodes(input_path, output_path):
                     output_lines.append('<ul><li>')
                     in_list = True
                     in_list_item = True
-                #output_lines.append( f'<li>{line.strip()[1:]}</li>' )
                 elif in_list_item:
                     output_lines.append("</li><li>")
 
                 output_lines.append(line.replace("*","",1)+"<br>")
-            #elif in_list_item:
-
             elif in_list:
-                #if not in_list_item:
-
-                #    in_list = False
                 output_lines.append(line)
                 output_lines.append("<br>")
             elif in_ordered_list:
-                #if not in_list_item:
-
-                #    in_list = False
                 output_lines.append(line)
                 output_lines.append("<br>")
             if not in_list:
                 if not in_ordered_list:
                     output_lines.append(line)
 
-    # Removing multiple consecutive blank lines
     print("Cleaning up blank lines")
-
     cleaned_lines = []
     prev_line_empty = False
     for line in output_lines:
@@ -159,11 +151,6 @@ def botc_to_nodes(input_path, output_path):
             cleaned_lines.append(line)
             prev_line_empty = False
 
-    # Remove trailing blank lines at the end of the file
-    #while output_lines and output_lines[-1].strip() == '':
-    #    output_lines.pop()
-
-    
     output_lines = []
     i = 0
     while i < len(cleaned_lines):
@@ -174,34 +161,27 @@ def botc_to_nodes(input_path, output_path):
         i += 1
 
 
-
-    # Write the modified lines back to the file
     with open(output_path, 'w', encoding="utf-8") as file:
         file.writelines(output_lines)
 
 
 
-
-# Replace 'input.txt' with the path to your input file
-#botc_to_nodes('test_botc.txt', 'output.txt')
-botc_to_nodes('botc.txt', 'output.txt')
+botc_to_nodes('BotC.txt', 'nodefied content.txt')
 print("")
 print("Done nodifying text")
 
 
-# Read the content of the current HTML version
-with open('botc vault.html', 'r', encoding="utf-8") as file:
+print("Finding existing version of guide")
+with open('BotC Guide.html', 'r', encoding="utf-8") as file:
     html_content = file.read()
 
-# Parse the HTML content
-soup = BeautifulSoup(html_content, 'html.parser')
 
-# Find the div tag with id 'vault'
-bar_div = soup.find('div', id='vault')
+soup = BeautifulSoup(html_content, 'html.parser')
+vault = soup.find('div', id='vault')
 
 
 # Read the content of the replacement html
-with open('output.txt', 'r', encoding="utf-8") as file:
+with open('nodefied content.txt', 'r', encoding="utf-8") as file:
     replacement_content = file.read()
 
 # Parse the replacement content and remove empty paragraphs
@@ -211,14 +191,13 @@ for p_tag in replacement_soup.find_all('div'):
     if not p_tag.text.strip():  # Check if the paragraph has only whitespace
         p_tag.extract()  # Remove the empty paragraph
 
-# Replace the contents of the 'bar' div with the replacement content
 print("Updating HTML")
-if bar_div:
-    bar_div.clear()  # Remove existing contents
-    bar_div.append(replacement_soup)
+if vault:
+    vault.clear()
+    vault.append(replacement_soup)
 
-# Write the updated HTML content back to temp file 
-with open('output.html', 'w', encoding="utf-8") as file:
+
+with open('nodified content.html', 'w', encoding="utf-8") as file:
     file.write(str(soup))
 
 
@@ -266,8 +245,8 @@ Fabled    += [ "Spirit of Ivory", "Hell's Librarian", "Djinn", "Duchess"]
 Fabled    += [ "Storm Catcher", "Sentinel", "Doomsayer", "Angel", "Buddhist"] 
 Fabled    += [ "Ferryman", "Gardener"] 
 
-# Read the HTML file
-file_path = 'output.html'
+
+file_path = 'nodified content.html'
 with open(file_path, 'r', encoding='utf-8') as file:
     current_contents = file.read()
 
@@ -281,21 +260,15 @@ current_contents = surround_keywords_with_span(current_contents, Fabled, "Fabled
 
 
 
-# If you want to write the updated content back to the file, uncomment the following lines:
-file_path = 'pretty.html'
 file_path = 'highlighted.html'
 with open(file_path, 'w', encoding='utf-8') as file:
     file.write(current_contents)
-    #file.write(pretty_html)
-    #file.write(final_html)
-
-# Find lines containing only <span> tags and concatenate them with previous and next lines
 
 
 
 # Replace 'input.txt' and 'output.txt' with your file names
 input_path = 'highlighted.html'
-output_path = 'botc vault_rough.html'
+output_path = 'rough.html'
 #process_text(input_filename, output_filename)
 
 # Load the HTML file
@@ -361,8 +334,8 @@ with open(output_path, 'w', encoding='utf-8') as file:
 
 
 print("Prettifying HTML")
-input_path = 'botc vault_rough.html'
-output_path = 'botc vault.html'
+input_path = 'rough.html'
+output_path = 'BotC Guide.html'
 
 with open(input_path, 'r', encoding="utf-8") as file:
     html = file.read()
