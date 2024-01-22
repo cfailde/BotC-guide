@@ -295,7 +295,7 @@ roles_dict_str = javascript_code[start_index-1:end_index]
 Extra  = [ "poisoned", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
 Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
-Extra += [ "madness" ]
+Extra += [ "madness", "setup" ]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
 sorted_keywords = {}
 
