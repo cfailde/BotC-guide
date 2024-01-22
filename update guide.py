@@ -15,11 +15,7 @@ import json
 from yattag import indent
 
 
-
-
-
-
-# Function to surround keywords with <span class='character'></span>
+# Surround keywords with <span class='character'></span>
 def surround_keywords_with_span(html_content, keywords, character_type):
     soup = BeautifulSoup(html_content, 'html.parser')
 
@@ -81,7 +77,7 @@ def botc_to_nodes(input_path, output_path):
                 
                 id += 1
                 print("Node " + str(id))
-                output_lines.append('    <div class="node" id="' + str(id) + '">\n')  # open node
+                output_lines.append('    <div class="node">\n')  # open node
                 if line.startswith('Q '):
                     line = '      <div class="question">' + line[2:]   # open question
                 elif line.startswith('P '):
