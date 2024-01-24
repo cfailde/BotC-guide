@@ -176,16 +176,6 @@
         /*display: inline-block;*/
         animation: borderAnimation 2s linear infinite;
       }
-      #filterCount {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #ccc;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
     </style>
     <style> /* Everything else */
 
@@ -311,7 +301,6 @@
         <!-- Pick a letter and I will give you some great choices ... -->
       </div>
       <div id="centeredDiv"></div>
-      <div id="filterCount"></div>
     </div>
     <div class="nodes-container" id="vault">
       <div class="node">
@@ -12222,7 +12211,6 @@ Note if the target instead is dead, they can still turn.
       const centeredDiv = document.getElementById("centeredDiv");
       const keywordInput = document.getElementById('keywordInput');
       const nodes = document.querySelectorAll('.node');
-      const filterCount = document.getElementById('filterCount');
       const selectedKeywordsContainer = document.getElementById("selectedKeywords");
       const inputContainer = document.getElementById('inputContainer');
 
@@ -12245,9 +12233,7 @@ Note if the target instead is dead, they can still turn.
 
       // Trigger filtering on input
       keywordInput.addEventListener('input', function() {
-        const filterTerms = this.value.split(' ').filter(Boolean); // Get filter terms as an array
-
-        let matchingNodeCount = 0;
+        const filterTerms = this.value.split(' ').filter(Boolean);
 
         nodes.forEach(node => {
           const questionNode = node.querySelector('.question');
@@ -12273,12 +12259,10 @@ Note if the target instead is dead, they can still turn.
               answerNode.innerHTML = answerNode.innerHTML.replace(termRegex, '<span class="highlight">$1</span>'); // Highlight in answer
             });
             node.classList.remove('hide');
-            matchingNodeCount++;
           } else {
             node.classList.add('hide');
           }
         });
-        updateFilterCount(matchingNodeCount);
         updateURL();
       });
 
@@ -12512,19 +12496,6 @@ Note if the target instead is dead, they can still turn.
 
       createIndexMenu();
       correctPositioning();
-      updateFilterCount(0);
-
-      function updateFilterCount(count) {
-        if (selectedKeywordsContainer.childElementCount == 0) {
-          filterCount.textContent = "To search type in terms or use the menu";
-        }
-        else if (count == 0 && selectedKeywordsContainer.childElementCount > 0) {
-          filterCount.textContent = "Nothing to see!";
-        }
-        else {
-          filterCount.textContent = `Matching Entries: ${count}`;
-        }
-      }
 
       function spinMagnifyingGlass() {
         document.querySelector('.magnifying-glass').classList.toggle('spin');
