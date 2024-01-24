@@ -1,28 +1,6 @@
 H Al-Hadikhia with the Mastermind
 D Only one jinxed character can be in play. Evil players start knowing which player and character it is.
 
-J Al-Hadikhia with the Scarlet Woman
-D If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again.
-
-  This means that if the Scarlet-Woman-turned-Al-Hadikhia resurrects the Al-Hadikhia, they revert to being the Scarlet Woman rather than staying the Demon themselves as well.
-
-J Alchemist with the Spy
-D The Alchemist cannot have the Spy ability.
-
-J Alchemist with the Widow
-D The Alchemist cannot have the Widow ability.
-
-J Butler with the Cannibal
-D If the Cannibal gains the Butler ability, the Cannibal learns this (otherwise they could break the Butler rules regarding voting without realising).
-
-P Al-Hadikhia with the Barber
-I If the Barber is killed by the Al-Hadikhia,
-  the Al-Hadikhia should be re-woken to swap characters.
-  This can happen part way through the waking choices if the Barber chooses to die and is not the last player to choose life or death.
-
-  However, if the Al-Hadikhia swaps themselves using the Barber ability mid-activation,
-  the Al-Hadikhia ability would leave play and therefore no more players would be woken and live or die.
-
 P Al-Hadikhia with the Barista
 I Probably best to not Barista-double the Al-Hadikhia as
   the entire choosing process and killing would then happen twice:
@@ -32,15 +10,11 @@ I Probably best to not Barista-double the Al-Hadikhia as
   True/sober/healthy does not affect the running of the Al-Hadikhia ability unless they would otherwise have been poisoned or drunk.
   If a player affected by the Barista doubling is selected by the Al-Hadikhia, they do not choose twice, as their ability is doubled, not the Al-Hadikhia’s ability.
 
-
-P Al-Hadikhia with the Chambermaid
-I Does not register an Al-Hadikhia target as waking (if they would not otherwise wake),
-  because it is due to the Al-Hadikhia ability that they are waking.
-
 P Al-Hadikhia with the Choirboy
 I Order is important, so if the King chooses to die and is able to do so,
   the Choirboy would be woken and told which player is the Demon,
   even if the Choirboy chooses to die later in the Al-Hadikhia’s selections.
+
 
 P Al-Hadikhia with the Courtier
 I Not particularly fun to put in scripts with the Al-Hadikhia – everyone will know the Al-Hadikhia is in play by day 2
@@ -56,22 +30,13 @@ P Al-Hadikhia with the Farmer
 I There can be multiple living good Famers if the Farmer dies (creating another Farmer)
   and then is resurrected by the Al-Hadikhia.
 
-P Al-Hadikhia with the Flowergirl
-I If the Flowergirl is dead during the day,
-  then she is resurrected by the Al-Hadikhia that night, she gets woken to be told if the Demon voted.
-
 P Al-Hadikhia with the Gambler
 I The Gambler does not know if they have died to their own ability.
   As a result, they could gamble incorrectly and die,
   then be chosen by the Al-Hadikhia and choose live
   and therefore be resurrected and would not know whether they gambled correctly or not as the net effect is the same.
 
-P Al-Hadikhia with the Godfather
-I If the Godfather is dead during the day and there an Outsider is executed,
-  then she is resurrected by the Al-Hadikhia that night, she gets woken to make a kill.
 
-P Al-Hadikhia with the Goon
-I If the Goon is chosen by the Al-Hadikhia, then the Al-Hadikhia is drunked immediately and therefore instantly ceases the Al-Hadikhia ability, preventing any announcements being made.
 
 P Al-Hadikhia with the Gossip
 I If the Gossip is dead during the day and she made a correct gossip,
@@ -131,17 +96,7 @@ I The Mayor can bounce an Al-Hadikhia kill from themselves to another player if 
   leaving A, B, C and D as dying in the night despite only Mayor, A and B being announced as Al-Hadikhia targets.
 
   If the ST were do this though it would all-but hard-confirm the Mayor and the Al-Hadikhia cannot easily stop them surviving to F3, but it is a fun interaction!
-==========================
-P Al-Hadikhia with the Monk
-I Protecting the Al-Hadikhia target means they cannot die from the Al-Hadikhia but can be resurrected, since resurrections are not considered harmful.
 
-Q The Al-Hadikhia's first pick is Monk-protected and chooses die, while the other two picks choose live.
-  Who dies?
-A The first player is saved by the Monk so just the other two die, barring other sources of protection.
-
-  At the end of the players choosing, all three are alive, which would have been the case had the first player chosen live also.
-  As they are all alive, they all should die.
-==================
 P Al-Hadikhia with the Moonchild
 I Although the Moonchild might choose death on being woken for their Al-Hadikhia choice,
   she does not actually know if she died until it is announced in the morning as she could be protected by another character,
@@ -198,6 +153,7 @@ I The Storm Caught player can be picked by the Al-Hadikhia but cannot die.
   because it reduces the field to the Storm Caught player and two characters who do not want to die,
   one of whom is going to have to choose to do so or both of them will instead.
 
+
 P Al-Hadikhia with the Sweetheart
 I The Sweetheart drunks someone as soon as they die.
   So could drunk a character that dies later within the Al-Hadikhia choices or even the Al-Hadikhia herself, 
@@ -217,12 +173,12 @@ A The Tinker can choose to live for their Al-Hadikhia choice,
   ensuring that one of the three is dead and preventing an "all three die" situation.
 
   The ST probably would not do this because
-  * either the Tinker will generally be happy to say die or 
+  * either the Tinker will generally be happy to say die
   * or it would be harsh on the Al-Hadikhia who was about to get a rare triple kill.
 
-P Al-Hadikhia with the Town Crier
-I If the Town Crier is dead during the day and their ability is satisfied,
-  then she is resurrected by the Al-Hadikhia that night, she gets woken to be told if a Minion nominated.
+
+
+
 
 P Al-Hadikhia with the Undertaker
 I If the Undertaker is dead during the day and there is an execution,
@@ -660,11 +616,9 @@ Q What happens if the Pit-Hag changes a player into the Alchemist but there is n
 A If all Minion abilities are already in play, then the Alchemist will have the ability of an in-play Minion (ST's choice which)
   This is true whether an Alchemist gets made after all Minion abilities are put into play or an Alchemist has always been around.
 
-Q The Alchemist has an out of play Minion ability. Is this a constant check? Can the Pit-Hag create the Minion the Alchemist has the ability of? /
-  If the Pit-Hag creates the Minion that the Alchemist has the ability of, what happens to the Alchemist? 
-A The Pit-Hag can create the Minion the Alchemist has the ability of, 
-  and if they do the Alchemist would change ability if there is still an out-of-play Minion ability available.
- 
+Q Can the Minion the Alchemist has the ability of come into play due to the Pit-Hag or the Hatter?
+A Yes. The Alchemist would change ability if there is still an out-of-play Minion ability available.
+
   If there is no out-of-play Minion ability remaining, 
   the Alchemist could either keep the same ability or change to a different in-play ability. 
   It should probably change to signal to the Alchemist that the corresponding Minion has entered play as is usually the case.
@@ -734,10 +688,8 @@ Q Are the drunk / poisoned Al-Hadikhia's picks still woken?
 A No, they are drunk / poisoned so they cannot affect other players: there is no annoucement and no waking of their targets.
   The Al-Hadikhia will then realise that they were drunk / poisoned or think that they might be the Lunatic.
 
-Q If one of the Al-Hadikhia's targets is the unpicked Goon, will all three players live anyway?
-A Yes, and there are no announcements or waking of the targets.
-
-  It does not matter if the Goon is picked first, second or third, as soon as they are picked, the Al-Hadikhia is drunked.
+Q If one of the Al-Hadikhia's targets is the unpicked Goon, what happens?
+A The Al-Hadikhia is drunked immediately, so there are no announcements or waking of any of the targets who all live.
 
 Q If the evil Goon is resurrected by the Al-Hadikhia, are they still evil?
 A Yes.  Resurrection does not change alignment.
@@ -748,23 +700,30 @@ A The Fool initially survives due to her ability, then as all three are alive, a
 
   Arguably the unspent Fool should always say no to dying...
 
-Q In a final four, if the Barber, the Farmer and the last good/evil player are picked by the Al-Hadikhia and all choose live, does the Barber and the Farmer stuff still happen?
+Q In a final four, if the Barber, the Farmer and the last good/evil player are picked by the Al-Hadikhia and all choose live,
+  does the Barber and the Farmer stuff still happen?
 A Yes, in the order that they were picked.
 
-  The players would die in the order the Al-Had chose them, with any on death abilities handled as they trigger, but the ST will end the game as soon as end game condition is met, 
+  The players would die in the order the Al-Had chose them,
+  with any on death abilities handled as they trigger,
+  but the ST will end the game as soon as end game condition is met, 
   such as only two players left alive.
-  So if the choices were the Farmer, the Barber, and another role in that order, the Farmer would die and someone would become the Farmer,
+  So if the choices were the Farmer, the Barber, and another role in that order,
+  the Farmer would die and someone would become the Farmer,
   then the player who was the Barber would die and the game would end. 
 
   If the Barber were first,
-  the Al-Had would be offered the Barber swap, and if they swapped themselves then the rest of the kills would not happen.
-  If they instead swapped the Barber with the Farmer, then the Farmer would not trigger and instead there would be another Barber swap.  Theoretically there could be three Barber swaps.
+  the Al-Had would be offered the Barber swap,
+  and if they swapped themselves then the rest of the kills would not happen.
+  If they instead swapped the Barber with the Farmer,
+  then the Farmer would not trigger and instead there would be another Barber swap.
+  Theoretically there could be three Barber swaps.
 
-Q If all three of the Al-Hadikhia's targets choose to live,
-  then, since they die in the order that they were chosen,
-  and the Barber happens to be the first to die,
-  does the Barber's ability interrupt the Al-Had's kills?
-A It would probably be less messy to run the Barber swap afterwards. 
+Q If the Al-Hadikhia kills the Barber, when does the Barber swap happen?
+A It can happen part way through waking their choices if the Barber chooses to die and is not the last player to choose.
+
+  Should the Al-Had swap themselves while the picks are still being resolved,
+  then the Al-Had ability would leave play and therefore no more players would be woken and live or die.
 
 Q The Al-Hadikhia picks the Innkeeper and the two Innkeeper targets.
   If all choose live, do all die, or just the Innkeeper?
@@ -1085,6 +1044,18 @@ A If the Damsel is Barista doubled when no guess has been made,
   However, as it would be the Damsel that would be told they were Barista doubled, 
   the Minions would not know they would get an extra opportunity to guess unless the Damsel announced it.
 
+Q Does the Barista doubled Pit-Hag who uses their first pick to turn themselves into something else still get a second use of the Pit-Hag ability?
+A No, as they no longer have the Pit-Hag ability.
+
+Q Does the Barista doubled Pit-Hag who with her last pick turns herself into a role that acts after the Pit-Hag, get to use their new role twice too?
+A Yes.
+
+Q Does the Barista doubled Snake Charmer who hits the Demon get to make two kills as the Demon?
+A Yes.
+
+Q Does the Barista doubled Philosopher get to pick two abilities that night?
+A Yes, but the Barista doubled Philosopher is completely broken so best not to do it.
+
 ========
 =Beggar=
 ========
@@ -1242,6 +1213,9 @@ A If the Butler votes illegally, tally the Butler's vote anyway.
 ==========
 =Cannibal=
 ==========
+Q What is the Butler jinx with the Cannibal?
+A If the Cannibal gains the Butler ability, the Cannibal learns this, otherwise they could break the Butler rules regarding voting without realising.
+
 Q If the Cannibal eats the Spy who registers as a good Townsfolk with a mechanical ability, such as the  Monk or the Gossip), what would happen?
 A The Cannibal has that ability so long as the Spy continues to register as good.
 
@@ -1438,6 +1412,16 @@ A Yes.
 ===========
 =Cerenovus=
 ===========
+Q A good player is Cerenovus mad and breaks madness. The ST decides to not execute for the madness break. 
+  The next day the good player is no longer Cerenovous mad.
+  Can the ST on any subsequent day execute the good player for the previous madness break?
+A The madness due to the Cerenovus ability is in effect until the end of the following night,
+  so once that time has passed, their target cannot be executed for breaking madness because it no longer applies to them.
+  
+  This does mean that after the Cerenovus picks a new madness target, 
+  the previous player could still be executed for breaking madness before the end of the night phase,
+  but most STs would not do this as night executions usually make little sense.
+
 Q Can the Cerenovus target a Traveller?
 A Yes.
 
@@ -1479,6 +1463,10 @@ A Yes.
 =============
 =Chambermaid=
 =============
+Q What is the Al-Hadikhia jinx with the Chambermaid?
+A The Al-Hadikhia's targets do not register as waking, if they would not otherwise wake,
+  because it is due to the Al-Hadikhia ability that they are waking.
+
 Q Do "start knowing" roles, like the Grandmother learning their grandchild, register on their first night to the Chambermaid?
 A Yes, they woke up to their own ability.
 
@@ -1529,7 +1517,13 @@ Q Does a Minion learning they are now the Imp alert the Chambermaid?
 A No. They are not waking to their own ability.
 
   Telling a player their character has changed is not an ability's action, it is game mechanics.
-  However, a Minion changed into the Evil Twin and waking due to their ability to know the good twin is a Chambermaid +1.
+
+Q Does a Minion / the Demon waking up to learn their new role after an Engineer swap ping the Chambermaid?
+A Only if they wake due to their new ability.
+
+Q Does a new instance of the Evil Twin learning their twin ping the Chambermaid?
+A Yes.  Learning that they are now the Evil Twin does not ping the Chambermaid,
+  but waking due to their ability to know their twin is a Chambermaid +1.
 
 Q Does any character waking to learn of a change in alignment count for the Chambermaid, or just the Goon and the Cult Leader?
 A The Chambermaid only learns if the character woke due to their own power. So a Mezepheles turning someone, for example, does not count for the Chambermaid.
@@ -1566,8 +1560,7 @@ A No, the Chambermaid detects if a player woke up for their character ability, a
   In contrast, a Lunatic, who wakes up to receive Demon Info is detected by the Chambermaid
   because they are not actually a Demon and did wake up due to their own ability.
 
-Q Does a Minion / the Demon waking up to learn their new role after an Engineer swap ping the Chambermaid?
-A Only if they wake due to their new ability.
+
 
 ======
 =Chef=
@@ -1982,7 +1975,7 @@ A If the Engineer causes the Alchemist to have an in-play Minion ability,
   then the Alchemist will need to swap to an out-of-play one.
   Otherwise, the Alchemist is not affected by the Engineer, as they are not themselves a Minion, they just have a Minion ability.
 
-Q What is the Legion / Engineer jinx?
+Q What is the Legion jinx with the Engineer?
 A Legion and the Engineer cannot both be in play at the start of the game.
   If the Engineer creates Legion, most players (including all evil players) become evil Legion.
 
@@ -2015,9 +2008,6 @@ A Yes, evil wins.
   But the Evil Twin specifically prevents that win from happening so long as both twins are alive.
   So despite the Demon being dead, as only two players left alive is evil's win condition, evil wins.
 
-Q Does the Evil Twin wake immediately after the good twin changes character to learn their new character?
-A Yes.
-
 Q Could the twins ever get bad information?
   i.e. is it possible that they think the other twin is someone else other than their actual twin?
 A The Sweetheart drunked player who is turned into the Evil Twin would learn wrong info,
@@ -2026,18 +2016,20 @@ A The Sweetheart drunked player who is turned into the Evil Twin would learn wro
 Q If the Courtier drinks with the Evil Twin and town kills the good twin, what happens when drunkeness ends?
 A Nothing. The good player in the twin pair was executed while the Evil Twin ability was drunk and it does not trigger retrospectively.
 
-
 Q The Evil Twin knows the role of a twinned good player.
   If the Pit-Hag turns a good player into the Evil Twin,
   does the resulting good aligned Evil Twin know the role of their twinned evil player?
 A Yes.
 
-Q If the Evil Twin's good twin changes role, do they find out?
-A Yes, the Evil Twin always knows the ability of their good twin.  However, if the Evil Twin is turned into something else the good twin does not learn this.
+Q Does the Evil Twin find out if their twin changes character?
+A Yes, the Evil Twin always knows the ability of their good twin, so should be immediately informed of their new character.
+
+  However, if the Evil Twin is turned into something else the good twin does not learn this.
 
 Q The Pit-Hag turns a good player into the Evil Twin, who is then twinned with an evil player. 
-  If the evil player is killed does that cause another evil player to become the evil aligned twin, since the Evil Twin is still alive and needs a counterpart?
-A No. The twins only change if the _alignment_ of one of the changes. It is allowable to have a dead twin.
+  If the evil player is killed does that cause another evil player to become the evil aligned twin,
+  since the Evil Twin is still alive and needs a counterpart?
+A No. The twins only change if the _alignment_ of one of them changes. It is allowable to have a dead twin.
 
 Q The Evil Twin is N1 droisoned (accidental poisoning in a Poppy Grower game).  How should the ST run this?
 A The ET is decieved as to their ability working, so they are told an arbitrary player and a character. The good twin learns nothing.
@@ -2048,10 +2040,17 @@ A The ET is decieved as to their ability working, so they are told an arbitrary 
 
   While the ET is droisoned, executing the good twin does nothing.
 
-Q What happens if the good aligned player in an Evil Twin pair becomes evil? 
-A A new good Twin would need to be assigned. The Twins must always be of opposing alignment, so if they are ever the same,
-  the good twin has to become someone else. The Evil Twin would wake with their new good twin that night to each learn each other.
-  
+Q What happens if the good twin in an Evil Twin pair becomes evil? 
+A A new good Twin would need to be assigned.
+  The Twins must always be of opposing alignment,
+  so if they are ever the same,
+  the good twin has to become someone else.
+  The Evil Twin would wake with their new good twin that night to each learn each other.
+
+Q If a new Evil Twin is created (Pit-Hag / Hatter) how is it run?
+A Each twin wakes individually to learn who their twin is and what character it is.
+  The good twin does not have to be alive and generally should not be if it happens late game when the good team cannot win.
+
 ==========
 =Exorcist=
 ==========
@@ -2210,6 +2209,10 @@ A Evil wins.
 
   Usually, because exceptions are made in rulings if, for example, good could never win otherwise.
 
+Q If the Fearmonger ability enters midgame (Pit-Hag / Hatter / Plague Doctor) how is it run?
+A If a player gains the Fearmonger, any choices they made as their previous character are not relevant to the Fearmonger announcement;
+  their first pick will cause an announcement regardless of who it is. 
+
 =========
 =Fiddler=
 =========
@@ -2228,6 +2231,13 @@ Q Does Fisherman advice have to be specific and can it be affected by the Vortox
 A The Fisherman gets whatever the ST wants to give them.
   That can be specific or vague, however they want. Misregistration can affect it if the ST wants, and the Vortox must affect it.
 
+============
+=Flowergirl=
+============
+Q If the Flowergirl is dead during the day and resurrected the next night (Al-Hadikhia / Professor / ...),
+  are they told if the Demon voted the previous day?
+A Yes.
+
 ======
 =Fool=
 ======
@@ -2236,6 +2246,9 @@ A No, any protection ability lets the Fool keeps their ability.
 
 Q Can the Pit-Hag's deaths are arbitrary ability kill an unspent Fool?
 A Yes.  Effectively the Fool was targeted twice so it appears that they were one-shot.
+
+Q Does a dead player turned into the Fool come back to life as the once killed Fool?
+A No, they stay dead.
 
 ================
 =Fortune Teller=
@@ -2349,6 +2362,7 @@ A Yes, they still have their ability through the Vigormortis and the Goblin abil
 ===========
 =Godfather=
 ===========
+
 Q Can the Spy register as an Outsider to the Godfather? 
 A Yes.
   Doing this during setup would be an Outsider ability hurting evil so not recommended.
@@ -2362,20 +2376,21 @@ Q The Godfather and the Recluse are in play. Must the ST show the Recluse token 
 A The ST could do that, but STs should generally not use Outsiders to hinder evil, at least not during N1.
 
   The GF could probably figure out that that means the Recluse is in play, unless there is other Outsider manipulation in play,
-  or they might suspect that they are poisoned (say accidentally by the Poisoner in a Poppy Grower game) so mistrust their info.
-
-Q Does a Godfather created mid-game (Pit-Hag / Hatter / ...) learn the in-play Outsiders?
-  And do they get a kill the same night if an Outsider was executed the previous day when there was no Godfather?
-A Yes, the Godfather is backward-looking so can potentially kill.
-
-  Any start knowing characters (Pixie, Philo-X, ...) created mid-game get their info at the earliest chance.
-  If a player becomes the Godfather, wake her up and inform her of a her new role and the in play Outsiders, then put her back to sleep.
-  If an Outsider died (perhaps the Hatter responsible for creating the Godfather),
-  then wake her up at the correct point in the night order to get her kill.
+  or they might suspect that they are poisoned, perhaps accidentally by the Poisoner in a Poppy Grower game, so mistrust their info.
 
 Q If the Pit-Hag creates Outsiders that the Godfather did not see at the start,
   does the Godfather get to kill, if one of the new Outsiders dies?
 A The Godfather gets to kill if any Outsider died, even one that did not exist at the start of the game.
+
+Q If an Outsider is executed and the following night the Godfather is either resurrected (Al-Hadikhia) or created (Pit-Hag / Hatter)
+  do they get a kill?
+A Yes, the Godfather is backward-looking so can potentially get a kill.  They should be woken at their turn in the night order for their choice.
+
+Q Can the Hatter's death leading to a midgame Godfather give the new Godfather a kill?
+A Yes.  
+
+Q Does a Godfather created midgame (Pit-Hag / Hatter) learn the in-play Outsiders?
+A Yes.  Wake her up, inform her of her new character and the in play Outsiders regardless of their living status, then put her back to sleep.
 
 =======
 =Golem=
@@ -2677,29 +2692,52 @@ A Yes.  The madness lasts until the next Harpy choice.
 ========
 =Hatter=
 ========
-Q How is the Hatter ability run?
-A If the Hatter dies at day, they use their ability before any other character. If the Hatter dies at night, they use their ability immediately. The night order is only a reminder.
+Q If the Recluse misregisters, can they change character when the Hatter dies?
+A Yes, but don't. This is unlikely to be fun, so recommended against. 
+
+Q If the Hatter dies does can the evil Apprentice change their Minion ability?
+A No, they are not a Minion so unaffected by the Hatter.
+
+Q If the Hatter dies does can an evil Townsfolk (Bounty Hunter / Mezepheles / Cult Leader) or the evil Goon choose a new character?
+A No, only Minions and Demons are affected by the Hatter.
+
+Q Does a Minion or a Demon waking to make a choice after the Hatter dies register to the Chambermaid?
+A No, it is not their own ability causing them to wake.
+
+Q If the Hatter dies and the Minions change characters, can they have a new Damsel guess?
+A No.
+
+Q If the Hatter dies and a Minion or the Demon is drunk / poisoned, do they still change character?
+A Yes, they become the drunk / poisoned role that they chose, as the change is due to the Hatter's ability, not their own.
+
+Q How is the Hatter ability run? / When does the Hatter ability activate?
+A The Hatter ability is immediate, similar to the Barber:
+  * If the Hatter dies during the day, they use their ability before any other character.
+  * If the Hatter dies at night, they use their ability immediately. The night order is only a reminder.
 
   Each Minion and Demon chooses their role, one after the other, knowing the previous choices.
 
 Q What happens if the Hatter dies in a Legion game?
-A Nothing.
+A Nothing, as per the jinx.
 
-  If it is not a Legion game, but Legion is on the script, and the Hatter dies, an evil player choosing to become Legion causes all evil players to become Legion.
+Q What happens if the Hatter dies in a non Legion game and an evil player picks Legion?
+A All evil players become Legion, as per the jinx.
 
-Q If Lil' Monsta kills the Hatter (and you are NOT using the variant rule), does the babysitting Minion choose from the Minions list, the Demons list, or either list?
-A From 
-⁠experimental-how-to-run: "A Lil’ Monsta holder would be able to choose another Demon, as usual for Demons. Jinx - If a Demon chooses Lil' Monsta, they also choose a Minion to become and babysit Lil' Monsta tonight."
-  If the player wishes to remain as LM then they can pick a Minion instead.
+Q If Lil' Monsta kills the Hatter (and the variant rule is not being used),
+  does the babysitting Minion choose from the Minions list, the Demons list, or either list?
+A The babysitter chooses a different Demon to become or they can opt to remain as Lil' Monsta by picking a Minion.
 
-Q Does a good Minion wake due to the Hatter dying?
+Q What is the Hatter jinx with Lil' Monsta?
+A If the Demon chooses Lil' Monsta then they also choose a Minion to become and babysit Lil' Monsta tonight.
+
+Q Does a good Minion or Demon wake due to the Hatter dying?
 A Yes.
 
 Q How does the Hatter and Poppy Grower interact?
 A The ST should probably wake the affected players separately.
 
-Q When are you supposed to run the Hatter? At the moment they die or at their point in the night order?
-A It is immediate, similar to the Barber.
+Q If the Hatter dies on or after day five, can the Demon choose to become the Leviathan?
+A No, as per the jinx.
 
 =========
 =Heretic=
@@ -2970,7 +3008,7 @@ A The Investigator would not see a Legion token, as that is a Demon token.
 Q Legion do not know other Legions, right?
 A Legion learn other Demons/Minions like normal.
 
-Q All alive legion can potential kill one person, right?
+Q All alive Legion can potential kill one person, right?
 A Yes, though Legion should usually never kill more than two, and if they do multikill it should be multiple Legions.
   Multikill is usually done to support a world pushed by the Legions so it balances out
   for example, if a Legion is bluffing Gossip and asks the ST to kill an extra player tonight, the ST will typically comply and kill one more legion.
@@ -3034,6 +3072,9 @@ A No, the days are universal.  However, any good executions while the Leviathan 
 =============
 =Lil' Monsta=
 =============
+Q If the babysitter dies in a Lil' Monsta game that continues (Mastermind / Evil Twin), do the Minions get to choose a new babysitter?
+A No, if the babysitter dies so does Lil' Monsta, so the ability cannot continue.
+
 --------
 Q The demon always learns the Lunatic, the Marionette and the King.  How does this work in a Lil' Monsta game?
 A Each time the player holding Lil' Monsta changes they need to be told who those characters are.
@@ -3054,6 +3095,7 @@ A If they are given the token for real, yes.
   And they should also learn that that they are their own Lunatic.
   None of this triggers the Mathematician because it is all their own respective abilities. 
 -----
+
 Q Does the Alchemist wake up with the Minions to decide who babysits Lil' Monsta?
 A No, the Alchemist is not a Minion, they merely have the ability of an out of play one.
 
@@ -3166,7 +3208,7 @@ Q The Soldier is immune to the Demon, so can they be the Lleech host?
 A Yes. "Immune" is not really the right word to use.  The Soldier is safe from harmful effects.
   Dying, being poisoned, and turning evil are examples of harmful effects.
   Being the Lleech host is not a harmful effect, because when the host dies so does the Demon,
-  and that is rather good for the good team.
+  and that benefits the good team.
 
   So the Soldier is not poisoned by the Lleech, but they are still their host.
 
@@ -3344,6 +3386,10 @@ A Nothing.
 
   The Lunatic says the Demon learns who they picked, and the Ojo says picking an out of play character is the ST's choice not the player's, so the Lunatic Ojo did not pick anyone.
 
+Q If the Hatter dies, can the Lunatic be given the choice to change characters?
+A Yes, this does not even need the actual Hatter to die.
+
+
 =============
 =Lycanthrope=
 =============
@@ -3355,17 +3401,9 @@ A The Godfather does not choose when they use it,
 Q The Lycanthrope attacks a good player, then the Pit-Hag creates a new Demon.  How many deaths can occur that night?
 A The Pit-Hag acts first in the night order so deaths are completely arbitrary which can include blocking the Lycanthrope kill.
 
------------
-Q If the Lycanthrope attempts to kill the sober Sailor, is it a no death night?
+Q If the Lycanthrope attacks a good player who does not die (sober Soldier / Tea Lady protection / Innkeeper protection / unspent Fool / ...)
+  is it a no death night?
 A If the Lycanthrope attacks a good player but that good player does not die, players can still die tonight due to other characters’ abilities.
-
-Q If the Lycanthrope chooses good player protected by the Tea Lady, will there be any deaths tonight?
-A If the Lycanthrope attacks a good player but that good player does not die, players can still die tonight due to other characters’ abilities.
-
-Q If the Lycanthrope hits the Fool who has yet to use their ability, can other deaths happen since the Fool did not die?
-A Yes.
-
-----------------
 
 Q If the Lycanthrope chooses the Mayor and the Mayor redirects the kill to an evil player, RAW, could you kill the evil player?
 A No, a Mayor bounce does not change the nature of the kill attempt's source. It is still a Lycanthrope ability doing it and it has to fail.
@@ -3377,12 +3415,11 @@ Q How does Pukka interact with the Lycanthrope?
   If the Lycan prevents the death of a Pukka poisoned target, do they remain poisoned? 
   Or, in other words, does a Pukka chosen target have to die in order to become healthy?
 A No, the Lycan-protected and Pukka-poisoned player becomes a healthy (and living) player.
-  The order of events would look something like this:
 
+  The order of events would look something like this:
   *N1 - The Pukka poisons player A.
   *N2 - The Lycanthrope kills a good player and the Pukka chooses player B. 
         Player B is poisoned and player A becomes healthy and does not die since the Lycanthrope ability worked successfully.
-
 
 Q What is the Gambler jinx with the Lycanthrope?
 A If the Gambler gambles someone incorrectly and dies while there is an alive Lycan ability,
@@ -3536,6 +3573,9 @@ A The Marionette who is selected by the Preacher will wake and learn that this h
   They no longer have anything that makes them "think they are a good character", and will no longer be woken at night to use an ability.
   They will not explicitly be told that they are evil or the Marionette, but will probably be able to figure it out.
 
+Q What happens if a player chooses the Marionette with the Hatter ability?
+A The ST informs that player that they are a good character and tells the Demon who their Marionette is.
+
 ============
 =Mastermind=
 ============
@@ -3585,6 +3625,9 @@ A Correct.
 ===============
 =Mathematician=
 ===============
+Q After the Pit-Hag creates a demon and deaths are arbitrary, is the Demon's kill being blocked a +1 to the Mathematician?
+A Yes.
+
 Q Does the Assassin bypassing an ability like the Fool's, the Sailor's, or the Tea Lady's protection give a +1 to the Mathematician?
 A Yes, the Assassin's ability is causing another player's protection ability to work abnormally.
 
@@ -3685,7 +3728,7 @@ Q The Exorcist picks the Demon. Is this +1 for the Mathematician?
 A If the Demon should be waking up to use their ability, and they are not because of the Exorcist,
   then the Demon ability has malfunctioned and it counts.
 
-Q Does the Dreamer seeing a good role and a Minion role when checking a Legion player ping Mathematician?
+Q Does the Dreamer seeing a good role and a Minion role when checking a Legion player ping the Mathematician?
 A Yes.  The Dreamer is not seeing the correct character, due to another character’s ability.
 
 Q If the Lunatic thinks that they are a Shabaloth, but the real demon is single kill demon such as the Imp
@@ -3720,7 +3763,7 @@ A Yes, the Demon's ability worked abnormally due to another character's ability,
 ---
 Q The Zombuul has died once, and there are three other players alive including the Mayor.
   If no executions are made, does the game continue? What happens?
-A the Zombuul will register as dead to the Mayor, which means good wins.
+A The Zombuul will register as dead to the Mayor, which means good wins.
 
 Q Does the Mayor still win if three players register alive and nobody is executed, while the Zombuul is dead?
 A Yes, the Zombuul registers as dead to the Mayor. It also has to be exactly three players so two does not work.
@@ -3768,13 +3811,18 @@ A The Minstel's ability reads "all other players (except Travellers)", so yes, d
 ======
 =Monk=
 ======
+Q If a dead Monk-protected player is targeted by the Al-Hadikhia, can they be resurrected if they chose live?
+A Yes, living and resurrections are not considered harmful.
+
+Q The Al-Hadikhia's first pick is Monk-protected and chooses die, while the other two picks choose live.
+  Who dies?
+A Just the other two die, barring other sources of protection.
+  The Monk-protected player cannot die regardless of whether they choose live or die.
+  The other two picks choosing live results in all three being alive so all dying, except the Monk protection again saves the first player.
+
 Q Does the Monk protected, No Dashii poisoned, Minstrel proc after a Minion is executed?
 A The Monk is not protecting the Minstrel when the Minion dies; the Monk only works during the night.
   The resulting No Dashii poisoned Minstrel does not proc.
-
-Q The Monk chooses the dead Poisoner. The Al-Hadikhia selects some Outsiders that choose to die, and then the dead Poisoner, who chooses to live.
-  Are they resurrected, or are they safe from the Demon?
-A Living is not harmful so the Poisoner is resurrected.
 
 ---check this one:
 Q The Monk protects the Pit-Hag holding Lil' Monsta.  Does the Monk block the PH from changing her character?
@@ -3981,8 +4029,13 @@ A If the Philosopher is drunk or poisoned at the time they try to gain an abilit
 =========
 =Pit-Hag=
 =========
-Q After the Pit-Hag creates a demon and deaths are arbitrary, is the Demon's kill being blocked a +1 to the Mathematician?
-A Yes.
+Q If the Pit-Hag creates a Demon but then loses their ability can an arbirtary deaths night still occur?
+A Yes.  As soon as the Pit-Hag creates a Demon arbirtary deaths are global and cannot be removed.
+
+  This covers:
+  * the Vigormortis changing character causing the Pit-Hag to lose their ability
+  * the Alchemist Assassin, whose ability cannot be blocked, killing the Pit-Hag
+  * the Pit-Hag changing themselves to a Demon
 
 Q After the Pit-Hag creates a demon and deaths are arbitrary, can the ST allow the Demon's kill to go through?
 A Yes.
@@ -4151,12 +4204,14 @@ A The Pixie still gains the ability they see if they are mad as that role, after
 ===============
 =Plague Doctor=
 ===============
-
-
 Q What happens if the Plague Doctor dies multiple times?
-A The ST gains multiple abilities. If all abilities are in play they can get an in play ability.
-  That can happen if the PD is Barber swapped to a living player or pit hagged and a new one is made.
+A The ST gains multiple abilities.
+  If all abilities are in play they can get an in play ability.
+  That can happen if the PD is Barber swapped to a living player or a new one is made by the Pit Hag.
   There is no way for the ST to lose an ability they gained.
+
+Q Can the ST lose the ability granted by the Plague Doctor if the Minion comes into play or a player gains the ability (Pit-Hag / Hatter / Engineer / Alchemist)?
+A No.
 
 Q If the Plague Doctor gives the Baron ability, does the ST tell the players who changed roles?
 A Yes.
@@ -4180,6 +4235,8 @@ A Pixie and PD are run differently.
 ====
 =Po=
 ====
+Q If a player becomes the Po (Hatter / Engineer/ Pit-Hag), do their choices as their previous character have any effect?
+A No. They can only kill no-one or one player on their first night.
 
 Q If the Po charges, are they allowed to attack fewer than three people?
 A No, the Po that chose to attack no one last time must now choose exactly three different players.
@@ -4403,6 +4460,9 @@ A Correct. Drunk or poisoned characters do not actually have abilities.
 =======
 =Pukka=
 =======
+Q If the Pukka becomes another Demon (Pit-Hag / Hatter / ...), what happens to the previously poisoned player?
+A They are immediately no longer poisoned and will not die tonight.
+
 ----------------------Combine
 Q What happens when the Pukka kills a character with an ability that acts on death (Sweetheart / Barber / Plague Doctor / Hatter / ...)?
 A Their ability does not trigger.
@@ -4652,6 +4712,11 @@ A Yes but don't.
 ======
 =Riot=
 ======
+Q What is the Hatter jinx with Riot?
+A If the Hatter dies in a Riot game, and a Riot chooses a different Demon, a normal evil team is created from the Riot players.
+
+  If the Hatter dies and the Demon chooses Riot, the Minions become Riot too.
+
 Q Can there be a call to exile a Traveller while there is a Riot active?
 A No, the call should be made before nominations open.
 
@@ -4721,6 +4786,12 @@ A Yes.
 ===============
 =Scarlet Woman=
 ===============
+Q What is the Al-Hadikhia jinx with the Scarlet Woman?
+A If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again.
+
+  This means that if the Scarlet Woman turned Al-Hadikhia resurrects the Al-Hadikhia,
+  they revert to being the Scarlet Woman rather than staying the Demon themselves as well.
+
 Q There are five players left alive including the Imp and the Scarlet Woman.  The Imp is executed, leaving four alive.
   Does the SW activate?
 A Yes.
@@ -4893,6 +4964,16 @@ A No, additional means just that, so the Demon sees more different characters.
 =========
 =Soldier=
 =========
+Q Minions killed by the Vigormortis poison a Townfolk neighbour.  Is the Soldier safe from this poisoning?
+A Yes, as it is a Demon ability that causes the poisoning.
+
+Q Can the sober Soldier die during the night in a Lil' Monsta game?
+A Not to the Lil' Monsta or the babysitter, as the source of the kill is still the Demon even when the ST picks the target.
+  It is possible for the Soldier to die to non Demon sources.
+
+Q Can the soldier die in a Legion game?
+A Not to Legion, as a Legion player counts as both a Demon and a Minion, and the source of the kill is still a Legion player even when the ST picks the target.
+
 Q Is the Soldier safe from the Demon using the Barber swap on them?
 A No.
 
@@ -5051,6 +5132,13 @@ Q Suppose the Tinker cannot die at night due to Innkeeper protection,
 A RAW the ST can wait a fraction of a second after announcing night deaths and then say the Tinker died,
   There is no need to specify if it was a night death or not.
 
+============
+=Town Crier=
+============
+Q If the Town Crier is dead during the day and resurrected the next night (Al-Hadikhia / Professor / ...),
+  are they told if a Minion nominated the previous day?
+A Yes.
+
 ==========
 =Toymaker=
 ==========
@@ -5067,13 +5155,13 @@ A Yes.
 =Undertaker=
 ============
 Q In a Riot game, does the Undertaker learn about all the execution in the day?
-A The chooses one of the executees for the UT to learn about, not all of them.
+A The ST chooses one of the executees for the UT to learn about, not all of them.
 
-Q Town executes the Widow. That night, the Widow is Pit-Hagged into the Sage. Would the Undertaker see the Widow or would they see the Sage? 
-A The UT would see that the Widow was executed today.
- 
-  The Widow-turned-Sage was the Widow when they died by execution,
-  and the Undertaker's ability is past tense: they learn what character was executed, not what character that player currently is. 
+Q If a player is executed then swaps character (Pit-Hag / Barber / Engineer / Hatter)
+  what does the Undertaker see?
+A They learn the player's role at the time of the execution.
+
+  The Undertaker's ability is past tense: they learn what character was executed, not what character that player currently is.
  
 Q The poisoned Recluse is executed, but is not poisoned when the UT's turn comes up in the night, what happens?
 A The UT must see the Recluse.
@@ -5103,29 +5191,24 @@ A The Spy's ability allows her to register as good, even after death, so she cou
 =============
 =Vigormortis=
 =============
-Q If the Plague Doctor dies, and a living Minion gains an out of play Minion ability like the Spy, and is then killed by the Vigormortis,
-  does the Minion still keep the ability gained from the Plague Doctor?
+Q If a living Minion gains another out of play Minion ability via the Plague Doctor,
+  do they keep this second ability if killed by the Vigormortis?
 A Yes.
 
 Q If the Vigor killed Poisoner poisons the Vigormortis, does the Vigor kill that night?
 A No.
 
 Q Does an evil Apprentice killed by the Vigormortis retain their ability?
-A No.
+A No, they are not a Minion.
 
------------------combine
-Q If the Engineer swaps the Vigimortis to another Demon, do any Vigor-killed Minions keep their abilities?
-A No, any killed Minions lose their abilities and their Townsfolk neighbours stop being poisoned immediately.
+Q If the Vigormortis is changed to another Demon (Pit-Hag / Engineer / Hatter),
+  does anything happen to Minions they previously killed?
+A Yes, the Vigor killed Minions lose their abilities and neighbouring Townsfolk are no longer poisoned.
 
-Q If the Vigormortis is changed into a different Demon, do the dead Minions lose their ability and are the neighbouring Townsfolk no longer poisoned?
-A Yes, the Minions lose their ability and no longer poison anyone. 
------------------
-
-Q If the Pit-Hag changes the role of a Vigor-killed Minion,
-  does the Minion keep their ability? What if the new role is a Townsfolk role?
-A A Vigor killed Minion keeps their ability in death as long as they always remain a Minion.
-  If they ever stop being a Minion, they lose their ability.
-
+Q If a Vigormorits killed Minion changes role (Pit-Hag / Engineer/ Hatter)
+  does the Minion keep their ability?
+A A Vigor killed Minion keeps their ability and continues to poison a neighbouring Townsfolk as long as they always remain a Minion.
+  If they ever stop being a Minion, they lose their ability and stop poisoning a neighbour.
 
 Q The Vigor kills their Pit-Hag. The dead Pit-Hag changes the Vigormortis to another Demon.
   Does the PH lose his ability due to the Vigormortis being no longer in play?
@@ -5541,9 +5624,9 @@ A A good player learns of the Widow that night.
 =========
 =Zombuul=
 =========
-Q If the Zombuul that has already died once is droisoned, does the game end or continue?
-A The game continues because importantly the Zombuul has never actually died. 
-  Do not remove the shroud.  Do not announce anything to town.
+Q If the once-killed Zombuul is drunked or poisoned, does the game end?
+A The game continues because importantly the Zombuul has never actually died.
+  Their death shroud is not removed and nothing is announced to town.
   They do not register as dead for roles like Tea Lady and Oracle that care about living status.
  
 Q If the Zombuul that has not already died once is killed while droisoned, what happens?
@@ -5559,28 +5642,33 @@ Q The first time a Zombuul is executed, do they still wake at night to kill, if 
   or does being executed technically count as "died today” even though they live?
 A They count themselves as having died today and do not wake.
 
-Q The Pit-Hag creates the Zombuul from a dead Minion. Does the Zombuul have one life?
-A No. The Zombuul starts bona-fide dead, so without any lives.
+Q If a dead player becomes the Zombuul (Pit-Hag / Hatter / Engineer /...) do they return to life as a once-killed Zombuul?
+A No, they are the genuinely dead Zombuul.
 
-  Think of the Zombuul ability like the Fool’s ability, but with the extra misregistration that feigns death. 
-  A dead player turned into the Fool does not resurrect she remains dead. Same for the Zombuul.
+  It is only the Zombuul's ability that allows it to misregister as dead that gives them a second life,
+  and dead players do not have abilities unless specified otherwise.
 
-Q In a Zombuul game with the Barber, the Zombuul has been executed once and her Minion is alive.
-  That night, the Barber swap was triggered and the executed Zombuul is now the Minion, the Minion is now the Demon.
-  Because the Zombuul only registered as dead, will they suddenly "come back to life" or remain as a dead minion?
-A They remain appearing dead, but are not.  
+Q Is the once-killed Zombuul who either swaps with a Minion (Barber) or becomes another Demon (Pit-Hag / Engineer / Hatter)
+  just the dead version of her new character?
+A No, she is alive but remains appearing as dead.
+  Nothing in the ability prompts the ST to announce anything about her life/death status
+  since her status has technically not changed.
+  As a result the town do not know to flip her life token back over:
+  in person, the town square is maintained by the players, not the ST,
+  and online the ST simulates what the players would do.
+ 
+  From the players' perspective nothing has changed,
+  but abilities that care about living status are affected: she does not register as dead, so abilities can see, choose and impact her.
 
-  Nothing in the ability prompts the ST to announce anything about their life/death status
-  since their status technically has not changed meaning players do not know to flip the life token back over.
-  In person, the Town Square is controlled by players not the ST and online the ST should be simulating what the players would do.
+ The Zombuul and roles that allow character changes such as Barber or the Pit-Hag do not mix well! It is kind of awkward no matter how it is run.
 
-  From the player's perspective nothing has changed,
-  but abilities that care about living status definitely see that player; they do not register as dead, so abilities can see, choose and impact that player. 
+Q Does the "dead" Zombuul have a ghost vote?
+A Yes.
 
-  The Zombuul does not work great with character changers like the Barber or the Pit-Hag. It is kind of awkward no matter how it is run.
+Q Can the "dead" Zombuul vote more than once?
+A After their first vote while registering as dead they would lose their ghost vote.
+  Mechanically they can vote again but voting more than once while appearing dead would out them, so probably a bad idea.
 
-Q If the Zombuul, after having appeared to die once, is swapped to another Demon, are they announced to have come back to life?
-A No, they remain appearing dead on the town square, but register as alive for all other purposes.
 
 
 
@@ -5833,6 +5921,12 @@ A You can say whatever you want but with a few exceptions like not narrating wha
 
 
 :travellers:
+Q In a game with multiple Demons (Legion / Riot / ...) what does an evil Traveller learn?
+A They learn just one Demon player.
+
+Q In a Lil' Monsta game does an evil Traveller still learn the babysitter if they are a good player at the time?
+A Yes.
+
 Q If a Traveller joins the game is their role immediatelly known to everyone or is it secret?
 A Everyone knows what Traveller they are for as long as they are a Traveller.
 
