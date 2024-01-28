@@ -20,7 +20,7 @@ def surround_keywords_with_span(html_content, keywords, character_type):
     soup = BeautifulSoup(html_content, 'html.parser')
 
     for keyword in keywords:
-        print("Highlighting: " + keyword)
+        print("Highlighting: " + keyword + "                               ", end='\r')
         # Find all occurrences of the keyword in the HTML content
         matches = soup.find_all(string=re.compile(r'\b' + re.escape(keyword) + r'\b'))
 
@@ -29,7 +29,6 @@ def surround_keywords_with_span(html_content, keywords, character_type):
             content = str(match)
             replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
-
     return str(soup)
 
 
@@ -48,11 +47,11 @@ def botc_to_nodes(input_path, output_path):
             if line.strip() == '':
                 if in_list:
                     output_lines.append(  '</ul>' )
-                    in_list = False;
+                    in_list = False
                     continue
                 elif in_ordered_list:
                     output_lines.append(  '</ol>' )
-                    in_ordered_list = False;
+                    in_ordered_list = False
                     continue
 
                 if not answer_mode:
@@ -63,20 +62,21 @@ def botc_to_nodes(input_path, output_path):
                     output_lines.append('        <div>')      # open paragraph
 
 
-            # question time
+            # question time (or pair or jinx or hate jinx for now)
             if line.startswith('Q ') or line.startswith('P ') or line.startswith('H ') or line.startswith('J '):
                 if first_question:
                     first_question = False
-                    print("First:" + line)
                 else:
                     output_lines.append('        </div>\n')   # close paragraph
                     output_lines.append('      </div>\n')     # close answer
                     output_lines.append('    </div>\n')       # close node
 
-                answer_mode = False;
+                answer_mode = False
                 
                 id += 1
-                print("Node " + str(id))
+                print("Node " + str(id) + "         " , end='\r')
+                if (id % 100 == 0):
+                  print("")
                 output_lines.append('    <div class="node">\n')  # open node
                 if line.startswith('Q '):
                     line = '      <div class="question">' + line[2:]   # open question
@@ -87,26 +87,23 @@ def botc_to_nodes(input_path, output_path):
                 else:
                     line = '      <div class="question jinx">' + line[2:] # open interaction
             elif line.startswith('A '):
-                answer_mode = True;
+                answer_mode = True
                 output_lines.append('      </div>\n')              # close question
                 line = '      <div class="answer">\n        <div>' + line[2:]     # open answer and open first paragraph
             elif line.startswith('I '):
-                answer_mode = True;
+                answer_mode = True
                 output_lines.append('      </div>\n')               # close interaction 
                 line = '      <div class="answer interaction-description">\n        <div>' + line[2:]  # open description and first paragraph
             elif line.startswith('D '):
-                answer_mode = True;
+                answer_mode = True
                 output_lines.append('      </div>\n')               # close interaction 
                 line = '      <div class="answer jinx-description">\n        <div>' + line[2:]  # open description and first paragraph
 
+            # skip comments
+            elif line.startswith('=') or line.startswith('--') or line.startswith(':'):
+                line = ''
 
-            elif line.startswith('='):
-                line = ''
-            elif line.startswith('--'):
-                line = ''
-            elif line.startswith(':'):
-                line = ''
-            # in_ordered_list
+            # ordered_list
             elif line.strip().startswith('#'):
                 if not in_ordered_list:
                     output_lines.append('<ol><li>')
@@ -116,6 +113,8 @@ def botc_to_nodes(input_path, output_path):
                     output_lines.append("</li><li>")
 
                 output_lines.append(line.replace("#","",1)+"<br>")
+            
+            # unordered list
             elif line.strip().startswith('*'):
                 if not in_list:
                     output_lines.append('<ul><li>')
@@ -125,12 +124,15 @@ def botc_to_nodes(input_path, output_path):
                     output_lines.append("</li><li>")
 
                 output_lines.append(line.replace("*","",1)+"<br>")
+                
+            # handle paragraphing within lists
             elif in_list:
                 output_lines.append(line)
                 output_lines.append("<br>")
             elif in_ordered_list:
                 output_lines.append(line)
                 output_lines.append("<br>")
+
             if not in_list:
                 if not in_ordered_list:
                     output_lines.append(line)
@@ -166,15 +168,12 @@ botc_to_nodes('BotC.txt', 'nodefied content.txt')
 print("")
 print("Done nodifying text")
 
-
 print("Finding existing version of guide")
 with open('BotC Guide.html', 'r', encoding="utf-8") as file:
     html_content = file.read()
 
-
 soup = BeautifulSoup(html_content, 'html.parser')
 vault = soup.find('div', id='vault')
-
 
 # Read the content of the replacement html
 with open('nodefied content.txt', 'r', encoding="utf-8") as file:
@@ -192,14 +191,10 @@ if vault:
     vault.clear()
     vault.append(replacement_soup)
 
-
 with open('nodified content.html', 'w', encoding="utf-8") as file:
     file.write(str(soup))
 
-
-
-
-
+print("Highlighting roles")
 
 # List of keywords to search for
 Townsfolk =  [ "Steward", "Knight", "Noble", "Investigator", "Chef"]
@@ -260,19 +255,19 @@ file_path = 'highlighted.html'
 with open(file_path, 'w', encoding='utf-8') as file:
     file.write(current_contents)
 
+print("Done highlighting.                                                              ")
 
 
-# Replace 'input.txt' and 'output.txt' with your file names
 input_path = 'highlighted.html'
 output_path = 'rough.html'
-#process_text(input_filename, output_filename)
 
-# Load the HTML file
+
+
 with open(input_path, 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 
-# Parse the HTML content
+
 soup = BeautifulSoup(html_content, 'html.parser')
 
 # Find the <script> tag containing the JavaScript code
@@ -329,9 +324,9 @@ with open(output_path, 'w', encoding='utf-8') as file:
 
 
 
-print("Prettifying HTML")
+print("Prettifying ...")
 input_path = 'rough.html'
-output_path = 'BotC Guide.html'
+output_path = 'guide.html'
 
 with open(input_path, 'r', encoding="utf-8") as file:
     html = file.read()
@@ -340,7 +335,30 @@ nicely_indented = str(indent(html))
 fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
 
 with open(output_path, 'w', encoding="utf-8") as file:
-    file.write(fixed_spans);
-    
+    file.write(fixed_spans)
+
+
+
+def emphasise(input_file, output_file):
+    # Read the HTML file
+    with open(input_file, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    # Define a regex pattern to find words surrounded by underscores
+    pattern = re.compile(r'(_)(\w+)(_)')
+
+    # Replace matched patterns with <em> tags and without underscores
+    modified_html = pattern.sub(lambda match: f'<em>{match.group(2)}</em>', html_content)
+
+    # Write the modified HTML to the output file
+    with open(output_file, 'w', encoding='utf-8') as output:
+        output.write(modified_html)
+
+
+print("Adding emphasis ...")
+input_html_file = "guide.html"
+output_html_file = "BotC Guide.html" 
+
+emphasise(input_html_file, output_html_file)
 print("Done")
 

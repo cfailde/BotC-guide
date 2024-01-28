@@ -1,14 +1,6 @@
 H Al-Hadikhia with the Mastermind
 D Only one jinxed character can be in play. Evil players start knowing which player and character it is.
 
-P Al-Hadikhia with the Barista
-I Probably best to not Barista-double the Al-Hadikhia as
-  the entire choosing process and killing would then happen twice:
-  from the Al-Hadikhia choosing three players and those players deciding live/die to the end of the activation,
-  then back to the start to do it all again.
-  
-  True/sober/healthy does not affect the running of the Al-Hadikhia ability unless they would otherwise have been poisoned or drunk.
-  If a player affected by the Barista doubling is selected by the Al-Hadikhia, they do not choose twice, as their ability is doubled, not the Al-Hadikhia’s ability.
 
 P Al-Hadikhia with the Choirboy
 I Order is important, so if the King chooses to die and is able to do so,
@@ -38,9 +30,7 @@ I The Gambler does not know if they have died to their own ability.
 
 
 
-P Al-Hadikhia with the Gossip
-I If the Gossip is dead during the day and she made a correct gossip,
-  then she is resurrected by the Al-Hadikhia that night, there will be a Gossip kill.
+
 
 P Al-Hadikhia with the Grandmother
 I If the grandchild dies to the Al-Hadikhia,
@@ -68,16 +58,15 @@ I Although the Klutz might choose death on being woken for their Al-Hadikhia cho
   she does not actually know if she died until it is announced in the morning as she could be protected by another character,
   so her choice would happen publicly in the morning.
 
-P Al-Hadikhia with the Lycanthrope
-I If the Lycanthrope successful kills a good player,
-  then she prevents all deaths regardless of the live/die choices made by the Al-Hadikhia targets,
-  so the net effect of a Lycanthrope successful kill is that no-one can die to the Al-Hadikhia but players can be resurrected.
+
 
 P Al-Hadikhia with the Lunatic
 I If the Lunatic thinks they are the Al-Hadikhia,
   their choices are shown to the real Demon. 
   Obviously this means that if the real Demon is a different Demon,
   the Lunatic will find out immediately.
+
+
 
 P Al-Hadikhia with the Mathematician
 I If a Soldier or one of the other protective characters prevents an Al-Hadikhia kill,
@@ -191,32 +180,11 @@ I If the Widow is resurrected by the Al-Hadikhia,
  but should if their choice of poison could affect what happens when the other players selected by the Al-Hadikhia that night make their choices.
  A good player should also be told that a Widow is in play.
 
-P Alchemist with the Apprentice
-I The Apprentice can gain the Alchemist ability and then gain a Minion ability while good.
 
-P Alchemist with the Bounty Hunter
-I The Bounty Hunter can make the Alchemist evil, to go full circle to have the Minion ability go back to being used by evil.
 
-P Alchemist with the Cerenovus
-I The process is no different whether someone is made mad by the Cerenovus or the Alchemist Cerenovus, the target is still shown the Cerenovus token and the token they are mad as.
 
-P Alchemist with the Chambermaid
-I The Alchemist wakes on N1 due to their ability to find out what Minion ability they have, 
-  after that it depends on which Minion ability they got.
 
-P Alchemist with the Evil Twin
-I The Alchemist ET's "opposing twin" is an evil player. If the good Alchemist ET is executed, evil wins.
 
-P Alchemist with the Fearmonger
-I The announcement is the same as for the Fearmonger "A player has been chosen with the Fearmonger ability”.
-
-P Alchemist with the Legion
-I The Alchemist cannot get the Legion ability – Legion does not register as a Minion until it is in play.
-
-P Alchemist with the Lil’ Monsta
-I If LM is in play and therefore there are no out of play Minion abilities available,
-  the Alchemist duplicates an in-play ability.
-  Generally, it is better to have 5+ Minions on an Alchemist/Lil’ Monsta script to avoid this scenario.
 
 P Alchemist with the Marionette
 I Giving the Alchemist the Marionette ability should be avoided as it is unfun and uninteresting.
@@ -252,14 +220,6 @@ P Balloonist with the Spy
 I Can register three times to the Balloonist, as a Townsfolk, an Outsider and a Minion.
 
 
-P Boomdandy with the Artist
-I The Artist can choose to ask their question within the post-execution minute if they want to, but this does not extend the time limit.
-
-P Boomdandy with the Fisherman
-I The Fisherman can choose to get their advice within the post-execution minute if they want to, but this does not extend the time limit.
-
-P Boomdandy with the Savant
-I The Savant can choose to get their info within the post-execution minute if they want to, but this does not extend the time limit.
 
 P Boomdandy with the Cult Leader
 I RAW the Cult Leader can call for a cult in the one minute time if they are still alive and did not call for a cult earlier in the day,
@@ -350,7 +310,7 @@ I If the Boomdandy is babysitting and there is no Scarlet Woman or Evil Twin pai
   If there is an Evil Twin pair alive,
   the Demon can be dead and there would just be three alive including both twins.
   In both cases, all deaths are caused by the Demon, so all the Demon-death abilities would be relevant again. (Soldier / Grandmother / ...)
-.
+
 P Boomdandy with the Lleech
 I The Lleech can be killed by killing the host, so only applicable with an Evil Twin pair.
   Otherwise the Lleech and their host both have to be in the final three.
@@ -399,9 +359,8 @@ P Boomdandy with the Doomsayer
 I The only time a player can Doomsay during the Boomdandy minute is if there are more than three players left alive for whatever reason
   as in all other cases there will only be three players living and therefore the Doomsayer has no ability.
 
-P Boomdandy with the Storm Catcher
-I If there is a storm caught character alive, they cannot be killed by the Boomdandy ability. 
-  However, the Storm Catcher can be removed from play immediately before the Boomdandy execution and kill the previously storm caught character at will.
+
+
 
 
 P Bounty Hunter with the Barista
@@ -465,8 +424,8 @@ I If no execution occurs while just three players including the Mayor live, and 
 P Bounty Hunter with the No Dashii
 I The No Dashii still poisons evil Townsfolk, their ability does not care about alignment.
 
-P Bounty Hunter with the Poppy Grower
-I The evil Townsfolk is not a Minion or Demon, so is not shown who the evil team is when the Poppy Grower dies.
+
+
 
 P Bounty Hunter with the Revolutionary:
 I The Revolutionary may cause a good player to register falsely, resulting in the Bounty Hunter learning them.
@@ -475,14 +434,11 @@ I The Revolutionary may cause a good player to register falsely, resulting in th
   As such, if the two players in the pair are good, you cannot select either of them to become the Bounty Hunter evil Townsfolk.
   You could pair the evil Townsfolk with a Minion or Demon, however. 
 
-P Bounty Hunter with the Spy
-I Although the Spy could register as a Townsfolk 
-  in order to be made evil by the Bounty Hunter ability, it would be a terrible idea to do so.
 
-P Bounty Hunter with the Zombuul
-I If a Bounty Hunter learns the Zombuul,
-  and the Zombuul ‘dies’ for the first time,
-  the Bounty Hunter will learn a different player despite the Zombuul still technically being alive.
+
+
+
+
 
 P Cannibal with the Chambermaid 
 I If the Chambermaid chooses the Cannibal that is waking due to having gained a night-waking ability,
@@ -525,8 +481,6 @@ P The Choirboy with the Spy
 I Technically the Spy can register as the King to the Choirboy if killed by the Demon
   and cause the Choirboy to learn the Demon’s identity. Probably not fun for anyone though.
 
-P The Choirboy with the Legion
-I The Choirboy can be shown any of the living Legion players.
 
 P The Choirboy with the Lil’ Monsta
 I The Choirboy would be shown the person babysitting Lil’ Monsta the rest of that night
@@ -536,8 +490,6 @@ P The Choirboy with the Pukka
 I If the Pukka picks the King night N and the Choirboy Night N+1,
   the Choirboy is poisoned when the King dies and therefore can get arbitrary info that night before dying the following night.
 
-P The Choirboy with the Vortox
-I If the Vortox kills the King, the Choirboy is shown any non-Demon player.
 
 
 
@@ -551,9 +503,8 @@ Q Is the Marionette Townsfolk considered poisoned for the sake of the Acrobat?
 A No, they are sober and healthy. Also, they are an evil Minion, and the Acrobat only cares about neighboring living good players.
 
 Q If the Acrobat is sat next to a Minion what happens?
-A The Acrobat's ability skips over evil and dead players.
-  So whomever is the closest living good player next to the Acrobat on either side,
-  they will be the ones who trigger the Acrobat regardless of how many/what type of players or roles are in between them.
+A The Acrobat's ability skips over evil and dead players,
+  looking only at its nearest alive good players.
 
 Q If the Acrobat has a droisoned neighbour N1 and then is between two sober people N2, do they still die?
   (for instance, they neighbour a drunk Sailor the first night who becomes sober the second)
@@ -562,6 +513,29 @@ A The Acrobat dies at their turn in the night order only, so if by then they are
 ===========
 =Alchemist=
 ===========
+Q Can the good Apprentice have the Alchemist so gain a Minion ability?
+A Yes.
+
+Q The Bounty Hunter turning the Alchemist evil ... that is just another Minion ability being used by evil, right?
+A Yes.
+
+Q The Alchemist Cerenovus picks a player.  What token is that player shown?
+A Madness due to the Cerenovus or the Alchemist Cerenovus runs the same:
+  the target is still shown the Cerenovus token, as well as the token of the role that they are mad as.
+
+Q Does the Alchemist ping the Chambermaid when they learn what Minion ability they have?
+A Yes.  After N1 they might still register to the Chambermaid, depending on the Minion ability.
+
+Q How does the Alchemist Evil Twin work?
+A The Alchemist ET learns an evil player and their role as their twin.  The evil player learns the Alchemist.
+  If the good Alchemist ET is executed, evil wins.
+
+Q What is announced when the Alchemist Fearmonger has picked a player?
+A The announcement is the same as for the Fearmonger "A player has been chosen with the Fearmonger ability”.
+
+Q Can the Alchemist get the Legion ability?
+A No, Legion does not register as a Minion until it is in play.
+
 Q Is it valid for the Alchemist Goblin's win condition for them to publicly claim to be the Alchemist Goblin rather than the Goblin?
 A Yes.
 
@@ -608,9 +582,11 @@ A Yes, if they started the game with that ability then its setup effect happens.
   and are later switched to having one that does,
   then the setup effects do not happen midgame.
 
-Q What happens for an Alchemist if all Minions on a script are in play?
-  e.g. 14 players and Lil Monsta meaning four Minions are in play?
-A They get an in play ability.
+Q What happens for an Alchemist if all Minion abilities on a script are in play?
+A They duplicate an in play ability.
+
+  This could happen for instance in a 14 player Lil' Monsta game, which results in four in play Minions -
+  this is why it is better to have 5+ Minions on an Alchemist/Lil’ Monsta scripts to avoid such a scenario.
 
 Q What happens if the Pit-Hag changes a player into the Alchemist but there is no out of play Minion abilities?
 A If all Minion abilities are already in play, then the Alchemist will have the ability of an in-play Minion (ST's choice which)
@@ -676,6 +652,14 @@ A No, because she no longer has the ability that would be giving her that an out
 =============
 =Al-Hadikhia=
 =============
+Q How does the Barista doubled Al-Hadikhia work?
+A The entirety of the choosing and killing process happens twice:
+  from the Al-Hadikhia choosing three players who decide to live/die to the end of the activation,
+  then back to the start to do it again.
+
+Q Does the Barista doubled target of the Al-Hadikhia get to choose to live or die twice?
+A No, it is only that player's ability that is doubled, not the Al-Hadikhia’s.
+
 Q If the Pit-Hag turns the Demon into the Al-Hadikhia, deaths are arbirtary, but should the ST wake the Al-Hadikhia and her targets?
 A Deaths are arbirtary until the end of the night giving the ST a lot of freedom since Demons wake later than the Pit-Hag,
   but if the Al-Hadikhia is alive, sober and healthy
@@ -834,7 +818,7 @@ Q If the Assassin picks the alive Zombuul, does the game end?
 A Yes.
 
 Q Does the Assassin trump the Mayor?
-A Yes, the Mayor just dies; there can be no bounce.  Also, there can be no second death from the Mayor both dying and their bounce ability triggering.
+A Yes, the Mayor just dies.  There can be no bounce, either to die instead of the Mayor or in addition to the Mayor.
 
 Q Does the Fool die if targeted by the Assassin?
 A Yes. The Fool ability counts as something that would prevent them from dying, so the Assassin ignores it and actually kills them. 
@@ -848,6 +832,14 @@ A No.  The Assassin can still kill if the Lycanthrope hits a good player.
 =========
 =Atheist=
 =========
+Q Can puzzledrunking the Atheist mean evil roles can be included in the game?
+A No. 
+
+  The Atheist has a setup ability, the Puzzlemaster does not,
+  so no one is puzzledrunk until after the tokens go out.
+
+  The ST can make the Atheist _the_ Drunk or the Marionette,
+  otherwise when the Atheist is in the bag there must be no evil characters.
 
 Q If the Philosopher chooses the Atheist in a game that started with the Mastermind, and the ST then dies, could the ST "break the rules" making themself be considered the Demon?
 A If the ST allowed the Philo-Atheist ability to remain in play, the ST can do whatever they want.
@@ -869,12 +861,6 @@ A Atheist "can" questions are almost certainly answerable with a "yes." Whether 
 Q Does the Engineer in an Atheist game create new evils or just not work?
 A The Engineer can only change the characters of existing Demons and Minions (without breaking the rules). 
   In an Atheist game, the ST is reasonably likely to pretend that it has been effective, though, by changing what Demon/Minion abilities the town is hallucinating.
-
-Q Can puzzledrunking the Atheist mean evil roles can be included in the game?
-A The Atheist has a setup ability, the Puzzlemaster does not.
-  By the time the ST decides who will be puzzledrunk,
-  the tokens will have already been handed out with no evil characters.
-  Although, since it is an Atheist game, the idea of "drunkenness" is kind of irrelevant anyway.
 
 Q Does a nominated ST get a defense? 
   In a non Athiest game (with it on the script of course) could the ST use game state information in their defense?
@@ -990,6 +976,13 @@ A Yes.
 =========
 =Barista=
 =========
+Q Does Barista 1 have an effect on the Demon?
+A Only if they would have otherwise been poisoned or drunk.
+
+Q How does the Barista doubled Barber work?
+A The Demon is woken to make a swap, goes to sleep, then immediately wakes again to make a second swap.
+  If the Demon changes inbetween swaps, then it is the new Demon making the second swap.
+
 Q What effect does Barista doubling the Fearmonger have?
 A The Fearmonger can pick two players that night and nominating and executing either of them the following day will end the game.
 
@@ -1086,6 +1079,15 @@ A No; the BC is the only reason the Artist would be able to use their ability wh
 ===========
 =Boomdandy=
 ===========
+Q After the Boomdandy is triggered can the Artist still ask the ST their question, in the post-execution minute?
+A Yes, but this does not extend the time limit.
+
+Q After the Boomdandy is triggered can the Fisherman  still get their advice within the post-execution minute?
+A Yes, but this does not extend the time limit.
+
+Q After the Boomdandy is triggered can the Savant still get their info within the post-execution minute?
+A Yes, but this does not extend the time limit.
+
 Q What if there is a tie in a Boomdandy vote?
 A Noone dies, the game goes to night, and the Demon presumably kills.
 
@@ -1135,6 +1137,12 @@ A It is going to be very specific to the exact characters in play and alive.
 ===============
 =Bounty Hunter=
 ===============
+Q Can the Spy register as a good Townsfolk in order to be turned evil by the Bounty Hunter?
+A Yes, but this is not recommended.
+
+Q Does the Bounty Hunter who learns the Zombuul still learn a different player after the Zombuul 'dies' for the first time?
+A Yes.
+
 Q If the Bounty Hunter’s evil Townsfolk is turned into an Outsider, are they still evil or do they become good and a new Townsfolk made evil?
 A They remain evil, as they were turned on setup and their alignment being evil is not an ongoing effect and not linked to their character.
 
@@ -1213,6 +1221,17 @@ A If the Butler votes illegally, tally the Butler's vote anyway.
 ==========
 =Cannibal=
 ==========
+Q If the Cannibal eats the Alchemist and is shown the Scarlet Woman,
+  do they become the good Demon when the Demon is executed the next day,
+  or are they the poisoned Cannibal?
+A They become the good Demon; the SW ability triggers before the Cannibal can switch abilities.
+
+Q If the Cannibal eats a role that gained another ability (Pixie / Philosopher)
+  does she see both roles?
+A No, the Cannibal just eats the original role.
+  
+  The Cannibal does not care what else someone might have gained, just what their token is.
+
 Q What is the Butler jinx with the Cannibal?
 A If the Cannibal gains the Butler ability, the Cannibal learns this, otherwise they could break the Butler rules regarding voting without realising.
 
@@ -1301,8 +1320,7 @@ A When a new player dies from execution, the Cannibal loses the Pixie ability,
   and in turn loses any other ability they might have gained (although it is very difficult in the first place
   for the Cannibal to gain an ability via the Pixie ability)
 
-Q Does a Cannibal Nightwatchman show other players that they are the Cannibal or that they are the Nightwatchman?
-  Also Philosopher Nightwatchman.
+Q If a player gains the Nightwatchman ability (Philosopher / Cannibal / Pixie ) what are they shown to other players as?
 A Nightwatchman.
   It is the Nightwatchman ability, so their target is shown the Nightwatchman token, not the token of the player with the ability.
   
@@ -1409,6 +1427,7 @@ A Yes.
 
   The possibility of too many evils getting created is why the Spirit of Ivory exists.
 
+
 ===========
 =Cerenovus=
 ===========
@@ -1460,6 +1479,7 @@ A Not inherently, but madness is really subjective and context dependent.
 Q The Slayer while Cerenovus mad claims Slayer.  Can she be executed before she shoots due to breaking madness?
 A Yes.
 
+
 =============
 =Chambermaid=
 =============
@@ -1474,7 +1494,8 @@ Q Does waking a Minion to tell them the Damsel is in play register to the Chambe
 A No, that is not waking due to their ability.
 
 Q If the Chambermaid chooses someone who died that same night, are they told to choose another player?
-A Yes.  That will reveal to the Chambermaid one of their picks died, but the death is declared in the morning before anyone else should be talking so it does not matter.
+A Yes.  That will reveal to the Chambermaid one of their picks died,
+  but the death is declared in the morning before anyone else should be talking so it does not matter.
 
 Q If the good Mezepheles turns themselves evil that night, does that count as a +1 to the Chambermaid?
 A Yes, they woke up due to their own ability.
@@ -1560,8 +1581,6 @@ A No, the Chambermaid detects if a player woke up for their character ability, a
   In contrast, a Lunatic, who wakes up to receive Demon Info is detected by the Chambermaid
   because they are not actually a Demon and did wake up due to their own ability.
 
-
-
 ======
 =Chef=
 ======
@@ -1571,6 +1590,9 @@ A The Chef number could be any of 1, 2, or 3 with this seating, as the Recluse c
 ==========
 =Choirboy=
 ==========
+Q What does the Choirboy see in a Legion game?
+A Any of the living Legion players.
+
 Q Could the Choirboy be shown the Recluse after the King is killed by the Demon?
 A Yes, though that is unlikely to be a fair move,
   especially if the Choirboy’s convincingly bluffed something else so the Demon does not think the Choirboy is in play.
@@ -1610,6 +1632,10 @@ A No, except if the player that kills the King is holding Lil’ Monsta at the t
 Q The Demon kill bounces off the Mayor to the King.  Does the Choirboy get their info?
 A Yes.  A bounce off the Mayor is treated as full redirection of the entire ability,
   so it is as if the Demon directly chose the King.
+
+Q Who does the Choirboy learn if the Vortox kills the King?
+A Any non-Demon player.
+
 
 ============
 =Clockmaker=
@@ -1691,6 +1717,7 @@ A No.
 Q If the Cannibal Courtier chooses the Demon, but then a non-Courtier is executed, will the Demon become sober?
 A Yes.
 
+
 =============
 =Cult Leader=
 =============
@@ -1716,11 +1743,16 @@ A Yes but don't.
   The ST can but should exercise caution, erring on the side of not unless they are quite sure that player/group would enjoy that kind of thing.
 
 Q In order to correctly guess the Philosopher-Damsel or the Cannibal-Damsel, what does a Minion have to say? "X is the Philo/Cannibal" or "X is the Damsel" or either?
-A A Minion must guess "X is the Damsel"
+A A Minion must guess "X is the Damsel".
+
+  "You" in abilities is self-referential to the ability.
 
 ========
 =Damsel=
 ========
+Q What stops players from insisting that everyone publicly guesses themselves as the Damsel to prove that they are not a Minion to to waste the Damsel guess?
+A The ST is advised to ignore any forced statements.
+
 Q Does each Minion get an individual Damsel guess or collectively one guess?
 A Collectively one guess.
 
@@ -1775,8 +1807,8 @@ A No.
 Q Can an Imp who was a Minion guess the Damsel?
 A No.
 
-Q Can the Damsel be good twin to the Evil Twin?
-A That could end the game very quickly.
+Q Can the Damsel be the good twin to the Evil Twin?
+A Yes ... but that could end the game very quickly!
 
 Q If the Damsel is Barber swapped to another player, do the Minions get another Damsel annoucement?
 A No, it is a once per game annoucement.
@@ -1832,6 +1864,7 @@ A The Marionette does not learn the Damsel is in play.
 Q Can the Minions Damsel guess at night?
 A Yes.
 
+
 ==================
 =Devil's Advocate=
 ==================
@@ -1864,6 +1897,25 @@ A No.  At their turn in the night order, the DA's ability fails to protect their
   so the fact that they became sober / healthy is immaterial.
 -----------------
 
+
+
+=========
+=Dreamer=
+=========
+Q If the Dreamer targets an evil Townsfolk (Bounty Hunter / Mezepheles), what are they shown as the "evil" and "good" roles?
+A 
+  * "Good" characters are Townsfolk and Outsiders - blue tokens.
+  * "Evil" characters are Demons and Minions - red tokens.
+
+  The player's alignment is unimportant, they still have a good character, and that is what is shown as the good role. 
+  So an evil Oracle for example might be Dreamer seen as the Oracle or the Cerenovus.
+
+Q Could the Dreamer who picked the Recluse see a character other than the Recluse for their good character?
+A Yes.
+
+
+
+
 ===========
 =Doomsayer=
 ===========
@@ -1877,17 +1929,6 @@ Q Can the Spy invoking the Doomsayer kill a good player?
 A Yes, the Recluse and the Spy, due to registering as good or evil, can result in a Doomsayer death of any alignment.
   The Spy and the Recluse can also both die to anyone using the Doomsayer as well.
   The Storyteller can make use of this for game balance.
-
-=========
-=Dreamer=
-=========
-Q If the Dreamer targets an evil Townsfolk (Bounty Hunter / Mezepheles), what are they shown as the “evil” and “good” roles?
-A "Good" characters are Townsfolk and Outsiders.
-  "Evil" characters are Demons and Minions.
-  The player's alignment is unimportant, they still have a good character, and that is what is shown as the good role. 
-
-Q Could the Dreamer who picked the Recluse see a character other than the Recluse for their good character?
-A Yes.
 
 =======
 =Drunk=
@@ -1946,6 +1987,8 @@ A Yes.
   The Drunk registers as drunk to any abilities that are concerned with drunkeness.
   So the healthy and sober Acrobat that neighbours the living Drunk will die.
   
+
+
 ==========
 =Engineer=
 ==========
@@ -1994,6 +2037,7 @@ A
 Q What does the Marionette learn if they are swapped to another Minion by the Engineer?
 A They would be shown the "you are" info token and their new Minion character.
   They would be told nothing about their alignment as it has not changed.
+
 
 ===========
 =Evil Twin=
@@ -2103,13 +2147,13 @@ A If the Fang Gu has yet to jump this game, and the Fang Gu can die, then the Fa
   Otherwise the Barber dies and the Fang Gu can then swap two people's characters.
 -----------------
 
+
 ========
 =Farmer=
 ========
 Q If the grandchild Farmer is killed, could the Grandmother become a Farmer and not die?
 A Yes, because they are now a Farmer and therefore no longer have the Grandmother ability causing them to die.
   If the Grandmother instead dies to her ability then she is no longer a legitimate new Farmer choice.
-
 
 Q What does a Barista doubled Farmer do?
 A The Farmer dying would cause two good living players to become Farmers.
@@ -2213,6 +2257,7 @@ Q If the Fearmonger ability enters midgame (Pit-Hag / Hatter / Plague Doctor) ho
 A If a player gains the Fearmonger, any choices they made as their previous character are not relevant to the Fearmonger announcement;
   their first pick will cause an announcement regardless of who it is. 
 
+
 =========
 =Fiddler=
 =========
@@ -2264,16 +2309,14 @@ Q If the poisoned Fortune Teller picks their red herring do they have to get a y
 A If the FT is poisoned, they can get either yes or no, regardless of who is picked,
   unless it is a Vortox game.
 
+
 =========
 =Gambler=
 =========
-Q Does a Gambler die immediately at the time of the gamble or at the end of the night?
-A The die at their turn in night order.  Generally deaths are immediate, just only announced at dawn, assuming they are still dead then.
+Q Does the Gambler die immediately at the time of the gamble or at the end of the night?
+A They die at their turn in the night order.  Generally deaths are immediate, just only announced at dawn, assuming they are still dead then.
 
 Q Can the Gambler die from gambling the Recluse as the Recluse?
-A Yes.
-
-Q Can the Gambler die due to a misregistering Recluse?
 A Yes.
 
 ==========
@@ -2300,7 +2343,7 @@ A Yes.
 Q What happens if the Gangster is holding Lil’ Monsta and picks the Soldier with their ability?
 A The Soldier does not die.
 
-Q Can the Gangster kill their neighbour who if they favoured by the Storm Catcher?
+Q Can the Gangster kill their neighbour who is favoured by the Storm Catcher?
 A No.
 
 Q Can the Gangster trigger the Virgin's ability?
@@ -2308,7 +2351,6 @@ A No, the Gangster's choice is not a nomination.
 
 Q Does the Witch-cursed Gangster die if they use their ability?
 A No, the Gangster's choice is not a nomination.
-
 
 Q Can the Scapegoat die instead of the Gangster's target?
 A No, a Gangster kill is not an execution.
@@ -2453,6 +2495,7 @@ Q Can the Golem trigger the Goon's ability?
 A No.
 
   The Golem is not selecting the Goon at night, so is not drunked, and kills the Goon who dies with whatever alignment they are at the time.
+
 
 
 
@@ -2611,13 +2654,22 @@ Q If the Po picks the Pacifist, the Goon and the Minstrel in that order, would o
 A If the Goon has not been picked yet in that night, only the Pacifist dies.
 
 Q If the Pit-Hag turns a good player into the Goon, do they become evil?
-A No because they were not in play at the time of pick so the Goon has not not been targeted.
-  So they would stay good, At least until another evil player chooses them first in the night. 
+A No, because they were not in play at the time of pick so the Goon has not not been targeted.
+  So they would stay good, at least until another evil player chooses them first in the night. 
   And that does include if a different evil player chooses the new Goon that same night, before any good players do.
+
 
 ========
 =Gossip=
 ========
+Q If the dead Gossip made a gossip during the day, then is resurrected (Al-Hadikhia / Professor), will there be a Gossip kill?
+A Yes.
+
+Q If a player who is not the Gossip during the day makes a correct gossip and then that night becomes the Gossip 
+  (sufficiently mad Pixie / Philosopher choosing Gossip / Cannibal eating the Gossip / Pit-Hag creating the Gossip / Barber swap / ...)
+  do they Gossip kill?
+A Yes.  It is recommended that the ST tracks any player's gossips who could potentially become the Gossip.
+
 Q If the Gossip makes a correct gossip during the day
   but that night is swapped to a different role (Pit-Hagging / Barber swap / turned into the Farmer / ...)
   is there a Gossip kill that night?
@@ -2627,13 +2679,13 @@ Q Could the Gossip making a correct gossip kill the Farmer, triggering the Farme
 A Yes.  The Gossip could even become the Farmer themselves.
 
 Q Can the Gossip's kill target an immortal player? Or should a player always die?
-A The Gossip can target a player who cannot die, but the almanac does not recommend doing this typically since the whole idea is that the extra kill tells the Gossip something.
+A The Gossip can target a player who cannot die, but this is not recommended since the idea is that the extra kill tells the Gossip something.
 
 Q If the Pit-Hag turns a player into the Gossip, and that player made a true statement the previous day, does the Gossip trigger at their turn in the night order?
 A Yes.
 
-Q Can "there are two demons" be a correct Gossip statement when the Recluse is in play?
-A Yes, if the Recluse is registering as a demon for it.
+Q Can "there are two Demons" be a correct Gossip statement when the Recluse is in play?
+A Yes, if the Recluse is registering as a Demon for it.
 
 Q How is the Gossip affected by poisoning?
 A The Gossip's ability at night is "backwards-looking" and checks if whatever they gossiped was true, and if so, kills a player.
@@ -2736,25 +2788,37 @@ A Yes.
 Q How does the Hatter and Poppy Grower interact?
 A The ST should probably wake the affected players separately.
 
-Q If the Hatter dies on or after day five, can the Demon choose to become the Leviathan?
+Q If the Hatter dies on or after day five, can the Demon choose to become the Leviathan, instantly winning the game?
 A No, as per the jinx.
 
 =========
 =Heretic=
 =========
-Q The Heretic's ability works will she is dead, but what if her corpse is drunked or poisoned?
-A Then her ability does not function.
+Q Does good wins ties rule apply before or after the Heretic's ability?
+A The Heretic flips the winning team after the game has ended.
+  So if two win conditions are satisfied at once,
+  good wins on ties,
+  which is then flipped by the Heretic causing evil to win.
 
+  For example, in a final three of the Heretic, the Vortox and the Mayor the day ends without execution results in an evil win:
+  No execution with three alive with both Vortox and Mayor in play means a good character win condition competing with an evil character win condition, so good wins.
+  The Heretic ability is then applied, so evil wins.
+ 
 Q The Fearmonger executes the good Lleech host in a Heretic game. Who wins?
 A Abilities trump normal win conditions.
   So although the Demon died (good win) the Fearmonger win condition takes precedence (evil win), then the Heretic flips this to a good win.
 
-Q In a final three of the Demon, the Poisoner, and the Poisoner poisoned Heretic, if the Poisoner is executed, does good win?
+Q In a final three of the Heretic, the Demon, and the Poisoner who is poisoning the Heretic, if the Poisoner is executed, does good win?
 A Yes. The Poisoner being executed means the Heretic is no longer poisoned, and since the evil win condition is satisfied in a Heretic game, good wins.
 
 Q If the Demon killed themselves in a Heretic game but the Heretic became drunk afterwards (but in the same night), would that be a Good win?
 A No. The game would end instantly as the Demon dies; nothing would happen later in the night.
-  The Heretic would have to be drunk/poisoned before the demon dies.
+  The Heretic would have to be drunk/poisoned before the Demon dies.
+
+Q The evil twinned Saint and the Heretic are in play. The Saint gets executed. Who wins?
+A The Heretic applies last, so the Saint being executed (assuming they are the good Saint) would cause evil to win,
+  then the Heretic flips it to a good win, unaffected by the Evil Twin. 
+  This means that evil cannot win in a Heretic game so long as the twins are both alive.
 
 Q Why are the Godfather and Heretic jinxed?
 A The Godfather knows which Outsiders are in play.
@@ -2764,45 +2828,20 @@ Q Why does the Baron have a possible +1 to Outsiders when the Heretic is on the 
 A Because otherwise in a base two Outsiders game with the Baron and only four Outsiders on the script, the evil team can know for sure that the Heretic is in play,
   and then the Demon can kill themselves and win.
 
-Q The evil twinned Saint and the Heretic are in play. The Saint gets executed. Who wins?
-A The Heretic applies last, so the Saint being executed (assuming they are the good Saint) would cause evil to win,
-  then the Heretic flips it to a good win, unaffected by the Evil Twin. 
-  This means that evil cannot win in a Heretic game so long as the twins are both alive.
+Q If the Heretic is drunk or poisoned what happens?
+A If the Heretic, regardless of living status, is drunk or poisoned when the game ends,
+  then her ability does not function so the win conditions are not reversed.
 
-Q If the Heretic is droisoned what happens?
-A If the Heretic is drunk or poisoned when the game ends, the win conditions are not reversed.
+Q What happens if there are two Heretic abilites in play, due to the Cannibal or the Philosopher?
+A Two sober and healthy Heretic abilities would cancel each other out, making win conditions normal again.
 
--------------------------combine
-Q Does the Philosopher Heretic still work if the Philosopher is dead?
-A Yes.
+Q Does an alive Philosopher Heretic drunking the actual Heretic cause win conditions to be flipped?
+A Yes.  But should the Philosopher die, both Heretic abilities would then function, cancelling each other out.
 
-  The dead Philosopher who chose an "even when dead" ability, such as the Heretic's, retains the ability when dead.
+Q Does the Cannibal or the Philosopher with an "even while dead" ability, such as the Heretic's, keep that ability when they die?
+A Yes, they lose the Cannibal/Philosopher ability but keep their "even while dead" ability.
 
-  Notably, if there's an actual Heretic in the game,
-  that Heretic will no longer be Philo-drunk so there will be two Heretic abilities in the game that would cancel each other out,
-  making the win conditions normal again so long as they are both sober/healthy.
-﻿
-Q If the Cannibal or the Philosopher with the Heretic ability dies,
-  does his ability continue to work after death?
-A Yes.
 
-  Cannibals or Philosophers who die with "even while dead" abilities keep those abilities when they die.
-  They would lose the Cannibal/Philosopher ability, but keep the Heretic ability.
-
-Q If the Heretic is in play, then the Philosopher chooses to turn into the Heretic, the first Heretic would then be drunk, and there would be one total Heretic power in play.
-  However, if the Philosopher died, the original Heretic would be sober, then there would be two total Heretic powers in play.
-  Is that right?
-A Yes and the two Heretic abilities will cancel out since the winning team is flipped twice.
-
-Q If there is a dead Philosopher-Heretic, and the living Heretic, does the winning condition go to normal? 
-A Yes.
-
-Q The Philosopher-Heretic and the Heretic are both alive. Is the normal win condition still reversed?
-A Yes, since the Heretic is philo-drunked by the Philo-Heretic.
-
-Q If there are two Heretic abilities in play simultaneously (say, a Heretic and a Cannibal-Heretic) do they cancel each other out? 
-A Yes.
---------------------------
 ================
 =High Priestess=
 ================
@@ -2811,6 +2850,13 @@ A Yes.
 
 Q Can the HP only receive living players?
 A No, you show them dead players too.
+
+Q Who does the drunk / poisoned High Priestess see?
+A Anyone.
+
+Q Who does the High Priestess see in a Vortox game?
+A The only restriction is that the ST does not give the one player that they would have given if it was not a Vortox game.
+  It does not have to be the least helpful player to talk to.
 
 ==========
 =Huntsman=
@@ -2852,7 +2898,6 @@ A No, they are not the Damsel.
 =====
 Q When an Imp kills themself, and there are several minions alive, is there a priority order for who should become the new demon?
   And if a minion becomes the Demon, would the entire evil team be notified about the identity of the new Demon? 
-
 A The Scarlet Woman must become the Demon if their ability is active (alive, not droisoned, 5+ alive players), as that is the entire point of their ability.
   Otherwise, it is the ST's choice which living Minion gets the Imp from the Imp's ability. 
 
@@ -2871,6 +2916,7 @@ Q Can multiple Imps selfkill / starpass in one game? Can the Imp change more tha
 A Yes, it is part of the Imp's ability and is not a once per game action, unlike with the Fang Gu jump.
   
   The physical game comes with four Imp tokens, since (not including Recluse hijinks) that is how many Imps there could end up being.
+
 
 ===========
 =Innkeeper=
@@ -2976,6 +3022,14 @@ A If the King and Choirboy are both in play and the Kazali happens to randomly c
 ======
 =King=
 ======
+
+Q Can "the King" for the Choirboy ability refer to any character with the King ability?
+A No, the King only. Philosopher King, Drunk King, Marionette King, Cannibal King, Pixie King - none of these would count for the Choirboy ability.
+
+Q Does the Demon learn the Drunk who believes that they are the King?
+A No. The Drunk believing that they are the King is not the King.
+  On the other hand, the King who N1 is drunk, or poisoned, does not alert the Demon until they are sober / healthy.
+
 Q Does a newly created Demon learn who the King is?
 A Yes. The King's ability, which is a constant check, says "the Demon knows" so new Demons learn who the King is.
 
@@ -2987,12 +3041,9 @@ A Yes. If they were were not, the ability would say so, like Scarlet Woman does.
 =======
 Q The Klutz gets nominated in a Riot game and dies. Do they have to pick someone before (optionally) nominating?
 A Yes. Their countdown will restart if the game is continuing. So it would look like this:
-
-  ST: <Klutz> dies. 3... 2...
-
-  Klutz: I claim Klutz and pick x.
-
-  ST: The game continues. 3... 2...
+  #  ST: <Klutz> dies. 3... 2...
+  #  Klutz: I claim Klutz and pick x.
+  #  ST: The game continues. 3... 2...
 
 
 ========
@@ -3021,6 +3072,13 @@ A No, they should get the number between two closest Legion, which is usually a 
 
 Q Do Legions learn each other in a Teensyville game?
 A No.
+
+Q Can the drunk Investigator learn of a Legion who is not in play?
+A No, the Investigator can never see Legion; Legion registers as a Minion, but the Legion character is not a Minion character.
+
+  In a Legion game, the Investigator would see a Legion as any Minion.
+
+
 
 ===========
 =Leviathan=
@@ -3193,6 +3251,7 @@ A Yes. The Flowergirl looks back so would learn if the player holding the token 
 Q Is the Scarlet Woman’s ability "reusable” in a Lil' Monsta game?
 A Yes, probably, but there is no official LM write up yet so who knows?
 
+
 ========
 =Lleech=
 ========
@@ -3254,8 +3313,8 @@ A It depends on what happens.
 Q If the Lleech makes it to final three, is that an instant evil win?  Surely if the host was executed, that would create a final two before the Lleech dies.
 A The Lleech and the host die simultaneously.
 
-Q The Lleech host dies, so the Lleech dies, and the Scarlet Woman becomes the new Lleech.  When does the SW select their host?
-A Created Lleeches choose a new host as soon as possible.
+Q If a new Lleech is made (Scarlet Woman / Pit-Hag / Engineer / Hatter / ...) when do they select a host?
+A A new Lleech chooses their host as soon as possible, then follows that by choosing a kill. 
 
 Q In a final five that includes the Lleech, their host and the Scarlet Woman, the host is executed and dies, so the Lleech dies, does the SW become the Lleech?
 A RAW the SW becomes the Lleech but STs sometimes run it otherwise to avoid situations where good cannot win.
@@ -3311,21 +3370,20 @@ A Yes.
   so if the Pukka and the Lleech are on the script, then the Demon would not know which token the Lunatic saw, which might cause issues on N2 when deciding who to kill.
 
 Q Can the Lunatic be told that another player is the Lunatic?
-A Yes but don't, as it often leads to the ST controlling kills, like:
+A Yes, but this can lead to the ST controlling the kills:
+  * the ST chooses a kill for the fake Lunatic and informs the Lunatic, 
+  * the Lunatic attacks the fake Lunatic's target to keep up the lie,
+  * the Demon attacks the same target to keep up the lie.
 
-  ST tells the Lunatic who the fake Lunatic killed (person of the ST's choice)
-  The Lunatic attacks the fake Lunatic target to keep up the lie
-  The Demon attacks the Lunatic target to keep up the lie
+  The ST can do this if their group is cool with the idea
+  or perhaps to ensure seeing the Lunatic token does not confirm someone as the Demon.
 
-  ... and the ST has chosen who dies. This is not a cardinal sin of playing like some Recluse interactions,
-  and depending on your playgroup you might want to do it very rarely to make sure seeing the Lunatic does not confirm you as the Demon,
-  but unless your group is chill with it probably do not do this.
-
-  How you could simulate the Lunatic to the Lunatic:
-  The Lunatic thinks they are, for example, the Po, and the ST showed them the actual Pukka as their Lunatic.
-  (remember, the Demon does not know which demon the Lunatic thinks they are)
-  Then if N1, the Pukka poisons John, N2 the ST tells the false Po that their Lunatic just tried to kill John, etc...
-  and so, because the Pukka kills "out of sync", this solves the issue of "it is the ST who chose who died".
+  How to simulate the Lunatic to the Lunatic without dictating the kills:
+  * have the Lunatic think that they are, for example, the Po
+  * the actual Demon is the Pukka, and is shown to the Lunatic as their fake Lunatic (Demons never know what Demon their Lunatic thinks they are)
+  * N1, the Pukka (actual Demon) picks player X
+  * N2, the ST tells the Lunatic that their Lunatic (actual Demon) just tried to kill player X
+  * and so on. Because the Pukka kills out of sync, the issue is solved.
 
 -----combine
 Q If the Lunatic thinks that they are the Fang Gu and the Fang Gu jumps to them, what are they told?
@@ -3343,6 +3401,7 @@ A Yes. Players learn when their character and alignment have changed,
 
   So the ST would wake them up and inform tell them "You are the Fang Gu, you are evil." 
 ----
+
 Q The Lunatic is good but believes they are an evil Demon.
   If the Pit-Hag turns the Lunatic into a Demon, will the Lunatic learn, along with their new role, that they are actually good?
  
@@ -3363,16 +3422,20 @@ A You reinform the new Demon of her character, as it changed and she no longer h
 Q If the Lunatic is Pit-Hagged into another role, they are told their new role, but are they told that they are in fact good?
 A No, their role has changed, but not their alignment, and players should only be informed of their alignment when it changes.
 
-Q If the Pit-Hag turns a player into the Lunatic, do I tell that player they are evil?
+Q If the Pit-Hag turns a player into the Lunatic, does the ST tell that player that they are evil?
 A No.  The Lunatic's ability is "You think you are a Demon, but you are not. The Demon knows who you are and who you choose at night.".
   With Pit-Hag on script it is very believable someone could be made a good demon, and that is all that is required of the Lunatic, to believe they are a demon of some kind.
 
 Q What happens if the Exorcist picks the Lunatic in BMR?
 A Nothing. You can deceive the Lunatic into thinking the Exorcist picked them in any game with or without an Exorcist in play.
 
-Q Can the ST make the Lunatic falsely believe that the Poppy Grower is in the game by not giving her Minions, when the Poppy Grower is not actually in play?
-A Yes, with or without the PG in the game.
-  The ST can tell the Lunatic anything that they would plausbily tell a Demon on the script: fake Magician, fake King, fake Marionette, fake Exorcist, ...
+Q Can the ST fake the Poppy Grower is in play and not show fake Minions to the Lunatic?
+A Yes.
+
+  The ST is already lying to the player that they are the Demon,
+  so they can lie about them being affected by the Poppy Grower, even when they are not in the game.
+
+  Anything on the script that could happen or be told to the Demon can be simulated for the Lunatic: fake Magician, fake King, fake Marionette, fake Exorcist, ...
 
 Q Can the ST make the Lunatic who has figured out what they are believe that they have been Fang Gu jumped?
 A Yes.
@@ -3393,6 +3456,9 @@ A Yes, this does not even need the actual Hatter to die.
 =============
 =Lycanthrope=
 =============
+Q What happens when the Lycanthrope successfully kills a good player in an Al-Hadikhia game?
+A No-one can die to the Al-Hadikhia regardless of their live/die choices but players can still be resurrected.
+
 Q If the Lycanthrope chooses a good player and a Godfather chooses to use their ability, does the Godfather ability get wasted?
 A The Godfather does not choose when they use it,
   but the Godfather kill also does not go through when the Lycan picks a good player.
@@ -3576,6 +3642,7 @@ A The Marionette who is selected by the Preacher will wake and learn that this h
 Q What happens if a player chooses the Marionette with the Hatter ability?
 A The ST informs that player that they are a good character and tells the Demon who their Marionette is.
 
+
 ============
 =Mastermind=
 ============
@@ -3748,13 +3815,22 @@ A No, their ability worked normally, so the Mathematician gets nothing.
   (since they still learnt the information they were supposed to learn).
   Hence, no abnormality. 
   The same applies if a mechanical ability would have done nothing, such as a poisoned (but not self poisoned!) Snake Charmer choosing a non-demon.
+
+Q Does a player who is drunk or poisoned, or whose ability is affected by misregistration,
+  still ping the Mathematician if they get true information?
+A No, the Mathematician is only pinged if the information is incorrect.
+
+  For example, the Empath sat between the Recluse and the Spy receiving a one, true information, does not ping the Mathematician, 
+  even when the Recluse misregistered as evil and the Spy misregistered as good.
 ----
 Q Does the No Dashii poisoned Sailor failing to drunk someone ping the Mathematician?
 A Yes.
-  The line in the SnV almanac "The Mathematician does not detect drunkenness or poisoning itself" refers to the fact that the Mathematician does not necessarily detect players that are drunk or poisoned, just ones whose abilities malfunction since the previous dawn due to those states.
 
+  The line in the SnV almanac "the Mathematician does not detect drunkenness or poisoning itself"
+  refers to the fact that the Mathematician does not necessarily detect players that are drunk or poisoned,
+  just ones whose abilities malfunction since the previous dawn due to those states.
 
-Q Does the Mathematician count a Demon's Kill being protected as working abnormally?
+Q Does the Demon's target being protected ping the Mathematician?
 A Yes, the Demon's ability worked abnormally due to another character's ability, so that counts for the Mathematician.
 
 =======
@@ -3785,13 +3861,18 @@ Q What happens if a good player says the Mezepheles’s secret word during N1,
   after the Mez’s point in the night order where they learn the word but before D1 starts?
 A The good player turns on N2.
 
-Q If the Mezepheles gets someone to say the word but they die by execution, does the person not turn?
-A Correct, they do not turn, because the Mezepheles' ability can no longer work in death.
-Note if the target instead is dead, they can still turn.
+Q If the Mezepheles gets someone to say the word but they die by execution, does the person turn?
+A No, because the Mezepheles' ability can no longer work in death.
+  Note if the _target_ instead is dead, they can still turn.
 
 Q Does the Sailor-drunk Mezepheles still turn a good player evil at night?
 A If they are drunk at their spot in the night order no. 
   If they were drunk when the word was said but sober at their place in the night order yes.
+
+Q Can the Mezepheles turn the Magician evil?
+A Yes.  While the Mezepheles player thinks that the Magician player is the Demon,
+  their Mezepheles ability registers the Magician as good,
+  and therefore would turn them that night if they say the word.
 
 ==========
 =Minstrel=
@@ -3874,6 +3955,7 @@ A No, the dead Mutant has no ability.
 Q Can the ST execute the drunk/poisoned Mutant for breaking madness?
 A No, the Mutant ability to self execute would not work if they are drunk or poisoned.
 
+
 ===========
 =No Dashii=
 ===========
@@ -3885,9 +3967,14 @@ Q Does the No Dashii poisoning move if one of her Townsfolk neighbours becomes a
 A Yes. It also moves if someone closer than their current Townsfolk neighbour becomes a Townsfolk.
   It is constantly checking for who is the closest Townsfolk to the No Dashii's left and right, and poisoning those two players.
 
+
+
 =====
 =Ojo=
 =====
+Q If the Ojo targets the Village Idiot, do they all die or just one?
+A Whenever there are multiples of a role in play, the Ojo kills one instance of them and it is the ST's choice.
+
 Q What happens when the Ojo picks the Soldier?
 A Nothing. The Soldier is targeted but cannot die so there are no Ojo deaths that night.
 
@@ -3900,14 +3987,18 @@ A Sort of. The ST can choose any number of people to die to the Ojo
 Q Can the ST choose to sink a missed Ojo kill?
 A Yes.
 
-Q If the Ojo picks the Recluse, could the Recluse misregister? What happens? Could you kill off a Minion?
-A If the Recluse registers as the Recluse then the Recluse dies. 
-  If the Recluse is drunk or poisoned at the time then they have no choice but to register as the Recluse.
-  If the Recluse registers as anything else then there is no Recluse in play as far as the Ojo is concerned and so the ST chooses kills.
 
 Q If a character has died and in the night the Ojo names them, does the ST kill them again or kill someone else?
   Is there a rule or is it just up to the ST because is not that character technically in play?
 A The character is in play, so it would target the dead player and there would be no death from the Ojo that night.
+
+
+Q What are the ST's options if the Ojo targets the Recluse?
+A The ST has several options:
+  * If the Recluse registers as the Recluse then the Recluse dies. 
+  * If the Recluse is drunk or poisoned at the time then they have no choice but to register as the Recluse.
+  * If the Recluse registers as anything else then there is no Recluse in play as far as the Ojo is concerned and so the ST chooses kills.
+
 
 ===============
 =Organ Grinder=
@@ -3929,6 +4020,8 @@ A Those abilities do not play well together.
 Q Does the Organ Grinder affect exile votes?
 A No, exile "votes" are not votes.
 ﻿
+
+
 =======
 =Philo=
 =======
@@ -4198,9 +4291,6 @@ A The Pixie still gains the ability they see if they are mad as that role, after
   In the situation where the Spy misregisters as a Townsfolk and that role is shown to the Pixie,
   the Spy is the marked player and must die in order for the sufficiently mad Pixie to gain the role shown.
 
-
-
-
 ===============
 =Plague Doctor=
 ===============
@@ -4280,18 +4370,80 @@ A No. It is a new instance of the character, so a reset of the ability.
 ============
 =Politician=
 ============
+Q Does the Politician work well in a Legion game?
+A It is not that fun - the Politician is incentivised to vote on literally any execution but their own
+  and be the single good vote Legion needs to pass every vote
+  – it is difficult to claim they were not the most responsible for the good team's loss.
+
+Q How does the Politician in a Revolutionary pair work?
+A If the Politician is in a Revolutionary pair,
+  it is the Politician who must be most responsible for the game end in order to potentially flip both players’ alignments,
+  not the pair as a duo.
+
+Q Can the Politician be Mezepheles turned, betray the evil team, and win with the good team?
+A Yes.  The Politician is not restricted to only switching from good to evil at the end of the game, they can switch the other way too.
+
+Q If the Pit-Hag turns himself into the Politician,
+  could he campaign for his Demon's execution causing his team to lose, then flip alignment to win with the good team?
+A No.  As per the jinx: the Pit-Hag cannot create an evil Politician.
+  This prevents this exact scenario.
+
+  The Pit-Hag role does not work great with alignment changers such as the Goon and the Cult Leader.
+
 Q Can the Politician campaign for their own Fearmonger-execution and win with evil?
 A Yes.
 
-  If the Politician were to find out that they were the Fearmonger's target,
-  and got themselves executed while triggering the Fearmonger ability,
-  then the order of events is:
-   # the good Politician's team loses 
-   # the Politician flips to evil
+  The Politician flipping alignment does not change the result of the game;
+  if they are Fearmonger-executed, the evil team's win is guaranteed.
+  With the result decided, the ST must now consider if the Politician was most responsible for the good team losing.
+
+  Arguably if the Politician successfully campaigns for their execution,
+  perhaps after finding out that they were targeted,
+  triggers the Fearmonger ability and causes the good team to lose,
+  then the Politician should flip alignment and win with evil.
+
+Q Can the Politician campaign for themselves to be the second good player execution in a Leviathan game and win with evil?
+A Yes.
+
+  The Politician flipping alignment does not change the result of the game;
+  if they are the second execution of a good player then the evil team's win is guaranteed.
+  With the result decided, if the ST then decides that the Politician was the main influence in causing their to team to lose,
+  then the Politician can flip alignment and win with the evil team.
+
+Q Can the Politician campaign for their execution on a Mastermind day and win with evil?
+A Yes.
+
+  The Politician flipping alignment does not change the result of the game;
+  if they are the executed then the evil team's win is guaranteed.
+  With the result decided, if the ST then decides that the Politician was the main influence in causing their to team to lose,
+  then the Politician can flip alignment and win with the evil team.
+
+Q How can the Politician win in an Atheist game?
+A If the Politician successfully makes the entire good team believe that the Atheist is evil,
+  and manages to get them to execute down to final 2,
+  then they can be the only player that wins in an Atheist game.
+
+Q How does it work if there is more than one Politician ability (Cannibal / Philosopher / Pixie / ...) in play?
+A With multiple Politician abilities in play,
+  there can be multiple players playing for the evil team.
+  However, only the most responsible player can change teams, so they are in direct competition with one another.
+  If any of these die while they have the Politician ability,
+  they maintain the ability even if dead and can change alignments to win at the end of the game.
+
+Q When does the Politician flip alignment in a Heretic game?
+A The Politician’s changing of alignment is decided after the Heretic impacts the result of who actually won the game.
+
+Q Can the Politician be the good twin to the Evil Twin?
+A Yes, but don't; they will likely campaign for their own execution,
+  never mentioning the twins,
+  then win the game with evil as a result - it is pretty hard to argue they were not most responsible in that situation!
 
 ==============
 =Poppy Grower=
 ==============
+Q Do evil Townsfolk (Bounty Hunter / Mezepheles / Cult Leader) learn the evil team when the Poppy Grower dies?
+A No, an evil Townsfolk is not a Minion or a Demon.
+
 Q If the Poppy Grower is swapped out of the game (changed by Pit-Hag / becomes the Farmer / ...), do evil learn each other?
 A No, the Poppy Grower must die for evil to learn each other.
 
@@ -4988,6 +5140,15 @@ A Yes, and she is also immune to the Lleech's poison, but is still the host, jus
 =====
 =Spy=
 =====
+Q Can the Spy be poisoned by the No Dashii?
+A The poisoning would sort of loop: 
+  # The Spy who neighbours the No Dashii and registers as a Townsfolk becomes poisoned.
+  # Being poisoned, the Spy can no longer register as a Townsfolk.
+  # The No Dashii poisoning must move to the next neighbour as the current target is not a Townsfolk so no longer valid
+  # The Spy is no longer poisoned and regains their ability.
+
+  But the ST is free to repeatedly move the poison from the Spy to the next Townsfolk and back, to their own delight for as long as they want.
+
 Q Can the Spy registering as good become the Farmer?
 A Yes.
 
@@ -5066,13 +5227,16 @@ A Nothing. The Steward is a start knowing ability, not a constantly knows.
 ===============
 =Storm Catcher=
 ===============
+Q If the Boomdandy explodes, can the player favoured by the Storm Catcher die?
+A No.  However, the Storm Catcher can be removed from play immediately before the Boomdandy execution and kill the previously storm caught character at will.
+
 Q The Storm Catcher favours the Damsel ...?
 A Do not storm catch the Damsel!
 
-Q With the Storm Catcher, do newly created evil players, such as the Demon jumping, learn who the protected character is?
+Q Do newly created evil players, such as the Demon jumping, learn the player favoured by the Storm Catcher?
 A Yes.
 
-Q With the Storm Catcher, does the Marionette learn of the storm caught player?
+Q Does the Marionette learn the player favoured by the Storm Catcher?
 A It would probably be best not to, as otherwise that would tell the Marionette that they are evil.
   Good players do not learn about storm caught players, and the Marionette thinks they are good, so that kind of works.
 
@@ -5346,6 +5510,9 @@ A Yes.
 ========
 =Vortox=
 ========
+Q Does the Monk protected player receive true info in a Vortox game?
+A Yes. They are safe from the Demon in all aspects, including secondary effects, assuming they are sober and healthy.
+
 Q What are the Minions told when the Cannibal eats the Snitch in a Vortox game.
 A Three in-play characters.
 
@@ -5386,13 +5553,6 @@ A The target of the Nightwatchman / Philo-Nightwatchman / Cannibal-Nightwatchman
   "someone with the NWM ability chose you" is a mechanical explanation of why someone woke up,
   and [ST points to a player] is the information.
 
-Q Who must the Monk protect for the Nightwatchman's pick to correctly learn the Nightwatchman in a Vortox game?
-A The Nightwatchman.
-
-  In order for the the target to learn the correct name the Nightwatchman, as the source of the ability needs to be protected, not their target.
-  So if the NWM uses their ability while Monk-protected, their target correctly learns the correct player as the NWM,
-  since the Monk stops the Vortox from making info false.  If the target is Monk-protected then the misinformation is not prevented.
-
 Q Does the Soldier, who is safe from the Demon, correctly learn the Nightwatchman if picked in a Vortox game?
 A No. The source of the information is the Nightwatchman and they are not safe from the Demon.
 
@@ -5409,8 +5569,10 @@ A Yes.
   though that does not apply to Damsel (even filtered through Philosopher), so they just simply learn the Damsel is in play.
 
 Q How does the Pixie interact with the Vortox?
-A The Pixie learns an out of play Townsfolk. An arbitrary player is marked whose role does not matter.
-  If that player dies, the Pixie would gain the ability they were shown if they were sufficiently mad as that role.
+A The Pixie learns an out of play Townsfolk.
+  An arbitrary player is marked whose role does not matter.  The marked player could in fact be a Minion, but probably should not be the Demon.
+  If the marked player dies, the Pixie would gain the ability they were shown if they were sufficiently mad as that role.
+
 
 Q The Magician Vortox interaction... does it work the same way as Philosopher Lunatic in a Vortox game, where the Demon learns a wrong name?
 A No. 
@@ -5566,12 +5728,14 @@ A The Savant is given two false statements.
 Q Does the Vortox learn of the King or the Exorcist?
 A The Vortox correctly learns that the Exorcist / King are in play but always learns the wrong person.
 
-Q In a Vortox game, the Nightwatchman picks a player, and that player learns someone else is something other than the NWM right?
-  But does the Monk have to protect the Nightwatchman or the Nightwatchman's target in order for their ability to work correctly?
-A The Nightwatchman, because that is the origin of the information.
+Q Who must the Monk protect for the Nightwatchman's pick to correctly learn the Nightwatchman in a Vortox game?
+A The Nightwatchman, because they are the source of the information.
 
-  You can also think of it this way: if the Nightwatchman selects an Outsider in a Vortox game, they still learn the wrong player.
-  So it cannot be about the role of the person they select, it must be about the person whose ability is causing the thing to happen.
+  In a Vortox game, the Nightwatchman picks a player, and that player learns someone else as something other than the Nightwatchman.
+  The Monk protection can stop the Vortox from making info false,
+  but in order for the the target to learn the correct player as the Nightwatchman,
+  it is the Nightwatchman as the source of the ability that needs to be protected when they use their ability, not their target.
+  If the target is Monk-protected then the misinformation is not prevented.
 
 Q D1, a Minion is executed while the Minstrel is in play, so the Vortox is drunk. If on D2 no one is executed, does the evil team win?
 A ST choice; it could go either way.
@@ -6021,6 +6185,9 @@ A Yes.
 
 
 :misc:
+Q After a player dies the ST does not reveal their identity, but is the dead player allowed to make their role public during the day phase?
+A Anyone can say anything at any time including the dead.
+
 Q Evil wins if only two players are alive.  What if there are only evil players alive?
 A The game can end if there is no reasonable path to victory for good such as only evil left alive.
 
