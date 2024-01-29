@@ -1431,6 +1431,13 @@ A Yes.
 ===========
 =Cerenovus=
 ===========
+Q If a player is made Cerenovous mad as the role that they actually have, 
+  can they claim this,
+  and be safe from a madness break execution?
+A Often it does lead to execution because of its use as code for "I am not actually this role".
+
+  But claiming to be Cerenovus mad as your role is fine if the player is making a sincere effort to convince other players that that is what happened; this is fulfilling madness.
+
 Q A good player is Cerenovus mad and breaks madness. The ST decides to not execute for the madness break. 
   The next day the good player is no longer Cerenovous mad.
   Can the ST on any subsequent day execute the good player for the previous madness break?
@@ -1750,6 +1757,12 @@ A A Minion must guess "X is the Damsel".
 ========
 =Damsel=
 ========
+Q If the Damsel is drunk (Puzzlemaster / Courtier / Sailor / ...) do the Minion not get informed?
+A Puzzlemaster drunking would prevent the Minions learning the Damsel, as the Damsel comes into play already drunk; it is a setup effect.
+  Other sources of drunkening act after the Minion info step in the night order so cannot prevent the Minions learning the Damsel.
+  
+  With that understood, using the Puzzlemaster to drunk the Damsel is not recommended. 
+
 Q What stops players from insisting that everyone publicly guesses themselves as the Damsel to prove that they are not a Minion to to waste the Damsel guess?
 A The ST is advised to ignore any forced statements.
 
@@ -1801,8 +1814,6 @@ A This is a hate jinx: only one of these characters can be in play.
 Q What is the Damsel jinx with the Widow?
 A This is a hate jinx: only one of these characters can be in play.
 
-Q Can the Demon who was the Scarlet Woman guess the Damsel?
-A No.
 
 Q Can an Imp who was a Minion guess the Damsel?
 A No.
@@ -1899,22 +1910,6 @@ A No.  At their turn in the night order, the DA's ability fails to protect their
 
 
 
-=========
-=Dreamer=
-=========
-Q If the Dreamer targets an evil Townsfolk (Bounty Hunter / Mezepheles), what are they shown as the "evil" and "good" roles?
-A 
-  * "Good" characters are Townsfolk and Outsiders - blue tokens.
-  * "Evil" characters are Demons and Minions - red tokens.
-
-  The player's alignment is unimportant, they still have a good character, and that is what is shown as the good role. 
-  So an evil Oracle for example might be Dreamer seen as the Oracle or the Cerenovus.
-
-Q Could the Dreamer who picked the Recluse see a character other than the Recluse for their good character?
-A Yes.
-
-
-
 
 ===========
 =Doomsayer=
@@ -1929,6 +1924,29 @@ Q Can the Spy invoking the Doomsayer kill a good player?
 A Yes, the Recluse and the Spy, due to registering as good or evil, can result in a Doomsayer death of any alignment.
   The Spy and the Recluse can also both die to anyone using the Doomsayer as well.
   The Storyteller can make use of this for game balance.
+
+
+=========
+=Dreamer=
+=========
+Q If the Dreamer targets an evil Townsfolk (Bounty Hunter / Mezepheles), what are they shown as the "evil" and "good" roles?
+A 
+  * "Good" characters are Townsfolk and Outsiders - blue tokens.
+  * "Evil" characters are Demons and Minions - red tokens.
+
+  The player's alignment is unimportant, they still have a good character, and that is what is shown as the good role. 
+  So an evil Oracle for example might be Dreamer seen as the Oracle or the Cerenovus.
+
+Q Could the Dreamer who picked the Recluse see a character other than the Recluse for their good character?
+A Yes.
+
+Q Can the Dreamer choose the same player repeatedly?
+A Yes, the Dreamer's only restriction is not themselves and not Travellers.
+  Picking the same player would likely result in the ST giving them the same answers,
+  unless the demon switches to/from the Vortox or drunkening / poisoning is involved.
+
+
+
 
 =======
 =Drunk=
@@ -1964,13 +1982,21 @@ Q Can the ST tell the Drunk that they turned into another Townsfolk character to
 A Yes.
 ---
 
-Q When do you choose who the Drunk character is?
-A If the character has setup abilities then you should decide they will be drunk beforehand. Otherwise it is up to the ST.
-  Most STs assign the drunk once tokens have been handed out and you know the grim, this allows you to balance the game much better
-  The entry for drunk states "While preparing the first night", which would be once tokens are already handed out
+----------------------------- combine
+Q When does the ST decide who the Drunk character is?
+A If the character has setup abilities then it should be decided that they will be drunk before tokens go in the bag
+  and this decision cannot change after token distribution. Otherwise it is up to the ST.
 
- You can decide beforehand to make the Drunk a specific character regardless of token distribution. You can also decide to wait until after token distribution. Both are fine.
- But in the case of a setup ability, you must decide that before putting things into the bag and cannot change it after token distribution.
+  Most STs assign the Drunk once tokens have been handed out and know the grim, allowing them to balance the game much better.
+  The entry for the Drunk states "while preparing the first night", which would be once tokens are already handed out
+
+  The ST can decide beforehand to make the Drunk a specific character regardless of token distribution.
+  They can also decide to wait until after token distribution. Both are fine.
+
+Q Can the ST decide which character the Drunk is after the tokens are distributed?
+A Yes, but you often need to decide beforehand if you want the Drunk to think they are Balloonist or Huntsman,
+  because Drunk does not have the setup ability that would change outsider count.
+---------------------------------
 
 Q If the Drunk is Pit-Hagged into play, can you show them an already in play character?
 A Yes, it is just on setup that the Drunk (and the Marionette) cannot be a role already in play.
@@ -1978,15 +2004,11 @@ A Yes, it is just on setup that the Drunk (and the Marionette) cannot be a role 
 Q Can the Drunk think that they are an in-play character?
 A No, unless it is a Bootlegger game.
 
-Q Can the ST decide which character the Drunk is after the tokens are distributed?
-A Yes, but you often need to decide beforehand if you want the Drunk to think they are Balloonist or Huntsman,
-  because Drunk does not have the setup ability that would change outsider count.
-
 Q Is the Drunk, drunk?
 A Yes.
   The Drunk registers as drunk to any abilities that are concerned with drunkeness.
   So the healthy and sober Acrobat that neighbours the living Drunk will die.
-  
+
 
 
 ==========
@@ -2404,6 +2426,8 @@ A Yes, they still have their ability through the Vigormortis and the Goblin abil
 ===========
 =Godfather=
 ===========
+Q In a base 0 Outsider game, can the Godfather's Outsider modifier by -1?
+A Yes, just as the Vigormortis's modifier is -1 in a base 0 Outsider game.
 
 Q Can the Spy register as an Outsider to the Godfather? 
 A Yes.
@@ -3130,29 +3154,22 @@ A No, the days are universal.  However, any good executions while the Leviathan 
 =============
 =Lil' Monsta=
 =============
+Q The Lunatic, the Marionette and the King are all "the Demon knows who you are" abilities.  How does this work in a Lil' Monsta game?
+A Each time the player holding Lil' Monsta changes they become "the Demon" and, the first time they become the babysitter, they are told who those characters are.
+
+  If the Marionette babysits Lil' Monsta, while they still learn the Lunatic and the King,
+  they do not learn that they are the Marionette because of the Marionette jinx with Lil' Monsta.
+
+  If the Lunatic is for real given Lil' Monsta (as opposed to the ST simulating this)
+  then, as well as learning that they are the babysitter and being shown the King and the Marionette,
+  they learn that they are their own Lunatic,
+  and are told their own Lunatic choices, because the real Demon learns the Lunatic's choices. 
+
+Q Is a good player holding Lil' Monsta informed that they are the babysitter?
+A Yes.
+
 Q If the babysitter dies in a Lil' Monsta game that continues (Mastermind / Evil Twin), do the Minions get to choose a new babysitter?
 A No, if the babysitter dies so does Lil' Monsta, so the ability cannot continue.
-
---------
-Q The demon always learns the Lunatic, the Marionette and the King.  How does this work in a Lil' Monsta game?
-A Each time the player holding Lil' Monsta changes they need to be told who those characters are.
-
-  But if the Marionette babysits Lil' Monsta, while they still learn the Lunatic and the King,
-  they do not learn that they are the Marionette because of the Marionette/Lil' Monsta jinx.
-
-Q In a Lil' Monsta game, who gets told who the Lunatic chooses, if at all? 
-A The Demon, so whoever is holding Lil' Monsta.
-
-Q In a Lil' Monsta game, does the evil team know who the King is?
-A The King ability is a continuous, "the Demon knows who you are" ability, so any new Demons also learn who the King is.
-  So the first time a player receives LM, they are informed of the King.
-
-Q Is the Lunatic told that they received Lil' Monsta?
-A If they are given the token for real, yes.
-  Also they are told their own Lunatic choices, because the real demon learns the Lunatic's choices.
-  And they should also learn that that they are their own Lunatic.
-  None of this triggers the Mathematician because it is all their own respective abilities. 
------
 
 Q Does the Alchemist wake up with the Minions to decide who babysits Lil' Monsta?
 A No, the Alchemist is not a Minion, they merely have the ability of an out of play one.
@@ -3992,7 +4009,6 @@ Q If a character has died and in the night the Ojo names them, does the ST kill 
   Is there a rule or is it just up to the ST because is not that character technically in play?
 A The character is in play, so it would target the dead player and there would be no death from the Ojo that night.
 
-
 Q What are the ST's options if the Ojo targets the Recluse?
 A The ST has several options:
   * If the Recluse registers as the Recluse then the Recluse dies. 
@@ -4193,10 +4209,10 @@ A No, they do not change any Townsfolk into Outsiders. It is a setup ability, an
 Q Can the Pit-Hag create the Damsel?
 A Yes, but as per the Jinx the ST chooses who becomes the Damsel.
 
-  All Minions learn immediately the Damsel is in play if the Damsel player is alive.
+  All Minions, including the Pit-Hag, learn immediately the Damsel is in play if the Damsel player is alive.
   If an evil Damsel is created, the evil team loses if a Minion guesses them.
-  
-  If the Damsel is in play, a Minion makes an incorrect guess, then the Damsel is removed and a new Damsel created, the Minions can guess again.
+
+  If the Damsel comes into play after previously being in play, incorrectly guessed and removed, then the Minions get a fresh Damsel guess.
 
 Q The Pit-Hag turns a good player into the Marionette. What does that player learn?
 A The Marionette has to think that she is a good character, so if a Townsfolk or Outsider is changed into the Marionette,
@@ -4441,6 +4457,12 @@ A Yes, but don't; they will likely campaign for their own execution,
 ==============
 =Poppy Grower=
 ==============
+Q Does the Demon learn the Marionette in a Poppy Grower game on N1?
+A No, assuming a sober and healthy PG ability.
+
+Q What happens if in a Poppy Grower game the Pit-Hag turns their Demon into a non-Demon?
+A If there is no Demon in the game and nothing else to keep it going, such as the Evil Twin, then the game just ends with good winning.
+
 Q Do evil Townsfolk (Bounty Hunter / Mezepheles / Cult Leader) learn the evil team when the Poppy Grower dies?
 A No, an evil Townsfolk is not a Minion or a Demon.
 
@@ -4748,6 +4770,18 @@ A No. As a new instance of the Pukka, the ability resets.
 ==============
 =Puzzlemaster=
 ==============
+Q If the Puzzlemaster becomes a different character, is their drunkeness removed from game?
+A Yes.
+
+Q If the Puzzlemaster's target changes character, is that player still drunk?
+A Yes.  For as long as the Puzzlemaster is in the game and healthy and sober, the picked player is drunk, even if that player changes character.
+
+Q Could the Puzzlemaster drunk a role in a hate jinx pair, allowing the other role to enter play?
+A No. Hate jinxes are a part of setup whereas the Puzzlemaster has no setup ability; the puzzledrunk player is decided after tokens have been distributed.
+  So pairs of hate jinxed characters still cannot be placed in the token bag in a Puzzlemaster game.
+
+  On the other hand, if one of the hate jinxed pair is _the_ Drunk then both roles can be put in the token bag, as then only one of the roles is techically in play.
+
 Q When does the Puzzlemaster guess?
 A During the day.
 
@@ -4861,6 +4895,9 @@ A Yes but don't.
 Q Could the Revolutionary cause a good player to register falsely as a Minion when they accuse someone of being the Damsel?
 A Yes but don't.
 
+Q How does a Revolutionary pair work if the first half draws the Lunatic?
+A The other person is given any good character.  The Lunatic player will probably figure it out immediately.
+
 ======
 =Riot=
 ======
@@ -4938,6 +4975,12 @@ A Yes.
 ===============
 =Scarlet Woman=
 ===============
+Q If the Demon is executed in a final five, does the Scarlet Woman catch the demonhood?
+A Yes, as it needs to be five alive at the time of the execution for the Scarlet Woman.
+
+Q Can the Demon who was the Scarlet Woman guess the Damsel?
+A No, they are no longer a Minion.
+
 Q What is the Al-Hadikhia jinx with the Scarlet Woman?
 A If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again.
 
@@ -4958,9 +5001,6 @@ A Yes. The SW became the Demon even before they were informed.
   The SW's ability takes over the Demonhood immediately upon the Demon's death.
   If they did not, then the game would technically be over in the space between the Demon's death and the night phase.
 
-Q The Vigormortis kills the the Scarlet Woman, then the Vigor dies. If the Scarlet Woman's ability works, would evil still lose?
-A Yes, Vigormortis and Scarlet Woman are not a good pairing since a Vigor-killed Scarlet Woman is ineffective.
-
 Q If a Scarlet Woman becomes the Demon during the middle of the day (due to the Slayer, the Witch, ...), when are they informed?
   Should they ask?
   Do they have to wait until the SW's turn at night?
@@ -4973,8 +5013,7 @@ A Wait until the start of the next night phase.
   often the start of the night. 
   The night order for trigger abilities should be considered flexible.
 
-Q If the Scarlet Woman gets the demonhood, would she be able to guess the Damsel?
-A No, they are now the Demon, not a Minion.
+
 ﻿
 Q If the Scarlet Woman catches the demonhood, but is then instantly Snake Charmed,
  would they learn who the King, Marionette and Lunatic are?
@@ -5049,6 +5088,8 @@ A Yes, but the ST might want to finish resolving the vote first and the player m
 ===============
 =Snake Charmer=
 ===============
+Q What happens if the Cannibal Snake Charmer chooses the Demon?
+A The Demon becomes the poisoned good Cannibal.  They are not told that they are poisoned but will deduce that they Cannibal SC picked them.
 
 Q If the dead self-poisoning Snake Charmer is resurrected (Professor / Al-Hadikhia) are they now healthy?
 A Yes, as they are treated as a new instance of the character.
@@ -5355,6 +5396,9 @@ A The Spy's ability allows her to register as good, even after death, so she cou
 =============
 =Vigormortis=
 =============
+Q Does the Vigormortis-killed Scarlet Woman become the dead Demon if the Vigor dies with 5+ alive?
+A Yes, which could end the game.  Vigormortis and SW are not a great pairing.
+
 Q If a living Minion gains another out of play Minion ability via the Plague Doctor,
   do they keep this second ability if killed by the Vigormortis?
 A Yes.
@@ -5366,12 +5410,13 @@ Q Does an evil Apprentice killed by the Vigormortis retain their ability?
 A No, they are not a Minion.
 
 Q If the Vigormortis is changed to another Demon (Pit-Hag / Engineer / Hatter),
-  does anything happen to Minions they previously killed?
-A Yes, the Vigor killed Minions lose their abilities and neighbouring Townsfolk are no longer poisoned.
+  what happens to Minions they previously killed?
+A They lose their abilities and neighbouring Townsfolk are no longer poisoned.
 
 Q If a Vigormorits killed Minion changes role (Pit-Hag / Engineer/ Hatter)
   does the Minion keep their ability?
 A A Vigor killed Minion keeps their ability and continues to poison a neighbouring Townsfolk as long as they always remain a Minion.
+
   If they ever stop being a Minion, they lose their ability and stop poisoning a neighbour.
 
 Q The Vigor kills their Pit-Hag. The dead Pit-Hag changes the Vigormortis to another Demon.
@@ -5410,9 +5455,6 @@ Q What happens if a Vigor-poisoned Townsfolk becomes a different character type 
 A The target is no longer valid, so the poison must move to a new Townsfolk neighbour of the Vigor-killed Minion.
   This can still be in either direction from said Minion; reapply the poison to either of the closest Townsfolk neighbours.
 
-Q If the Vigormortis kills the Scarlet Woman, can the SW become a dead demon? How is that supposed to be run?
-A If the dead Scarlet Woman has their ability and the Vigormortis dies with 5+ alive, the Scarlet Woman becomes the Demon...but also, is dead, so the game ends
-
 Q If a Vigormortis kills a Minion, the Minion keeps its power and poisons one of their neighbours.
   Can a second kill (by another character or by execution) of that minion disable the Minion's power and the poisoning,
   or would it have no further effect and the Minion keeps their power and keeps poisoning their neighbour if killed a second time?
@@ -5444,6 +5486,20 @@ Q Killing the Evil Twin as the Vigormortis loses the unwinnable condition,
  because the text says 'Good cannot win if you both live.' 
  However, if the Good Twin is executed while the Evil Twin has their ability because of the Vigormortis, does evil win?
 A Yes.
+
+===============
+=Village Idiot=
+===============
+Q Can one of the Village Idiots be the Marionette?
+A Sure, if they neighbour the Demon or the Recluse.
+  If this leaves one true VI in play then that one must be sober.
+  If it leaves two, one of them is drunk and the other one is sober.
+  The Marionette VI is then run like any other Marionette.
+
+  In order to guarantee the Marionete Village Idiot, an alternative setup of some sort is needed,
+  such as substituting the Demon token in the bag with an extra Townsfolk, 
+  then on N1 picking a Townsfolk neighbour of a VI to become the Demon.
+
 
 ========
 =Virgin=
@@ -5510,6 +5566,21 @@ A Yes.
 ========
 =Vortox=
 ========
+Q Can the Lunatic learn true info in a Vortox game, this Minion is a Minion, the King is the King, ... ?
+A Yes, the Lunatic as an Outsider is unaffected by the Vortox falsifying of info. It is up to the ST whether this is a good idea.
+
+Q What does the Alchemist Evil Twin learn in a Vortox game?
+A Loads!
+
+  Firstly she is told wrongly that she has a different Minion ability, one that is actually in-play.
+  Next she learns the wrong role of another good player as her evil-aligned twin,
+  which will likely alert her to the fact that she has the Evil Twin ability.
+
+  So she learns:
+  * one of the in-play Minions,
+  * a confirmed good player,
+  * the Demon is a Vortox.
+
 Q Does the Monk protected player receive true info in a Vortox game?
 A Yes. They are safe from the Demon in all aspects, including secondary effects, assuming they are sober and healthy.
 
@@ -5741,9 +5812,8 @@ Q D1, a Minion is executed while the Minstrel is in play, so the Vortox is drunk
 A ST choice; it could go either way.
 
   Two actions are stated to occur at dusk and would attempt to happen at the same time:
-  
-    *At dusk tomorrow, all players made drunk by the Minstrel become sober; the ST removes the EVERYONE IS DRUNK reminder.  
-    *Each dusk, if no player was executed today, the game ends and the evil team wins.
+  *At dusk tomorrow, all players made drunk by the Minstrel become sober; the ST removes the EVERYONE IS DRUNK reminder.  
+  *Each dusk, if no player was executed today, the game ends and the evil team wins.
 
   This is an order of operations issue.  Whichever happens first loses the interaction.
 
@@ -5832,6 +5902,7 @@ A Yes.
 Q Can the "dead" Zombuul vote more than once?
 A After their first vote while registering as dead they would lose their ghost vote.
   Mechanically they can vote again but voting more than once while appearing dead would out them, so probably a bad idea.
+  Some STs would rule that the Zombuul cannot vote again and would not count any ghost votes after the first.
 
 
 
@@ -6017,6 +6088,8 @@ Q What if the Philosopher is sober when they choose an ability, but they are dru
 A They have gained the ability. While drunk/poisoned, they may receive false information or a mechanical ability does not work at all.
   When they are sober/healthy again, they go back to working normally.
 
+Q If the Philosopher is drunked or poisoned, does the Philo drunk player get sober?
+A Yes.
 
 
 

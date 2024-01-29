@@ -74,9 +74,7 @@ def botc_to_nodes(input_path, output_path):
                 answer_mode = False
                 
                 id += 1
-                print("Node " + str(id) + "         " , end='\r')
-                if (id % 100 == 0):
-                  print("")
+
                 output_lines.append('    <div class="node">\n')  # open node
                 if line.startswith('Q '):
                     line = '      <div class="question">' + line[2:]   # open question
@@ -137,6 +135,7 @@ def botc_to_nodes(input_path, output_path):
                 if not in_ordered_list:
                     output_lines.append(line)
 
+    print("Processed " + str(id) + " nodes")
     print("Cleaning up blank lines")
     cleaned_lines = []
     prev_line_empty = False
