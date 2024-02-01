@@ -20,9 +20,10 @@
         top: 0px;
         width: 100%;
         background-color: #552354;
-        height: 70px;
+        height: 85px;
         z-index:1;
-        border-bottom: 3px solid #AA2354;
+        /*border-bottom: 3px solid #AA2354;*/
+        background: linear-gradient(to bottom, rgba(85, 35, 84, 1.0), rgba(85, 35, 84, 0.7));
       }
       #keywordsIndex {
         display: flex;
@@ -40,6 +41,11 @@
         color: blue;
 
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        border-radius:2px;
+
       }
       .menuItem {
         margin: 0px;
@@ -59,7 +65,8 @@
         cursor: default;
       }
       .openedMenu {
-        background-color: #ff0000;
+        background-color: #552354;
+        color: white;
       }
       #submenu {
         position: fixed;
@@ -104,7 +111,7 @@
         top: 32px;
         right: 0;
         padding: 2px;
-        background-color: #f0f0f0;
+        background-color: #EFEAE0;
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 2;
@@ -113,12 +120,12 @@
         display: inline-block;
         margin: 4px;
         padding: 4px 20px 4px 5px;
-        background-color: #e0e0e0;
+        background-color: #EFEAE0;
         border: 1px solid #ccc;
         border-radius: 5px;
         cursor: pointer;
         position: relative;
-        font-size: x-small;
+        font-size: x-small; 
       }
       .removeButton {
         position: absolute;
@@ -179,7 +186,6 @@
       }
     </style>
     <style> /* Everything else */
-
       #vault {
         position: relative;
         padding: 5px;
@@ -190,10 +196,8 @@
       .node {
         border: 1px solid #ccc;
         padding: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 5px;
         display: block;
-        margin-bottom: 1px;
         border-radius: 10px;
         background:#EFEAE0; /* default background for browsers without gradient support */
         /* css3 */
@@ -301,24 +305,10 @@
     <div id="submenu">
       <!-- Pick a letter and I will give you some great choices ... -->
     </div>
-    <div id="centeredDiv"></div>
+    <div id="centeredDiv">
+      <!--  I can be used for debugging -->
+    </div>
     <div id="vault">
-      <div class="node">
-        <div class="question hate-jinx"><span class="Demon">Al-Hadikhia</span> with the <span class="Minion">Mastermind</span></div>
-        <div class="answer jinx-description">
-          <div>Only one jinxed character can be in play. Evil players start knowing which player and character it is.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Choirboy</span></div>
-        <div class="answer interaction-description">
-          <div>Order is important, so if the <span class="Townsfolk">King</span> chooses to die and is able to do so,
-  the <span class="Townsfolk">Choirboy</span> would be woken and told which player is the Demon,
-  even if the <span class="Townsfolk">Choirboy</span> chooses to die later in the <span class="Demon">Al-Hadikhia</span>’s selections.
-        </div>
-        </div>
-      </div>
       <div class="node">
         <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Courtier</span></div>
         <div class="answer interaction-description">
@@ -326,46 +316,6 @@
   and it is a no-brainer to pick them at that point,
   which is completely unbluffable by the evil team and a <span class="Townsfolk">Courtier</span> will
   thus always be confirmed and get to wipe out the <span class="Demon">Al-Hadikhia</span> for three nights.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Exorcist</span></div>
-        <div class="answer interaction-description">
-          <div>Indistinguishable from the <span class="Demon">Al-Hadikhia</span> being drunk/poisoned from the Town’s point of view,
-  the <span class="Demon">Al-Hadikhia</span> just does not get to choose that night and so no announcement is made.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Farmer</span></div>
-        <div class="answer interaction-description">
-          <div>There can be multiple living good Famers if the <span class="Townsfolk">Farmer</span> dies (creating another <span class="Townsfolk">Farmer</span>)
-  and then is resurrected by the <span class="Demon">Al-Hadikhia</span>.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Gambler</span></div>
-        <div class="answer interaction-description">
-          <div>The <span class="Townsfolk">Gambler</span> does not know if they have died to their own ability.
-  As a result, they could gamble incorrectly and die,
-  then be chosen by the <span class="Demon">Al-Hadikhia</span> and choose live
-  and therefore be resurrected and would not know whether they gambled correctly or not as the net effect is the same.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Grandmother</span></div>
-        <div class="answer interaction-description">
-          <div>If the grandchild dies to the <span class="Demon">Al-Hadikhia</span>,
-  the <span class="Townsfolk">Grandmother</span> dies too, but similar to the <span class="Townsfolk">Gambler</span>,
-  can then be resurrected in the same night and therefore not know if their ability worked or not.
-        </div>
-          <div>
-  If the grandchild is the first <span class="Demon">Al-Hadikhia</span> pick and chooses to die, also killing the <span class="Townsfolk">Grandmother</span>,
-  and the <span class="Townsfolk">Grandmother</span> is the second pick and chooses to live so coming back to life,
-  then they could get a new grandchild, which is not recommended as this gives them too much confirmation.
         </div>
         </div>
       </div>
@@ -515,8 +465,9 @@
         </div>
       </div>
       <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Fabled">Storm Catcher</span></div>
-        <div class="answer interaction-description">
+        <div class="question">What happens when the <span class="Demon">Al-Hadikhia</span> targets the player favoured by the <span class="Fabled">Storm Catcher</span>?
+      </div>
+        <div class="answer">
           <div>The Storm Caught player can be picked by the <span class="Demon">Al-Hadikhia</span> but cannot die.
   This can be a way to force a good player who does not want to die to do so,
   because it reduces the field to the Storm Caught player and two characters who do not want to die,
@@ -525,28 +476,30 @@
         </div>
       </div>
       <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Outsider">Sweetheart</span></div>
-        <div class="answer interaction-description">
+        <div class="question">When does the <span class="Outsider">Sweetheart</span> drunk a player if they are killed by the <span class="Demon">Al-Hadikhia</span>?
+      </div>
+        <div class="answer">
           <div>The <span class="Outsider">Sweetheart</span> drunks someone as soon as they die.
-  So could drunk a character that dies later within the <span class="Demon">Al-Hadikhia</span> choices or even the <span class="Demon">Al-Hadikhia</span> herself, 
+  So they could drunk a character that dies later within the <span class="Demon">Al-Hadikhia</span> choices or even the <span class="Demon">Al-Hadikhia</span> herself, 
   immediately ending har activation at that moment but
   this is a probably a bad idea as it confirms the <span class="Outsider">Sweetheart</span> as good as well as wiping out the Demon ability.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Townsfolk">Tea Lady</span></div>
-        <div class="answer interaction-description">
+        <div class="question">What happens when the <span class="Demon">Al-Hadikhia</span> picks the protected neighbour of the <span class="Townsfolk">Tea Lady</span>?
+      </div>
+        <div class="answer">
           <div>If the <span class="Townsfolk">Tea Lady</span>'s neighbour is picked by the <span class="Demon">Al-Hadikhia</span> and chooses die when the other two picks both pick live,
   then she cannot die due to the <span class="Townsfolk">Tea Lady</span>'s protection,
-  so lives despite choosing death and the other two live as they chose life.
-  As all three would be alive, all three should die in the order they were picked.
+  meaning an all three should die situation.
   Again, however, the <span class="Townsfolk">Tea Lady</span>'s protection means that she cannot die, so only the other two would now die.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question interesting-interaction"><span class="Demon">Al-Hadikhia</span> with the <span class="Outsider">Tinker</span></div>
+        <div class="question">What happens when the <span class="Outsider">Tinker</span> is one of the <span class="Demon">Al-Hadikhia</span>’s picks?
+      </div>
         <div class="answer">
           <div>The <span class="Outsider">Tinker</span> can choose to live for their <span class="Demon">Al-Hadikhia</span> choice,
   then die before the other players have made their choices,
@@ -1164,6 +1117,42 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">What happens when the <span class="Townsfolk">Alchemist</span> is drunk or poisoned on their first night? / How does <span class="Townsfolk">Philosopher</span> picking <span class="Townsfolk">Alchemist</span> N1 affect the <span class="Townsfolk">Alchemist</span>?
+      </div>
+        <div class="answer">
+          <div>Their ability is something the <span class="Townsfolk">Alchemist</span> starts knowing
+  and just as with any start knowing character who is drunked or poisoned
+  they can get wrong info on their first night
+  that is not corrected if they become sober / healthy.
+        </div>
+          <div>
+  On N1 the <span class="Townsfolk">Alchemist</span> is assigned a not-in-play Minion ability.
+  If they are N1 droisoned they are told that they have another ability, typically one that is in play,
+  and the ST will treat them as having that ability.
+  When the <span class="Townsfolk">Alchemist</span> becomes sober and healthy, they do not change abilities, their actual ability that they had from setup now functions correctly,
+  and the ST treats them as having that ability.
+  Note that the <span class="Townsfolk">Alchemist</span> is only ever informed of a change of ability when they actually change ability, which is not the case here, so the ST tells them nothing.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does the <span class="Townsfolk">Alchemist</span> only change their Minion ability when the current ability enters play?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Alchemist</span> gains a new ability due to a <span class="Outsider">Hatter</span>, are they informed of the new ability they have,
+  or do they have to figure it out like the <span class="Townsfolk">Cannibal</span>?
+      </div>
+        <div class="answer">
+          <div>The ST wakes them at night to tell them about their new ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Can the good <span class="Traveller">Apprentice</span> have the <span class="Townsfolk">Alchemist</span> so gain a Minion ability?
       </div>
         <div class="answer">
@@ -1209,7 +1198,7 @@
         <div class="question">What is announced when the <span class="Townsfolk">Alchemist</span> <span class="Minion">Fearmonger</span> has picked a player?
       </div>
         <div class="answer">
-          <div>The announcement is the same as for the <span class="Minion">Fearmonger</span> "A player has been chosen with the <span class="Minion">Fearmonger</span> ability”.
+          <div>The announcement is the same as for the <span class="Minion">Fearmonger</span>: "a player has been chosen with the <span class="Minion">Fearmonger</span> ability”.
         </div>
         </div>
       </div>
@@ -1234,23 +1223,6 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Philosopher</span> chooses <span class="Townsfolk">Alchemist</span> N1 and gains the ability of the <span class="Minion">Godfather</span>.
-  The actual <span class="Townsfolk">Alchemist</span> is drunk and, as such, thinks they gain the ability of the in-play <span class="Minion">Witch</span>.
-  During the game, the Philospher dies and the <span class="Townsfolk">Alchemist</span> is no longer drunk.
-  What happens to the <span class="Townsfolk">Alchemist</span>?
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Alchemist</span> is told nothing and the ST would start treating them as the ability they actually have after the drunkening wears off.
-        </div>
-          <div>
-  They never had the <span class="Minion">Witch</span> ability, so they are not changing abilities, so are not informed of an ability change.
-  The (out of play Minion) ability they actually have, they had from setup, they were just informed incorrectly because of the drunking.
-  Their ability is something they start knowing and can be drunked / poisoned like a start knowing character can get wrong info
-  and will not be informed of the correct info if they become sober / healthy.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">How does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Mezepheles</span> work?
   Could it turn an evil player good?
       </div>
@@ -1265,7 +1237,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Alchemist</span> has the <span class="Minion">Baron</span> ability, but on the second night, they get droisoned.
+        <div class="question">The <span class="Townsfolk">Alchemist</span> has the <span class="Minion">Baron</span> ability, but on the second night, they get drunked / poisoned.
   Can they be told that the <span class="Minion">Baron</span> has come into play, they now have the <span class="Minion">Poisoner</span> ability, and for them to choose a player?
   Can they continue to be asked to choose players when made healthy?
       </div>
@@ -1275,7 +1247,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Does the drunk <span class="Townsfolk">Alchemist</span> <span class="Minion">Baron</span> add Outsiders?
+        <div class="question">Does the <span class="Outsider">Drunk</span> who thinks that they are the <span class="Townsfolk">Alchemist</span> <span class="Minion">Baron</span> add Outsiders?
       </div>
         <div class="answer">
           <div>No.
@@ -1327,7 +1299,7 @@
         <div class="question">What happens if the <span class="Minion">Pit-Hag</span> changes a player into the <span class="Townsfolk">Alchemist</span> but there is no out of play Minion abilities?
       </div>
         <div class="answer">
-          <div>If all Minion abilities are already in play, then the <span class="Townsfolk">Alchemist</span> will have the ability of an in-play Minion (ST's choice which)
+          <div>If all Minion abilities are already in play, then the <span class="Townsfolk">Alchemist</span> will have the ability of an in play Minion (ST's choice which)
   This is true whether an <span class="Townsfolk">Alchemist</span> gets made after all Minion abilities are put into play or an <span class="Townsfolk">Alchemist</span> has always been around.
         </div>
         </div>
@@ -1340,7 +1312,7 @@
         </div>
           <div>
   If there is no out-of-play Minion ability remaining, 
-  the <span class="Townsfolk">Alchemist</span> could either keep the same ability or change to a different in-play ability. 
+  the <span class="Townsfolk">Alchemist</span> could either keep the same ability or change to a different in play ability. 
   It should probably change to signal to the <span class="Townsfolk">Alchemist</span> that the corresponding Minion has entered play as is usually the case.
         </div>
           <div>
@@ -1398,7 +1370,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Alchemist</span> <span class="Minion">Spy</span> jinx is that the <span class="Townsfolk">Alchemist</span> cannot get the <span class="Minion">Spy</span> ability, so if the only out-of-play Minion is the <span class="Minion">Spy</span>, does the <span class="Townsfolk">Alchemist</span> get an in-play Minion ability instead?
+        <div class="question">The <span class="Townsfolk">Alchemist</span> <span class="Minion">Spy</span> jinx is that the <span class="Townsfolk">Alchemist</span> cannot get the <span class="Minion">Spy</span> ability, so if the only out-of-play Minion is the <span class="Minion">Spy</span>, does the <span class="Townsfolk">Alchemist</span> get an in play Minion ability instead?
       </div>
         <div class="answer">
           <div>That is a reasonable solution.
@@ -1406,7 +1378,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Can the <span class="Townsfolk">Alchemist</span>-<span class="Minion">Scarlet Woman</span> become the Demon?
+        <div class="question">Can the <span class="Townsfolk">Alchemist</span> <span class="Minion">Scarlet Woman</span> become the Demon?
       </div>
         <div class="answer">
           <div>Yes.
@@ -1414,10 +1386,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Demon">Imp</span> self kills, does the <span class="Townsfolk">Alchemist</span>-<span class="Minion">Scarlet Woman</span> become the <span class="Demon">Imp</span>?
+        <div class="question">If the <span class="Demon">Imp</span> self kills, does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Scarlet Woman</span> become the <span class="Demon">Imp</span>?
       </div>
         <div class="answer">
-          <div>Yes. But also, as the <span class="Townsfolk">Alchemist</span> is not a Minion, a living Minion also becomes the <span class="Demon">Imp</span>.
+          <div>Yes. But, as the <span class="Townsfolk">Alchemist</span> is not a Minion, a living Minion also becomes the <span class="Demon">Imp</span>.
         </div>
         </div>
       </div>
@@ -1443,6 +1415,42 @@
   but she will not know if that is because that Minion has entered play while she was dead,
   or if the ST just gave her a different out-of-play Minion ability
   (since that resurrected <span class="Townsfolk">Alchemist</span> would be a new instance and can get a new ability so long as it is also out of play).
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What happens if the grandchild and the <span class="Townsfolk">Grandmother</span> are both in the same <span class="Demon">Al-Hadikhia</span> selection?
+      </div>
+        <div class="answer">
+          <div>If the grandchild dies to the <span class="Demon">Al-Hadikhia</span>,
+  the <span class="Townsfolk">Grandmother</span> dies too,
+  but they can then be resurrected in the same night and therefore not know if their ability worked or not.
+        </div>
+          <div>
+  If the grandchild is the first <span class="Demon">Al-Hadikhia</span> pick and chooses to die, also killing the <span class="Townsfolk">Grandmother</span>,
+  and the <span class="Townsfolk">Grandmother</span> is the second pick and chooses to live so coming back to life,
+  they should probably be given the same grandchild,
+  as a new grandchild would give them too much confirmation.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does the <span class="Townsfolk">Gambler</span> know if they died to their own ability if they are resurrected the same night by the <span class="Demon">Al-Hadikhia</span>?
+      </div>
+        <div class="answer">
+          <div>The <span class="Townsfolk">Gambler</span> never knows whether they have died to their own ability.
+  So, they could gamble incorrectly and die,
+  then be chosen by the <span class="Demon">Al-Hadikhia</span> and choose live
+  and therefore be resurrected and would not know whether they gambled correctly or not as the net effect is the same.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Exorcist</span> picks the <span class="Demon">Al-Hadikhia</span>, then there are no annoucements that night, correct?
+      </div>
+        <div class="answer">
+          <div>Yes.  The <span class="Demon">Al-Hadikhia</span> does not get to pick and there are no annoucements.
+  This would look no different to the <span class="Demon">Al-Hadikhia</span> being drunked or poisoned.
         </div>
         </div>
       </div>
@@ -1538,18 +1546,6 @@
   If they instead swapped the <span class="Outsider">Barber</span> with the <span class="Townsfolk">Farmer</span>,
   then the <span class="Townsfolk">Farmer</span> would not trigger and instead there would be another <span class="Outsider">Barber</span> swap.
   Theoretically there could be three <span class="Outsider">Barber</span> swaps.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Demon">Al-Hadikhia</span> kills the <span class="Outsider">Barber</span>, when does the <span class="Outsider">Barber</span> swap happen?
-      </div>
-        <div class="answer">
-          <div>It can happen part way through waking their choices if the <span class="Outsider">Barber</span> chooses to die and is not the last player to choose.
-        </div>
-          <div>
-  Should the Al-Had swap themselves while the picks are still being resolved,
-  then the Al-Had ability would leave play and therefore no more players would be woken and live or die.
         </div>
         </div>
       </div>
@@ -1675,11 +1671,21 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Why the <span class="Demon">Al-Hadikhia</span> / <span class="Minion">Mastermind</span> jinx?
+        <div class="question">What is the <span class="Demon">Al-Hadikhia</span> jinx with the <span class="Minion">Mastermind</span>?
       </div>
         <div class="answer">
-          <div>If the Al-Had is killed in a <span class="Minion">Mastermind</span> game there would be no night announcement,
-  meaning the good team would know the demon is dead and that it is a <span class="Minion">Mastermind</span> day, making the <span class="Minion">Mastermind</span> mechanically useless
+          <div>They follow the hate jinx rule: only one jinxed character can be in play.  Additionally evil players start knowing which player and character it is.
+        </div>
+          <div>
+  They are hate jinxed because after a night of no annoucements, 
+  everyone knows that the Demon has died,
+  that it must be a <span class="Minion">Mastermind</span> day,
+  rendering the MM useless.
+        </div>
+          <div>
+  They are hate jinxed because killing the Al-Had means no more night annoucements,
+  everyone realising the Demon is dead and that it is a <span class="Minion">Mastermind</span> day, 
+  making the <span class="Minion">Mastermind</span> mechanically useless.
         </div>
         </div>
       </div>
@@ -1855,7 +1861,7 @@
         <div class="question">If <span class="Townsfolk">Atheist</span> is not on the script, can the Storyteller be executed?
       </div>
         <div class="answer">
-          <div>No. The ST can only be nominated at all when the <span class="Townsfolk">Atheist</span> is on the script. If it is not, then it is just not allowed to nom the ST.
+          <div>No. Executing the ST is only allowed when the <span class="Townsfolk">Atheist</span> is on the script, otherwise even nominating the ST is not allowed.
         </div>
         </div>
       </div>
@@ -1924,6 +1930,15 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">Does the <span class="Outsider">Barber</span> interrupt multi-kill Demons (<span class="Demon">Al-Hadikhia</span> / <span class="Demon">Po</span> / <span class="Demon">Shabaloth</span>)?
+      </div>
+        <div class="answer">
+          <div>Yes.  If the <span class="Outsider">Barber</span> is killed by the Demon, the Demon is woken and offered the swap.
+  If the Demon swaps herself then there would be no more Demon kills; all of her picks after the <span class="Outsider">Barber</span> are skipped, including waking for the <span class="Demon">Al-Hadikhia</span> to choose life or death.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Is the <span class="Townsfolk">Soldier</span> safe when the Demon uses the <span class="Outsider">Barber</span> swap on them?
       </div>
         <div class="answer">
@@ -1975,7 +1990,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Can a dead Demon (game continues due to ET) revive the Demon with a <span class="Outsider">Barber</span> swap?
+        <div class="question">Can a dead Demon (game continues due to the <span class="Minion">Evil Twin</span>) revive the Demon with a <span class="Outsider">Barber</span> swap?
       </div>
         <div class="answer">
           <div>Yes. But only themselves, since it says "not another Demon"
@@ -2588,7 +2603,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Cannibal</span> gains the ability of the recently killed executee.  What happens if that character is resurrected (<span class="Townsfolk">Professor</span> / <span class="Demon">Shabaloth</span> / <span class="Demon">Al-Hadikhia</span> / ...)?
+        <div class="question">The <span class="Townsfolk">Cannibal</span> gains the ability of the recently killed executee, but what happens if that character is resurrected (<span class="Townsfolk">Professor</span> / <span class="Demon">Shabaloth</span> / <span class="Demon">Al-Hadikhia</span> / ...)?
       </div>
         <div class="answer">
           <div>The <span class="Townsfolk">Cannibal</span> keeps their ability, because they are still the recently killed executee even though they are alive again.
@@ -2606,15 +2621,6 @@
   then the <span class="Townsfolk">Professor</span> resurrects the <span class="Townsfolk">Cannibal</span> that night, 
   the <span class="Townsfolk">Cannibal</span> will wake the same night to use the <span class="Townsfolk">Chambermaid</span> ability,
   even though the <span class="Townsfolk">Cannibal</span> was dead when the <span class="Townsfolk">Chambermaid</span> was executed.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Townsfolk">Alchemist</span> gains a new ability due to a <span class="Outsider">Hatter</span>, are they informed of the new ability they have,
-  or do they have to figure it out like the <span class="Townsfolk">Cannibal</span>?
-      </div>
-        <div class="answer">
-          <div>The ST wakes them at night to tell them about their new ability.
         </div>
         </div>
       </div>
@@ -2656,23 +2662,15 @@
         <div class="question">If the <span class="Townsfolk">Cannibal</span> gains the <span class="Townsfolk">Alchemist</span> ability, are they told what Minion ability they have?
       </div>
         <div class="answer">
-          <div>Yes, and that ability does not need to be the original <span class="Townsfolk">Alchemist</span>'s ability, as long as it is also a not in-play Minion ability.
+          <div>Yes, and that ability does not need to be the original <span class="Townsfolk">Alchemist</span>'s ability, as long as it is also a not in play Minion ability.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Traveller">Barista</span> picks the <span class="Townsfolk">Cannibal</span> after an evil player was executed, can the <span class="Townsfolk">Cannibal</span> potentially become a good Demon?
+        <div class="question">An evil player is executed and the <span class="Townsfolk">Cannibal</span> is poisoned. What effect can a <span class="Traveller">Barista</span> 1 have?
       </div>
         <div class="answer">
-          <div>The <span class="Townsfolk">Cannibal</span> would have the sober and healthy ability of the evil player. They do not become that role, just gain the ability of.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">What happens if the poisoned <span class="Townsfolk">Cannibal</span> (an evil was executed) gets <span class="Traveller">Barista</span>'d for true info?
-      </div>
-        <div class="answer">
-          <div>Then they are not poisoned, and gain the ability of the player who was executed (even if that is a Minion ability). 
+          <div>The <span class="Townsfolk">Cannibal</span> would have the sober and healthy ability of the evil player.
   Sometimes best not done if, for example, the <span class="Minion">Widow</span> was just executed.
         </div>
         </div>
@@ -2754,7 +2752,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If a player gains the <span class="Townsfolk">Nightwatchman</span> ability (<span class="Townsfolk">Philosopher</span> / <span class="Townsfolk">Cannibal</span> / <span class="Townsfolk">Pixie</span> ) what are they shown to other players as?
+        <div class="question">If a player gains the <span class="Townsfolk">Nightwatchman</span> ability (<span class="Townsfolk">Philosopher</span> / <span class="Townsfolk">Cannibal</span> / <span class="Townsfolk">Pixie</span>) what are they shown to other players as?
       </div>
         <div class="answer">
           <div><span class="Townsfolk">Nightwatchman</span>.
@@ -2776,7 +2774,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Cannibal</span> <span class="Townsfolk">Preacher</span> hits a minion. The next day, another player is executed and the <span class="Townsfolk">Cannibal</span> no longer has  the <span class="Townsfolk">Preacher</span> ability.
+        <div class="question">The <span class="Townsfolk">Cannibal</span> <span class="Townsfolk">Preacher</span> hits a minion. The next day, another player is executed and the <span class="Townsfolk">Cannibal</span> no longer has the <span class="Townsfolk">Preacher</span> ability.
   Does the Minion wake and use their ability as normal?
       </div>
         <div class="answer">
@@ -2789,7 +2787,7 @@
   do they cause a Townsfolk who nominates them to be immediately executed?
       </div>
         <div class="answer">
-          <div>Yes, it is a new instance of the ability and the player has not been nominated since getting it, so if a Townsfolk noms them they'll be executed.
+          <div>Yes, it is a new instance of the ability and the player has not been nominated since getting it, so if a Townsfolk noms them they will be executed.
         </div>
         </div>
       </div>
@@ -3281,6 +3279,14 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">If a multikill Demon (<span class="Demon">Al-Hadikhia</span> / <span class="Demon">Po</span> / <span class="Demon">Shabaloth</span>) chooses the <span class="Townsfolk">Choirboy</span> after the <span class="Townsfolk">King</span> as part of the same selection, can the <span class="Townsfolk">Choirboy</span> learn the Demon?
+      </div>
+        <div class="answer">
+          <div>Yes.  Order matters: if the <span class="Townsfolk">King</span> dies then the <span class="Townsfolk">Choirboy</span> is woken and told the Demon player, even if the <span class="Townsfolk">Choirboy</span> then dies later as part of the same selection.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">What does the <span class="Townsfolk">Choirboy</span> see in a <span class="Demon">Legion</span> game?
       </div>
         <div class="answer">
@@ -3420,26 +3426,18 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">If the <span class="Townsfolk">Courtier</span> drunked Demon dies turning the SW, is the new Demon also <span class="Townsfolk">Courtier</span> drunked?
+      </div>
+        <div class="answer">
+          <div>No, the <span class="Townsfolk">Courtier</span> drunkenness does not migrate; it stays on the targeted player.  <span class="Townsfolk">Courtier</span> essentially uses the character to choose the player.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">What happens if the <span class="Townsfolk">Courtier</span> drunked player changes character?
       </div>
         <div class="answer">
           <div>They stay <span class="Townsfolk">Courtier</span> drunk as once it has happened, the drunkedness is tied to the player.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">The <span class="Townsfolk">Courtier</span> drunks the Demon who dies and the <span class="Minion">Scarlet Woman</span> becomes the new Demon.  Is the new Demon still drunked by the <span class="Townsfolk">Courtier</span> (assuming less than three days have passed)?
-      </div>
-        <div class="answer">
-          <div>No, the <span class="Townsfolk">Courtier</span> drunkenness does not migrate; it stays on the targeted player.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the Demon is <span class="Townsfolk">Courtier</span> drunk and then dies and swaps to the <span class="Minion">Scarlet Woman</span>, is the SW (new Demon) also drunk?
-      </div>
-        <div class="answer">
-          <div>No. The player with that character at that time is the one that is made drunk. <span class="Townsfolk">Courtier</span> essentially uses the character to choose the player.
         </div>
         </div>
       </div>
@@ -3979,6 +3977,14 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">Can an Outsider be the <span class="Outsider">Drunk</span>?
+      </div>
+        <div class="answer">
+          <div>An Outsider can be drunk but they cannot be <em>the</em> <span class="Outsider">Drunk</span>, as the <span class="Outsider">Drunk</span> must believe that they are a Townsfolk.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Is the Townsfolk that the <span class="Minion">Marionette</span> or the <span class="Outsider">Drunk</span> thinks that they are considered "in play"?
       </div>
         <div class="answer">
@@ -4079,7 +4085,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Can the <span class="Outsider">Drunk</span> think that they are an in-play character?
+        <div class="question">Can the <span class="Outsider">Drunk</span> think that they are an in play character?
       </div>
         <div class="answer">
           <div>No, unless it is a <span class="Fabled">Bootlegger</span> game.
@@ -4142,7 +4148,7 @@
         <div class="question">Can the <span class="Townsfolk">Engineer</span> affect the <span class="Townsfolk">Alchemist</span>'s Minion ability?
       </div>
         <div class="answer">
-          <div>If the <span class="Townsfolk">Engineer</span> causes the <span class="Townsfolk">Alchemist</span> to have an in-play Minion ability,
+          <div>If the <span class="Townsfolk">Engineer</span> causes the <span class="Townsfolk">Alchemist</span> to have an in play Minion ability,
   then the <span class="Townsfolk">Alchemist</span> will need to swap to an out-of-play one.
   Otherwise, the <span class="Townsfolk">Alchemist</span> is not affected by the <span class="Townsfolk">Engineer</span>, as they are not themselves a Minion, they just have a Minion ability.
         </div>
@@ -4161,7 +4167,7 @@
         <div class="question">Can the <span class="Townsfolk">Engineer</span> choose Lil' Monsta to be in play?
       </div>
         <div class="answer">
-          <div>Yes, the former Demon becomes a not-in-play Minion of the ST's choice and is babysitting Lil’ Monsta.
+          <div>Yes, the former Demon becomes a not in play Minion of the ST's choice and is babysitting Lil’ Monsta.
         </div>
         </div>
       </div>
@@ -4401,6 +4407,14 @@
         </div>
           <div>
   Otherwise the <span class="Outsider">Barber</span> dies and the <span class="Demon">Fang Gu</span> can then swap two people's characters.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Farmer</span> dies to the Demon creating a new <span class="Townsfolk">Farmer</span> but is then resurrected (<span class="Townsfolk">Professor</span> / <span class="Demon">Al-Hadikhia</span> / <span class="Demon">Shabaloth</span> / ...) could there be multiple living Farmers?
+      </div>
+        <div class="answer">
+          <div>Yes.
         </div>
         </div>
       </div>
@@ -5014,7 +5028,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Does a <span class="Minion">Godfather</span> created midgame (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Hatter</span>) learn the in-play Outsiders?
+        <div class="question">Does a <span class="Minion">Godfather</span> created midgame (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Hatter</span>) learn the in play Outsiders?
       </div>
         <div class="answer">
           <div>Yes.  Wake her up, inform her of her new character and the in play Outsiders regardless of their living status, then put her back to sleep.
@@ -6404,7 +6418,8 @@
         <div class="question">Is a good player holding Lil' Monsta informed that they are the babysitter?
       </div>
         <div class="answer">
-          <div>Yes.
+          <div>Yes, they get woken and told that they are holding Lil' Monsta and, as applicable, learns the <span class="Townsfolk">King</span>, <span class="Outsider">Lunatic</span> and <span class="Minion">Marionette</span>.
+  Except when the <span class="Minion">Marionette</span> holds LM as they do not learn that they are the <span class="Minion">Marionette</span>.
         </div>
         </div>
       </div>
@@ -6420,7 +6435,7 @@
         <div class="question">Does the <span class="Townsfolk">Alchemist</span> wake up with the Minions to decide who babysits Lil' Monsta?
       </div>
         <div class="answer">
-          <div>No, the <span class="Townsfolk">Alchemist</span> is not a Minion, they merely have the ability of an out of play one.
+          <div>No, the <span class="Townsfolk">Alchemist</span> is not a Minion, they merely have the ability of a not-in-play one.
         </div>
         </div>
       </div>
@@ -6460,25 +6475,18 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Courtier</span> drunks Lil' Monsta, do the Minions still vote but just no kills happen?
-      </div>
-        <div class="answer">
-          <div>(caveat: There is no write up)
-  The Lil' Monsta is drunk, and cannot move or kill for three days.
-  The Minions do not wake to vote in this ruling.
-  (The waking of the Minions is a mechanical effect by another ability and poisoned mechanical things cannot happen.)
-  The LM would just be on the same person it was last put on.
-  The ST does not wake the Minions to deceive them that they are working normally as no player is LM.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">If the <span class="Townsfolk">Courtier</span> drunks Lil' Monsta, what happens?
       </div>
         <div class="answer">
-          <div>For three nights, the Minions do not wake to choose who holds Lil' Monsta and nobody dies due to LM.
-  If the player babysitting a drunk LM dies, then good wins. 
-  Only the LM themselves is drunk, the player holding the LM is not and can therefore still use their ability.
+          <div>For three nights:
+<ul><li>   the Minions do not wake to choose who holds LM; the ST does not wake the Minions to deceive them that they are working normally as no player is LM.
+<br/></li><li>   nobody dies due to LM.
+<br/></li><li>   LM cannot move; whoever was holding LM before the <span class="Townsfolk">Courtier</span> picked will keeping holding LM
+<br/></li><li>   the player holding LM is not themselves drunk so can still use their ability
+<br/></li></ul>  Good wins as normal if the babysitter dies.  
+        </div>
+          <div>
+  (caveat: There is no Lil' Monsta write up)
         </div>
         </div>
       </div>
@@ -6522,21 +6530,12 @@
       </div>
         <div class="answer">
           <div>(Standard caveat: there is no write up for Lil' Monsta)
-  Best guess: since the <span class="Outsider">Barber</span> only swaps characters, and no player is Lil' Monsta, the <span class="Demon">Lil Monsta</span> token likely stays put.
+  Best guess: since the <span class="Outsider">Barber</span> only swaps characters, and no player is Lil' Monsta, the Lil' Monsta token likely stays put.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">If a Townsfolk is given Lil' Monsta do they get told?
-      </div>
-        <div class="answer">
-          <div>Yes, they get woken and told that they are holding Lil' Monsta and, as applicable, learns the <span class="Townsfolk">King</span>, <span class="Outsider">Lunatic</span> and <span class="Minion">Marionette</span>.
-  Except when the <span class="Minion">Marionette</span> holds LM as they do not learn that they are the <span class="Minion">Marionette</span>.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Would a good Minion (perhaps caused by a <span class="Minion">Pit-Hag</span> or <span class="Outsider">Barber</span> swap) learn who all the other Minions are in a <span class="Demon">Lil Monsta</span> game?
+        <div class="question">Would a good Minion (perhaps caused by a <span class="Minion">Pit-Hag</span> or <span class="Outsider">Barber</span> swap) learn who all the other Minions are in a Lil' Monsta game?
       </div>
         <div class="answer">
           <div>Yes. You could prevent it with a house rule that only evil Minions wake.
@@ -7011,13 +7010,13 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Outsider">Lunatic</span> who thinks they are the Ojo picks an out of play character, what is the Demon shown?
+        <div class="question">If the <span class="Outsider">Lunatic</span> who thinks they are the Ojo picks a not-in-play character, what is the Demon shown?
       </div>
         <div class="answer">
           <div>Nothing. 
         </div>
           <div>
-  The <span class="Outsider">Lunatic</span> says the Demon learns who they picked, and the Ojo says picking an out of play character is the ST's choice not the player's, so the <span class="Outsider">Lunatic</span> Ojo did not pick anyone.
+  The <span class="Outsider">Lunatic</span> says the Demon learns who they picked, and the Ojo says picking a not-in-play character is the ST's choice not the player's, so the <span class="Outsider">Lunatic</span> Ojo did not pick anyone.
         </div>
         </div>
       </div>
@@ -7163,6 +7162,34 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">Can the <span class="Outsider">Lunatic</span> be the <span class="Minion">Marionette</span>?
+      </div>
+        <div class="answer">
+          <div>ST choice.
+        </div>
+          <div>
+  The TPI consider 'yes, they can' and 'no, they cannot' to both be valid rulings, so the ST should pick their preference and inform their players which they run.
+<ol><li>   The <span class="Minion">Marionette</span> cannot think they are the <span class="Outsider">Lunatic</span> as the <span class="Outsider">Lunatic</span> thinks they are evil, which contradicts the <span class="Minion">Marionette</span> thinking they are good, so the <span class="Outsider">Lunatic</span> cannot be the <span class="Minion">Marionette</span>.
+<br/></li><li>   The <span class="Minion">Marionette</span> can think they are a good character that themselves thinks they are the Demon. 
+<br/></li></ol>  If the preference is 'no they cannot' and the Demon lands between the <span class="Outsider">Lunatic</span> and a Minion then, if there is no <span class="Outsider">Recluse</span> in the game, that would need a rerack.
+  To prevent this from happening an alternative setup should be used,
+  such as placing an extra Townsfolk token in the bag instead of the <span class="Outsider">Lunatic</span>,
+  then after the tokens are distributed,
+  deciding which of the Townsfolk players to make the <span class="Outsider">Lunatic</span>,
+  informing that they are a Demon from the script
+  and showing them the Townsfolk token that they received as one of their bluffs.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Do the other Minions learn who the <span class="Minion">Marionette</span> is?
+      </div>
+        <div class="answer">
+          <div>No, they will have to talk to their Demon to learn this.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Can the <span class="Minion">Marionette</span> be shown a fake <span class="Townsfolk">Nightwatchman</span> ping?
       </div>
         <div class="answer">
@@ -7299,10 +7326,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Minion">Marionette</span> thinks they are the <span class="Outsider">Klutz</span>. Is the <span class="Outsider">Klutz</span> in-play?
+        <div class="question">Is the character that the <span class="Minion">Marionette</span> thinks they are in play?
       </div>
         <div class="answer">
-          <div>No, the <span class="Outsider">Klutz</span> is not in play.
+          <div>No.
         </div>
         </div>
       </div>
@@ -7335,7 +7362,7 @@
         </div>
           <div>
   If the demon ever changes 
-  (<span class="Demon">Fang Gu</span> jump, <span class="Demon">Lil Monsta</span> swaps babysitter, <span class="Demon">Imp</span> starpasses, <span class="Townsfolk">Snake Charmer</span> correctly guesses, <span class="Minion">Pit-Hag</span> creates a new Demon, <span class="Outsider">Barber</span> swap occurs, etc),
+  (<span class="Demon">Fang Gu</span> jump, Lil' Monsta swaps babysitter, <span class="Demon">Imp</span> starpasses, <span class="Townsfolk">Snake Charmer</span> correctly guesses, <span class="Minion">Pit-Hag</span> creates a new Demon, <span class="Outsider">Barber</span> swap occurs, etc),
   then the new Demon must be told who the <span class="Minion">Marionette</span> is. 
   If the Demon ever changes back to the original player, they are not told again.
   This same exact thing applies to the <span class="Townsfolk">King</span> and the <span class="Outsider">Lunatic</span>.
@@ -7472,6 +7499,14 @@
       </div>
         <div class="answer">
           <div>Correct.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does the self poisoning <span class="Minion">Widow</span> trigger the <span class="Townsfolk">Mathematician</span>?
+      </div>
+        <div class="answer">
+          <div>No, the <span class="Townsfolk">Mathematician</span> only detects abnormalities due to other players' abilities.
         </div>
         </div>
       </div>
@@ -7638,19 +7673,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The ST <span class="Minion">Poisoner</span>, made by <span class="Outsider">Plague Doctor</span> dying, poisons a Townsfolk whose ability then malfunctions. Does it ping the <span class="Townsfolk">Mathematician</span>?
+        <div class="question">The ST <span class="Minion">Poisoner</span>, made by the <span class="Outsider">Plague Doctor</span> dying, poisons a Townsfolk whose ability then malfunctions. Does it ping the <span class="Townsfolk">Mathematician</span>?
       </div>
         <div class="answer">
           <div>Yes.  Even though the ST is not a player, a player has an ability malfunctioning, and it was technically caused by the <span class="Outsider">Plague Doctor</span> player.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Does the self poisoning <span class="Minion">Widow</span> trigger the <span class="Townsfolk">Mathematician</span> once? Or does it trigger the <span class="Townsfolk">Mathematician</span> until they sober up?
-  The <span class="Minion">Widow</span> specifies "a good player knows you are in play", not "a good player starts knowing you are in play".
-      </div>
-        <div class="answer">
-          <div>No. The <span class="Townsfolk">Mathematician</span> only detects abnormalities due to other players' abilities.
         </div>
         </div>
       </div>
@@ -7802,7 +7828,15 @@
         <div class="question">Can the <span class="Townsfolk">Tea Lady</span> protected <span class="Townsfolk">Mayor</span> still bounce an attempted kill?
       </div>
         <div class="answer">
-          <div>No.  The <span class="Townsfolk">Mayor</span>'s ability is "ff you die". If they are protected, then the attack never hits in the first place and they do not die. Since they did not die, they cannot bounce.
+          <div>No.  The <span class="Townsfolk">Mayor</span>'s ability is "if you die". If they are protected, then the attack never hits in the first place and they do not die. Since they did not die, they cannot bounce.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does the <span class="Townsfolk">Preacher</span> picking the <span class="Minion">Mezepheles</span> turn the evil turned player good?
+      </div>
+        <div class="answer">
+          <div>No, the turned player stay evil.  But if the Mez is preached on the same night where a player would turn evil, then they have no ability and noone turns.
         </div>
         </div>
       </div>
@@ -7828,8 +7862,8 @@
         <div class="question">Does the <span class="Townsfolk">Sailor</span>-drunk <span class="Minion">Mezepheles</span> still turn a good player evil at night?
       </div>
         <div class="answer">
-          <div>If they are drunk at their spot in the night order no. 
-  If they were drunk when the word was said but sober at their place in the night order yes.
+          <div>If they are drunk at their spot in the night order, no. 
+  If they were drunk when the word was said but sober at their place in the night order, yes.
         </div>
         </div>
       </div>
@@ -8398,7 +8432,7 @@
   (e.g. trying to create the <span class="Minion">Spy</span>/<span class="Minion">Widow</span> while the <span class="Outsider">Heretic</span> is in play)
       </div>
         <div class="answer">
-          <div>The <span class="Minion">Pit-Hag</span> attempting to make a character that is hard jinxed with an in-play character would simply fail in the same way it would if the character was already in play.
+          <div>The <span class="Minion">Pit-Hag</span> attempting to make a character that is hard jinxed with an in play character would simply fail in the same way it would if the character was already in play.
   The <span class="Minion">Pit-Hag</span> is not informed of the failure.
   But if they tried to create a <span class="Outsider">Heretic</span>, the ST should probably shake their head no, point at the jinx area of the character sheet,
   and wait for a valid choice, because the PH has tried to make an invalid choice by their own character's rules.
@@ -8505,7 +8539,7 @@
       </div>
         <div class="answer">
           <div>They can and there are reasons for doing so:
-<ul><li>   to turn an alive player into that role requires getting it out of play first; such as removing a dead <span class="Minion">Assassin</span> allows a new <span class="Minion">Assassin</span> the next night.
+<ul><li>   to turn an alive player into that role requires it being not-in-play first; such as removing a dead <span class="Minion">Assassin</span> allows a new <span class="Minion">Assassin</span> the next night.
 <br/></li><li>   they could be possibly revived or picked by another player that night
 <br/></li><li>   turning someone into the <span class="Outsider">Politician</span> still allows them to turn.
 <br/></li><li>   turning someone into the <span class="Outsider">Drunk</span> when they expect to be <span class="Townsfolk">Professor</span> revived, can be awesome to cause confusion.
@@ -8521,13 +8555,13 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Pixie</span> is created late enough that there are no other Townsfolk alive, do they learn a dead in-play Townsfolk and just never get the ability?
+        <div class="question">If the <span class="Townsfolk">Pixie</span> is created late enough that there are no other Townsfolk alive, do they learn a dead in play Townsfolk and just never get the ability?
       </div>
         <div class="answer">
           <div>The <span class="Townsfolk">Pixie</span> created midgame can be shown a dead in play Townsfolk and will likely never get their ability.  
         </div>
           <div> 
-  A late game <span class="Townsfolk">Pixie</span> is essentially just confirming an in-play Townsfolk and should probably not be trying to gain their ability nor likely can they.
+  A late game <span class="Townsfolk">Pixie</span> is essentially just confirming an in play Townsfolk and should probably not be trying to gain their ability nor likely can they.
         </div>
         </div>
       </div>
@@ -9258,7 +9292,47 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> becomes another Demon (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Hatter</span> / ...), what happens to the previously poisoned player?
+        <div class="question">If the <span class="Demon">Pukka</span> passes to another player (<span class="Outsider">Hatter</span> / <span class="Minion">Scarlet Woman</span> / <span class="Outsider">Barber</span> / ...), is the previously poisoned player still poisoned and scheduled to die?
+      </div>
+        <div class="answer">
+          <div>No. As a new instance of the <span class="Demon">Pukka</span>, the ability resets, so their victim immediately becomes healthy.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Demon">Pukka</span> dies and the game continues (<span class="Minion">Evil Twin</span> / <span class="Minion">Mastermind</span> / ...) does the previously poisoned player still die?
+      </div>
+        <div class="answer">
+          <div>No, killing the <span class="Demon">Pukka</span> completely removes their ability from play: the victim immediately becomes healthy and does not die.
+        </div>
+          <div>
+  In contrast, drunkening the <span class="Demon">Pukka</span> keeps the poison in play, killing the player when the <span class="Demon">Pukka</span> sobers.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What happens when the <span class="Demon">Pukka</span> chooses while drunk or poisoned?
+      </div>
+        <div class="answer">
+          <div>If the <span class="Demon">Pukka</span> is drunk or poisoned when they pick at night then:
+<ol><li>   the player who already has the poisoned token is temporarily healthy (some STs choose not to remove the token entirely to help them remember; some turn it upside down) 
+<br/></li><li>   no new token is placed down.
+<br/></li></ol>  On the next night when the <span class="Demon">Pukka</span> is both sober and healthy:
+<ol><li>   the <span class="Demon">Pukka</span>'s choice will now cause a new poisoned token to be placed down.
+<br/></li><li>   the previously poisoned player is re-poisoned, they die, then become healthy
+<br/></li></ol></div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Demon">Pukka</span> is drunked (<span class="Townsfolk">Courtier</span> / <span class="Outsider">Goon</span> / ...) when does the previously poisoned player die?
+      </div>
+        <div class="answer">
+          <div>When the <span class="Demon">Pukka</span> becomes sober.  Until then the previously poisoned player is temporarily healthy, which the ST can indicate by turning the poison reminder token upside-down.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Demon">Pukka</span> becomes another Demon (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Hatter</span> / <span class="Townsfolk">Engineer</span> / ...), what happens to the previously poisoned player?
       </div>
         <div class="answer">
           <div>They are immediately no longer poisoned and will not die tonight.
@@ -9266,7 +9340,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">What happens when the <span class="Demon">Pukka</span> kills a character with an ability that acts on death (<span class="Outsider">Sweetheart</span> / <span class="Outsider">Barber</span> / <span class="Outsider">Plague Doctor</span> / <span class="Outsider">Hatter</span> / ...)?
+        <div class="question">What happens when the <span class="Demon">Pukka</span> kills a character with an ability that acts on death (<span class="Outsider">Sweetheart</span> / <span class="Outsider">Barber</span> / <span class="Outsider">Plague Doctor</span> / <span class="Outsider">Hatter</span> / <span class="Townsfolk">Farmer</span> / <span class="Townsfolk">Ravenkeeper</span> / <span class="Townsfolk">Sage</span> / ...)?
       </div>
         <div class="answer">
           <div>Their ability does not trigger.
@@ -9279,35 +9353,13 @@
   But dying poisoned also means that effects which trigger upon death malfunction meaning for example that:
 <ul><li>   the <span class="Demon">Pukka</span> is not offered the <span class="Outsider">Barber</span> swap when the <span class="Outsider">Barber</span> dies
 <br/></li><li>   a good player is not drunked when the <span class="Outsider">Sweetheart</span> dies
-<br/></li><li>   the ST does not get an out of play Minion ability when the <span class="Outsider">Plague Doctor</span> dies
+<br/></li><li>   the ST does not get a not-in-play Minion ability when the <span class="Outsider">Plague Doctor</span> dies
 <br/></li><li>   the evil players do not get to switch their roles when the <span class="Outsider">Hatter</span> dies
 <br/></li><li>   the evil team do not learn each other when the <span class="Townsfolk">Poppy Grower</span> dies
+<br/></li></ul>  But while those were all bad for team evil, consider:
+<ul><li>   the <span class="Townsfolk">Farmer</span> does not create another <span class="Townsfolk">Farmer</span><br/></li><li>   the <span class="Townsfolk">Sage</span> can be told two non Demon players
+<br/></li><li>   the <span class="Townsfolk">Ravenkeeper</span> may be given false info
 <br/></li></ul></div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">How does the <span class="Demon">Pukka</span> poisoning interact with something like the <span class="Townsfolk">Farmer</span>/<span class="Townsfolk">Ravenkeeper</span>/<span class="Townsfolk">Sage</span>?
-      </div>
-        <div class="answer">
-          <div>These roles would die poisoned. A <span class="Townsfolk">Farmer</span> would not be able to create another <span class="Townsfolk">Farmer</span>, and the <span class="Townsfolk">Sage</span> and the RK may be given false information.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Townsfolk">Lycanthrope</span> picks a good player in a <span class="Demon">Pukka</span> game and gets <span class="Demon">Pukka</span> poisoned afterwards, can there a <span class="Demon">Pukka</span> kill tonight?
-      </div>
-        <div class="answer">
-          <div>Yes, the <span class="Townsfolk">Lycanthrope</span> pick and the previous night's <span class="Demon">Pukka</span> pick since the <span class="Townsfolk">Lycanthrope</span> protection is now poisoned.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">The text of <span class="Demon">Pukka</span> says the previous person dies then becomes healthy.
-  So if for any reason they do not die, are they still poisoned?
-      </div>
-        <div class="answer">
-          <div>They are separate events, one does not rely on another, so if the player is protected from dying, they still become healthy right after.
-        </div>
         </div>
       </div>
       <div class="node">
@@ -9331,35 +9383,19 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> poisons someone, and then dies, does their kill still go through (because for example, there is a <span class="Minion">Mastermind</span> in play),
+        <div class="question">Can the <span class="Demon">Pukka</span> poisoned <span class="Townsfolk">Fool</span> die even if she has yet to use her ability?
       </div>
         <div class="answer">
-          <div>Drunkening the <span class="Demon">Pukka</span> keeps the poison in play, killing the player when the <span class="Demon">Pukka</span> sobers,
-  but killing the <span class="Demon">Pukka</span> completely removes their ability from play: the poison is removed and the victim does not die.
+          <div>If the <span class="Townsfolk">Fool</span> is poisoned, then she does not have her ability, so she will die the first time she is killed.
+  The same goes for the <span class="Townsfolk">Sailor</span>.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">What happens when the <span class="Demon">Pukka</span> chooses while droisoned? Is the poison token moved? Is there going to be a night where nobody has the poison token? 
-  Or does the poison token just stay in place?
+        <div class="question">If the <span class="Townsfolk">Lycanthrope</span> picks a good player but is then <span class="Demon">Pukka</span> poisoned that night, can there be a <span class="Demon">Pukka</span> kill tonight?
       </div>
         <div class="answer">
-          <div>If the <span class="Demon">Pukka</span> is drunk/poisoned,
-  - the player who already has the poisoned token is temporarily healthy
-  (some STs choose not to remove the token entirely to help them remember; some turn it upside down) 
-  - and no new token is placed down.
-  On the next night the <span class="Demon">Pukka</span> is sober/healthy, the poisoned player is re-poisoned,
-  and the <span class="Demon">Pukka</span>'s choice will now cause a new poisoned token to be placed down.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">How do the <span class="Demon">Pukka</span> and <span class="Townsfolk">Monk</span> interact? 
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Monk</span> is very strong vs the <span class="Demon">Pukka</span>.
-  If the <span class="Demon">Pukka</span> chooses a <span class="Townsfolk">Monk</span>-protected player, they do not become poisoned, and the following night there will be no Demon kill.
-  If the <span class="Townsfolk">Monk</span> chooses the <span class="Demon">Pukka</span>’s previous choice, it works like the <span class="Demon">Pukka</span>-<span class="Townsfolk">Innkeeper</span> interaction in that the pick does not die and becomes healthy.
+          <div>Yes, the <span class="Townsfolk">Lycanthrope</span> pick and the previous night's <span class="Demon">Pukka</span> pick since the <span class="Townsfolk">Lycanthrope</span> protection is now poisoned.
         </div>
         </div>
       </div>
@@ -9367,9 +9403,8 @@
         <div class="question">In order to not die to the <span class="Demon">Pukka</span>, does a player need to be <span class="Townsfolk">Monk</span> protected the night they are picked by the <span class="Demon">Pukka</span> or the following night when they would die?
       </div>
         <div class="answer">
-          <div>Either.
-        </div>
-          <div><ul><li>   If they are protected the first night then the <span class="Demon">Pukka</span> poison is never applied, so there is no "previously poisoned player" the following night.
+          <div>Either:
+<ul><li>   If they are protected the first night then the <span class="Demon">Pukka</span> poison is never applied, so there is no "previously poisoned player" the following night, so no Demon kill.
 <br/></li><li>   If instead they are protected the following night then they do not die and become healthy.
 <br/></li></ul>  The <span class="Demon">Pukka</span>'s target does not need to be protected on both nights: if they were protected on the first night, then the <span class="Townsfolk">Monk</span> is free to protect someone else the following night.
   From the <span class="Townsfolk">Monk</span>'s perspective they have two good targets available to them, the player targeted the night before or the one targeted tonight - the <span class="Townsfolk">Monk</span> is super strong in a <span class="Demon">Pukka</span> game.
@@ -9404,7 +9439,10 @@
         <div class="question">N1 player X is <span class="Demon">Pukka</span> poisoned. N2 the <span class="Townsfolk">Monk</span> protects player X but is then later targetted by the <span class="Demon">Pukka</span>. What happens to player X?
       </div>
         <div class="answer">
-          <div>Player X is no longer poisoned while <span class="Townsfolk">Monk</span> protected, but when the <span class="Townsfolk">Monk</span> becomes poisoned, the protection is removed.
+          <div>They die.
+        </div>
+          <div>
+  Player X is no longer poisoned while <span class="Townsfolk">Monk</span> protected, but when the <span class="Townsfolk">Monk</span> becomes poisoned, the protection is removed.
   As player X is still the previously poisoned player, they die.
         </div>
         </div>
@@ -9418,103 +9456,27 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Demon">Pukka</span> chooses a player, then the following night chooses herself.  Does the player picked the previous night still die?
+        <div class="question">What happens when the <span class="Demon">Pukka</span> picks herself?
       </div>
         <div class="answer">
-          <div>No.  The <span class="Demon">Pukka</span> is poisoned and their ability does not work while poisoned, including the "the previously chosen player dies and then becomes healthy" portion of their ability.
-  As well as not dying, the previously poisoned player becomes healthy, as the <span class="Demon">Pukka</span>'s ability to poison them has been disabled.
-        </div>
           <div>
-  For the rest of the game the <span class="Demon">Pukka</span> is permanently poisoned.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> self-picks, they are poisoned forever but what happens to their previous pick?
-      </div>
-        <div class="answer">
-          <div>The previous pick becomes healthy, because the <span class="Demon">Pukka</span> ability that was poisoning them is itself poisoned, and does not die.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Can the <span class="Demon">Pukka</span> selfkill?
-      </div>
-        <div class="answer">
-          <div>No. As soon as she picks herself she is poisoned for the rest of the game.  Because she is poisoned she cannot cause herself to die.
-        </div>
+            <ul>
+              <li>   As soon as she picks herself she is permanently poisoned for the rest of the game, so she cannot kill anyone, including herself.
+<br/></li>
+              <li>   The previously poisoned player, if there is one, is immediately healthy, and does not die.
+<br/></li>
+              <li>   If she somehow became healthy on a later night then, as the previously poisoned player, she would die.
+<br/></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">What happens if the <span class="Demon">Pukka</span> poisons herself?
+        <div class="question">The <span class="Demon">Pukka</span>'s pick is poisoned and the following night dies and then becomes healthy.
+  If that player does not die because of protection (<span class="Townsfolk">Monk</span> / <span class="Townsfolk">Tea Lady</span> / <span class="Townsfolk">Innkeeper</span>) do they still become healthy?
       </div>
         <div class="answer">
-          <div>She is permanently poisoned for the rest of the game and cannot kill anyone, including herself. If they somehow become healthy, they will die the next night.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">How do the <span class="Demon">Pukka</span> and the <span class="Townsfolk">Ravenkeeper</span> interact? Is the <span class="Townsfolk">Ravenkeeper</span> healthy or poisoned when she gets her information?
-      </div>
-        <div class="answer">
-          <div>The <span class="Demon">Pukka</span> picks the RK. The next night after the <span class="Demon">Pukka</span> picks another player to poison, the RK dies poisoned and gets poisoned info.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">The <span class="Demon">Pukka</span> picks someone to poison and the next night the <span class="Townsfolk">Courtier</span> drunks the <span class="Demon">Pukka</span>.
-  After three nights, the drunking wears off and the <span class="Demon">Pukka</span> chooses a new player.
-  Does the person poisoned before the drunking die that night? 
-  As in, is the poison suspended but stays on the target during the drunkenness?
-      </div>
-        <div class="answer">
-          <div>Yes, however during those those nights that person would not be poisoned.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> poisons a player, and then that player does not die the following night despite the <span class="Demon">Pukka</span> being sober and healthy (due to the <span class="Townsfolk">Tea Lady</span>, for instance),
-  does the previously poisoned player become healthy, even though they did not die? 
-      </div>
-        <div class="answer">
-          <div>They still become healthy.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Does the <span class="Outsider">Goon</span>-drunk <span class="Demon">Pukka</span> the next night kill the player that originally poisoned when they became drunk?
-      </div>
-        <div class="answer">
-          <div>Yes. The sequence of events is like this:
-  N1: The <span class="Demon">Pukka</span> chooses A.
-  N2: The <span class="Demon">Pukka</span> chooses the <span class="Outsider">Goon</span> and is <span class="Outsider">Goon</span>-drunk. A is temporarily healthy and does not die.
-  N3: The <span class="Demon">Pukka</span> is sober again. The poison on A comes back. The <span class="Demon">Pukka</span> chooses B (not the <span class="Outsider">Goon</span>). A dies and becomes healthy.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> died, but the game continues (due to <span class="Minion">Scarlet Woman</span> / <span class="Minion">Mastermind</span> / ...) will the previously poisoned player die?
-      </div>
-        <div class="answer">
-          <div>No. In order for the demon to kill she must be alive.
-  Also, the <span class="Demon">Pukka</span>-posioned player becomes healthy as soon as the <span class="Demon">Pukka</span> dies.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Can the <span class="Demon">Pukka</span> poisoned <span class="Townsfolk">Fool</span> die even if she has yet to use her ability?
-      </div>
-        <div class="answer">
-          <div>If the <span class="Townsfolk">Fool</span> is poisoned, then she does not have her ability, so she will die the first time she is killed.
-  The same goes for the <span class="Townsfolk">Sailor</span>.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the <span class="Demon">Pukka</span> passes to the <span class="Minion">Scarlet Woman</span>, is the previously poisoned player still poisoned and scheduled to die?
-      </div>
-        <div class="answer">
-          <div>No. As a new instance of the <span class="Demon">Pukka</span>, the ability resets.
+          <div>Yes.  The player's dying and becoming healthy are two separate events, one does not rely on the other; if anything prevents them from dying, they still become healthy.
         </div>
         </div>
       </div>
@@ -9875,6 +9837,14 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">If the Philosoper <span class="Outsider">Saint</span> nominates the unspent <span class="Townsfolk">Virgin</span>, do good lose?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Can the <span class="Outsider">Recluse</span> register good in the first part of <span class="Townsfolk">Savant</span> info, and then register evil in the second part, or do they have to register the same in both parts of the <span class="Townsfolk">Savant</span> info?
       </div>
         <div class="answer">
@@ -10210,15 +10180,6 @@
           <div>
   Depending on the kind of game you like to run and your players would like to experience, 
   generally it would be recommended to have the Philo-drunk <span class="Townsfolk">Snake Charmer</span> choose first to prevent this overload of shenanigans.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">The <span class="Minion">Pit-Hag</span> creates a <span class="Outsider">Snitch</span> causing the Minions to learn not in play characters. Are dead players considered not in play characters?
-      </div>
-        <div class="answer">
-          <div>Dead characters are still in play.
-  The only out of play characters are those that are on the script, but not currently assigned to any player (LM being an exception).
         </div>
         </div>
       </div>
@@ -10725,7 +10686,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If a Vigormorits killed Minion changes role (<span class="Minion">Pit-Hag</span> / <span class="Townsfolk">Engineer</span>/ <span class="Outsider">Hatter</span>)
+        <div class="question">If a <span class="Demon">Vigormortis</span> killed Minion changes role (<span class="Minion">Pit-Hag</span> / <span class="Townsfolk">Engineer</span>/ <span class="Outsider">Hatter</span>)
   does the Minion keep their ability?
       </div>
         <div class="answer">
@@ -10768,36 +10729,21 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If a Vigor who killed ther Minions previously, is snake charmered, do the Minions lose their ability?
+        <div class="question">If the <span class="Demon">Vigormortis</span> changes places (<span class="Townsfolk">Snake Charmer</span> / <span class="Outsider">Barber</span> / <span class="Outsider">Hatter</span> ...) does a Minion they have killed keep her ability and continue to poison her neighbour,
+  or do dead Minions need to be rekilled by the new <span class="Demon">Vigormortis</span>?
       </div>
         <div class="answer">
-          <div>Yes, the <span class="Townsfolk">Snake Charmer</span> turned Vigor is a fresh instance of the <span class="Demon">Vigormortis</span> who has not killed any Minions.
-  The <span class="Demon">Vigormortis</span> that was giving those dead Minions their abilities no longer exists, so its effect no longer exists either. 
+          <div>Character swaps essentially reset the characters; they are replaced with new instances of the characters.
+  In this case the <span class="Demon">Vigormortis</span> that was giving dead Minions their abilities no longer exists, so those Minions lose their abilities and their neighbours become healthy.
         </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Do Minions killed by the <span class="Demon">Vigormortis</span> keep their power when the <span class="Demon">Vigormortis</span> moves player due to the <span class="Townsfolk">Snake Charmer</span>? 
-      </div>
-        <div class="answer">
-          <div>No.  Character swaps essentially reset the characters; they are replaced with new instances of the characters.
-  In this case the <span class="Demon">Vigormortis</span> that was giving dead Minions their abilities no longer exists, so those Minions lose their abilities.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">If the Vigor changes places (<span class="Townsfolk">Snake Charmer</span>, <span class="Outsider">Barber</span>, ...) do any Minions they have killed keep their ability?
-  Does the new Vigor need to rekill the dead Minions?
-      </div>
-        <div class="answer">
-          <div>No. It is a new instance of the Vigor and this Vigor is not the one who killed those Minions. 
-  And the new <span class="Demon">Vigormortis</span> cannot "reactivate" their dead Minions' abilities by attacking their corpses, 
+          <div>
+  A new <span class="Demon">Vigormortis</span> cannot "reactivate" their dead Minions' abilities by attacking their corpses, 
   because attacking an already dead player does not "kill" them.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">What happens if a Vigor-poisoned Townsfolk becomes a different character type (e.g. pit-hagged into an Outsider)?
+        <div class="question">What happens if a Vigor-poisoned Townsfolk becomes a different character type (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Barber</span>)?
   What if a neighboring player being skipped by the poison becomes a Townsfolk?
       </div>
         <div class="answer">
@@ -10807,18 +10753,11 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If a <span class="Demon">Vigormortis</span> kills a Minion, the Minion keeps its power and poisons one of their neighbours.
-  Can a second kill (by another character or by execution) of that minion disable the Minion's power and the poisoning,
-  or would it have no further effect and the Minion keeps their power and keeps poisoning their neighbour if killed a second time?
+        <div class="question">A <span class="Demon">Vigormortis</span> killed Minion keeps her power and poisons one of her neighbours.
+  Could a second kill, by another character or by execution, of that Minion disable her ability and the poisoning?
       </div>
         <div class="answer">
-          <div>It would have no further effect. 
-  <span class="Demon">Vigormortis</span> says "Minions you kill keep their ability" and executing a dead minion will not kill them
-  as they cannot be killed, because they are already dead.
-  For the rest of the game, while the <span class="Demon">Vigormortis</span> lives and its ability applies, 
-  they are dead because the <span class="Demon">Vigormortis</span> killed them, and thus keep their ability even when killed again.
-  (The power that makes the Minions keep their abilities is not the Minion's power but the <span class="Demon">Vigormortis</span>’s power.)
-  If there is a change of demon (either type or player) then the Minions will most likely lose their ability.
+          <div>A second kill would have no effect on the Minion: a dead player cannot be killed, they are already dead.
         </div>
         </div>
       </div>
@@ -11005,10 +10944,11 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Can the <span class="Outsider">Lunatic</span> learn true info in a <span class="Demon">Vortox</span> game, this Minion is a Minion, the <span class="Townsfolk">King</span> is the <span class="Townsfolk">King</span>, ... ?
+        <div class="question">Does a sober and healthy <span class="Townsfolk">Alchemist</span> always have correct waking patterns in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
-          <div>Yes, the <span class="Outsider">Lunatic</span> as an Outsider is unaffected by the <span class="Demon">Vortox</span> falsifying of info. It is up to the ST whether this is a good idea.
+          <div>They are told the ability of an in play Minion but are treated like the ability they actually have,
+  which would be the ability of an out-of-play Minion. So they have the wake pattern of their actual ability.
         </div>
         </div>
       </div>
@@ -11019,16 +10959,76 @@
           <div>Loads!
         </div>
           <div>
-  Firstly she is told wrongly that she has a different Minion ability, one that is actually in-play.
+  Firstly she is told wrongly that she has a different Minion ability, one that is actually in play.
   Next she learns the wrong role of another good player as her evil-aligned twin,
   which will likely alert her to the fact that she has the <span class="Minion">Evil Twin</span> ability.
         </div>
           <div>
   So she learns:
-<ul><li>   one of the in-play Minions,
+<ul><li>   one of the in play Minions,
 <br/></li><li>   a confirmed good player,
 <br/></li><li>   the Demon is a <span class="Demon">Vortox</span>.
 <br/></li></ul></div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What does the <span class="Townsfolk">Alchemist</span>, a Townsfolk role, learn in a <span class="Demon">Vortox</span> game? / Is the <span class="Townsfolk">Alchemist</span> immune from the <span class="Demon">Vortox</span>?
+      </div>
+        <div class="answer">
+          <div>The <span class="Townsfolk">Alchemist</span>, although they have a Minion ability, is still a Townsfolk and is not immune to the <span class="Demon">Vortox</span>.
+  The <span class="Townsfolk">Alchemist</span> learns an in play Minion, but has the ability of an out-of-play Minion,
+  as the <span class="Demon">Vortox</span> causes misinformation but does not change the ability's working.
+        </div>
+          <div>
+  For example, in a game with the <span class="Minion">Witch</span> and the <span class="Minion">Poisoner</span> in play and the <span class="Minion">Harpy</span> and the <span class="Minion">Devil's Advocate</span> on the script,
+  the <span class="Townsfolk">Alchemist</span> learns that they have the ability of the <span class="Minion">Poisoner</span> while in reality they have the DA's ability. 
+  The ST still has to maintain the DA's restriction on not picking the same player twice in a row. 
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Would an <span class="Townsfolk">Alchemist</span> with the <span class="Minion">Spy</span> or the <span class="Minion">Widow</span> ability see an incorrect grimoire in a <span class="Demon">Vortox</span> game?
+      </div>
+        <div class="answer">
+          <div>The <span class="Townsfolk">Alchemist</span> cannot have the <span class="Minion">Spy</span> or the <span class="Minion">Widow</span> ability as they are jinxed combinations. 
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Alchemist</span> has a passive <span class="Minion">Scarlet Woman</span> ability, but thinks she has the <span class="Minion">Poisoner</span> ability. Should she be woken every night?
+      </div>
+        <div class="answer">
+          <div>No.
+  It is not the same as a 'you think' like the <span class="Outsider">Drunk</span> or the <span class="Minion">Marionette</span> who are constantly lied to.
+  She should just got false information at the start,
+  so N1 she is told an incorrect ability but then treated like she would be for her actual ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Alchemist</span> is told that they have the <span class="Minion">Godfather</span>'s ability (an information gathering Minion),
+  when in reality they have a different Minion ability (say some passive Minion like <span class="Minion">Boomdandy</span> or <span class="Minion">Scarlet Woman</span>).
+  What do they learn regarding Outsiders?
+      </div>
+        <div class="answer">
+          <div>The <span class="Townsfolk">Alchemist</span> is just told that they have the <span class="Minion">Godfather</span> ability, but then nothing else because they do not actually have the <span class="Minion">Godfather</span> ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">In a <span class="Demon">Vortox</span> game, what does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Godfather</span> learn?
+      </div>
+        <div class="answer">
+          <div>She falsely learns that she has a different Minion ability, that is in play.  She is then shown out of play Outsiders.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Outsider">Lunatic</span> learn true info in a <span class="Demon">Vortox</span> game, this Minion is a Minion, the <span class="Townsfolk">King</span> is the <span class="Townsfolk">King</span>, ... ?
+      </div>
+        <div class="answer">
+          <div>Yes, the <span class="Outsider">Lunatic</span> as an Outsider is unaffected by the <span class="Demon">Vortox</span> falsifying of info. It is up to the ST whether this is a good idea.
+        </div>
         </div>
       </div>
       <div class="node">
@@ -11040,22 +11040,59 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">What are the Minions told when the <span class="Townsfolk">Cannibal</span> eats the <span class="Outsider">Snitch</span> in a <span class="Demon">Vortox</span> game.
+        <div class="question">Who must the <span class="Townsfolk">Monk</span> protect for the <span class="Townsfolk">Nightwatchman</span>'s pick to correctly learn the <span class="Townsfolk">Nightwatchman</span> in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
-          <div>Three in-play characters.
+          <div>The <span class="Townsfolk">Nightwatchman</span>, because they are the source of the information.
         </div>
           <div>
-  Even though the <span class="Outsider">Snitch</span> is an Outsider, the <span class="Townsfolk">Cannibal</span> is a Townsfolk so any information ability that they gain is affected by the <span class="Demon">Vortox</span>.
-  So the Minions would each be told three in play characters due to the <span class="Townsfolk">Cannibal</span>-<span class="Outsider">Snitch</span> ability being a Townsfolk ability rather than an Outsider ability.
+  In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Nightwatchman</span> picks a player, and that player learns someone else as something other than the <span class="Townsfolk">Nightwatchman</span>.
+  The <span class="Townsfolk">Monk</span> protection can stop the <span class="Demon">Vortox</span> from making info false,
+  but in order for the the target to learn the correct player as the <span class="Townsfolk">Nightwatchman</span>,
+  it is the <span class="Townsfolk">Nightwatchman</span> as the source of the ability that needs to be protected when they use their ability, not their target.
+  If the target is <span class="Townsfolk">Monk</span>-protected then the misinformation is not prevented.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">What does the <span class="Demon">Vortox</span> learn if the <span class="Townsfolk">Cannibal</span> eats the <span class="Outsider">Lunatic</span>?
+        <div class="question">Does the <span class="Townsfolk">Philosopher</span> <span class="Outsider">Snitch</span> and the <span class="Townsfolk">Cannibal</span> <span class="Outsider">Snitch</span> causes each Minion to learn three in play characters in a <span class="Demon">Vortox</span> game?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+          <div>
+  Townsfolk who gain an Outsider ability are still affected by the <span class="Demon">Vortox</span>'s falsifying of information.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What does the <span class="Demon">Vortox</span> learn if the <span class="Townsfolk">Cannibal</span> eats the <span class="Outsider">Lunatic</span> or the <span class="Townsfolk">Philosopher</span> gains the <span class="Outsider">Lunatic</span> ability?
       </div>
         <div class="answer">
           <div>The <span class="Demon">Vortox</span> learns the wrong player as their <span class="Outsider">Lunatic</span> and the wrong players for the <span class="Outsider">Lunatic</span>'s picks.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">How does the <span class="Townsfolk">Pixie</span> interact with the <span class="Demon">Vortox</span>?
+      </div>
+        <div class="answer">
+          <div>The <span class="Townsfolk">Pixie</span> learns an out of play Townsfolk.
+  An arbitrary player is marked whose role does not matter.  The marked player could in fact be a Minion, but probably should not be the Demon.
+  If the marked player dies, the <span class="Townsfolk">Pixie</span> would gain the ability they were shown if they were sufficiently mad as that role.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">How does the <span class="Townsfolk">Pixie</span> work when the <span class="Demon">Vortox</span> is N1 drunk or poisoned and later sober and healthy?
+      </div>
+        <div class="answer">
+          <div>If the <span class="Demon">Vortox</span> is N1 drunk or poisoned then the <span class="Townsfolk">Pixie</span> will correctly see an in play character.
+        </div>
+          <div>
+  If the <span class="Demon">Vortox</span> is later sober and healthy when the <span class="Townsfolk">Pixie</span>'s marked Townsfolk dies,
+  then the <span class="Townsfolk">Pixie</span> gains the ability that they saw, 
+  which if it is an info ability will be affected by the <span class="Demon">Vortox</span>.
         </div>
         </div>
       </div>
@@ -11068,15 +11105,6 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Does a sober, vortoxed <span class="Townsfolk">Alchemist</span> always have correct waking patterns?
-      </div>
-        <div class="answer">
-          <div>They are told the ability of an in-play Minion but are treated like the ability they actually have,
-  which would be the ability of an out-of-play Minion. So they have the wake pattern of their actual ability.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">The <span class="Townsfolk">Alchemist</span> <span class="Minion">Fearmonger</span> in a <span class="Demon">Vortox</span> game ...  does the ST announce that the <span class="Minion">Fearmonger</span> has picked a new player?
       </div>
         <div class="answer">
@@ -11085,7 +11113,9 @@
           <div>
   Public or even private announcements are not information.
   Only <em>who</em> is information for the purposes of the <span class="Demon">Vortox</span>.
-  For example
+        </div>
+          <div>
+  For example:
 <ul><li>   preached Minions still learn they have been preached,
 <br/></li><li>   exorcised Demons still learn they have been exorcised (they just learn the wrong player),
 <br/></li><li>   the <span class="Townsfolk">Philosopher</span>-<span class="Outsider">Damsel</span> would still inform the Minions that the <span class="Outsider">Damsel</span> is in play.
@@ -11098,7 +11128,7 @@
       </div>
         <div class="answer">
           <div>That they were chosen by the <span class="Townsfolk">Preacher</span>, same as a non <span class="Demon">Vortox</span> game, as being told that you were picked by a player is not part of the vortoxable information.
-  If it were an ability were you learnt <em>who</em> picked you (such as when the <span class="Townsfolk">Exorcist</span> picks the <span class="Demon">Vortox</span>) then that would part would be falsified.
+  If it were an ability where you learnt <em>who</em> picked you (such as when the <span class="Townsfolk">Exorcist</span> picks the <span class="Demon">Vortox</span>) then that would part would be falsified.
         </div>
         </div>
       </div>
@@ -11106,11 +11136,11 @@
         <div class="question">How does the <span class="Townsfolk">Nightwatchman</span> work in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
-          <div>The target of the <span class="Townsfolk">Nightwatchman</span> / Philo-<span class="Townsfolk">Nightwatchman</span> / <span class="Townsfolk">Cannibal</span>-<span class="Townsfolk">Nightwatchman</span> wakes up and learns they were picked by the <span class="Townsfolk">Nightwatchman</span> but is told the wrong name.
+          <div>The target of the <span class="Townsfolk">Nightwatchman</span> / <span class="Townsfolk">Philosopher</span>-<span class="Townsfolk">Nightwatchman</span> / <span class="Townsfolk">Cannibal</span>-<span class="Townsfolk">Nightwatchman</span> wakes up and learns they were picked by the <span class="Townsfolk">Nightwatchman</span> but is told the wrong name.
         </div>
           <div>
   The <span class="Demon">Vortox</span> says Townsfolk abilities yield false info
-  and the <span class="Townsfolk">Nightwatchman</span>, and other info passing characters too, are ruled that the ability name/type is not part of the vortoxable information -
+  and info passing characters such as the <span class="Townsfolk">Nightwatchman</span> are ruled that the ability name/type is not part of the vortoxable information -
   "someone with the NWM ability chose you" is a mechanical explanation of why someone woke up,
   and [ST points to a player] is the information.
         </div>
@@ -11148,12 +11178,20 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">How does the <span class="Townsfolk">Pixie</span> interact with the <span class="Demon">Vortox</span>?
+        <div class="question">If in a <span class="Demon">Vortox</span> game that contains both the <span class="Outsider">Damsel</span> and the <span class="Townsfolk">Philosopher</span> <span class="Outsider">Damsel</span>, what do Minions learn?
       </div>
         <div class="answer">
-          <div>The <span class="Townsfolk">Pixie</span> learns an out of play Townsfolk.
-  An arbitrary player is marked whose role does not matter.  The marked player could in fact be a Minion, but probably should not be the Demon.
-  If the marked player dies, the <span class="Townsfolk">Pixie</span> would gain the ability they were shown if they were sufficiently mad as that role.
+          <div>Minions learn that the <span class="Outsider">Damsel</span> is in play.
+        </div>
+          <div>
+  Being woken due to an ability to learn <ability> affected you or is in play
+  is a mechanical aspect not affected by <span class="Demon">Vortox</span>; only learning specifically who is.
+        </ability></div>
+          <div>  
+  Consider similar interactions in <span class="Demon">Vortox</span> games:
+  A Minion that is selected by the <span class="Townsfolk">Preacher</span> is still told that they have been preached.
+  If the Demon is picked by the <span class="Townsfolk">Exorcist</span>, the Demon learns this but learns the wrong player.
+  The demon learns that the <span class="Townsfolk">King</span> is in play, but not the correct person.
         </div>
         </div>
       </div>
@@ -11176,7 +11214,7 @@
       </div>
       <div class="node">
         <div class="question">Is it possible to learn factual information in a <span class="Demon">Vortox</span> game due to a character misregistering?
-  For example where an <span class="Townsfolk">Empath</span> neigbors a <span class="Minion">Spy</span> and a good player, the <span class="Minion">Spy</span> register as good, therefore the <span class="Townsfolk">Empath</span> would learn a 0, but the vortox warps it into a 1?
+  For example where an <span class="Townsfolk">Empath</span> neigbours a <span class="Minion">Spy</span> and a good player, the <span class="Minion">Spy</span> register as good, therefore the <span class="Townsfolk">Empath</span> would learn a 0, but the vortox warps it into a 1?
       </div>
         <div class="answer">
           <div>Yes.
@@ -11230,31 +11268,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If in a <span class="Demon">Vortox</span> game that contains both the <span class="Outsider">Damsel</span> and the <span class="Townsfolk">Philosopher</span> <span class="Outsider">Damsel</span>, what do Minions learn?
-  Seems learning that the <span class="Outsider">Damsel</span> is in play would be true information derived from a Townsfolk ability (Philo)
-  but learning a different character/nothing at all seems incorrect also.
+        <div class="question">In a <span class="Demon">Vortox</span> game, does the ST lie to the <span class="Townsfolk">Amnesiac</span> about their guesses?
       </div>
         <div class="answer">
-          <div>Minions learn that the <span class="Outsider">Damsel</span> is in play.
-        </div>
-          <div>
-  Being woken due to an ability to learn <ability> affected you or is in play
-  is a mechanical aspect not affected by <span class="Demon">Vortox</span>; only learning specifically who is.
-        </ability></div>
-          <div>  
-  Consider similar interactions in <span class="Demon">Vortox</span> games:
-  A Minion that is selected by the <span class="Townsfolk">Preacher</span> is still told that they have been preached.
-  If the Demon is picked by the <span class="Townsfolk">Exorcist</span>, the Demon learns this but learns the wrong player.
-  The demon learns that the <span class="Townsfolk">King</span> is in play, but not the correct person.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">In a <span class="Demon">Vortox</span> game, do you lie to the <span class="Townsfolk">Amnesiac</span> about their guesses?
-  For example if they asked if their ability was to do with voting and it was not should you still give them a warm/hot?
-      </div>
-        <div class="answer">
-          <div>Yes.
+          <div>Yes.  For example, if they asked if their ability was to do with voting and it was not should you still give them a warm/hot?
         </div>
         </div>
       </div>
@@ -11270,49 +11287,24 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Poppy Grower</span> dies in a <span class="Demon">Vortox</span> game, what do the evils learn?
+        <div class="question">What do the evil team learn if the <span class="Townsfolk">Poppy Grower</span> dies in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
-          <div>At night you tell each evil player incorrect info.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">In a <span class="Demon">Vortox</span> game, if the <span class="Townsfolk">Poppy Grower</span> dies, can you give the evil team bad info?
-      </div>
-        <div class="answer">
-          <div>Rules as written, the information they receive from <span class="Townsfolk">Poppy Grower</span> (a Townsfolk) must be false.
-  It is common to house rule this interaction.
+          <div>Because the info is coming from a Townsfolk ability it must be falsified, then RAW each evil player must be told incorrect info.
         </div>
           <div>
-  Worth noting that, while not a perfect workaround, showing wrong information can still mean showing the Demon as a Minion,
-  and a Minion as the Demon. Arguably, you could show all of the Minions as Demons.
+  The ST can show the Minions and the Demons only good players,
+  but evil Townsfolk, if there are any, can be shown.
+        </div>
+          <div>  
+  More specifically team red must learn non-Minions as Minions and non-Demons as Demons,
+  so as a workaround Minions could learn another Minion as the Demon and, if this is a 2+ Minion game, the Demon as a Minion.
+  The <span class="Demon">Vortox</span> will still have to learn non-Minions as their Minions but they will at least know that their info is wrong.
         </div>
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Poppy Grower</span> dies in a <span class="Demon">Vortox</span> game, does evil learn the wrong team?
-      </div>
-        <div class="answer">
-          <div>RAW, yes. The Demon learns player(s) who are not Minion(s), and the Minion(s) learn a player who is not the Demon. 
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Do evil players learn good players in a <span class="Demon">Vortox</span> game when the <span class="Townsfolk">Poppy Grower</span> dies?
-      </div>
-        <div class="answer">
-          <div>Almost correct.  The evil team learn false information because this information is coming from a Townsfolk ability, so the ST could show the Minions and the Demon good players.
-  But, more specifically, they learn non-Minions as Minions and non-Demons as Demons. They could still be shown an evil Townsfolk for example, if one was in play.
-        </div>
-          <div>
-  So in a two Minion game, the Minions could learn their fellow Minion as the Demon and the Demon as a fellow Minion,
-  while the Demon would still have to learn two non-Minions, but as they are the <span class="Demon">Vortox</span> they at least will know their info is wrong.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">What does the <span class="Townsfolk">Knight</span> learn when the <span class="Demon">Vortox</span> is in play?
+        <div class="question">What does the <span class="Townsfolk">Knight</span> learn in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
           <div>The <span class="Townsfolk">Knight</span> learns two players one of which is the (or possibly a) Demon.
@@ -11320,18 +11312,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Does the <span class="Townsfolk">Philosopher</span> <span class="Outsider">Snitch</span> and the <span class="Townsfolk">Cannibal</span> <span class="Outsider">Snitch</span> causes Minions to learn in play characters in a <span class="Demon">Vortox</span> game?
-      </div>
-        <div class="answer">
-          <div>Yes.  <span class="Outsider">Snitch</span> may be an Outsider ability, but it is a Townsfolk character with that ability.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">In a <span class="Demon">Vortox</span> game, what should the <span class="Townsfolk">Fortune Teller</span> get when they hit their red herring?
       </div>
         <div class="answer">
-          <div>They would get a "No".
+          <div>They would get a "no".
         </div>
         </div>
       </div>
@@ -11354,8 +11338,10 @@
         <div class="answer">
           <div>They learn a good player. When that good player dies, they learn another good player.
   Even if the <span class="Demon">Vortox</span> is killed, droisoned, etc., the BH is only shown a new player after the death of the shown good player; 
-  the BH never gets "corrected" info.
-  They get shown a player and they will only ever get a new name when that player dies, regardless of that player's actual alignment.
+  the BH never gets their information corrected.
+        </div>
+          <div>
+  The BH is shown a player and they will only ever get a new name when that player dies, regardless of that player's actual alignment.
         </div>
         </div>
       </div>
@@ -11400,58 +11386,6 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">What does the <span class="Townsfolk">Alchemist</span>, a Townsfolk role, learn in a <span class="Demon">Vortox</span> game? / Is the <span class="Townsfolk">Alchemist</span> immune from the <span class="Demon">Vortox</span>?
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Alchemist</span> learns an in play Minion, but has the ability of an out-of-play Minion,
-  as the <span class="Demon">Vortox</span> causes misinformation but does not change the ability's working.
-  Note that the <span class="Townsfolk">Alchemist</span>, although they have a Minion ability, is still a Townsfolk and is not immune to the <span class="Demon">Vortox</span>.
-        </div>
-          <div>
-  So for example in a game with the <span class="Minion">Witch</span> and the <span class="Minion">Poisoner</span> in play and the <span class="Minion">Harpy</span> and the <span class="Minion">Devil's Advocate</span> on the script,
-  the <span class="Townsfolk">Alchemist</span> learns that they have the ability of the <span class="Minion">Poisoner</span> while in reality they have the DA's ability. 
-  The ST still has to maintain the DA's restriction on not picking the same player twice in a row. 
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Would an <span class="Townsfolk">Alchemist</span> with the <span class="Minion">Spy</span> or the <span class="Minion">Widow</span> ability see an incorrect grimoire in a <span class="Demon">Vortox</span> game?
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Alchemist</span> cannot have the <span class="Minion">Spy</span> or the <span class="Minion">Widow</span> ability as they are jinxed combinations. 
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Alchemist</span> has a passive <span class="Minion">Scarlet Woman</span> ability, but thinks she has the <span class="Minion">Poisoner</span> ability. Should she be woken every night?
-      </div>
-        <div class="answer">
-          <div>No.
-  It is not the same as a 'you think' like the <span class="Outsider">Drunk</span> or the <span class="Minion">Marionette</span> who are constantly lied to.
-  She should just got false information at the start,
-  so N1 she is told an incorrect ability but then treated like she would be for her actual ability.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Alchemist</span> is told that they have the <span class="Minion">Godfather</span>'s ability (an information gathering Minion),
-  when in reality they have a different Minion ability (say some passive Minion like <span class="Minion">Boomdandy</span> or <span class="Minion">Scarlet Woman</span>).
-  What do they learn regarding Outsiders?
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Alchemist</span> is just told that they have the <span class="Minion">Godfather</span> ability, but then nothing else because they do not actually have the <span class="Minion">Godfather</span> ability.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">In a <span class="Demon">Vortox</span> game, what does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Godfather</span> learn?
-      </div>
-        <div class="answer">
-          <div>She falsely learns that she has a different Minion ability, that is in play.  She is then shown out of play Outsiders.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">What do you tell the <span class="Townsfolk">Savant</span> in a <span class="Demon">Vortox</span> game?
       </div>
         <div class="answer">
@@ -11464,21 +11398,6 @@
       </div>
         <div class="answer">
           <div>The <span class="Demon">Vortox</span> correctly learns that the <span class="Townsfolk">Exorcist</span> / <span class="Townsfolk">King</span> are in play but always learns the wrong person.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Who must the <span class="Townsfolk">Monk</span> protect for the <span class="Townsfolk">Nightwatchman</span>'s pick to correctly learn the <span class="Townsfolk">Nightwatchman</span> in a <span class="Demon">Vortox</span> game?
-      </div>
-        <div class="answer">
-          <div>The <span class="Townsfolk">Nightwatchman</span>, because they are the source of the information.
-        </div>
-          <div>
-  In a <span class="Demon">Vortox</span> game, the <span class="Townsfolk">Nightwatchman</span> picks a player, and that player learns someone else as something other than the <span class="Townsfolk">Nightwatchman</span>.
-  The <span class="Townsfolk">Monk</span> protection can stop the <span class="Demon">Vortox</span> from making info false,
-  but in order for the the target to learn the correct player as the <span class="Townsfolk">Nightwatchman</span>,
-  it is the <span class="Townsfolk">Nightwatchman</span> as the source of the ability that needs to be protected when they use their ability, not their target.
-  If the target is <span class="Townsfolk">Monk</span>-protected then the misinformation is not prevented.
         </div>
         </div>
       </div>
@@ -11562,6 +11481,14 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">If the <span class="Demon">Zombuul</span> is "dead" and there are only two other players are alive, does evil win?
+      </div>
+        <div class="answer">
+          <div>No, the <span class="Demon">Zombuul</span> registering as dead does not count for evil's win condition.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">If the once-killed <span class="Demon">Zombuul</span> is drunked or poisoned, does the game end?
       </div>
         <div class="answer">
@@ -11572,7 +11499,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Demon">Zombuul</span> that has not already died once is killed while droisoned, what happens?
+        <div class="question">If the <span class="Demon">Zombuul</span> that has not already died once is killed while drunk or poisoned, what happens?
       </div>
         <div class="answer">
           <div>The droisoned <span class="Demon">Zombuul</span> dies for real even if they have not used their extra life.
@@ -11596,11 +11523,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The first time a <span class="Demon">Zombuul</span> is executed, do they still wake at night to kill, if no other player dies that day,
-  or does being executed technically count as "died today” even though they live?
+        <div class="question">The first time a <span class="Demon">Zombuul</span> is executed, do they still wake at night to kill, if no other player dies that day?
       </div>
         <div class="answer">
-          <div>They count themselves as having died today and do not wake.
+          <div>No, their "death" registers even to their own ability so the following night they do not wake.
         </div>
         </div>
       </div>
@@ -11633,7 +11559,8 @@
   but abilities that care about living status are affected: she does not register as dead, so abilities can see, choose and impact her.
         </div>
           <div>
- The <span class="Demon">Zombuul</span> and roles that allow character changes such as <span class="Outsider">Barber</span> or the <span class="Minion">Pit-Hag</span> do not mix well! It is kind of awkward no matter how it is run.
+  The <span class="Demon">Zombuul</span> and roles that allow character changes such as <span class="Outsider">Barber</span> or the <span class="Minion">Pit-Hag</span> do not mix well!
+  It is kind of awkward no matter how it is run.
         </div>
         </div>
       </div>
@@ -12057,6 +11984,14 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">Can travellers nominate? 
+      </div>
+        <div class="answer">
+          <div>Yes, they are treated the same as regular players.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">In a game with multiple Demons (<span class="Demon">Legion</span> / <span class="Demon">Riot</span> / ...) what does an evil Traveller learn?
       </div>
         <div class="answer">
@@ -12065,7 +12000,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">In a Lil' Monsta game does an evil Traveller still learn the babysitter if they are a good player at the time?
+        <div class="question">If a good player is babysitting Lil' Monsta are they still seen by an evil Traveller?
       </div>
         <div class="answer">
           <div>Yes.
@@ -12077,14 +12012,6 @@
       </div>
         <div class="answer">
           <div>Everyone knows what Traveller they are for as long as they are a Traveller.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Do exiled Travellers get a deadvote?
-      </div>
-        <div class="answer">
-          <div>Yes.
         </div>
         </div>
       </div>
@@ -12255,14 +12182,6 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If a Traveller is exiled, do they still have a dead vote?
-      </div>
-        <div class="answer">
-          <div>Yes.
-        </div>
-        </div>
-      </div>
-      <div class="node">
         <div class="question">Do Travellers count towards the majority needed to execute?
       </div>
         <div class="answer">
@@ -12292,14 +12211,6 @@
       </div>
         <div class="answer">
           <div>The game can end if there is no reasonable path to victory for good such as only evil left alive.
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Can an Outsider be the <span class="Outsider">Drunk</span>?
-      </div>
-        <div class="answer">
-          <div>An Outsider can be drunk but they cannot be <em>the</em> <span class="Outsider">Drunk</span>, as the <span class="Outsider">Drunk</span> must believe that they are a Townsfolk.
         </div>
         </div>
       </div>
@@ -12504,19 +12415,14 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Do dead Characters register for abilities that say "in play"?
+        <div class="question">Do dead characters register for abilities that say "in play" (<span class="Townsfolk">Philosopher</span> / <span class="Minion">Pit-Hag</span> / <span class="Outsider">Plague Doctor</span> / <span class="Outsider">Snitch</span> ...)?
       </div>
         <div class="answer">
-          <div>Players who are dead are still their character, and so are still "in play".
-        </div>
-        </div>
-      </div>
-      <div class="node">
-        <div class="question">Are dead characters still in play for the purpose of the <span class="Townsfolk">Philosopher</span> and the <span class="Minion">Pit-Hag</span>?
-      </div>
-        <div class="answer">
-          <div>Yes. The token is assigned to a player; therefore the character is in play. 
-        </div>
+          <div>Players who are dead are still their character, and so are still in play.
+<ul><li>   the Philosoper who gains the ability of a dead character means that character is dead and drunk
+<br/></li><li>   the <span class="Minion">Pit-Hag</span> who wants to make create another <span class="Outsider">Barber</span> will first have to change the dead <span class="Outsider">Barber</span> to some other character
+<br/></li><li>   after the <span class="Outsider">Plague Doctor</span> dies the dead in play <span class="Minion">Fearmonger</span> means the <span class="Minion">Witch</span> cannot gain this ability, unless all Minion abilites are in play
+<br/></li></ul></div>
         </div>
       </div>
       <div class="node">
@@ -12660,7 +12566,8 @@ var keywords = {
     "Artist",
     "Assassin",
     "Atheist",
-    "alignment"
+    "alignment",
+    "alive"
   ],
   "B": [
     "Balloonist",
@@ -12697,6 +12604,7 @@ var keywords = {
     "Dreamer",
     "Drunk",
     "Duchess",
+    "dead",
     "demon",
     "droisoned",
     "drunk"
@@ -12749,7 +12657,8 @@ var keywords = {
   "I": [
     "Imp",
     "Innkeeper",
-    "Investigator"
+    "Investigator",
+    "in play"
   ],
   "J": [
     "Judge",

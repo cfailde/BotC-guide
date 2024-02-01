@@ -11,8 +11,47 @@ import re
 import json
 
  
+import os
+import shutil
+from datetime import datetime
+
 # pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pip install yattag
 from yattag import indent
+
+
+def manage_backups(filename):
+    # Define the original and backup file names
+    #html_file = "foo.html"
+    max_backups = 5
+
+    # Check if foo.html exists
+    if os.path.exists(filename):
+        print(f"{filename} exists.")
+
+        # Get the list of existing backup files
+        backup_files = [f for f in os.listdir() if f.startswith("Back up of foo")]
+
+        # Check the number of existing backup files
+        if len(backup_files) >= max_backups:
+            # Sort backup files by creation time and delete the oldest one
+            backup_files.sort(key=lambda x: os.path.getctime(x))
+            oldest_backup = backup_files[0]
+            os.remove(oldest_backup)
+            print(f"Deleted the oldest backup file: {oldest_backup}")
+
+        # Create a new backup filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_filename = f"Back up of {filename.split('.')[0]}-{timestamp}.html"
+
+
+
+        # Make a copy of foo.html with the new backup filename
+        shutil.copy(filename, backup_filename)
+        print(f"Created backup: {backup_filename}")
+
+    else:
+        print(f"{filename} does not exist.")
+
 
 
 # Surround keywords with <span class='character'></span>
@@ -162,6 +201,8 @@ def botc_to_nodes(input_path, output_path):
         file.writelines(output_lines)
 
 
+manage_backups("BotC Guide.html")
+
 
 botc_to_nodes('BotC.txt', 'nodefied content.txt')
 print("")
@@ -285,7 +326,7 @@ roles_dict_str = javascript_code[start_index-1:end_index]
 Extra  = [ "poisoned", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
 Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
-Extra += [ "madness", "setup" ]
+Extra += [ "madness", "setup", "alive", "dead", "in play" ]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
 sorted_keywords = {}
 
