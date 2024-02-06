@@ -9,14 +9,60 @@ Output is an updated BotC Guide.html file
 from bs4 import BeautifulSoup
 import re
 import json
-
+import sys
  
 import os
 import shutil
 from datetime import datetime
 
 # pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pip install yattag
-from yattag import indent
+from yattag import indent as yattag_indent
+
+
+
+def check_file_format(file_path):
+    try:
+        with open(file_path, 'r', encoding="utf-8") as file:
+            lines = file.readlines()
+
+            # Extract file name from the path
+            file_name = file_path.split("/")[-1]
+
+            # Initialize an empty string to store first letters
+            first_letters = ""
+
+            for line_number, line in enumerate(lines, start=1):
+
+                # Check if the line is not empty
+                if line:
+                    first_char = line[0]
+
+                    # Skip lines that don't start with Q or A
+                    if first_char not in {'Q', 'A'}:
+                        continue
+
+                    # Check for incorrect formatting
+                    if first_char == 'A' and 'Q' not in first_letters:
+                        print(f"{file_name} is incorrectly formatted: 'A' detected before 'Q' on line {line_number}.")
+                        return False
+                    elif first_letters and first_char == first_letters[-1]:
+                        print(f"{file_name} is incorrectly formatted: '{first_char}' detected after another '{first_char}' on line {line_number}.")
+                        return False
+
+                    # Add the first character to the string
+                    first_letters += first_char
+
+            # Check if the last letter is 'A'
+            if first_letters and first_letters[-1] == 'A':
+                print(f"{file_name} is correctly formatted.")
+                return True
+            else:
+                print(f"{file_name} is incorrectly formatted: Missing 'A' at the end.")
+                return False
+
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+        return False
 
 
 def manage_backups(filename):
@@ -29,7 +75,7 @@ def manage_backups(filename):
         print(f"{filename} exists.")
 
         # Get the list of existing backup files
-        backup_files = [f for f in os.listdir() if f.startswith("Back up of foo")]
+        backup_files = [f for f in os.listdir() if f.startswith(f"Back up of {filename.split('.')[0]}")]
 
         # Check the number of existing backup files
         if len(backup_files) >= max_backups:
@@ -67,6 +113,7 @@ def surround_keywords_with_span(html_content, keywords, character_type):
         for match in matches:
             content = str(match)
             replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
+            #print(replaced_content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
     return str(soup)
 
@@ -201,42 +248,136 @@ def botc_to_nodes(input_path, output_path):
         file.writelines(output_lines)
 
 
-manage_backups("BotC Guide.html")
+def replace_nodes(original, replacement, output_path):
+    print("Finding existing version of guide")
+    with open(original, 'r', encoding="utf-8") as file:
+        html_content = file.read()
+        soup = BeautifulSoup(html_content, 'html.parser')
+        vault = soup.find('div', id='vault')
+    
+    # Read the content of the replacement html
+    with open(replacement, 'r', encoding="utf-8") as file:
+        replacement_content = file.read()
+
+    # Parse the replacement content and remove empty paragraphs
+    print("Removing empty divs")
+    replacement_soup = BeautifulSoup(replacement_content, 'html.parser')
+    for p_tag in replacement_soup.find_all('div'):
+        if not p_tag.text.strip():  # Check if the paragraph has only whitespace
+            p_tag.extract()  # Remove the empty paragraph
+
+    print("Updating HTML")
+    if vault:
+        vault.clear()
+        vault.append(replacement_soup)
+
+    with open(output_path, 'w', encoding="utf-8") as file:
+        file.write(str(soup))
+
+def highlight_roles(input_path, output_path):
+    with open(input_path, 'r', encoding='utf-8') as file:
+        current_contents = file.read()
+
+    # Update the HTML content with keyword replacements
+    current_contents = surround_keywords_with_span(current_contents, Fabled, "Fabled")
+    current_contents = surround_keywords_with_span(current_contents, Townsfolk, "Townsfolk")
+    current_contents = surround_keywords_with_span(current_contents, Outsider, "Outsider")
+    current_contents = surround_keywords_with_span(current_contents, Minion, "Minion")
+    current_contents = surround_keywords_with_span(current_contents, Demon, "Demon")
+    current_contents = surround_keywords_with_span(current_contents, Traveller, "Traveller")
+
+    with open(output_path, 'w', encoding='utf-8') as file:
+        file.write(current_contents)
+
+def update_index(input_path, output_path):
+    with open(input_path, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    soup = BeautifulSoup(html_content, 'html.parser')
+    script_tag = soup.find('script')
+
+    # Extract the JavaScript code from the <script> tag
+    javascript_code = script_tag.string.strip()
+
+    # Locate the 'keywords' dictionary in the JavaScript code
+    start_index = javascript_code.find("var keywords = {") + len("var keywords = {")
+    end_index = javascript_code.find("};", start_index) + 1
+    roles_dict_str = javascript_code[start_index-1:end_index]
 
 
-botc_to_nodes('BotC.txt', 'nodefied content.txt')
-print("")
-print("Done nodifying text")
 
-print("Finding existing version of guide")
-with open('BotC Guide.html', 'r', encoding="utf-8") as file:
-    html_content = file.read()
+    sorted_keywords = {}
 
-soup = BeautifulSoup(html_content, 'html.parser')
-vault = soup.find('div', id='vault')
 
-# Read the content of the replacement html
-with open('nodefied content.txt', 'r', encoding="utf-8") as file:
-    replacement_content = file.read()
 
-# Parse the replacement content and remove empty paragraphs
-print("Removing empty divs")
-replacement_soup = BeautifulSoup(replacement_content, 'html.parser')
-for p_tag in replacement_soup.find_all('div'):
-    if not p_tag.text.strip():  # Check if the paragraph has only whitespace
-        p_tag.extract()  # Remove the empty paragraph
+    # Sort names by first letter and populate the dictionary
+    for name in sorted(all_the_words):
+        first_letter = name[0].upper()
+        if first_letter not in sorted_keywords:
+            sorted_keywords[first_letter] = [name]
+        else:
+            sorted_keywords[first_letter].append(name)
 
-print("Updating HTML")
-if vault:
-    vault.clear()
-    vault.append(replacement_soup)
+    for key in sorted_keywords:
+        sorted_keywords[key] = sorted(sorted_keywords[key])
+     
+    new_keyword_count = 0
+    for key, value in sorted_keywords.items():
+        new_keyword_count += len(value)
 
-with open('nodified content.html', 'w', encoding="utf-8") as file:
-    file.write(str(soup))
 
-print("Highlighting roles")
+#
+    print(f"Added {new_keyword_count} keywords to index")
 
-# List of keywords to search for
+    # Print the sorted dictionary
+    #for key, value in sorted_keywords.items():
+    #    print(f"{key}: {value}")
+    
+    # Convert the new dictionary to a JSON string
+    new_keywords_dict_str = json.dumps(sorted_keywords, indent=2)
+
+    # Replace the old 'roles' dictionary string with the new one
+    javascript_code = javascript_code.replace(roles_dict_str, new_keywords_dict_str)
+
+    # Update the <script> tag with the modified JavaScript code
+    script_tag.string = javascript_code
+
+    # Write the updated HTML back to the file
+    with open(output_path, 'w', encoding='utf-8') as file:
+        file.write(str(soup))
+
+def indent(input_path, output_path):
+    with open(input_path, 'r', encoding="utf-8") as file:
+        html = file.read()
+
+    nicely_indented = str(yattag_indent(html))
+    fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
+
+    with open(output_path, 'w', encoding="utf-8") as file:
+        file.write(fixed_spans)
+
+def emphasise(input_file, output_file):
+    # Read the HTML file
+    with open(input_file, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    # Define a regex pattern to find words surrounded by underscores
+    pattern = re.compile(r'(_)(\w+)(_)')
+
+    # Replace matched patterns with <em> tags and without underscores
+    modified_html = pattern.sub(lambda match: f'<em>{match.group(2)}</em>', html_content)
+
+    # Write the modified HTML to the output file
+    with open(output_file, 'w', encoding='utf-8') as output:
+        output.write(modified_html)
+
+
+
+
+
+
+# List of keywords to highlight
+
 Townsfolk =  [ "Steward", "Knight", "Noble", "Investigator", "Chef"]
 Townsfolk += [ "Washerwoman", "Clockmaker", "Librarian", "Grandmother"]
 Townsfolk += [ "Pixie", "Bounty Hunter", "Empath", "High Priestess", "Sailor"]
@@ -277,128 +418,51 @@ Fabled    += [ "Storm Catcher", "Sentinel", "Doomsayer", "Angel", "Buddhist"]
 Fabled    += [ "Ferryman", "Gardener"] 
 
 
-file_path = 'nodified content.html'
-with open(file_path, 'r', encoding='utf-8') as file:
-    current_contents = file.read()
 
-# Update the HTML content with keyword replacements
-current_contents = surround_keywords_with_span(current_contents, Townsfolk, "Townsfolk")
-current_contents = surround_keywords_with_span(current_contents, Outsider, "Outsider")
-current_contents = surround_keywords_with_span(current_contents, Minion, "Minion")
-current_contents = surround_keywords_with_span(current_contents, Demon, "Demon")
-current_contents = surround_keywords_with_span(current_contents, Traveller, "Traveller")
-current_contents = surround_keywords_with_span(current_contents, Fabled, "Fabled")
-
-
-
-file_path = 'highlighted.html'
-with open(file_path, 'w', encoding='utf-8') as file:
-    file.write(current_contents)
-
-print("Done highlighting.                                                              ")
-
-
-input_path = 'highlighted.html'
-output_path = 'rough.html'
-
-
-
-with open(input_path, 'r', encoding='utf-8') as file:
-    html_content = file.read()
-
-
-
-soup = BeautifulSoup(html_content, 'html.parser')
-
-# Find the <script> tag containing the JavaScript code
-script_tag = soup.find('script')
-
-# Extract the JavaScript code from the <script> tag
-javascript_code = script_tag.string.strip()
-
-# Locate the 'keywords' dictionary in the JavaScript code
-start_index = javascript_code.find("var keywords = {") + len("var keywords = {")
-end_index = javascript_code.find("};", start_index) + 1
-roles_dict_str = javascript_code[start_index-1:end_index]
-
-
-# Keywords
+# All the keywords that are not the names of characters
 Extra  = [ "poisoned", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
 Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
-Extra += [ "madness", "setup", "alive", "dead", "in play" ]
+Extra += [ "madness", "setup", "alive", "dead", "vote" ]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
-sorted_keywords = {}
 
 
 
-# Sort names by first letter and populate the dictionary
-for name in sorted(all_the_words):
-    first_letter = name[0].upper()
-    if first_letter not in sorted_keywords:
-        sorted_keywords[first_letter] = [name]
-    else:
-        sorted_keywords[first_letter].append(name)
 
-for key in sorted_keywords:
-    sorted_keywords[key] = sorted(sorted_keywords[key])
- 
-# Print the sorted dictionary
-for key, value in sorted_keywords.items():
-    print(f"{key}: {value}")
 
-print("Wow! What an impressive set of key words")
+print("Starting update.")
 
-# Convert the new dictionary to a JSON string
-new_keywords_dict_str = json.dumps(sorted_keywords, indent=2)
+print("Checking BotC.txt")
+if not check_file_format('BotC.txt'):
+  sys.exit("..Oh dear!")
 
-# Replace the old 'roles' dictionary string with the new one
-javascript_code = javascript_code.replace(roles_dict_str, new_keywords_dict_str)
+manage_backups("BotC Guide.html")
 
-# Update the <script> tag with the modified JavaScript code
-script_tag.string = javascript_code
+botc_to_nodes('BotC.txt', 'nodefied content.txt')
+print("Done nodifying text")
 
-# Write the updated HTML back to the file
-with open(output_path, 'w', encoding='utf-8') as file:
-    file.write(str(soup))
+replace_nodes('BotC Guide.html', 'nodefied content.txt', 'nodified content.html')
+
+print("Updating index")
+update_index('nodified content.html', 'updated index.html')
+
+print("Highlighting roles")
+highlight_roles('updated index.html', 'highlighted.html')
+print("Done highlighting.                                                              ")
+
+
 
 
 
 print("Prettifying ...")
-input_path = 'rough.html'
-output_path = 'guide.html'
-
-with open(input_path, 'r', encoding="utf-8") as file:
-    html = file.read()
-
-nicely_indented = str(indent(html))
-fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
-
-with open(output_path, 'w', encoding="utf-8") as file:
-    file.write(fixed_spans)
-
-
-
-def emphasise(input_file, output_file):
-    # Read the HTML file
-    with open(input_file, 'r', encoding='utf-8') as file:
-        html_content = file.read()
-
-    # Define a regex pattern to find words surrounded by underscores
-    pattern = re.compile(r'(_)(\w+)(_)')
-
-    # Replace matched patterns with <em> tags and without underscores
-    modified_html = pattern.sub(lambda match: f'<em>{match.group(2)}</em>', html_content)
-
-    # Write the modified HTML to the output file
-    with open(output_file, 'w', encoding='utf-8') as output:
-        output.write(modified_html)
+indent('rough.html', 'guide.html')
 
 
 print("Adding emphasis ...")
-input_html_file = "guide.html"
-output_html_file = "BotC Guide.html" 
+emphasise("guide.html", "BotC Guide.html")
 
-emphasise(input_html_file, output_html_file)
-print("Done")
+
+print("Done updating.")
+
+
 
