@@ -1472,7 +1472,7 @@ A No, the Chambermaid detects if a player woke up for their character ability, a
 ======
 =Chef=
 ======
-Q With the seating of Imp-Recluse-Poisoner-Baron, what could the Chef be shown?
+Q With the seating of Demon-Recluse-Minion-Minion, what could the Chef be shown?
 A The Chef number could be any of 1, 2, or 3 with this seating, as the Recluse can register as good and evil for separate instances of the Chef ability.
 
 ==========
