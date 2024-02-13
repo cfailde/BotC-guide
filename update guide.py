@@ -25,11 +25,12 @@ MAX_BACKUPS = 5
 
 
 def debug(data, output_path):
+    if not DEBUG_MODE:
+        return
 
-    if DEBUG_MODE:
-        print("  - Saving interim results to " + output_path)
-        with open(output_path, 'w', encoding="utf-8") as file:
-            file.writelines(data)
+    print("  - Saving interim results to " + output_path)
+    with open(output_path, 'w', encoding="utf-8") as file:
+        file.writelines(data)
 
 
 def sanity_check():
@@ -249,12 +250,12 @@ def update_index(html, output_path):
     # Locate the 'keywords' dictionary in the JavaScript code
     start_index = javascript_code.find("var keywords = {") + len("var keywords = {")
     end_index = javascript_code.find("};", start_index) + 1
-    roles_dict_str = javascript_code[start_index-1:end_index]
+    keywords_str = javascript_code[start_index-1:end_index]
 
     sorted_keywords = {}
 
-    # Sort names by first letter and populate the dictionary
-    for name in sorted(all_the_words):
+    # populate the dictionary
+    for name in all_the_words:
         first_letter = name[0].upper()
         if first_letter not in sorted_keywords:
             sorted_keywords[first_letter] = [name]
@@ -270,15 +271,11 @@ def update_index(html, output_path):
 
     print(f"  Added {new_keyword_count} keywords to index")
 
-    # Print the sorted dictionary
-    #for key, value in sorted_keywords.items():
-    #    print(f"{key}: {value}")
-    
     # Convert the new dictionary to a JSON string
     new_keywords_dict_str = json.dumps(sorted_keywords, indent=2)
 
-    # Replace the old 'roles' dictionary string with the new one
-    javascript_code = javascript_code.replace(roles_dict_str, new_keywords_dict_str)
+    # Replace the old index string with the new one
+    javascript_code = javascript_code.replace(keywords_str, new_keywords_dict_str)
 
     # Update the <script> tag with the modified JavaScript code
     script_tag.string = javascript_code
@@ -303,9 +300,6 @@ def indent_keywords(html):
     return "\n".join(updated_content)
 
 def indent(html, output_path):
-    #with open(input_path, 'r', encoding="utf-8") as file:
-    #    html = file.read()
-
     nicely_indented = str(yattag_indent(html))
     fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
 
@@ -313,7 +307,6 @@ def indent(html, output_path):
 
     debug(updated_content, output_path)
     return updated_content
-
 
 # Replaces underscores around words with <em></em> tag
 def emphasise(html_content, output_path):
