@@ -347,6 +347,7 @@ Townsfolk += [ "Slayer", "Professor", "Seamstress", "Philosopher", "Huntsman",]
 Townsfolk += [ "Soldier", "Fool", "Pacifist", "Alchemist", "Tea Lady", "Sage"]
 Townsfolk += [ "Farmer", "Magician", "Ravenkeeper", "Choirboy", "Virgin"]
 Townsfolk += [ "Poppy Grower", "Minstrel", "Mayor", "Atheist", "Cannibal"]
+Townsfolk += [ "Village Idiot"]
 
 Outsider  =  [ "Snitch", "Butler", "Goon", "Acrobat"]
 Outsider  += [ "Puzzlemaster", "Tinker", "Saint", "Sweetheart"]
