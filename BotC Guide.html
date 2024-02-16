@@ -285,7 +285,7 @@
   <body>
     <div id="top">
       <div class="input-container" id="inputContainer">
-        <input id="keywordInput" oninput="displaySelectedKeywords();" placeholder="Enter keywords to filter" type="text"/>
+        <input id="keywordInput" oninput="update()" placeholder="Enter keywords to filter" type="text"/>
         <span class="magnifying-glass" onclick="toggleInputContainer(); spinMagnifyingGlass()">🔎</span>
         <!-- Clear button for the input field, I might bring this back in some form ...
 <span id="clearButton" onclick="clearInput()">Clear</span> -->
@@ -305,7 +305,7 @@
     </div>
     <div id="vault">
       <div class="node">
-        <div class="question">Can the droisoned <span class="Outsider">Acrobat</span> die with one or more droisoned neighbours?
+        <div class="question">Can the drunk or poisoned <span class="Outsider">Acrobat</span> die with one or more drunk or poisoned neighbours?
       </div>
         <div class="answer">
           <div>No.  The <span class="Outsider">Acrobat</span> dies only at its turn in the night order. If they are drunk/poisoned at that time, they would not be able to die to their own ability.
@@ -316,7 +316,7 @@
         <div class="question">Is the <span class="Minion">Marionette</span> Townsfolk considered poisoned for the sake of the <span class="Outsider">Acrobat</span>?
       </div>
         <div class="answer">
-          <div>No, they are sober and healthy. Also, they are an evil Minion, and the <span class="Outsider">Acrobat</span> only cares about neighboring living good players.
+          <div>No, they are sober and healthy. Also, they are an evil Minion, and the <span class="Outsider">Acrobat</span> only cares about neighbouring living good players.
         </div>
         </div>
       </div>
@@ -330,11 +330,11 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Outsider">Acrobat</span> has a droisoned neighbour N1 and then is between two sober people N2, do they still die?
+        <div class="question">If the <span class="Outsider">Acrobat</span> has a drunk or poisoned neighbour N1 and then is between two sober people N2, do they still die?
   (for instance, they neighbour a drunk <span class="Townsfolk">Sailor</span> the first night who becomes sober the second)
       </div>
         <div class="answer">
-          <div>The <span class="Outsider">Acrobat</span> dies at their turn in the night order only, so if by then they are between two sober amd healthy players, they do not die.
+          <div>The <span class="Outsider">Acrobat</span> dies at their turn in the night order only, so if by then they are between two sober and healthy players, they do not die.
         </div>
         </div>
       </div>
@@ -364,13 +364,13 @@
       </div>
         <div class="answer">
           <div>Their ability is something the <span class="Townsfolk">Alchemist</span> starts knowing
-  and just as with any start knowing character who is drunked or poisoned
+  and just as with any start knowing character who is drunk or poisoned
   they can get wrong info on their first night
   that is not corrected if they become sober / healthy.
         </div>
           <div>
-  On N1 the <span class="Townsfolk">Alchemist</span> is assigned a not-in-play Minion ability.
-  If they are N1 droisoned they are told that they have another ability, typically one that is in play,
+  On N1 the <span class="Townsfolk">Alchemist</span> is assigned an out of play Minion ability.
+  If they are N1 drunk/poisoned they are told that they have another ability, typically one that is in play,
   and the ST will treat them as having that ability.
   When the <span class="Townsfolk">Alchemist</span> becomes sober and healthy, they do not change abilities, their actual ability that they had from setup now functions correctly,
   and the ST treats them as having that ability.
@@ -466,7 +466,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">How does the <span class="Townsfolk">Alchemist</span> who gains the Marionete ability work? / How does the <span class="Minion">Marionette</span> who thinks that they are the <span class="Townsfolk">Alchemist</span> work?
+        <div class="question">How does the <span class="Townsfolk">Alchemist</span> who gains the <span class="Minion">Marionette</span> ability work? / How does the <span class="Minion">Marionette</span> who thinks that they are the <span class="Townsfolk">Alchemist</span> work?
       </div>
         <div class="answer">
           <div>These pairings should be avoided as it is unfun and uninteresting.
@@ -494,12 +494,12 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">The <span class="Townsfolk">Alchemist</span> has the <span class="Minion">Baron</span> ability, but on the second night, they get drunked / poisoned.
+        <div class="question">The <span class="Townsfolk">Alchemist</span> has the <span class="Minion">Baron</span> ability, but on the second night, they are drunk / poisoned.
   Can they be told that the <span class="Minion">Baron</span> has come into play, they now have the <span class="Minion">Poisoner</span> ability, and for them to choose a player?
   Can they continue to be asked to choose players when made healthy?
       </div>
         <div class="answer">
-          <div>While droisoned, they can be told anything. Once they sober up, they must act as their actual ability does.
+          <div>While drunk or poisoned, they can be told anything. Once they sober up, they must act as their actual ability does.
         </div>
         </div>
       </div>
@@ -643,7 +643,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Demon">Imp</span> self kills, does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Scarlet Woman</span> become the <span class="Demon">Imp</span>?
+        <div class="question">If the <span class="Demon">Imp</span> self-kills, does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Scarlet Woman</span> become the <span class="Demon">Imp</span>?
       </div>
         <div class="answer">
           <div>Yes. But, as the <span class="Townsfolk">Alchemist</span> is not a Minion, a living Minion also becomes the <span class="Demon">Imp</span>.
@@ -652,7 +652,7 @@
       </div>
       <div class="node">
         <div class="question">The <span class="Townsfolk">Alchemist</span> <span class="Minion">Goblin</span> is nominated, claims <span class="Minion">Goblin</span>, and is not put on the block.  She then nominates the <span class="Townsfolk">Virgin</span> and is immediately executed.
-  Does that end the game and give a win to the goood team?
+  Does that end the game and give a win to the good team?
   What about a good <span class="Minion">Goblin</span> nominating the <span class="Townsfolk">Virgin</span>? What about an <span class="Townsfolk">Alchemist</span> <span class="Minion">Goblin</span> breaking Cere madness?
       </div>
         <div class="answer">
@@ -719,7 +719,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">How does the <span class="Demon">Al-Hadikhia</span> targetting the <span class="Townsfolk">Mayor</span> work?
+        <div class="question">How does the <span class="Demon">Al-Hadikhia</span> targeting the <span class="Townsfolk">Mayor</span> work?
       </div>
         <div class="answer">
           <div>The <span class="Townsfolk">Mayor</span> can bounce an <span class="Demon">Al-Hadikhia</span> kill from themselves to another player if they choose to die.
@@ -862,10 +862,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Exorcist</span> picks the <span class="Demon">Al-Hadikhia</span>, then there are no annoucements that night, correct?
+        <div class="question">If the <span class="Townsfolk">Exorcist</span> picks the <span class="Demon">Al-Hadikhia</span>, then there are no announcements that night, correct?
       </div>
         <div class="answer">
-          <div>Yes.  The <span class="Demon">Al-Hadikhia</span> does not get to pick and there are no annoucements.
+          <div>Yes.  The <span class="Demon">Al-Hadikhia</span> does not get to pick and there are no announcements.
   This would look no different to the <span class="Demon">Al-Hadikhia</span> being drunked or poisoned.
         </div>
         </div>
@@ -889,10 +889,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Minion">Pit-Hag</span> turns the Demon into the <span class="Demon">Al-Hadikhia</span>, deaths are arbirtary, but should the ST wake the <span class="Demon">Al-Hadikhia</span> and her targets?
+        <div class="question">If the <span class="Minion">Pit-Hag</span> turns the Demon into the <span class="Demon">Al-Hadikhia</span>, deaths are arbitrary, but should the ST wake the <span class="Demon">Al-Hadikhia</span> and her targets?
       </div>
         <div class="answer">
-          <div>Deaths are arbirtary until the end of the night giving the ST a lot of freedom since Demons wake later than the <span class="Minion">Pit-Hag</span>,
+          <div>Deaths are arbitrary until the end of the night giving the ST a lot of freedom since Demons wake later than the <span class="Minion">Pit-Hag</span>,
   but if the <span class="Demon">Al-Hadikhia</span> is alive, sober and healthy
   then the waking up and announcing stuff is not optional: it must happen.
         </div>
@@ -906,7 +906,7 @@
         <div class="question">Are the drunk / poisoned <span class="Demon">Al-Hadikhia</span>'s picks still woken?
       </div>
         <div class="answer">
-          <div>No, they are drunk / poisoned so they cannot affect other players: there is no annoucement and no waking of their targets.
+          <div>No, they are drunk / poisoned so they cannot affect other players: there is no announcement and no waking of their targets.
   The <span class="Demon">Al-Hadikhia</span> will then realise that they were drunk / poisoned or think that they might be the <span class="Outsider">Lunatic</span>.
         </div>
         </div>
@@ -986,7 +986,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">For <span class="Demon">Al-Hadikhia</span>, do all deaths happen simultaneously (when all choose live) or do they happen in the order chosen?
+        <div class="question">For the <span class="Demon">Al-Hadikhia</span>, do all deaths happen simultaneously (when all choose live) or do they happen in the order chosen?
       </div>
         <div class="answer">
           <div>In the order chosen, like any multi-kill Demon.
@@ -1056,7 +1056,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">Does the <span class="Townsfolk">Monk</span> stop a player from being chosen by the Al-Hakidia?
+        <div class="question">Does the <span class="Townsfolk">Monk</span> stop a player from being chosen by the <span class="Demon">Al-Hadikhia</span>?
       </div>
         <div class="answer">
           <div>No, they just do not die no matter what they choose.
@@ -1091,16 +1091,16 @@
       </div>
         <div class="answer">
           <div>They follow the hate jinx rule: only one jinxed character can be in play.
-  Additionally evil players start knowing which player and character it is.
+  Additionally, evil players start knowing which player and character it is.
         </div>
           <div>
-  They are hate jinxed because after a night of no annoucements, 
+  They are hate jinxed because after a night of no announcements, 
   everyone knows that the Demon has died,
   that it must be a <span class="Minion">Mastermind</span> day,
   rendering the MM useless.
         </div>
           <div>
-  They are hate jinxed because killing the Al-Had means no more night annoucements,
+  They are hate jinxed because killing the Al-Had means no more night announcements,
   everyone realising the Demon is dead and that it is a <span class="Minion">Mastermind</span> day, 
   making the <span class="Minion">Mastermind</span> mechanically useless.
         </div>
@@ -1108,7 +1108,7 @@
       </div>
       <div class="node">
         <div class="question">Can a multi-kill per night demon attack the same player twice? e.g. the <span class="Demon">Shabaloth</span> tries to eat the <span class="Townsfolk">Fool</span> twice with both kills, 
- or the <span class="Demon">Al-Hadikhia</span> chooses the same player three time, thus ensuring they die ?
+ or the <span class="Demon">Al-Hadikhia</span> chooses the same player three time, thus ensuring they die?
       </div>
         <div class="answer">
           <div>No, it must be different players.
@@ -1589,6 +1589,22 @@
       </div>
         <div class="answer">
           <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What effect does the <span class="Traveller">Barista</span> have on the <span class="Townsfolk">King</span>?
+      </div>
+        <div class="answer">
+          <div>The <span class="Traveller">Barista</span> only has an effect when the dead outnumber the living. Once this is the case, <span class="Traveller">Barista</span> 1 gives the <span class="Townsfolk">King</span> true info and <span class="Traveller">Barista</span> doubling gives the <span class="Townsfolk">King</span> two character tokens to see.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">How does the <span class="Traveller">Barista</span> doubled <span class="Townsfolk">Huntsman</span> work?
+      </div>
+        <div class="answer">
+          <div>If they have yet to guess then they can choose two players in one night, otherwise they can be woken to make another guess.
         </div>
         </div>
       </div>
@@ -3191,7 +3207,7 @@
         <div class="question">Does the <span class="Minion">Scarlet Woman</span> only count for waking for the <span class="Townsfolk">Chambermaid</span>'s ability when they become the Demon?
       </div>
         <div class="answer">
-          <div>Yes. But the ST might consider their waking up when the <span class="Demon">Imp</span> selfkills is due to the <span class="Demon">Imp</span>'s ability, not the SW's ability, and not ping the <span class="Townsfolk">Chambermaid</span>.
+          <div>Yes. But the ST might consider their waking up when the <span class="Demon">Imp</span> self-kills is due to the <span class="Demon">Imp</span>'s ability, not the SW's ability, and not ping the <span class="Townsfolk">Chambermaid</span>.
         </div>
         </div>
       </div>
@@ -3246,7 +3262,7 @@
         </div>
           <div>
   The <span class="Townsfolk">King</span> would die as the previously poisoned player after the <span class="Demon">Pukka</span> makes their next pick.
-  That pick being the <span class="Townsfolk">Choirboy</span> means that they are poisoned when they awake and can therefore receive arbirtary info, before dying the following night.
+  That pick being the <span class="Townsfolk">Choirboy</span> means that they are poisoned when they awake and can therefore receive arbitrary info, before dying the following night.
         </div>
         </div>
       </div>
@@ -3309,7 +3325,7 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Choirboy</span> is in the game, the <span class="Townsfolk">King</span> is not allowed to be the <span class="Outsider">Drunk</span> or the Marionete,
+        <div class="question">If the <span class="Townsfolk">Choirboy</span> is in the game, the <span class="Townsfolk">King</span> is not allowed to be the <span class="Outsider">Drunk</span> or the <span class="Minion">Marionette</span>,
   but is it possible to have the <span class="Townsfolk">King</span> turned evil by the <span class="Townsfolk">Bounty Hunter</span>?
       </div>
         <div class="answer">
@@ -3319,7 +3335,7 @@
       </div>
       <div class="node">
         <div class="question">In a two Minion game on a script with the <span class="Minion">Marionette</span>, the <span class="Townsfolk">King</span>, and the <span class="Townsfolk">Choirboy</span>, while roles are randomly assigned,
-  the Demon ends up neighboring one minion and the <span class="Townsfolk">King</span>, who must become the <span class="Minion">Marionette</span>, but the <span class="Townsfolk">Choirboy</span> is still in play.
+  the Demon ends up neighbouring one minion and the <span class="Townsfolk">King</span>, who must become the <span class="Minion">Marionette</span>, but the <span class="Townsfolk">Choirboy</span> is still in play.
   An illegal setup!  How can this be avoided?  Remove the <span class="Townsfolk">King</span> from the bag and put it back later as you do in a three Minion game?
       </div>
         <div class="answer">
@@ -3435,7 +3451,7 @@
         <div class="question">What happens if the <span class="Townsfolk">Courtier</span> drunked player changes character?
       </div>
         <div class="answer">
-          <div>They stay <span class="Townsfolk">Courtier</span> drunk as once it has happened, the drunkedness is tied to the player.
+          <div>They stay <span class="Townsfolk">Courtier</span> drunk as once it has happened, the drunkenness is tied to the player.
         </div>
         </div>
       </div>
@@ -3448,10 +3464,11 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Courtier</span> drunks <span class="Demon">Legion</span>, do they drunk all the <span class="Demon">Legion</span> players or does the ST choose only one? 
+        <div class="question">If there are multiple copies of the same character in play (<span class="Demon">Legion</span> / <span class="Townsfolk">Village Idiot</span> / <span class="Demon">Imp</span> / <span class="Demon">Fang Gu</span> / ...) and the <span class="Townsfolk">Courtier</span> chooses that character,
+  are they all drunked?
       </div>
         <div class="answer">
-          <div>Just one. If there are multiple copies of a character in play and the <span class="Townsfolk">Courtier</span> chooses that character, the Storyteller chooses one of those players to make drunk.
+          <div>Just one. The ST chooses one player with that character to become drunk.
         </div>
         </div>
       </div>
@@ -3592,6 +3609,78 @@
         </div>
       </div>
       <div class="node">
+        <div class="question">Can the <span class="Outsider">Damsel</span> player be seen by the <span class="Townsfolk">Balloonist</span> twice, first as an Outsider and then, post-<span class="Townsfolk">Huntsman</span>-transformation, as a Townsfolk?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Courtier</span> drunks the <span class="Outsider">Damsel</span>, what happens when the <span class="Outsider">Damsel</span> is chosen by the <span class="Townsfolk">Huntsman</span>?
+      </div>
+        <div class="answer">
+          <div>The <span class="Outsider">Damsel</span> becomes a Townsfolk and, since they are no longer the <span class="Outsider">Damsel</span>, they are no longer <span class="Townsfolk">Courtier</span> drunked.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">After the <span class="Outsider">Damsel</span> is transformed by the <span class="Townsfolk">Huntsman</span>, what do character checking abilities (<span class="Townsfolk">Dreamer</span>/<span class="Townsfolk">Gambler</span>/<span class="Townsfolk">Ravenkeeper</span>/<span class="Townsfolk">Undertaker</span>/<span class="Traveller">Harlot</span>/...) see?
+      </div>
+        <div class="answer">
+          <div>The see the new character post-transformation, not the <span class="Outsider">Damsel</span>.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">The <span class="Townsfolk">Huntsman</span> transforms the <span class="Outsider">Damsel</span> into a Townsfolk.  The former <span class="Outsider">Damsel</span> is <span class="Outsider">Barber</span> swapped with another player.  Does the other player become the <span class="Outsider">Damsel</span>?
+      </div>
+        <div class="answer">
+          <div>No, they become what the character that the former <span class="Outsider">Damsel</span> became, as the <span class="Outsider">Damsel</span> has changed, not just gained an ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Townsfolk">Huntsman</span>-transformed-<span class="Outsider">Damsel</span> be <span class="Demon">Fang Gu</span> jumped?
+      </div>
+        <div class="answer">
+          <div>No, as they are no longer an Outsider.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Huntsman</span>-transformed-<span class="Outsider">Damsel</span> is executed, does the <span class="Minion">Godfather</span> get a kill that night?
+      </div>
+        <div class="answer">
+          <div>No, as they are no longer an Outsider.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Outsider">Damsel</span> be the <span class="Minion">Marionette</span> if the <span class="Townsfolk">Huntsman</span> is in play?
+      </div>
+        <div class="answer">
+          <div>No, but the <span class="Townsfolk">Huntsman</span> is allowed to be the <span class="Minion">Marionette</span>.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Outsider">Damsel</span> who is hosting the <span class="Demon">Lleech</span> still be transformed by the <span class="Townsfolk">Huntsman</span>?
+      </div>
+        <div class="answer">
+          <div>Yes, and they continued to be poisoned.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does a correctly guessed <span class="Outsider">Damsel</span> change character twice if they have been <span class="Traveller">Barista</span> doubled?
+      </div>
+        <div class="answer">
+          <div>No.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">If the <span class="Townsfolk">Philosopher</span> picks the ability of an out of play character, then the <span class="Outsider">Damsel</span> is turned by the <span class="Townsfolk">Huntsman</span> into that character, what happens?
       </div>
         <div class="answer">
@@ -3717,7 +3806,7 @@
         <div class="question">Can a <span class="Demon">Legion</span> player guess the <span class="Outsider">Damsel</span>?
       </div>
         <div class="answer">
-          <div>Yes, as <span class="Demon">Legion</span> player register as Minions.
+          <div>Yes, as <span class="Demon">Legion</span> players register as Minions.
         </div>
         </div>
       </div>
@@ -3762,10 +3851,10 @@
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Outsider">Damsel</span> is <span class="Outsider">Barber</span> swapped to another player, do the Minions get another <span class="Outsider">Damsel</span> annoucement?
+        <div class="question">If the <span class="Outsider">Damsel</span> is <span class="Outsider">Barber</span> swapped to another player, do the Minions get another <span class="Outsider">Damsel</span> announcement?
       </div>
         <div class="answer">
-          <div>No, it is a once per game annoucement.
+          <div>No, it is a once per game announcement.
         </div>
           <div>
   However, if a player is swapped into having a Minion character and was not one previously, then they are told about the <span class="Outsider">Damsel</span>.
@@ -4174,7 +4263,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Townsfolk">Engineer</span> chooses the <span class="Minion">Marionette</span>, does an existing Minion become one, or does a Demon-neighboring good player become one?
+        <div class="question">If the <span class="Townsfolk">Engineer</span> chooses the <span class="Minion">Marionette</span>, does an existing Minion become one, or does a Demon-neighbouring good player become one?
       </div>
         <div class="answer">
           <div>An existing Minion becomes one. 
@@ -5299,6 +5388,22 @@ s
         </div>
       </div>
       <div class="node">
+        <div class="question">Can <span class="Demon">Legion</span> flip the <span class="Outsider">Goon</span>?
+      </div>
+        <div class="answer">
+          <div>No, as they never choose players with their ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">King</span> learns the <span class="Outsider">Goon</span>, could they trigger the <span class="Outsider">Goon</span>'s ability?
+      </div>
+        <div class="answer">
+          <div>No, as the <span class="Townsfolk">King</span> is not actively choosing the <span class="Outsider">Goon</span> with their ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">If the unpicked <span class="Outsider">Goon</span> is targeted by an evil player but cannot flip,
   because the <span class="Fabled">Spirit of Ivory</span> is in play and there is already one extra evil player,
   do they still drunk the chooser?
@@ -6065,6 +6170,14 @@ s
         </div>
       </div>
       <div class="node">
+        <div class="question">Can the <span class="Townsfolk">Pixie</span> see the <span class="Townsfolk">Huntsman</span>?
+      </div>
+        <div class="answer">
+          <div>Yes.  This would confirm to the <span class="Townsfolk">Pixie</span> that both the <span class="Townsfolk">Huntsman</span> and the <span class="Outsider">Damsel</span> are in play.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">Does the <span class="Townsfolk">Huntsman</span> actually change the outsider count? Or does it turn an already existing outsider into the <span class="Outsider">Damsel</span>?
       </div>
         <div class="answer">
@@ -6123,7 +6236,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">When an <span class="Demon">Imp</span> selfkills, and there are several Minions alive, is there a priority order for who should become the new Demon?
+        <div class="question">When an <span class="Demon">Imp</span> self-kills, and there are several Minions alive, is there a priority order for who should become the new Demon?
       </div>
         <div class="answer">
           <div>The <span class="Minion">Scarlet Woman</span> must become the Demon if their ability is active (alive, not drunk or poisoned, 5+ alive players), as that is the entire point of their ability.
@@ -6132,7 +6245,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">When an <span class="Demon">Imp</span> selfkills turning a Minion into a new <span class="Demon">Imp</span>, are the entire evil team notified about the identity of the new Demon? 
+        <div class="question">When an <span class="Demon">Imp</span> self-kills turning a Minion into a new <span class="Demon">Imp</span>, are the entire evil team notified about the identity of the new Demon? 
       </div>
         <div class="answer">
           <div>No, only the new <span class="Demon">Imp</span>.  The other evils are not notified, but they will know that it happened since their Demon died.
@@ -6140,7 +6253,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">If an <span class="Demon">Imp</span> selfkills do they get to choose which Minion becomes the new <span class="Demon">Imp</span> assuming there is no <span class="Minion">Scarlet Woman</span>?
+        <div class="question">If an <span class="Demon">Imp</span> self-kills do they get to choose which Minion becomes the new <span class="Demon">Imp</span> assuming there is no <span class="Minion">Scarlet Woman</span>?
       </div>
         <div class="answer">
           <div>No, that is the ST's choice.
@@ -6158,7 +6271,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">Can multiple Imps selfkill in one game? / Can the <span class="Demon">Imp</span> change more than once in the same game?
+        <div class="question">Can multiple Imps self-kill in one game? / Can the <span class="Demon">Imp</span> change more than once in the same game?
       </div>
         <div class="answer">
           <div>Yes, it is part of the <span class="Demon">Imp</span>'s ability and is not a once per game action, unlike with the <span class="Demon">Fang Gu</span> jump.
@@ -6464,6 +6577,22 @@ s
         </div>
       </div>
       <div class="node">
+        <div class="question">Does the <span class="Demon">Zombuul</span> who is registering as dead count towards the <span class="Townsfolk">King</span>'s "dead outnumber the living" requirement?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does the Demon learn of the <span class="Traveller">Apprentice</span> <span class="Townsfolk">King</span>?
+      </div>
+        <div class="answer">
+          <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
         <div class="question">If the <span class="Townsfolk">King</span> is resurrected (<span class="Townsfolk">Professor</span> / <span class="Demon">Shabaloth</span> / <span class="Traveller">Bone Collector</span>) is the Demon told again who the <span class="Townsfolk">King</span> is?
       </div>
         <div class="answer">
@@ -6537,7 +6666,71 @@ s
         <div class="question">Can the <span class="Townsfolk">Knight</span> see <span class="Demon">Legion</span>?
       </div>
         <div class="answer">
-          <div>No, they must see two non-<span class="Demon">Legion</span> players as each <span class="Demon">Legion</span> player is a Demon and cannot be seen by the <span class="Townsfolk">Knight</span>.
+          <div>No, they must see two non-<span class="Demon">Legion</span> players as each <span class="Demon">Legion</span> player is a Demon and cannot be seen by the <span class="Townsfolk">Knight</span> even when registering as a Minion.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Townsfolk">Knight</span> see the ST if <span class="Townsfolk">Atheist</span> is on the script?
+      </div>
+        <div class="answer">
+          <div>No, the ST is not a player.  However, if the <span class="Townsfolk">Atheist</span> is in play then the ST breaking the rules can be shown.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Townsfolk">Knight</span> see the <span class="Outsider">Recluse</span>?
+      </div>
+        <div class="answer">
+          <div>ST choice; it depends on how the <span class="Outsider">Recluse</span> registers.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What does the <span class="Townsfolk">Balloonist</span> see in a <span class="Demon">Legion</span> game?
+      </div>
+        <div class="answer">
+          <div>A Townsfolk, an Outsider and two Legions as each <span class="Demon">Legion</span> also registers as a Minion.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does an evil Townsfolk (turned by <span class="Townsfolk">Bounty Hunter</span>  / flipped <span class="Townsfolk">Cult Leader</span>) vote count in a <span class="Demon">Legion</span> game?
+      </div>
+        <div class="answer">
+          <div>No.  Votes still need a good player to pass.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does <span class="Demon">Legion</span> register to the <span class="Townsfolk">Chambermaid</span>?
+      </div>
+        <div class="answer">
+          <div>No, <span class="Demon">Legion</span> players never wake from their own ability.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What do character checkers (<span class="Townsfolk">Dreamer</span>/<span class="Townsfolk">Juggler</span>/<span class="Townsfolk">Gambler</span>/<span class="Townsfolk">Ravenkeeper</span>/<span class="Townsfolk">Undertaker</span>) see when they pick a <span class="Demon">Legion</span> player?
+      </div>
+        <div class="answer">
+          <div>They can see a Minion since <span class="Demon">Legion</span> registers as a Minion in the same way that the <span class="Outsider">Recluse</span> does.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">If the <span class="Townsfolk">Exorcist</span> selects a <span class="Demon">Legion</span>, is their no death to <span class="Demon">Legion</span> tonight?
+      </div>
+        <div class="answer">
+          <div>No.  Death is not prevented since <span class="Demon">Legion</span> does not wake.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Do <span class="Demon">Legion</span> learn the <span class="Townsfolk">King</span>?
+      </div>
+        <div class="answer">
+          <div>The ST can show as many <span class="Demon">Legion</span> as she wishes that the <span class="Townsfolk">King</span> is in play.  At least one <span class="Demon">Legion</span> player is recommended.
         </div>
         </div>
       </div>
@@ -6590,12 +6783,12 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">All alive <span class="Demon">Legion</span> can potential kill one person, right?
+        <div class="question">All alive <span class="Demon">Legion</span> can potentially kill one player, right?
       </div>
         <div class="answer">
           <div>Yes, though <span class="Demon">Legion</span> should usually never kill more than two, and if they do multikill it should be multiple Legions.
-  Multikill is usually done to support a world pushed by the Legions so it balances out
-  for example, if a <span class="Demon">Legion</span> is bluffing <span class="Townsfolk">Gossip</span> and asks the ST to kill an extra player tonight, the ST will typically comply and kill one more legion.
+  Multikill is usually done to support a world pushed by the Legions so it balances out.
+  For example, if a <span class="Demon">Legion</span> is bluffing <span class="Townsfolk">Gossip</span> and asks the ST to kill an extra player tonight, the ST will typically comply and kill one more <span class="Demon">Legion</span>.
         </div>
         </div>
       </div>
@@ -6611,7 +6804,7 @@ s
         <div class="question">Can the <span class="Townsfolk">Clockmaker</span> get a 0 in a <span class="Demon">Legion</span> game?
       </div>
         <div class="answer">
-          <div>No, they should get the number between two closest <span class="Demon">Legion</span>, which is usually a 1.
+          <div>No, they should get the number between the two closest <span class="Demon">Legion</span>, which is usually a 1.
         </div>
         </div>
       </div>
@@ -6629,8 +6822,29 @@ s
         <div class="answer">
           <div>No, the <span class="Townsfolk">Investigator</span> can never see <span class="Demon">Legion</span>; <span class="Demon">Legion</span> registers as a Minion, but the <span class="Demon">Legion</span> character is not a Minion character.
         </div>
-          <div>
-  In a <span class="Demon">Legion</span> game, the <span class="Townsfolk">Investigator</span> would see a <span class="Demon">Legion</span> as any Minion.
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">What can the <span class="Townsfolk">Investigator</span> see in a <span class="Demon">Legion</span> game?
+      </div>
+        <div class="answer">
+          <div>They can be shown a <span class="Demon">Legion</span> and any other player and any Minion token.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Townsfolk">Fortune Teller</span> receive a yes on any <span class="Demon">Legion</span> player?
+      </div>
+        <div class="answer">
+          <div>Yes, plus they still have a red herring.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Does any <span class="Demon">Legion</span> player voting in a nomination register to the Flower Girl?
+      </div>
+        <div class="answer">
+          <div>Yes, regardless of whether the vote tally ends up being zero.
         </div>
         </div>
       </div>
@@ -6640,7 +6854,7 @@ s
         <div class="answer">
           <div>No.
   There is no active ability letting players know the <span class="Demon">Leviathan</span>’s state,
-  so there is no mechanical reason to tell the town the <span class="Demon">Leviathan</span> is not in play. 
+  so there is no mechanical reason to tell the town the <span class="Demon">Leviathan</span> is out of play. 
   Some STs will announce the <span class="Demon">Leviathan</span> is in play every day in which case they would have to stop saying that, but it is not required.
         </div>
           <div>
@@ -6650,7 +6864,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">Can the Leviathen kill at night?
+        <div class="question">Can the <span class="Demon">Leviathan</span> kill at night?
       </div>
         <div class="answer">
           <div>No, that is not part of their ability.
@@ -7464,7 +7678,9 @@ s
    fake <span class="Minion">Marionette</span>,
 <br/></li><li>
    fake <span class="Townsfolk">Exorcist</span>, ...
-<br/></li></ul></div>
+<br/></li></ul>
+  The ST is also free to give the <span class="Outsider">Lunatic</span> correct info when these characters are really in play.
+        </div>
         </div>
       </div>
       <div class="node">
@@ -7934,7 +8150,7 @@ s
       </div>
       <div class="node">
         <div class="question">In a 13+ player game, there are three Minions. If one Minion is going to be the <span class="Minion">Marionette</span>, only two Minion tokens are put in the bag.
-  If once the roles are given out both Minion tokens are drawn by the two players neighboring the Demon, 
+  If once the roles are given out both Minion tokens are drawn by the two players neighbouring the Demon, 
   what can the ST do?
       </div>
         <div class="answer">
@@ -7986,7 +8202,7 @@ s
       </div>
       <div class="node">
         <div class="question">If the Demon changes player
-  (<span class="Demon">Fang Gu</span> jump / new Lil' Monsta babysitter / <span class="Demon">Imp</span> selfkills / <span class="Townsfolk">Snake Charmer</span> correctly guesses / <span class="Minion">Pit-Hag</span> creates a new Demon / <span class="Outsider">Barber</span> swap / <span class="Outsider">Hatter</span> / <span class="Minion">Scarlet Woman</span> / <span class="Townsfolk">Engineer</span> / ...),
+  (<span class="Demon">Fang Gu</span> jump / new Lil' Monsta babysitter / <span class="Demon">Imp</span> self-kills / <span class="Townsfolk">Snake Charmer</span> correctly guesses / <span class="Minion">Pit-Hag</span> creates a new Demon / <span class="Outsider">Barber</span> swap / <span class="Outsider">Hatter</span> / <span class="Minion">Scarlet Woman</span> / <span class="Townsfolk">Engineer</span> / ...),
   do they learn the <span class="Minion">Marionette</span>, the <span class="Outsider">Lunatic</span> and the <span class="Townsfolk">King</span>?
       </div>
         <div class="answer">
@@ -8647,7 +8863,7 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">Is a <span class="Townsfolk">Monk</span> protected Minion blocked from becoming the <span class="Demon">Imp</span> when the <span class="Demon">Imp</span> self kills?
+        <div class="question">Is a <span class="Townsfolk">Monk</span> protected Minion blocked from becoming the <span class="Demon">Imp</span> when the <span class="Demon">Imp</span> self-kills?
       </div>
         <div class="answer">
           <div>No, becoming the Demon is not consider a harmful effect.
@@ -9064,10 +9280,10 @@ s
         </div>
       </div>
       <div class="node">
-        <div class="question">If the <span class="Minion">Pit-Hag</span> creates a Demon but then loses their ability can an arbirtary deaths night still occur?
+        <div class="question">If the <span class="Minion">Pit-Hag</span> creates a Demon but then loses their ability can an arbitrary deaths night still occur?
       </div>
         <div class="answer">
-          <div>Yes.  As soon as the <span class="Minion">Pit-Hag</span> creates a Demon arbirtary deaths are global and cannot be removed.
+          <div>Yes.  As soon as the <span class="Minion">Pit-Hag</span> creates a Demon arbitrary deaths are global and cannot be removed.
         </div>
           <div>
   This covers:
@@ -9941,7 +10157,7 @@ s
       <div class="node">
         <div class="question">The <span class="Townsfolk">Preacher</span> and <span class="Demon">Vigormortis</span> interactions:
 <ol><li>
-     The <span class="Townsfolk">Preacher</span> chooses a Vigor killed Minion: the dead Minion loses their ability, the neighboring Townsfolk is still poisoned.
+     The <span class="Townsfolk">Preacher</span> chooses a Vigor killed Minion: the dead Minion loses their ability, the neighbouring Townsfolk is still poisoned.
 <br/></li><li>
      The <span class="Townsfolk">Preacher</span> chooses a Minion who is then Vigor killed: the Minion is dead, poisons their neighbor, no ability.
 <br/></li><li>
@@ -10450,6 +10666,14 @@ s
       </div>
         <div class="answer">
           <div>Yes.
+        </div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="question">Can the <span class="Outsider">Recluse</span> registering as the Demon learn the <span class="Townsfolk">King</span>?
+      </div>
+        <div class="answer">
+          <div>Yes, but don't.
         </div>
         </div>
       </div>
@@ -11702,7 +11926,7 @@ s
       </div>
       <div class="node">
         <div class="question">What happens if a <span class="Demon">Vigormortis</span>-poisoned Townsfolk becomes a different character type (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Barber</span>) or 
-  a neighboring player being skipped by the poison becomes a Townsfolk?
+  a neighbouring player being skipped by the poison becomes a Townsfolk?
       </div>
         <div class="answer">
           <div>The target is no longer valid, so the poison must move to a new Townsfolk neighbour of the Vigor-killed Minion.
@@ -11805,7 +12029,7 @@ s
   The <span class="Minion">Marionette</span> VI is then run like any other <span class="Minion">Marionette</span>.
         </div>
           <div>
-  In order to guarantee the Marionete <span class="Townsfolk">Village Idiot</span>, an alternative setup of some sort is needed,
+  In order to guarantee the <span class="Minion">Marionette</span> <span class="Townsfolk">Village Idiot</span>, an alternative setup of some sort is needed,
   such as substituting the Demon token in the bag with an extra Townsfolk, 
   then on N1 picking a Townsfolk neighbour of a VI to become the Demon.
         </div>
@@ -11914,8 +12138,8 @@ s
       </div>
         <div class="answer">
           <div>Yes, and it would be announced the first time they are sober/healthy, same as the <span class="Townsfolk">King</span>.
-  The how-to specifies the <span class="Minion">Vizier</span> annoucement is during the day,
-  so RAW it is possible a <span class="Minion">Poisoner</span> or other sources of droison could keep a lock on the annoucement for a few days - similar to <span class="Demon">Leviathan</span>
+  The how-to specifies the <span class="Minion">Vizier</span> announcement is during the day,
+  so RAW it is possible a <span class="Minion">Poisoner</span> or other sources of droison could keep a lock on the announcement for a few days - similar to <span class="Demon">Leviathan</span>
   but that is pretty risky if the Viz gets executed while evil is strategically holding off their announcement.
         </div>
         </div>
@@ -12661,7 +12885,7 @@ s
       </div>
       <div class="node">
         <div class="question">The <span class="Minion">Pit-Hag</span> turns another Minion into the <span class="Demon">Fang Gu</span>.  The new <span class="Demon">Fang Gu</span> targets an Outsider.
-  As deaths are arbirtary tonight, is the jump blocked, or is it legal to kill off the old Demon, and allow the jump to happen, killing off the first <span class="Demon">Fang Gu</span>
+  As deaths are arbitrary tonight, is the jump blocked, or is it legal to kill off the old Demon, and allow the jump to happen, killing off the first <span class="Demon">Fang Gu</span>
   and the targeted Outsider becoming the new evil <span class="Demon">Fang Gu</span>?
       </div>
         <div class="answer">
@@ -12885,7 +13109,7 @@ s
           <div>
   Examples:
 <ul><li>
-   If the <span class="Demon">Imp</span> self kills and the <span class="Minion">Poisoner</span> becomes the new <span class="Demon">Imp</span>, then the <span class="Minion">Poisoner</span> is no longer in play and is therefore not poisoning anyone.
+   If the <span class="Demon">Imp</span> self-kills and the <span class="Minion">Poisoner</span> becomes the new <span class="Demon">Imp</span>, then the <span class="Minion">Poisoner</span> is no longer in play and is therefore not poisoning anyone.
 <br/></li><li>
    If the <span class="Minion">Pit-Hag</span> turns the <span class="Townsfolk">Philosopher</span> drunking the <span class="Townsfolk">Savant</span> into the <span class="Outsider">Mutant</span>, then the Philo is no longer in play and is therefore not drunking the <span class="Townsfolk">Savant</span>.
 <br/></li><li>
@@ -13739,13 +13963,7 @@ s
         </div>
       </div>
     </div>
-    <script>
-      // debugging
-      function displayWord(s) {
-        centeredDiv.textContent = s;
-        centeredDiv.style.display = "block";
-      }
-
+    <script>// constants and variables
       const keywordsIndex = document.getElementById("keywordsIndex");
       const submenu = document.getElementById("submenu");
       const centeredDiv = document.getElementById("centeredDiv");
@@ -13758,72 +13976,7 @@ s
       let currentSubMenuLetter = null;
 
       const maximumKeywordChips = 3;
-
-      // Save the initial state of each node
-      nodes.forEach(node => {
-        const questionNode = node.querySelector('.question');
-        const answerNode = node.querySelector('.answer');
-        questionNode.dataset.savecontent = questionNode.innerHTML;
-        answerNode.dataset.savecontent = answerNode.innerHTML;
-      });
-
-      // Close any opened submenu when clicking outside of it
-      document.addEventListener("click", function (event) {
-        if (!submenu.contains(event.target) && !keywordsIndex.contains(event.target)) {
-          closeSubMenu();
-        }
-      });
-
-      // Trigger filtering on input
-      keywordInput.addEventListener('input', function() {
-        var filterTerms0 = this.value.split(',').filter(Boolean);
-        filterTerms0 = filterTerms0.filter(entry => entry.trim() != ''); // remove empty strings
-        const filterTerms = filterTerms0.map(str => str.trim());
-        nodes.forEach(node => {
-          const questionNode = node.querySelector('.question');
-          const answerNode = node.querySelector('.answer');
-          const question = questionNode.dataset.savecontent;
-          const answer = answerNode.dataset.savecontent;
-
-          // Reset previous highlights
-          questionNode.innerHTML = question;
-          answerNode.innerHTML = answer;
-
-          // Check if all filter terms match either the question or answer content
-          const matchesAllTerms = filterTerms.every(term => {
-            var termRegex =   new RegExp(`(?![^<]*>)(${term})`, 'gi'); // match term, excluding within tags, case insensitive, substrings allowed
-            if (term[0] === term[0].toUpperCase()) {
-              termRegex = new RegExp(`(?![^<]*>)(${term})(?![a-zA-Z])`, 'g'); // match term, excluding within tags, not a substring, case sensitive
-            }
-            return question.match(termRegex) || answer.match(termRegex);
-          });
-
-          // Highlight matching filter terms within the node
-          if (matchesAllTerms) {
-            filterTerms.forEach(term => {
-              var termRegex =   new RegExp(`(?![^<]*>)(${term})`, 'gi'); // match term, excluding within tags, case insensitive, substrings allowed
-              if (startsWithCapital(term)) {
-                termRegex = new RegExp(`(?![^<]*>)(${term})(?![a-zA-Z])`, 'g'); // match term, excluding within tags, not a substring, case sensitive
-              }
-              questionNode.innerHTML = questionNode.innerHTML.replace(termRegex, '<span class="highlight">$1</span>'); // Highlight in question
-              answerNode.innerHTML = answerNode.innerHTML.replace(termRegex, '<span class="highlight">$1</span>'); // Highlight in answer
-            });
-            node.classList.remove('hide');
-          } else {
-            node.classList.add('hide');
-          }
-        });
-        updateURL();
-      });
-
-      function startsWithCapital(term) {
-        term[0] === term[0].toUpperCase()
-      }
-
-      function triggerFilteringUpdate() {
-        var inputEvent = new Event('input');
-        keywordInput.dispatchEvent(inputEvent);
-      }
+      const crossMarkEmoji = "❌";
 
       var keywords = {
         "S": [
@@ -14054,10 +14207,64 @@ s
           "Zombuul"
         ]
       };
+      
+    </script>
+    <script> // functions
+      // debugging
+      function displayWord(s) {
+        centeredDiv.textContent = s;
+        centeredDiv.style.display = "block";
+      }
 
-      var keywordArray = Object.values(keywords).flat();
+      function update() {
+        updateFiltering();
+        updateURL();
+        displaySelectedKeywords(); 
+      }
 
-      createIndexMenu();
+      function updateFiltering() {
+        var filterTerms0 = keywordInput.value.split(',').filter(Boolean);
+        filterTerms0 = filterTerms0.filter(entry => entry.trim() != ''); // remove empty strings
+        const filterTerms = filterTerms0.map(str => str.trim());
+        nodes.forEach(node => {
+          const questionNode = node.querySelector('.question');
+          const answerNode = node.querySelector('.answer');
+          const question = questionNode.dataset.savecontent;
+          const answer = answerNode.dataset.savecontent;
+
+          // Reset previous highlights
+          questionNode.innerHTML = question;
+          answerNode.innerHTML = answer;
+
+          // Check if all filter terms match either the question or answer content
+          const matchesAllTerms = filterTerms.every(term => {
+            var termRegex =   new RegExp(`(?![^<]*>)(${term})`, 'gi'); // match term, excluding within tags, case insensitive, substrings allowed
+            if (term[0] === term[0].toUpperCase()) {
+              termRegex = new RegExp(`(?![^<]*>)(${term})(?![a-zA-Z])`, 'g'); // match term, excluding within tags, not a substring, case sensitive
+            }
+            return question.match(termRegex) || answer.match(termRegex);
+          });
+
+          // Highlight matching filter terms within the node
+          if (matchesAllTerms) {
+            filterTerms.forEach(term => {
+              var termRegex =   new RegExp(`(?![^<]*>)(${term})`, 'gi'); // match term, excluding within tags, case insensitive, substrings allowed
+              if (startsWithCapital(term)) {
+                termRegex = new RegExp(`(?![^<]*>)(${term})(?![a-zA-Z])`, 'g'); // match term, excluding within tags, not a substring, case sensitive
+              }
+              questionNode.innerHTML = questionNode.innerHTML.replace(termRegex, '<span class="highlight">$1</span>'); // Highlight in question
+              answerNode.innerHTML = answerNode.innerHTML.replace(termRegex, '<span class="highlight">$1</span>'); // Highlight in answer
+            });
+            node.classList.remove('hide');
+          } else {
+            node.classList.add('hide');
+          }
+        });
+      }
+
+      function startsWithCapital(term) {
+        term[0] === term[0].toUpperCase()
+      }
 
       function spinMagnifyingGlass() {
         document.querySelector('.magnifying-glass').classList.toggle('spin');
@@ -14135,7 +14342,7 @@ s
           wordDiv.innerHTML = word;
           wordDiv.addEventListener("click", function(){
             closeSubMenu();
-            updateInput(wordDiv.textContent);
+            addToFilter(wordDiv.textContent);
           }); 
           submenu.appendChild(wordDiv);
         }
@@ -14148,19 +14355,23 @@ s
         return arr;
       }
 
-      function updateInput(selectedOption) {
-        if (keywordInput.value.includes(selectedOption)) {
+      function addToFilter(term) {
+        if (keywordInput.value.includes(term)) {
           return;
         }
         terms = getSanitisedTerms();
-        terms.push(selectedOption);
+        terms.push(term);
         keywordInput.value =  terms.join(", ");
+        update();
+      }
 
-        triggerFilteringUpdate();
+      function removeFromFilter(term) {
+        keywordInput.value = getSanitisedTerms().filter(a => a.trim().toUpperCase() !== term.toUpperCase()).join(", ");
+        update();
       }
 
       function updateURL() {
-        var s = keywordInput.value.trim();
+        var s = getSanitisedTerms().join(",");
 
         if (s !== '') {
           var newURL = window.location.href.split('?')[0] + '?keywords=' + encodeURIComponent(s);
@@ -14180,15 +14391,11 @@ s
         // Add a remove button with a cross mark emoji
         var removeButton = document.createElement("span");
         removeButton.className = "removeButton";
-        removeButton.innerHTML = "&#x274C;"; // Cross mark emoji
+        removeButton.innerHTML = crossMarkEmoji;
         keywordChip.appendChild(removeButton);
 
         keywordChip.onclick = function() {
-          keywordInput.value = getSanitisedTerms().filter(a => a.trim().toUpperCase() !== keyword.toUpperCase()).join(", ");
-
-          triggerFilteringUpdate();
-
-          displaySelectedKeywords();
+          removeFromFilter(keyword);
         };
         return keywordChip;
       }
@@ -14196,42 +14403,19 @@ s
       function displaySelectedKeywords() {
         selectedKeywordsContainer.innerHTML = '';
 
-        // Store what is currently in the input field
-        var s = keywordInput.value;
-
         let shouldSkip = false;
 
-        // Process the keywords first
-        keywordArray.forEach(function(keyword) {
+        getSanitisedTerms().forEach(function(keyword) {
           if (shouldSkip) {
             return;
           }
-          // Check for a match
-          var regex = new RegExp("\\b" + keyword + "\\b", "g");
-          if (s.match(regex)) {
-            // Remove the matched keyword from the stored string
-            s = s.replace(regex, '');
 
-            var keywordChip = createKeywordChip(keyword);
-            selectedKeywordsContainer.appendChild(keywordChip);
-            shouldSkip = selectedKeywordsContainer.children.length >= maximumKeywordChips;
-          }
+          var keywordChip = createKeywordChip(keyword);
+          selectedKeywordsContainer.appendChild(keywordChip);
+          shouldSkip = selectedKeywordsContainer.children.length >= maximumKeywordChips;
         });
 
-        // Process the remaining keywords in the stored string
-        var remainingKeywords = s.split(',');
-        remainingKeywords.forEach(function(keyword) {
-          if (shouldSkip) {
-            return;
-          }
-          if (keyword.trim() !== '') {
-            var keywordChip = createKeywordChip(keyword);
-            selectedKeywordsContainer.appendChild(keywordChip);
-            shouldSkip = selectedKeywordsContainer.children.length >= maximumKeywordChips;
-          }
-        });
-
-        // Only show the selectedKeywords div if there are selected keywords
+        // Hide if nothing to show
         if (selectedKeywordsContainer.children.length > 0) {
           selectedKeywordsContainer.style.display = 'block';
         } else {
@@ -14239,11 +14423,6 @@ s
         }
       }
 
-      function correctPositioning() {
-        var w = keywordsIndex.offsetWidth;
-        selectedKeywords.style.right = w + 'px';
-      }
-      correctPositioning();
 
       function toggleInputContainer() {
         const currentLeft = parseInt(getComputedStyle(inputContainer).left);
@@ -14264,9 +14443,31 @@ s
         inputContainer.style.left = `-${inputWidth}px`;
       }
 
-      // In case of page reload delete any existing content
-      keywordInput.value = "";
+      function correctPositioning() {
+        var w = keywordsIndex.offsetWidth;
+        selectedKeywords.style.right = w + 'px';
+      }
 
+      correctPositioning();
+      createIndexMenu();
+
+      // Save the initial state of each node
+      nodes.forEach(node => {
+        const questionNode = node.querySelector('.question');
+        const answerNode = node.querySelector('.answer');
+        questionNode.dataset.savecontent = questionNode.innerHTML;
+        answerNode.dataset.savecontent = answerNode.innerHTML;
+      });
+
+      // Close any opened submenu when clicking outside of it
+      document.addEventListener("click", function (event) {
+        if (!submenu.contains(event.target) && !keywordsIndex.contains(event.target)) {
+          closeSubMenu();
+        }
+      });
+      
+    </script>
+    <script>  // handle page reloading
       function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[[]]/g, "\\$&");
@@ -14277,14 +14478,15 @@ s
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
 
+      keywordInput.value = "";
       var parameterisedKeywords = getParameterByName('keywords');
       if (parameterisedKeywords === null || parameterisedKeywords === '') {
         // Fine .. don't set keywords in the address bar!
       } else {
-        updateInput(parameterisedKeywords);
-      }</script>
-    <script>
-      // How about a quick way to jump to the input field?
+        addToFilter(parameterisedKeywords);
+      }
+    </script>
+    <script>       // How about a quick way to jump to the input field?
       function handleShortcut(event) {
         if (event.ctrlKey && event.altKey && event.shiftKey && event.key.toLowerCase() === 'f') {
           showInputContainer();

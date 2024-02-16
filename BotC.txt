@@ -1,13 +1,12 @@
 
-
 =========
 =Acrobat=
 =========
-Q Can the droisoned Acrobat die with one or more droisoned neighbours?
+Q Can the drunk or poisoned Acrobat die with one or more drunk or poisoned neighbours?
 A No.  The Acrobat dies only at its turn in the night order. If they are drunk/poisoned at that time, they would not be able to die to their own ability.
 
 Q Is the Marionette Townsfolk considered poisoned for the sake of the Acrobat?
-A No, they are sober and healthy. Also, they are an evil Minion, and the Acrobat only cares about neighboring living good players.
+A No, they are sober and healthy. Also, they are an evil Minion, and the Acrobat only cares about neighbouring living good players.
 
 Q If the Acrobat is sat next to a Minion what happens?
 A The Acrobat's ability skips over evil and dead players,
@@ -15,7 +14,7 @@ A The Acrobat's ability skips over evil and dead players,
 
 Q If the Acrobat has a drunk or poisoned neighbour N1 and then is between two sober people N2, do they still die?
   (for instance, they neighbour a drunk Sailor the first night who becomes sober the second)
-A The Acrobat dies at their turn in the night order only, so if by then they are between two sober amd healthy players, they do not die.
+A The Acrobat dies at their turn in the night order only, so if by then they are between two sober and healthy players, they do not die.
 
 Q Why does the Acrobat, unlike characters with other triggered abilities
   (Choirboy / Farmer / Grandmother / Poppy Grower / Ravenkeeper / Sage / Acrobat / Barber / Hatter / Plague Doctor / Sweetheart / Tinker / Scarlet Woman / ...),
@@ -30,18 +29,17 @@ A Because:
   * the executed Barber or Hatter
   * the Scarlet Woman, who although would have immediately become the Demon, being formally confirmed as such
 
-
 ===========
 =Alchemist=
 ===========
 Q What happens when the Alchemist is drunk or poisoned on their first night? / How does Philosopher picking Alchemist N1 affect the Alchemist?
 A Their ability is something the Alchemist starts knowing
-  and just as with any start knowing character who is drunked or poisoned
+  and just as with any start knowing character who is drunk or poisoned
   they can get wrong info on their first night
   that is not corrected if they become sober / healthy.
 
   On N1 the Alchemist is assigned an out of play Minion ability.
-  If they are N1 droisoned they are told that they have another ability, typically one that is in play,
+  If they are N1 drunk/poisoned they are told that they have another ability, typically one that is in play,
   and the ST will treat them as having that ability.
   When the Alchemist becomes sober and healthy, they do not change abilities, their actual ability that they had from setup now functions correctly,
   and the ST treats them as having that ability.
@@ -83,7 +81,7 @@ A Yes.
   Technically the ability requires claiming to be the Goblin in order to win when executed,
   but it would be harsh to not treat both as valid claims.
 
-Q How does the Alchemist who gains the Marionete ability work? / How does the Marionette who thinks that they are the Alchemist work?
+Q How does the Alchemist who gains the Marionette ability work? / How does the Marionette who thinks that they are the Alchemist work?
 A These pairings should be avoided as it is unfun and uninteresting.
 
   In both cases they are effectively the poisoned/drunk Alchemist and are told the wrong ability that has no effect,
@@ -99,10 +97,10 @@ A The ability still works as it normally does - the first good player to say the
   or they could not say it and not lead anyone else to say it
   and just play for the good team with the knowledge that there is no extra evil player in the game.
 
-Q The Alchemist has the Baron ability, but on the second night, they get drunked / poisoned.
+Q The Alchemist has the Baron ability, but on the second night, they are drunk / poisoned.
   Can they be told that the Baron has come into play, they now have the Poisoner ability, and for them to choose a player?
   Can they continue to be asked to choose players when made healthy?
-A While droisoned, they can be told anything. Once they sober up, they must act as their actual ability does.
+A While drunk or poisoned, they can be told anything. Once they sober up, they must act as their actual ability does.
 
 Q Does the Drunk who thinks that they are the Alchemist Baron add Outsiders?
 A No.
@@ -168,12 +166,12 @@ A That is a reasonable solution.
 Q Can the Alchemist Scarlet Woman become the Demon?
 A Yes.
 
-Q If the Imp self kills, does the Alchemist Scarlet Woman become the Imp?
+Q If the Imp self-kills, does the Alchemist Scarlet Woman become the Imp?
 A Yes. But, as the Alchemist is not a Minion, a living Minion also becomes the Imp.
 
 ---three questions in one
 Q The Alchemist Goblin is nominated, claims Goblin, and is not put on the block.  She then nominates the Virgin and is immediately executed.
-  Does that end the game and give a win to the goood team?
+  Does that end the game and give a win to the good team?
   What about a good Goblin nominating the Virgin? What about an Alchemist Goblin breaking Cere madness?
 A The Goblin's ability reads "If you publicly claim to be the Goblin when nominated and are executed that day, your team wins."
   So she does not have to be executed because of her nomination, but if she is executed the same day, that is a win for the good team.
@@ -211,7 +209,7 @@ A Yes, as the Al-Had's ability has malfunctioned due to another character's abil
   It does not, however, register for the Fool if they end up dying twice to the Al-Hadikhia in the same night as the Fool ability has worked as intended.
   So the Fool dying twice would give a 1 to the Mathematician for the Al-Hadikhia ability but not the Fool ability.
 
-Q How does the Al-Hadikhia targetting the Mayor work?
+Q How does the Al-Hadikhia targeting the Mayor work?
 A The Mayor can bounce an Al-Hadikhia kill from themselves to another player if they choose to die.
   If all three picks are then still alive so all three die, the Mayor can again bounce the kill.
 
@@ -289,8 +287,8 @@ A The Gambler never knows whether they have died to their own ability.
   then be chosen by the Al-Hadikhia and choose live
   and therefore be resurrected and would not know whether they gambled correctly or not as the net effect is the same.
 
-Q If the Exorcist picks the Al-Hadikhia, then there are no annoucements that night, correct?
-A Yes.  The Al-Hadikhia does not get to pick and there are no annoucements.
+Q If the Exorcist picks the Al-Hadikhia, then there are no announcements that night, correct?
+A Yes.  The Al-Hadikhia does not get to pick and there are no announcements.
   This would look no different to the Al-Hadikhia being drunked or poisoned.
 
 Q How does the Barista doubled Al-Hadikhia work?
@@ -301,8 +299,8 @@ A The entirety of the choosing and killing process happens twice:
 Q Does the Barista doubled target of the Al-Hadikhia get to choose to live or die twice?
 A No, it is only that player's ability that is doubled, not the Al-Hadikhia’s.
 
-Q If the Pit-Hag turns the Demon into the Al-Hadikhia, deaths are arbirtary, but should the ST wake the Al-Hadikhia and her targets?
-A Deaths are arbirtary until the end of the night giving the ST a lot of freedom since Demons wake later than the Pit-Hag,
+Q If the Pit-Hag turns the Demon into the Al-Hadikhia, deaths are arbitrary, but should the ST wake the Al-Hadikhia and her targets?
+A Deaths are arbitrary until the end of the night giving the ST a lot of freedom since Demons wake later than the Pit-Hag,
   but if the Al-Hadikhia is alive, sober and healthy
   then the waking up and announcing stuff is not optional: it must happen.
 
@@ -310,7 +308,7 @@ A Deaths are arbirtary until the end of the night giving the ST a lot of freedom
   so the ST might choose not to interfere with anything and ignore the option for arbitrary deaths.
 
 Q Are the drunk / poisoned Al-Hadikhia's picks still woken?
-A No, they are drunk / poisoned so they cannot affect other players: there is no annoucement and no waking of their targets.
+A No, they are drunk / poisoned so they cannot affect other players: there is no announcement and no waking of their targets.
   The Al-Hadikhia will then realise that they were drunk / poisoned or think that they might be the Lunatic.
 
 Q If one of the Al-Hadikhia's targets is the unpicked Goon, what happens?
@@ -359,7 +357,7 @@ A The Al-Had visits three players in an order over the night phase, offering the
   So in this example if the Innkeeper was picked first, all three would die.
   If the Innkeeper was not the first choice, then the protected player(s) chosen beforehand would stay alive.
 
-Q For Al-Hadikhia, do all deaths happen simultaneously (when all choose live) or do they happen in the order chosen?
+Q For the Al-Hadikhia, do all deaths happen simultaneously (when all choose live) or do they happen in the order chosen?
 A In the order chosen, like any multi-kill Demon.
   If a player chooses die they die immediately upon choosing so. If all players live, they each die in the order chosen. 
 
@@ -400,7 +398,7 @@ A Evil wins in this scenario:
   Evil wins when there are two players alive, and unless an ability says otherwise (such as the Mastermind or the Evil Twin),
   the game immediately ends and abilities do not finish resolving first.
 
-Q Does the Monk stop a player from being chosen by the Al-Hakidia?
+Q Does the Monk stop a player from being chosen by the Al-Hadikhia?
 A No, they just do not die no matter what they choose.
   Note that if they choose die, and the other two choose live, the protected player does not die and causes everyone to die,
   of course, they are still protected, so the other two die.
@@ -418,14 +416,14 @@ A Yes, then the ex-SW would become the SW again (hence the Al-Had and SW jinx to
 
 Q What is the Al-Hadikhia jinx with the Mastermind?
 A They follow the hate jinx rule: only one jinxed character can be in play.
-  Additionally evil players start knowing which player and character it is.
+  Additionally, evil players start knowing which player and character it is.
 
-  They are hate jinxed because after a night of no annoucements, 
+  They are hate jinxed because after a night of no announcements, 
   everyone knows that the Demon has died,
   that it must be a Mastermind day,
   rendering the MM useless.
 
-  They are hate jinxed because killing the Al-Had means no more night annoucements,
+  They are hate jinxed because killing the Al-Had means no more night announcements,
   everyone realising the Demon is dead and that it is a Mastermind day, 
   making the Mastermind mechanically useless.
 
@@ -437,8 +435,13 @@ A They follow the hate jinx rule: only one jinxed character can be in play.
 =not sure why it automatically tells evil players but that's the idea
 
 Q Can a multi-kill per night demon attack the same player twice? e.g. the Shabaloth tries to eat the Fool twice with both kills, 
- or the Al-Hadikhia chooses the same player three time, thus ensuring they die ?
+ or the Al-Hadikhia chooses the same player three time, thus ensuring they die?
 A No, it must be different players.
+
+
+
+
+
 
 
 
@@ -1471,7 +1474,7 @@ A No, they correctly learn that the Spy wakes and the Recluse does not.
   * The Recluse who misregisters as the Demon does not actually wake up to kill and does not incorrectly ping the Chambermaid.
 
 Q Does the Scarlet Woman only count for waking for the Chambermaid's ability when they become the Demon?
-A Yes. But the ST might consider their waking up when the Imp selfkills is due to the Imp's ability, not the SW's ability, and not ping the Chambermaid.
+A Yes. But the ST might consider their waking up when the Imp self-kills is due to the Imp's ability, not the SW's ability, and not ping the Chambermaid.
 
 Q Do the Drunk, Marionette and the Lunatic, who in reality do not have the ability that they think they have, "wake at night due to their own ability" for the Chambermaid?
 A Yes.
@@ -1501,7 +1504,7 @@ Q If the Pukka targets the King and then the following night picks the Choirboy,
 A Yes.
 
   The King would die as the previously poisoned player after the Pukka makes their next pick.
-  That pick being the Choirboy means that they are poisoned when they awake and can therefore receive arbirtary info, before dying the following night.
+  That pick being the Choirboy means that they are poisoned when they awake and can therefore receive arbitrary info, before dying the following night.
 
 Q If the Spy is killed by the Demon, could they misregister as the King and cause the Choirboy to learn the Demon's identity?
 A Yes, but that would probably not be fun for anyone.
@@ -1529,12 +1532,12 @@ Q Can the Choirboy be the Drunk or the Marionette if the King is in play?
 A Yes, this is a legitimate setup, 
   where the King has not been forced into play by the Choirboy, they are there by their own right.
 
-Q If the Choirboy is in the game, the King is not allowed to be the Drunk or the Marionete,
+Q If the Choirboy is in the game, the King is not allowed to be the Drunk or the Marionette,
   but is it possible to have the King turned evil by the Bounty Hunter?
 A Yes.
 
 Q In a two Minion game on a script with the Marionette, the King, and the Choirboy, while roles are randomly assigned,
-  the Demon ends up neighboring one minion and the King, who must become the Marionette, but the Choirboy is still in play.
+  the Demon ends up neighbouring one minion and the King, who must become the Marionette, but the Choirboy is still in play.
   An illegal setup!  How can this be avoided?  Remove the King from the bag and put it back later as you do in a three Minion game?
 A The better move is to not have the Demon in the bag. 
   Switching someone's token to the King would let a good player know a not in play role.
@@ -1775,8 +1778,8 @@ A No.
 Q Can the Damsel be the good twin to the Evil Twin?
 A Yes ... but that could end the game very quickly!
 
-Q If the Damsel is Barber swapped to another player, do the Minions get another Damsel annoucement?
-A No, it is a once per game annoucement.
+Q If the Damsel is Barber swapped to another player, do the Minions get another Damsel announcement?
+A No, it is a once per game announcement.
   
   However, if a player is swapped into having a Minion character and was not one previously, then they are told about the Damsel.
 
@@ -1982,7 +1985,7 @@ A Yes, but don't.
   Registering the Recluse as a Minion or as the Demon could cause them to be changed by the Engineer, or affect which characters are changed.
   But the Recluse is an Outsider so it is best not to use their ability like this.
   
-Q If the Engineer chooses the Marionette, does an existing Minion become one, or does a Demon-neighboring good player become one?
+Q If the Engineer chooses the Marionette, does an existing Minion become one, or does a Demon-neighbouring good player become one?
 A An existing Minion becomes one. 
   The Marionette's "you neighbor the Demon" is a setup ability (encased in []), so creating one mid game does not apply that condition.
 
@@ -2936,14 +2939,14 @@ A No, they are not the Damsel.
 =====
 =Imp=
 =====
-Q When an Imp selfkills, and there are several Minions alive, is there a priority order for who should become the new Demon?
+Q When an Imp self-kills, and there are several Minions alive, is there a priority order for who should become the new Demon?
 A The Scarlet Woman must become the Demon if their ability is active (alive, not drunk or poisoned, 5+ alive players), as that is the entire point of their ability.
   Otherwise, it is the ST's choice which living Minion becomes the Imp from the Imp's ability. 
 
-Q When an Imp selfkills turning a Minion into a new Imp, are the entire evil team notified about the identity of the new Demon? 
+Q When an Imp self-kills turning a Minion into a new Imp, are the entire evil team notified about the identity of the new Demon? 
 A No, only the new Imp.  The other evils are not notified, but they will know that it happened since their Demon died.
 
-Q If an Imp selfkills do they get to choose which Minion becomes the new Imp assuming there is no Scarlet Woman?
+Q If an Imp self-kills do they get to choose which Minion becomes the new Imp assuming there is no Scarlet Woman?
 A No, that is the ST's choice.
   The evil team can of course inform the ST of a plan they have involving the starpass landing on a specific Minion,
   and the ST may choose to aid that plan, but the ST is not obligated to do so.
@@ -2951,7 +2954,7 @@ A No, that is the ST's choice.
 Q If the Imp kills the Mayor, can the ST use the Mayor to bounce the kill back to the Imp, forcing the starpass?
 A Yes.
 
-Q Can multiple Imps selfkill in one game? / Can the Imp change more than once in the same game?
+Q Can multiple Imps self-kill in one game? / Can the Imp change more than once in the same game?
 A Yes, it is part of the Imp's ability and is not a once per game action, unlike with the Fang Gu jump.
   
   The physical game comes with four Imp tokens, since (not including Recluse hijinks) that is how many Imps there could end up being.
@@ -3857,7 +3860,7 @@ Q Could the Marionette believe that she is the Atheist?
 A Yes, though it might require an alternate setup to make that happen.
 
 Q In a 13+ player game, there are three Minions. If one Minion is going to be the Marionette, only two Minion tokens are put in the bag.
-  If once the roles are given out both Minion tokens are drawn by the two players neighboring the Demon, 
+  If once the roles are given out both Minion tokens are drawn by the two players neighbouring the Demon, 
   what can the ST do?
 A Options are:
     # Change a player to a Minion,
@@ -3885,7 +3888,7 @@ Q If an Outsider is made into the Marionette,
 A Yes. In this scenario the Marionette has acted like a soft -1 Outsider modifier.
 
 Q If the Demon changes player
-  (Fang Gu jump / new Lil' Monsta babysitter / Imp selfkills / Snake Charmer correctly guesses / Pit-Hag creates a new Demon / Barber swap / Hatter / Scarlet Woman / Engineer / ...),
+  (Fang Gu jump / new Lil' Monsta babysitter / Imp self-kills / Snake Charmer correctly guesses / Pit-Hag creates a new Demon / Barber swap / Hatter / Scarlet Woman / Engineer / ...),
   do they learn the Marionette, the Lunatic and the King?
 A Yes.
 
@@ -4212,7 +4215,7 @@ A No.  Changing characters is not considered a harmful effect so the Monk and So
 Q Does the Monk ability protect from positive Demon effects: regurgitating, resurrecting, etc.
 A No, it specifically protects from harmful effects. Regurgitation and resurrection are not considered to be harmful.
 
-Q Is a Monk protected Minion blocked from becoming the Imp when the Imp self kills?
+Q Is a Monk protected Minion blocked from becoming the Imp when the Imp self-kills?
 A No, becoming the Demon is not consider a harmful effect.
 
 ===========
@@ -4441,8 +4444,8 @@ A If the Philosopher is drunk or poisoned at the time they try to gain an abilit
 Q Can the Pit-Hag create the characters that the Drunk and the Marionette believe themselves to be?
 A Yes, they are not in play.
 
-Q If the Pit-Hag creates a Demon but then loses their ability can an arbirtary deaths night still occur?
-A Yes.  As soon as the Pit-Hag creates a Demon arbirtary deaths are global and cannot be removed.
+Q If the Pit-Hag creates a Demon but then loses their ability can an arbitrary deaths night still occur?
+A Yes.  As soon as the Pit-Hag creates a Demon arbitrary deaths are global and cannot be removed.
 
   This covers:
   * the Vigormortis changing character causing the Pit-Hag to lose their ability
@@ -4877,7 +4880,7 @@ Q Does the Preacher dying giving the Minions a new instance of their ability or 
 A No,  this is not a new instance of the ability; their ability is simply reactivating.
 
 Q The Preacher and Vigormortis interactions:
-    # The Preacher chooses a Vigor killed Minion: the dead Minion loses their ability, the neighboring Townsfolk is still poisoned.
+    # The Preacher chooses a Vigor killed Minion: the dead Minion loses their ability, the neighbouring Townsfolk is still poisoned.
     # The Preacher chooses a Minion who is then Vigor killed: the Minion is dead, poisons their neighbor, no ability.
     # either of the above then the Preacher dies: the Minion regains their ability.
 
@@ -5794,7 +5797,7 @@ A Character swaps essentially reset the characters; they are replaced with new i
   because attacking an already dead player does not "kill" them.
 
 Q What happens if a Vigormortis-poisoned Townsfolk becomes a different character type (Pit-Hag / Barber) or 
-  a neighboring player being skipped by the poison becomes a Townsfolk?
+  a neighbouring player being skipped by the poison becomes a Townsfolk?
 A The target is no longer valid, so the poison must move to a new Townsfolk neighbour of the Vigor-killed Minion.
   This can still be in either direction from said Minion; reapply the poison to either of the closest Townsfolk neighbours.
 
@@ -5845,7 +5848,7 @@ A Sure, if they neighbour the Demon or the Recluse.
   If it leaves two, one of them is drunk and the other one is sober.
   The Marionette VI is then run like any other Marionette.
 
-  In order to guarantee the Marionete Village Idiot, an alternative setup of some sort is needed,
+  In order to guarantee the Marionette Village Idiot, an alternative setup of some sort is needed,
   such as substituting the Demon token in the bag with an extra Townsfolk, 
   then on N1 picking a Townsfolk neighbour of a VI to become the Demon.
 
@@ -5905,8 +5908,8 @@ A No, you have one execution per day and an execution will always immediately en
 
 Q If the Vizier is D1 drunk, does that drunkness mean that the Vizier does not have to be announced? Should it be announced N2?
 A Yes, and it would be announced the first time they are sober/healthy, same as the King.
-  The how-to specifies the Vizier annoucement is during the day,
-  so RAW it is possible a Poisoner or other sources of droison could keep a lock on the annoucement for a few days - similar to Leviathan
+  The how-to specifies the Vizier announcement is during the day,
+  so RAW it is possible a Poisoner or other sources of droison could keep a lock on the announcement for a few days - similar to Leviathan
   but that is pretty risky if the Viz gets executed while evil is strategically holding off their announcement.
 
 Q The Golem can kill the Organ Grinder but not the Vizier, correct?
@@ -6318,7 +6321,7 @@ A If the Fang Gu themselves targeted that Outsider, the ST can choose to allow t
 
 
 Q The Pit-Hag turns another Minion into the Fang Gu.  The new Fang Gu targets an Outsider.
-  As deaths are arbirtary tonight, is the jump blocked, or is it legal to kill off the old Demon, and allow the jump to happen, killing off the first Fang Gu
+  As deaths are arbitrary tonight, is the jump blocked, or is it legal to kill off the old Demon, and allow the jump to happen, killing off the first Fang Gu
   and the targeted Outsider becoming the new evil Fang Gu?
 
 A Each Demon's choices are still taken, which the ST does not have to abide by, 
@@ -6450,7 +6453,7 @@ Q If a character that is drunking or poisoning someone is changed into a differe
 A No, because the ability that caused the droisoning no longer exists.
   
   Examples:
-  * If the Imp self kills and the Poisoner becomes the new Imp, then the Poisoner is no longer in play and is therefore not poisoning anyone.
+  * If the Imp self-kills and the Poisoner becomes the new Imp, then the Poisoner is no longer in play and is therefore not poisoning anyone.
   * If the Pit-Hag turns the Philosopher drunking the Savant into the Mutant, then the Philo is no longer in play and is therefore not drunking the Savant.
   * If the Pit-Hag turns the Puzzlemaster into the Klutz, the previously Puzzlemaster-drunk player is now sober.
 
