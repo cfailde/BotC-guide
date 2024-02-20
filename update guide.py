@@ -126,7 +126,7 @@ def text_to_nodes(input_path, output_path):
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
         for line in file:
-            # blank lines separate question and answer blocks and list items so need to handle this
+            # blank lines separate question and answer blocks and indicate the end of lists, so need to handle this
             if line.strip() == '':
                 if in_list:
                     output_lines.append(  '</ul>' )
@@ -141,15 +141,15 @@ def text_to_nodes(input_path, output_path):
                     continue
                 else:
                     # Answers are divided into paragraphs for clarity
-                    output_lines.append('        </div>\n')   # close paragraph
-                    output_lines.append('        <div>')      # open paragraph
+                    output_lines.append('        </p>\n')   # close paragraph
+                    output_lines.append('        <p>')      # open paragraph
 
             # question time
             if line.startswith('Q '):
                 if first_question:
                     first_question = False
                 else:
-                    output_lines.append('        </div>\n')   # close paragraph
+                    output_lines.append('        </p>\n')   # close paragraph
                     output_lines.append('      </div>\n')     # close answer
                     output_lines.append('    </div>\n')       # close node
 
@@ -158,12 +158,12 @@ def text_to_nodes(input_path, output_path):
                 id += 1
 
                 output_lines.append('    <div class="node">\n')  # open node
-                line = '      <div class="question">' + line[2:]   # open question
+                line = '      <h4 class="question">' + line[2:]   # open question
  
             elif line.startswith('A '):
                 answer_mode = True
-                output_lines.append('      </div>\n')              # close question
-                line = '      <div class="answer">\n        <div>' + line[2:]     # open answer and open first paragraph
+                output_lines.append('      </h4>\n')              # close question
+                line = '      <div class="answer">\n          <p>' + line[2:]     # open answer and open first paragraph
 
             # skip comments
             elif line.startswith('=') or line.startswith('--') or line.startswith(':'):
@@ -210,7 +210,7 @@ def replace_nodes(original, replacement, output_path):
     with open(original, 'r', encoding="utf-8") as file:
         html_content = file.read()
         soup = BeautifulSoup(html_content, 'html.parser')
-        vault = soup.find('div', id='vault')
+        vault = soup.find('main')
 
     # Parse the replacement content and remove empty paragraphs
     print("  Removing empty divs")
@@ -331,7 +331,22 @@ def remove_blank_lines(html, output_path):
         else:
             result.append(line)
 
-    return "\n".join(result)
+    deblanked_content = "\n".join(result)
+    debug(deblanked_content, output_path)
+    return deblanked_content
+
+def remove_empty_paragraphs(html, output_path):
+    lines = html.split("\n")
+    result = []
+
+    for line in lines:
+      if not line.strip().startswith("<p></p>"):
+        result.append(line)
+
+    content = "\n".join(result)
+    debug(content, output_path)
+    return content
+
 
 # List of keywords to highlight
 Townsfolk =  [ "Steward", "Knight", "Noble", "Investigator", "Chef"]
@@ -364,6 +379,7 @@ Minion    += [ "Marionette", "Organ Grinder", "Vizier"]
 Demon      = [ "Pukka", "Lil Monsta", "Lleech", "No Dashii", "Imp"]
 Demon     += [ "Shabaloth", "Po", "Zombuul", "Al-Hadikhia", "Vigormortis"]
 Demon     += [ "Fang Gu", "Vortox", "Legion", "Leviathan", "Riot", "Kazali"]
+Demon     += [ "Ojo"]
 
 Traveller  = [ "Bureaucrat", "Thief", "Gunslinger", "Scapegoat", "Beggar"]
 Traveller += [ "Apprentice", "Matron", "Judge", "Bishop", "Voudon", "Barista"]
@@ -417,6 +433,10 @@ interim_result = indent(interim_result, 'pretty.html')
 
 print("Adding emphasis ...")
 interim_result = emphasise(interim_result, "emphasised.html")
+
+print("Removing blank paragraphs ...")
+interim_result = remove_empty_paragraphs(interim_result, "removed_empty_paragraphs.html")
+
 
 print("Saving updated guide ...")
 with open(RESULT_FILE, 'w', encoding='utf-8') as output:
