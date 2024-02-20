@@ -126,26 +126,24 @@ def text_to_nodes(input_path, output_path):
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
         for line in file:
-            # blank lines separate question and answer blocks and indicate the end of lists, so need to handle this
+            # blank lines separate question-answer blocks, but also indicate the end of lists and paragraphs within answers so need to handle this
             if line.strip() == '':
                 if in_list:
                     output_lines.append(  '</ul>' )
                     in_list = False
-                    continue
                 elif in_ordered_list:
                     output_lines.append(  '</ol>' )
                     in_ordered_list = False
-                    continue
 
-                if not answer_mode:
-                    continue
-                else:
-                    # Answers are divided into paragraphs for clarity
+                if answer_mode:
                     output_lines.append('        </p>\n')   # close paragraph
                     output_lines.append('        <p>')      # open paragraph
 
             # question time
-            if line.startswith('Q '):
+            elif line.startswith('Q '):
+                answer_mode = False
+                id += 1
+
                 if first_question:
                     first_question = False
                 else:
@@ -153,21 +151,17 @@ def text_to_nodes(input_path, output_path):
                     output_lines.append('      </div>\n')     # close answer
                     output_lines.append('    </div>\n')       # close node
 
-                answer_mode = False
-                
-                id += 1
-
                 output_lines.append('    <div class="node">\n')  # open node
-                line = '      <h4 class="question">' + line[2:]   # open question
- 
+                output_lines.append('      <h4 class="question">' + line[2:])   # open question
+
             elif line.startswith('A '):
                 answer_mode = True
                 output_lines.append('      </h4>\n')              # close question
-                line = '      <div class="answer">\n          <p>' + line[2:]     # open answer and open first paragraph
+                output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
 
             # skip comments
             elif line.startswith('=') or line.startswith('--') or line.startswith(':'):
-                line = ''
+                pass
 
             # ordered_list
             elif line.strip().startswith('#'):
@@ -178,7 +172,7 @@ def text_to_nodes(input_path, output_path):
                 elif in_list_item:
                     output_lines.append("</li><li>")
 
-                output_lines.append(line.replace("#","",1)+"<br>")
+                output_lines.append(line.replace("#","",1))
             
             # unordered list
             elif line.strip().startswith('*'):
@@ -189,16 +183,10 @@ def text_to_nodes(input_path, output_path):
                 elif in_list_item:
                     output_lines.append("</li><li>")
 
-                output_lines.append(line.replace("*","",1)+"<br>")
-                
-            # handle paragraphing within lists
-            elif in_list or in_ordered_list:
-                output_lines.append(line)
-                output_lines.append("<br>")
+                output_lines.append(line.replace("*","",1))
 
-            if not in_list:
-                if not in_ordered_list:
-                    output_lines.append(line)
+            else:
+                output_lines.append(line)
 
     print("  Processed " + str(id) + " nodes")
     debug(output_lines, output_path)
@@ -262,13 +250,15 @@ def update_index(html, output_path):
         else:
             sorted_keywords[first_letter].append(name)
 
+    # sort the dictionary alphabetically
+    sorted_keys = sorted(sorted_keywords.keys())
+    sorted_keywords = {key: sorted_keywords[key] for key in sorted_keys}
     for key in sorted_keywords:
         sorted_keywords[key] = sorted(sorted_keywords[key])
-     
+
     new_keyword_count = 0
     for key, value in sorted_keywords.items():
         new_keyword_count += len(value)
-
     print(f"  Added {new_keyword_count} keywords to index")
 
     # Convert the new dictionary to a JSON string
@@ -394,7 +384,7 @@ Fabled    += [ "Ferryman", "Gardener"]
 Extra  = [ "poisoned", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
 Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
-Extra += [ "madness", "setup", "alive", "dead", "vote" ]
+Extra += [ "madness", "setup", "alive", "dead", "vote", "bluff" ]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
 
 
