@@ -366,7 +366,7 @@ Minion    += [ "Psychopath", "Assassin", "Baron", "Mezepheles", "Goblin"]
 Minion    += [ "Scarlet Woman", "Mastermind", "Evil Twin", "Boomdandy"]
 Minion    += [ "Marionette", "Organ Grinder", "Vizier"]
 
-Demon      = [ "Pukka", "Lil Monsta", "Lleech", "No Dashii", "Imp"]
+Demon      = [ "Pukka", "Lil' Monsta", "Lleech", "No Dashii", "Imp"]
 Demon     += [ "Shabaloth", "Po", "Zombuul", "Al-Hadikhia", "Vigormortis"]
 Demon     += [ "Fang Gu", "Vortox", "Legion", "Leviathan", "Riot", "Kazali"]
 Demon     += [ "Ojo"]
@@ -381,7 +381,7 @@ Fabled    += [ "Storm Catcher", "Sentinel", "Doomsayer", "Angel", "Buddhist"]
 Fabled    += [ "Ferryman", "Gardener"] 
 
 # All the keywords that are not the names of characters
-Extra  = [ "poisoned", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
+Extra  = [ "poison", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
 Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
 Extra += [ "madness", "setup", "alive", "dead", "vote", "bluff" ]
