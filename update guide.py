@@ -121,7 +121,6 @@ def text_to_nodes(input_path, output_path):
     answer_mode = False
     in_list = False
     in_ordered_list = False
-    in_list_item = False
     first_question = True
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
@@ -168,8 +167,7 @@ def text_to_nodes(input_path, output_path):
                 if not in_ordered_list:
                     output_lines.append('<ol><li>')
                     in_ordered_list = True
-                    in_list_item = True
-                elif in_list_item:
+                else:
                     output_lines.append("</li><li>")
 
                 output_lines.append(line.replace("#","",1))
@@ -179,8 +177,7 @@ def text_to_nodes(input_path, output_path):
                 if not in_list:
                     output_lines.append('<ul><li>')
                     in_list = True
-                    in_list_item = True
-                elif in_list_item:
+                else:
                     output_lines.append("</li><li>")
 
                 output_lines.append(line.replace("*","",1))
@@ -381,10 +378,16 @@ Fabled    += [ "Storm Catcher", "Sentinel", "Doomsayer", "Angel", "Buddhist"]
 Fabled    += [ "Ferryman", "Gardener"] 
 
 # All the keywords that are not the names of characters
-Extra  = [ "poison", "drunk", "townsfolk", "outsider", "fabled", "traveller"]
-Extra += [ "demon", "minion", "droisoned","good","evil","nomination","execution","preached", "protect"]
-Extra += [ "misregister", "sober", "healthy", "alignment", "jinx", "resurrect"]
-Extra += [ "madness", "setup", "alive", "dead", "vote", "bluff" ]
+# character types
+Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "traveller"] 
+# conditions
+Extra += [ "poison", "drunk", "droisoned", "sober", "healthy"] 
+Extra += [ "good", "evil", "alive", "dead", "preached" ]
+# concepts
+Extra += [ "nomination","execution", "vote"]
+Extra += [ "misregister", "alignment", "jinx", "resurrect", "regurgitate"]
+Extra += [ "madness", "setup", "protect" ]
+Extra += [ "in play", "out of play", "bluff"]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
 
 
