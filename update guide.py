@@ -366,7 +366,7 @@ Minion    += [ "Marionette", "Organ Grinder", "Vizier"]
 Demon      = [ "Pukka", "Lil' Monsta", "Lleech", "No Dashii", "Imp"]
 Demon     += [ "Shabaloth", "Po", "Zombuul", "Al-Hadikhia", "Vigormortis"]
 Demon     += [ "Fang Gu", "Vortox", "Legion", "Leviathan", "Riot", "Kazali"]
-Demon     += [ "Ojo"]
+Demon     += [ "Ojo", "Yaggababble" ]
 
 Traveller  = [ "Bureaucrat", "Thief", "Gunslinger", "Scapegoat", "Beggar"]
 Traveller += [ "Apprentice", "Matron", "Judge", "Bishop", "Voudon", "Barista"]

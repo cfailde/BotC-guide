@@ -63,7 +63,7 @@ A Madness due to the Cerenovus or the Alchemist Cerenovus runs the same:
   the target is still shown the Cerenovus token, as well as the token of the role that they are mad as.
 
 Q Does the Alchemist ping the Chambermaid when they learn what Minion ability they have?
-A Yes.  After N1 they might still register to the Chambermaid, depending on the Minion ability.
+A Yes, and after N1 they might still register to the Chambermaid, depending on the Minion ability gained.
 
 Q How does the Alchemist Evil Twin work?
 A The Alchemist ET learns an evil player and their role as their twin.  The evil player learns the Alchemist.
@@ -638,7 +638,7 @@ A They are a fresh incarnation of the Balloonist
 ========
 Q Does the Barber interrupt multi-kill Demons (Al-Hadikhia / Po / Shabaloth)?
 A Yes.  If the Barber is killed by the Demon, the Demon is woken and offered the swap.
-  If the Demon swaps herself then there would be no more Demon kills; all of her picks after the Barber are skipped, including waking for the Al-Hadikhia to choose life or death.
+  If the Demon swaps herself then the rest of her picks are skipped: no-one dies / wakes to choose life or death.
 
 Q Is the Soldier safe when the Demon uses the Barber swap on them?
 A No.
@@ -821,6 +821,9 @@ A No.
 ================
 =Bone Collector=
 ================
+Q If the Bone Collector picks the Marionette or the Drunk, what happens?
+A They get another day/night of the ability that they think they have.
+
 Q Does the ST inform a player that the they have been chosen by the Bone Collector?
 A No.  But they can probably infer this when their ability works again.
 
@@ -1088,9 +1091,6 @@ Q Could the Cannibal (turned by the Mezepheles / Bounty Hunter) eat the Recluse 
 A No.
 
   Evil or good, the Cannibal is not a Minion.
-
-Q If the Cannibal eats the drunk Village Idiot, do they get drunk Village Idiot info?
-A No, sober.
 
 Q If the Cannibal is not sure whether they ate an info gatherer (Fisherman / Savant / ...)
   can the ST just give them false info if the Cannibal asks for it?
@@ -1372,10 +1372,8 @@ A Executions can occur at night and it is a legal way to punish good sometimes.
 Q Is a player claiming there is a Cerenovus while they are mad (but still pretending to be the character that they are supposed to be mad about) breaking madness?
 A Not inherently, but madness is really subjective and context dependent.
 
-Q The Slayer while Cerenovus mad claims Slayer.  Can she be executed before she shoots due to breaking madness?
+Q If the Slayer who has been targeted by the Cerenovus publically claims Slayer, can she be executed for a madness break before she shoots?
 A Yes.
-
-
 
 =============
 =Chambermaid=
@@ -2167,6 +2165,10 @@ A If the Fang Gu has yet to jump this game, and the Fang Gu can die, then the Fa
 ========
 =Farmer=
 ========
+Q What happens if the Farmer is the last good player who dies in the night but there is a Marionette and an evil turned Townsfolk who might still pick the Demon,
+  so the game cannot be called yet?
+A No one becomes a Farmer.
+
 Q If the evil Farmer (Mezepheles / Bounty Hunter / ...) dies in the night, who becomes the Farmer?
 A It is still an alive good player.
 
@@ -2708,19 +2710,23 @@ A No, because the Goon was out of play at the time of the pick so was not target
 ========
 =Gossip=
 ========
+Q The Gossip gossips that someone is the Demon.  The following night that player becomes the Demon (Pit-Hag / Barber / Engineer / Hatter / Fang Gu / ...).
+  Is there a gossip kill?
+A No, the gossip is either true or not at the time the statement is made.
+
 Q Is the Gossip allowed to make a compound gossip, i.e. "I gossip X or Y."?
 A Yes.  The ST might prompt the player to specify if they intend it to be an exclusive or, i.e. exactly one thing is true.
 
-Q If the dead Gossip made a gossip during the day, then is resurrected (Al-Hadikhia / Professor), will there be a Gossip kill?
+Q If the dead Gossip made a true gossip during the day, then is resurrected (Al-Hadikhia / Professor), will there be a Gossip kill?
 A Yes.
 
-Q If a player who is not the Gossip during the day makes a correct gossip and then that night becomes the Gossip 
+Q If a non-Gossip during the day makes a correct gossip and then that night becomes the Gossip 
   (sufficiently mad Pixie / Philosopher choosing Gossip / Cannibal eating the Gossip / Pit-Hag creating the Gossip / Barber swap / ...)
-  do they Gossip kill?
+  does the new Gossip kill at their turn in the night order?
 A Yes.  It is recommended that the ST tracks any player's gossips who could potentially become the Gossip.
 
 Q If the Gossip makes a correct gossip during the day
-  but that night is swapped to a different role (Pit-Hagging / Barber swap / turned into the Farmer / ...)
+  but that night is swapped to a different role (Pit-Hag / Barber swap / turned into the Farmer / ...)
   is there a Gossip kill that night?
 A No.
 
@@ -2728,10 +2734,7 @@ Q Could the Gossip making a correct gossip kill the Farmer, triggering the Farme
 A Yes.  The Gossip could even become the Farmer themselves.
 
 Q Can the Gossip's kill target a player that cannot die, either because they are protected by an ability or are already dead?
-A The Gossip can target a player who cannot die, but this is not recommended since the idea is that the extra kill tells the Gossip something.
-
-Q If the Pit-Hag turns a player into the Gossip, and that player made a true statement the previous day, does the Gossip trigger at their turn in the night order?
-A Yes.
+A Yes, but this is not recommended since the idea is that the extra kill tells the Gossip something.
 
 Q Can "there are two Demons" be a correct Gossip statement when the Recluse is in play?
 A Yes, if the Recluse is registering as a Demon for it.
@@ -2790,14 +2793,17 @@ A No.
 Q Can the Lleech die if they reveal to the Harlot?
 A No.
 
+Q If the Mayor agrees to be seen by the Harlot, could the ST kill the Harlot and use the Mayor bounce to kill another character?
+A Yes.
+
 =======
 =Harpy=
 =======
-Q Deaths caused by the Harpy count as executions, right?
-A No, the text says "dead", not "executed", so the day continues, unlike deaths caused by the Cerenovus.
+Q When do Harpy targets die?
+A At any point during the day or night until the Harpy picks again.  
 
-Q Can the Harpy kills happen at night
-A Yes.  The madness lasts until the next Harpy choice.
+Q Do deaths caused by the Harpy count as executions?
+A No, the text says "dead", not "executed", so the day continues, unlike deaths caused by the Cerenovus.
 
 ========
 =Hatter=
@@ -3175,6 +3181,9 @@ A Yes. If they were were not, the ability would say so, like Scarlet Woman does.
 =======
 =Klutz=
 =======
+Q The Pukka kills the Klutz. Is the Klutz poisoned when they must pick someone the following morning?
+A No.
+
 Q The Klutz gets nominated in a Riot game and dies. Do they have to pick someone before (optionally) nominating?
 A Yes. Their countdown will restart if the game is continuing. So it would look like this:
   #  ST: <Klutz> dies. 3... 2...
@@ -3220,8 +3229,10 @@ A No, Legion players never wake from their own ability.
 Q What do character checkers (Dreamer/Juggler/Gambler/Ravenkeeper/Undertaker) see when they pick a Legion player?
 A They can see a Minion since Legion registers as a Minion in the same way that the Recluse does.
 
-Q If the Exorcist selects a Legion, is their no death to Legion tonight?
-A No.  Death is not prevented since Legion does not wake.
+Q How does the Exorcist interact with Legion?
+A When the Exorcist picks a Legion player,
+  that player learns the Exorcist,
+  but deaths due to Legion are not prevented that night as Legion does not wake.
 
 Q Do Legion learn the King?
 A The ST can show as many Legion as she wishes that the King is in play.  At least one Legion player is recommended.
@@ -3743,6 +3754,12 @@ A Yes, this does not even need the actual Hatter to die.
 =============
 =Lycanthrope=
 =============
+Q If the Lycanthrope is drunk or poisoned, does none of their ability take effect?
+A Correct, they cannot kill and other deaths are not prevented.
+
+Q If the Lycanthrope self-kills are they the only death this night?
+A No, the dead Lycanthrope has no ability so they are unable to prevent other deaths tonight.
+
 Q What happens when the Lycanthrope successfully kills a good player in an Al-Hadikhia game?
 A No-one can die to the Al-Hadikhia regardless of their live/die choices but players can still be resurrected.
 
@@ -3763,7 +3780,7 @@ A No, other players can still die tonight due to other characters’ abilities.
 Q If the Lycanthrope attacks the Mayor who bounces the kill, what happens?
 A The ST has a choice of who to bounce the kill to:
   * a good player who dies, meaning no further deaths that night;
-  * a good player who cannot die, meaning other kills cannot happen that night,
+  * a good player who cannot die, meaning other kills can happen that night,
   * an evil player, who cannot die since the source of the attack is still considered to be the Lycan, so other deaths can happen tonight.
 
 Q Can the Lycanthrope kill the Lleech host, ending the game?
@@ -3879,10 +3896,11 @@ A They would learn both as Minions, and learn the Marionette as the Marionette,
 ============
 =Marionette=
 ============
-Q If the Demon gets picked by the Snake Charmer, does the Marionette stay where they are?
-A Yes, the Marionette does not move with the Demon.
+Q If the Demon moves mid game (Snake Charmer / Barber / Pit-Hag / Fang Gu / Imp / Lil’ Monsta / Matron / Hatter / ... ),
+  does the Marionette stay where they are?
+A Yes, the Marionette does not move with the Demon, as neighbouring the Demon is a setup ability that has no effect later in the game.
 
-  Additionally, the new Demon also learns the Marionette because this is part of the Marionette's ability.
+  The new Demon would, however, be told who the Marionette is.
 
 Q Can the Lunatic be the Marionette?
 A ST choice.
@@ -3967,11 +3985,11 @@ A Their alignment has not actually changed, so no, the ST does not have to notif
 -------------------
 
 Q Does a Marionette Townsfolk receive misinformation?
-A The Marionette is not actually a Townsfolk, and so is not affected by the Vortox.
-  They are not drunk or poisioned, but can be given any information, good or bad,
+A The Marionette is not actually a Townsfolk, and so is unaffected by the Vortox.
+  The ST can treat them as if they were drunk or poisoned, but they are not.
+  They can be given any information, good or bad,
   in order to deceive them in to thinking that they are the Townsfolk character that they saw.
-  The ST can treat them as if they were drunk, but they are not.
-
+  
 Q Could the Marionette believe that she is the Atheist?
 A Yes, though it might require an alternate setup to make that happen.
 
@@ -4298,7 +4316,7 @@ A Yes.  While the Mezepheles player thinks that the Magician player is the Demon
 Q Does a mid game Minstrel created (Damsel / Pit-Hag / Barber / Philosopher / ...) the night after a Minion execution immediately drunk everybody?
 A No, the Minstrel ability must be in play when the Minion "dies by execution" (present tense), so coming into play after the fact has no effect.
 
-Q If the public Goblin is executed while the Minstrel is in play, does the Minstrel immediately activate and prevent the Goblin's ability from winning the game?
+Q If the public Goblin is executed while the Minstrel is in play, does the Minstrel immediately activate and block the Goblin's wincon?
 A No, the Goblin win is triggered before the Minstrel can drunk them.
 
 Q If it is a Minstrel day with the alive Scarlet Woman does the game end if the Demon is executed?
@@ -4710,11 +4728,12 @@ A Yes, but if they ever become sober and healthy then they must be treated norma
 
 Q If the Pixie is shown the Village Idiot, does only one of the VIs need to die in order to turn the Pixie?
 A During setup the ST will have marked one of the VIs with the Pixie reminder token - this is the VI that needs to die in order to turn the Pixie.
+  The marked VI could the sober one or the drunk one, if there is one.
 
 Q Could the Pixie get their ability just before being killed if their marked player dies during the same selection of a multikill Demon (Al-Hadikhia / Po / Shabaloth)?
 A She could.  The order of the deaths would matter: if the marked player dies before the Pixie then she can gain her ability.
 
-  Fore example, if the Ravenkeeper and the Pixie-Ravenkeeper both died in that order on the same night,
+  For example, if the Ravenkeeper and the Pixie-Ravenkeeper both died in that order on the same night,
   then both could get their info.
 
 Q If the Pixie is created late enough that there are no other Townsfolk alive, do they learn a dead in play Townsfolk and just never get the ability?
@@ -4750,7 +4769,7 @@ A That player still needs to die and the Pixie still needs to be mad as the char
 Q How does a Pixie who is N1 poisoned or drunk work?
 A The Pixie still gains the ability they see if they are mad as that role, after the player marked with the Pixie mad token dies.
   
-  If the Pixie is drunk or poisoned on their first night they will likely be shown an out of play role, and an arbitrary player is marked.
+  They will likely be shown an out of play role, and an arbitrary player is marked, but probably best it is not the Demon.
   As long as the Pixie is mad about the shown role and the marked player dies, they still gain the role they saw.
 
 Q What happens when the Pixie is affected by the Spy misregistering?
@@ -4918,6 +4937,9 @@ A Yes, but don't; they will likely campaign for their own execution,
 ==============
 =Poppy Grower=
 ==============
+Q What is the Poppy Grower jinx with the Marionette?
+A When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing.
+
 Q Does the Poppy Grower prevent the Demon from learning who the King and the Lunatic are?
 A No.
 
@@ -5079,6 +5101,17 @@ A No as it would still be an invalid target. The ST should shake their head and 
 ============
 =Psychopath=
 ============
+Q If a player is bluffing as the Psychopath and is executed, can they pretend to play roshambo with their nominator?
+A No, they are not the Psychopath so do not have the ability that allows them to play roshambo.
+
+Q If the Psychopath is protected by the Devil's Advocate do they still play roshambo /
+  Does the Alchemist Psychopath protected by the Tea Lady or Pacifist still play roshambo?
+A Yes, and then it is only if they lose and do not die that the good team discovers they were protected.
+
+Q When can the Psychopath choose to kill someone?
+A Each day before nominations begin.  They could kill as soon as the day starts if they wished.
+  The Psychopath should not be allowed to interrupt an action such as the ST privately giving a player any information.
+
 Q If the Psychopath self nominates, who do they play roshambo with?
 A The ST.
 
@@ -5101,7 +5134,7 @@ A The ST.  From the how-to-run:
 Q How do the Psychopath and the Vigormortis interact?
 A The Psychopath keeps their ability if killed by the Vigormortis.
   So they can still name a player before nominations to die, and if their corpse is executed,
-  they play roshambo with the person who nominated them .
+  they play roshambo with the person who nominated them.
   There is no reason to nominate their body though since they are already dead and cannot die again, but it would be amusing.
 
 Q The Vizier forces the execution of the Psychopath. Do they play romshambo?
@@ -5330,7 +5363,7 @@ Q If the Recluse is in play, the Scarlet Woman is on the script and the Zombuul 
 A No, they do not actually have the Scarlet Woman's ability.
   If the Recluse dies the Scarlet Woman can become the Demon however.
 
-Q If the Snake Charmer is pit-hagged into the Recluse, 
+Q If the Snake Charmer is turned into the Recluse (Pit-Hag / Barber / ...), 
   is the ST allowed to show the former SC "you are now the evil Pukka" using the Recluse's register as a Demon ability?
 A No.
 
@@ -5551,9 +5584,6 @@ A If the Shabaloth chose two people the night before, then just before they atta
 ========
 =Slayer=
 ========
-Q Can the Slayer who is made Cerenovus mad use their ability have the resolution of that ability interrupted by a madness execution ending the day?
-A Yes.
-
 Q When is the last moment a character can activate their ability? 
   Should the Slayer be allowed to use their ability after the day's execution has been carried out?
 A Any time before they die, and before the day officially ends.
@@ -5574,6 +5604,8 @@ A Yes, but the ST might want to finish resolving the vote first and the player m
 ===============
 =Snake Charmer=
 ===============
+Q If the Snake Charmer charms the Demon, do they receive any bluffs?
+A No.
 
 Q What happens when the Cannibal Snake Charmer picks the Demon?
 A The Cannibal becomes an evil Demon and the Demon becomes a good poisoned Cannibal. 
@@ -5998,10 +6030,10 @@ Q If the Drunk believes that they are the Village Idiot, how many real Village I
 A There are only three Village Idiot tokens in the game, so if one of them is the Drunk,
   practically speaking there can only be two other Village Idiots, with one of them being drunk from their own ability.
 
-Q If a player gains the Village Idiot ability (Philosopher / Cannibal / Pixie) could they be drunked by their own VI ability?
+Q If a player gains the Village Idiot ability (Philosopher / Cannibal / Pixie) could they be drunked by their own VI ability, gaining wrong info?
 A No, the drunking due to the VI ability is a setup effect.
   Also, gaining the VI ability does not make a player the VI, and the drunking specifically targets a VI.
-  So rather powerfully the info from the the gained VI ability cannot be the drunked VI info.
+  So, the info from the the gained VI ability must be sober, unless they are targeted by another drunking or poisoning ability or the ST house rules gained VI abilites otherwise.
 
 Q If the drunk Village Idiot changes roles, do they become sober making one of the other VIs drunk?
 A They become sober because they are no longer an extra Village Idiot.
@@ -6254,7 +6286,7 @@ A They can see anything but two good and one evil. Including all evil.
 
 
 Q Is it possible to learn factual information in a Vortox game due to a character misregistering?
-  For example where an Empath neigbours a Spy and a good player, the Spy register as good, therefore the Empath would learn a 0, but the vortox warps it into a 1?
+  For example where an Empath neigbours a Spy and a good player, the Spy register as good, therefore the Empath would learn a 0, but the Vortox warps it into a 1?
 A Yes.
   It was previously thought not, but since the ruling that the Fortune Teller's Red Herring yields a "no" in a Vortox game, 
   the majority (but not universal) view is that this generalizes to other kinds of misregistration, including Spy. 
@@ -6281,8 +6313,6 @@ Q Would the Alchemist Pit-Hag in a Vortox game make people learn the wrong chara
   would the ST announce incorrect information?
 A Learning your character and alignment is never "information" for the purposes of the Vortox.
   Learning what character you are mad as is not information. 
-
-
 
 Q In a Vortox game, does the ST lie to the Amnesiac about their guesses?
 A Yes.  For example, if they asked if their ability was to do with voting and it was not should you still give them a warm/hot?
@@ -6348,8 +6378,6 @@ A The Savant is given two false statements.
 Q Does the Vortox learn of the King or the Exorcist?
 A The Vortox correctly learns that the Exorcist / King are in play but always learns the wrong person.
 
-
-
 Q D1, a Minion is executed while the Minstrel is in play, so the Vortox is drunk. If on D2 no one is executed, does the evil team win?
 A ST choice; it could go either way.
 
@@ -6405,6 +6433,12 @@ A That night; it is their first night, so they should be immediately woken and s
 
 Q If the Widow is created mid game (Engineer / Pit-Hag / Hatter / ...) when does a good player get told?
 A A good player learns of the Widow that night.
+
+=============
+=Yaggababble=
+=============
+Q What is the Exorcist jinx with the Yaggababble?
+A If the Exorcist chooses the Yaggababble, the Yaggababble ability does not kill tonight.
 
 =========
 =Zombuul=
@@ -6882,6 +6916,11 @@ A Yes.
 
 
 :misc:
+
+Q When a character with a 'no ability' reminder token dies (Fisherman / Artist / ...), is that token placed in the Grimoire?
+A No, only after they have used their ability.
+  When a player dies a death shroud is placed on their token which, except for abilities that persist on death, already indicates that they have no ability.
+
 Q When in the night order are characters with first night info abilities woken if they are created mid game (Damsel / Pit-Hag / Pixie / Philosopher / Cannibal / ...)?
 A After any killing, poisoning and drunking roles act.
 

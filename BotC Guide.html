@@ -396,7 +396,7 @@
         <h4 class="question">Does the <span class="Townsfolk">Alchemist</span> ping the <span class="Townsfolk">Chambermaid</span> when they learn what Minion ability they have?
       </h4>
         <div class="answer">
-          <p>Yes.  After N1 they might still register to the <span class="Townsfolk">Chambermaid</span>, depending on the Minion ability.
+          <p>Yes, and after N1 they might still register to the <span class="Townsfolk">Chambermaid</span>, depending on the Minion ability gained.
         </p>
         </div>
       </div>
@@ -1464,7 +1464,7 @@
       </h4>
         <div class="answer">
           <p>Yes.  If the <span class="Outsider">Barber</span> is killed by the Demon, the Demon is woken and offered the swap.
-  If the Demon swaps herself then there would be no more Demon kills; all of her picks after the <span class="Outsider">Barber</span> are skipped, including waking for the <span class="Demon">Al-Hadikhia</span> to choose life or death.
+  If the Demon swaps herself then the rest of her picks are skipped: no-one dies / wakes to choose life or death.
         </p>
         </div>
       </div>
@@ -1852,6 +1852,14 @@
       </h4>
         <div class="answer">
           <p>No.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">If the <span class="Traveller">Bone Collector</span> picks the <span class="Minion">Marionette</span> or the <span class="Outsider">Drunk</span>, what happens?
+      </h4>
+        <div class="answer">
+          <p>They get another day/night of the ability that they think they have.
         </p>
         </div>
       </div>
@@ -2422,14 +2430,6 @@
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the <span class="Townsfolk">Cannibal</span> eats the drunk <span class="Townsfolk">Village Idiot</span>, do they get drunk <span class="Townsfolk">Village Idiot</span> info?
-      </h4>
-        <div class="answer">
-          <p>No, sober.
-        </p>
-        </div>
-      </div>
-      <div class="node">
         <h4 class="question">If the <span class="Townsfolk">Cannibal</span> is not sure whether they ate an info gatherer (<span class="Townsfolk">Fisherman</span> / <span class="Townsfolk">Savant</span> / ...)
   can the ST just give them false info if the <span class="Townsfolk">Cannibal</span> asks for it?
       </h4>
@@ -2987,7 +2987,7 @@
         </div>
       </div>
       <div class="node">
-        <h4 class="question">The <span class="Townsfolk">Slayer</span> while <span class="Minion">Cerenovus</span> mad claims <span class="Townsfolk">Slayer</span>.  Can she be executed before she shoots due to breaking madness?
+        <h4 class="question">If the <span class="Townsfolk">Slayer</span> who has been targeted by the <span class="Minion">Cerenovus</span> publically claims <span class="Townsfolk">Slayer</span>, can she be executed for a madness break before she shoots?
       </h4>
         <div class="answer">
           <p>Yes.
@@ -4595,6 +4595,15 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">What happens if the <span class="Townsfolk">Farmer</span> is the last good player who dies in the night but there is a <span class="Minion">Marionette</span> and an evil turned Townsfolk who might still pick the Demon,
+  so the game cannot be called yet?
+      </h4>
+        <div class="answer">
+          <p>No one becomes a <span class="Townsfolk">Farmer</span>.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">If the evil <span class="Townsfolk">Farmer</span> (<span class="Minion">Mezepheles</span> / <span class="Townsfolk">Bounty Hunter</span> / ...) dies in the night, who becomes the <span class="Townsfolk">Farmer</span>?
       </h4>
         <div class="answer">
@@ -5745,6 +5754,15 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">The <span class="Townsfolk">Gossip</span> gossips that someone is the Demon.  The following night that player becomes the Demon (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Barber</span> / <span class="Townsfolk">Engineer</span> / <span class="Outsider">Hatter</span> / <span class="Demon">Fang Gu</span> / ...).
+  Is there a gossip kill?
+      </h4>
+        <div class="answer">
+          <p>No, the gossip is either true or not at the time the statement is made.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">Is the <span class="Townsfolk">Gossip</span> allowed to make a compound gossip, i.e. "I gossip X or Y."?
       </h4>
         <div class="answer">
@@ -5753,7 +5771,7 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the dead <span class="Townsfolk">Gossip</span> made a gossip during the day, then is resurrected (<span class="Demon">Al-Hadikhia</span> / <span class="Townsfolk">Professor</span>), will there be a <span class="Townsfolk">Gossip</span> kill?
+        <h4 class="question">If the dead <span class="Townsfolk">Gossip</span> made a true gossip during the day, then is resurrected (<span class="Demon">Al-Hadikhia</span> / <span class="Townsfolk">Professor</span>), will there be a <span class="Townsfolk">Gossip</span> kill?
       </h4>
         <div class="answer">
           <p>Yes.
@@ -5761,9 +5779,9 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If a player who is not the <span class="Townsfolk">Gossip</span> during the day makes a correct gossip and then that night becomes the <span class="Townsfolk">Gossip</span> 
+        <h4 class="question">If a non-<span class="Townsfolk">Gossip</span> during the day makes a correct gossip and then that night becomes the <span class="Townsfolk">Gossip</span> 
   (sufficiently mad <span class="Townsfolk">Pixie</span> / <span class="Townsfolk">Philosopher</span> choosing <span class="Townsfolk">Gossip</span> / <span class="Townsfolk">Cannibal</span> eating the <span class="Townsfolk">Gossip</span> / <span class="Minion">Pit-Hag</span> creating the <span class="Townsfolk">Gossip</span> / <span class="Outsider">Barber</span> swap / ...)
-  do they <span class="Townsfolk">Gossip</span> kill?
+  does the new <span class="Townsfolk">Gossip</span> kill at their turn in the night order?
       </h4>
         <div class="answer">
           <p>Yes.  It is recommended that the ST tracks any player's gossips who could potentially become the <span class="Townsfolk">Gossip</span>.
@@ -5772,7 +5790,7 @@ s
       </div>
       <div class="node">
         <h4 class="question">If the <span class="Townsfolk">Gossip</span> makes a correct gossip during the day
-  but that night is swapped to a different role (Pit-Hagging / <span class="Outsider">Barber</span> swap / turned into the <span class="Townsfolk">Farmer</span> / ...)
+  but that night is swapped to a different role (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Barber</span> swap / turned into the <span class="Townsfolk">Farmer</span> / ...)
   is there a <span class="Townsfolk">Gossip</span> kill that night?
       </h4>
         <div class="answer">
@@ -5792,15 +5810,7 @@ s
         <h4 class="question">Can the <span class="Townsfolk">Gossip</span>'s kill target a player that cannot die, either because they are protected by an ability or are already dead?
       </h4>
         <div class="answer">
-          <p>The <span class="Townsfolk">Gossip</span> can target a player who cannot die, but this is not recommended since the idea is that the extra kill tells the <span class="Townsfolk">Gossip</span> something.
-        </p>
-        </div>
-      </div>
-      <div class="node">
-        <h4 class="question">If the <span class="Minion">Pit-Hag</span> turns a player into the <span class="Townsfolk">Gossip</span>, and that player made a true statement the previous day, does the <span class="Townsfolk">Gossip</span> trigger at their turn in the night order?
-      </h4>
-        <div class="answer">
-          <p>Yes.
+          <p>Yes, but this is not recommended since the idea is that the extra kill tells the <span class="Townsfolk">Gossip</span> something.
         </p>
         </div>
       </div>
@@ -5919,18 +5929,26 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">Deaths caused by the <span class="Minion">Harpy</span> count as executions, right?
+        <h4 class="question">If the <span class="Townsfolk">Mayor</span> agrees to be seen by the <span class="Traveller">Harlot</span>, could the ST kill the <span class="Traveller">Harlot</span> and use the <span class="Townsfolk">Mayor</span> bounce to kill another character?
       </h4>
         <div class="answer">
-          <p>No, the text says "dead", not "executed", so the day continues, unlike deaths caused by the <span class="Minion">Cerenovus</span>.
+          <p>Yes.
         </p>
         </div>
       </div>
       <div class="node">
-        <h4 class="question">Can the <span class="Minion">Harpy</span> kills happen at night
+        <h4 class="question">When do <span class="Minion">Harpy</span> targets die?
       </h4>
         <div class="answer">
-          <p>Yes.  The madness lasts until the next <span class="Minion">Harpy</span> choice.
+          <p>At any point during the day or night until the <span class="Minion">Harpy</span> picks again.  
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">Do deaths caused by the <span class="Minion">Harpy</span> count as executions?
+      </h4>
+        <div class="answer">
+          <p>No, the text says "dead", not "executed", so the day continues, unlike deaths caused by the <span class="Minion">Cerenovus</span>.
         </p>
         </div>
       </div>
@@ -6704,6 +6722,14 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">The <span class="Demon">Pukka</span> kills the <span class="Outsider">Klutz</span>. Is the <span class="Outsider">Klutz</span> poisoned when they must pick someone the following morning?
+      </h4>
+        <div class="answer">
+          <p>No.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">The <span class="Outsider">Klutz</span> gets nominated in a <span class="Demon">Riot</span> game and dies. Do they have to pick someone before (optionally) nominating?
       </h4>
         <div class="answer">
@@ -6795,10 +6821,12 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the <span class="Townsfolk">Exorcist</span> selects a <span class="Demon">Legion</span>, is their no death to <span class="Demon">Legion</span> tonight?
+        <h4 class="question">How does the <span class="Townsfolk">Exorcist</span> interact with <span class="Demon">Legion</span>?
       </h4>
         <div class="answer">
-          <p>No.  Death is not prevented since <span class="Demon">Legion</span> does not wake.
+          <p>When the <span class="Townsfolk">Exorcist</span> picks a <span class="Demon">Legion</span> player,
+  that player learns the <span class="Townsfolk">Exorcist</span>,
+  but deaths due to <span class="Demon">Legion</span> are not prevented that night as <span class="Demon">Legion</span> does not wake.
         </p>
         </div>
       </div>
@@ -7892,6 +7920,22 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">If the <span class="Townsfolk">Lycanthrope</span> is drunk or poisoned, does none of their ability take effect?
+      </h4>
+        <div class="answer">
+          <p>Correct, they cannot kill and other deaths are not prevented.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">If the <span class="Townsfolk">Lycanthrope</span> self-kills are they the only death this night?
+      </h4>
+        <div class="answer">
+          <p>No, the dead <span class="Townsfolk">Lycanthrope</span> has no ability so they are unable to prevent other deaths tonight.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">What happens when the <span class="Townsfolk">Lycanthrope</span> successfully kills a good player in an <span class="Demon">Al-Hadikhia</span> game?
       </h4>
         <div class="answer">
@@ -7937,7 +7981,7 @@ s
 <ul><li>
    a good player who dies, meaning no further deaths that night;
 </li><li>
-   a good player who cannot die, meaning other kills cannot happen that night,
+   a good player who cannot die, meaning other kills can happen that night,
 </li><li>
    an evil player, who cannot die since the source of the attack is still considered to be the Lycan, so other deaths can happen tonight.
 </li></ul></p>
@@ -8172,13 +8216,14 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the Demon gets picked by the <span class="Townsfolk">Snake Charmer</span>, does the <span class="Minion">Marionette</span> stay where they are?
+        <h4 class="question">If the Demon moves mid game (<span class="Townsfolk">Snake Charmer</span> / <span class="Outsider">Barber</span> / <span class="Minion">Pit-Hag</span> / <span class="Demon">Fang Gu</span> / <span class="Demon">Imp</span> / Lil’ Monsta / <span class="Traveller">Matron</span> / <span class="Outsider">Hatter</span> / ... ),
+  does the <span class="Minion">Marionette</span> stay where they are?
       </h4>
         <div class="answer">
-          <p>Yes, the <span class="Minion">Marionette</span> does not move with the Demon.
+          <p>Yes, the <span class="Minion">Marionette</span> does not move with the Demon, as neighbouring the Demon is a setup ability that has no effect later in the game.
         </p>
           <p>
-  Additionally, the new Demon also learns the <span class="Minion">Marionette</span> because this is part of the <span class="Minion">Marionette</span>'s ability.
+  The new Demon would, however, be told who the <span class="Minion">Marionette</span> is.
         </p>
         </div>
       </div>
@@ -8342,10 +8387,10 @@ s
         <h4 class="question">Does a <span class="Minion">Marionette</span> Townsfolk receive misinformation?
       </h4>
         <div class="answer">
-          <p>The <span class="Minion">Marionette</span> is not actually a Townsfolk, and so is not affected by the <span class="Demon">Vortox</span>.
-  They are not drunk or poisioned, but can be given any information, good or bad,
+          <p>The <span class="Minion">Marionette</span> is not actually a Townsfolk, and so is unaffected by the <span class="Demon">Vortox</span>.
+  The ST can treat them as if they were drunk or poisoned, but they are not.
+  They can be given any information, good or bad,
   in order to deceive them in to thinking that they are the Townsfolk character that they saw.
-  The ST can treat them as if they were drunk, but they are not.
         </p>
         </div>
       </div>
@@ -9001,7 +9046,7 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the public <span class="Minion">Goblin</span> is executed while the <span class="Townsfolk">Minstrel</span> is in play, does the <span class="Townsfolk">Minstrel</span> immediately activate and prevent the <span class="Minion">Goblin</span>'s ability from winning the game?
+        <h4 class="question">If the public <span class="Minion">Goblin</span> is executed while the <span class="Townsfolk">Minstrel</span> is in play, does the <span class="Townsfolk">Minstrel</span> immediately activate and block the <span class="Minion">Goblin</span>'s wincon?
       </h4>
         <div class="answer">
           <p>No, the <span class="Minion">Goblin</span> win is triggered before the <span class="Townsfolk">Minstrel</span> can drunk them.
@@ -9801,6 +9846,7 @@ s
       </h4>
         <div class="answer">
           <p>During setup the ST will have marked one of the VIs with the <span class="Townsfolk">Pixie</span> reminder token - this is the VI that needs to die in order to turn the <span class="Townsfolk">Pixie</span>.
+  The marked VI could the sober one or the drunk one, if there is one.
         </p>
         </div>
       </div>
@@ -9811,7 +9857,7 @@ s
           <p>She could.  The order of the deaths would matter: if the marked player dies before the <span class="Townsfolk">Pixie</span> then she can gain her ability.
         </p>
           <p>
-  Fore example, if the <span class="Townsfolk">Ravenkeeper</span> and the <span class="Townsfolk">Pixie</span>-<span class="Townsfolk">Ravenkeeper</span> both died in that order on the same night,
+  For example, if the <span class="Townsfolk">Ravenkeeper</span> and the <span class="Townsfolk">Pixie</span>-<span class="Townsfolk">Ravenkeeper</span> both died in that order on the same night,
   then both could get their info.
         </p>
         </div>
@@ -9899,7 +9945,7 @@ s
           <p>The <span class="Townsfolk">Pixie</span> still gains the ability they see if they are mad as that role, after the player marked with the <span class="Townsfolk">Pixie</span> mad token dies.
         </p>
           <p>
-  If the <span class="Townsfolk">Pixie</span> is drunk or poisoned on their first night they will likely be shown an out of play role, and an arbitrary player is marked.
+  They will likely be shown an out of play role, and an arbitrary player is marked, but probably best it is not the Demon.
   As long as the <span class="Townsfolk">Pixie</span> is mad about the shown role and the marked player dies, they still gain the role they saw.
         </p>
         </div>
@@ -10201,6 +10247,14 @@ s
           <p>Yes, but don't; they will likely campaign for their own execution,
   never mentioning the twins,
   then win the game with evil as a result - it is pretty hard to argue they were not most responsible in that situation!
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">What is the <span class="Townsfolk">Poppy Grower</span> jinx with the <span class="Minion">Marionette</span>?
+      </h4>
+        <div class="answer">
+          <p>When the <span class="Townsfolk">Poppy Grower</span> dies, the Demon learns the <span class="Minion">Marionette</span> but the <span class="Minion">Marionette</span> learns nothing.
         </p>
         </div>
       </div>
@@ -10533,6 +10587,32 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">If a player is bluffing as the <span class="Minion">Psychopath</span> and is executed, can they pretend to play roshambo with their nominator?
+      </h4>
+        <div class="answer">
+          <p>No, they are not the <span class="Minion">Psychopath</span> so do not have the ability that allows them to play roshambo.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">If the <span class="Minion">Psychopath</span> is protected by the <span class="Minion">Devil's Advocate</span> do they still play roshambo /
+  Does the <span class="Townsfolk">Alchemist</span> <span class="Minion">Psychopath</span> protected by the <span class="Townsfolk">Tea Lady</span> or <span class="Townsfolk">Pacifist</span> still play roshambo?
+      </h4>
+        <div class="answer">
+          <p>Yes, and then it is only if they lose and do not die that the good team discovers they were protected.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">When can the <span class="Minion">Psychopath</span> choose to kill someone?
+      </h4>
+        <div class="answer">
+          <p>Each day before nominations begin.  They could kill as soon as the day starts if they wished.
+  The <span class="Minion">Psychopath</span> should not be allowed to interrupt an action such as the ST privately giving a player any information.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">If the <span class="Minion">Psychopath</span> self nominates, who do they play roshambo with?
       </h4>
         <div class="answer">
@@ -10576,7 +10656,7 @@ s
         <div class="answer">
           <p>The <span class="Minion">Psychopath</span> keeps their ability if killed by the <span class="Demon">Vigormortis</span>.
   So they can still name a player before nominations to die, and if their corpse is executed,
-  they play roshambo with the person who nominated them .
+  they play roshambo with the person who nominated them.
   There is no reason to nominate their body though since they are already dead and cannot die again, but it would be amusing.
         </p>
         </div>
@@ -11051,7 +11131,7 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If the <span class="Townsfolk">Snake Charmer</span> is pit-hagged into the <span class="Outsider">Recluse</span>, 
+        <h4 class="question">If the <span class="Townsfolk">Snake Charmer</span> is turned into the <span class="Outsider">Recluse</span> (<span class="Minion">Pit-Hag</span> / <span class="Outsider">Barber</span> / ...), 
   is the ST allowed to show the former SC "you are now the evil <span class="Demon">Pukka</span>" using the <span class="Outsider">Recluse</span>'s register as a Demon ability?
       </h4>
         <div class="answer">
@@ -11453,14 +11533,6 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">Can the <span class="Townsfolk">Slayer</span> who is made <span class="Minion">Cerenovus</span> mad use their ability have the resolution of that ability interrupted by a madness execution ending the day?
-      </h4>
-        <div class="answer">
-          <p>Yes.
-        </p>
-        </div>
-      </div>
-      <div class="node">
         <h4 class="question">When is the last moment a character can activate their ability? 
   Should the <span class="Townsfolk">Slayer</span> be allowed to use their ability after the day's execution has been carried out?
       </h4>
@@ -11489,6 +11561,14 @@ s
           <p>Yes, but the ST might want to finish resolving the vote first and the player may have repeat their target in case the ST did not hear it or forgot.
   The ST may not be inclined to let the <span class="Townsfolk">Slayer</span> kill or clear someone in the middle of the vote,
   so the <span class="Townsfolk">Slayer</span> might want to do it before, so that there is no need to vote, or after, to convince town to lift.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">If the <span class="Townsfolk">Snake Charmer</span> charms the Demon, do they receive any bluffs?
+      </h4>
+        <div class="answer">
+          <p>No.
         </p>
         </div>
       </div>
@@ -12324,12 +12404,12 @@ s
         </div>
       </div>
       <div class="node">
-        <h4 class="question">If a player gains the <span class="Townsfolk">Village Idiot</span> ability (<span class="Townsfolk">Philosopher</span> / <span class="Townsfolk">Cannibal</span> / <span class="Townsfolk">Pixie</span>) could they be drunked by their own VI ability?
+        <h4 class="question">If a player gains the <span class="Townsfolk">Village Idiot</span> ability (<span class="Townsfolk">Philosopher</span> / <span class="Townsfolk">Cannibal</span> / <span class="Townsfolk">Pixie</span>) could they be drunked by their own VI ability, gaining wrong info?
       </h4>
         <div class="answer">
           <p>No, the drunking due to the VI ability is a setup effect.
   Also, gaining the VI ability does not make a player the VI, and the drunking specifically targets a VI.
-  So rather powerfully the info from the the gained VI ability cannot be the drunked VI info.
+  So, the info from the the gained VI ability must be sober, unless they are targeted by another drunking or poisoning ability or the ST house rules gained VI abilites otherwise.
         </p>
         </div>
       </div>
@@ -12797,7 +12877,7 @@ s
       </div>
       <div class="node">
         <h4 class="question">Is it possible to learn factual information in a <span class="Demon">Vortox</span> game due to a character misregistering?
-  For example where an <span class="Townsfolk">Empath</span> neigbours a <span class="Minion">Spy</span> and a good player, the <span class="Minion">Spy</span> register as good, therefore the <span class="Townsfolk">Empath</span> would learn a 0, but the vortox warps it into a 1?
+  For example where an <span class="Townsfolk">Empath</span> neigbours a <span class="Minion">Spy</span> and a good player, the <span class="Minion">Spy</span> register as good, therefore the <span class="Townsfolk">Empath</span> would learn a 0, but the <span class="Demon">Vortox</span> warps it into a 1?
       </h4>
         <div class="answer">
           <p>Yes.
@@ -13080,6 +13160,14 @@ s
       </h4>
         <div class="answer">
           <p>A good player learns of the <span class="Minion">Widow</span> that night.
+        </p>
+        </div>
+      </div>
+      <div class="node">
+        <h4 class="question">What is the <span class="Townsfolk">Exorcist</span> jinx with the <span class="Demon">Yaggababble</span>?
+      </h4>
+        <div class="answer">
+          <p>If the <span class="Townsfolk">Exorcist</span> chooses the <span class="Demon">Yaggababble</span>, the <span class="Demon">Yaggababble</span> ability does not kill tonight.
         </p>
         </div>
       </div>
@@ -13973,6 +14061,15 @@ s
         </div>
       </div>
       <div class="node">
+        <h4 class="question">When a character with a 'no ability' reminder token dies (<span class="Townsfolk">Fisherman</span> / <span class="Townsfolk">Artist</span> / ...), is that token placed in the Grimoire?
+      </h4>
+        <div class="answer">
+          <p>No, only after they have used their ability.
+  When a player dies a death shroud is placed on their token which, except for abilities that persist on death, already indicates that they have no ability.
+        </p>
+        </div>
+      </div>
+      <div class="node">
         <h4 class="question">When in the night order are characters with first night info abilities woken if they are created mid game (<span class="Outsider">Damsel</span> / <span class="Minion">Pit-Hag</span> / <span class="Townsfolk">Pixie</span> / <span class="Townsfolk">Philosopher</span> / <span class="Townsfolk">Cannibal</span> / ...)?
       </h4>
         <div class="answer">
@@ -14693,6 +14790,9 @@ s
           "Washerwoman",
           "Widow",
           "Witch"
+        ],
+        "Y": [
+          "Yaggababble"
         ],
         "Z": [
           "Zombuul"
