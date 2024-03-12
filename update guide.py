@@ -387,7 +387,7 @@ Extra += [ "good", "evil", "alive", "dead", "preached" ]
 Extra += [ "nomination","execution", "vote"]
 Extra += [ "misregister", "alignment", "jinx", "resurrect", "regurgitate"]
 Extra += [ "madness", "setup", "protect" ]
-Extra += [ "in play", "out of play", "bluff", "mid game"]
+Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
 
 
