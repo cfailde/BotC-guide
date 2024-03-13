@@ -384,8 +384,9 @@ Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "poison", "drunk", "droisoned", "sober", "healthy"] 
 Extra += [ "good", "evil", "alive", "dead", "preached" ]
 # concepts
-Extra += [ "nomination | nominate","execution | execute", "vote | voting"]
-Extra += [ "misregister | misregistration", "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
+Extra += [ "nomination | nominate","execution | execute | executing"]
+Extra += [ "register | registration", "vote | voting" ]
+Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
