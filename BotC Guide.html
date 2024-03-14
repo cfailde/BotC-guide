@@ -15056,244 +15056,214 @@ s
       const crossMarkEmoji = "❌";
 
       var keywords = {
-        "A": [
-          "Acrobat",
-          "Al-Hadikhia",
-          "Alchemist",
-          "Amnesiac",
-          "Angel",
-          "Apprentice",
-          "Artist",
-          "Assassin",
-          "Atheist",
-          "alignment",
-          "alive"
-        ],
-        "B": [
-          "Balloonist",
-          "Barber",
-          "Barista",
-          "Baron",
-          "Beggar",
-          "Bishop",
-          "Bone Collector",
-          "Boomdandy",
-          "Bootlegger",
-          "Bounty Hunter",
-          "Buddhist",
-          "Bureaucrat",
-          "Butcher",
-          "Butler",
-          "bluff"
-        ],
-        "C": [
-          "Cannibal",
-          "Cerenovus",
-          "Chambermaid",
-          "Chef",
-          "Choirboy",
-          "Clockmaker",
-          "Courtier",
-          "Cult Leader"
-        ],
-        "D": [
-          "Damsel",
-          "Deviant",
-          "Devil's Advocate",
-          "Djinn",
-          "Doomsayer",
-          "Dreamer",
-          "Drunk",
-          "Duchess",
-          "dead",
-          "demon",
-          "droisoned",
-          "drunk"
-        ],
-        "E": [
-          "Empath",
-          "Engineer",
-          "Evil Twin",
-          "Exorcist",
-          "evil",
-          "execution | execute | executing"
-        ],
-        "F": [
-          "Fang Gu",
-          "Farmer",
-          "Fearmonger",
-          "Ferryman",
-          "Fibbin",
-          "Fiddler",
-          "Fisherman",
-          "Flowergirl",
-          "Fool",
-          "Fortune Teller",
-          "fabled"
-        ],
-        "G": [
-          "Gambler",
-          "Gangster",
-          "Gardener",
-          "General",
-          "Goblin",
-          "Godfather",
-          "Golem",
-          "Goon",
-          "Gossip",
-          "Grandmother",
-          "Gunslinger",
-          "good"
-        ],
-        "H": [
-          "Harlot",
-          "Harpy",
-          "Hatter",
-          "Hell's Librarian",
-          "Heretic",
-          "High Priestess",
-          "Huntsman",
-          "healthy"
-        ],
-        "I": [
-          "Imp",
-          "Innkeeper",
+        "Townsfolk": [
+          "Steward",
+          "Knight",
+          "Noble",
           "Investigator",
-          "in play"
-        ],
-        "J": [
-          "Judge",
-          "Juggler",
-          "jinx"
-        ],
-        "K": [
-          "Kazali",
-          "King",
-          "Klutz",
-          "Knight"
-        ],
-        "L": [
-          "Legion",
-          "Leviathan",
+          "Chef",
+          "Washerwoman",
+          "Clockmaker",
           "Librarian",
+          "Grandmother",
+          "Pixie",
+          "Bounty Hunter",
+          "Empath",
+          "High Priestess",
+          "Sailor",
+          "General",
+          "Preacher",
+          "Chambermaid",
+          "Balloonist",
+          "King",
+          "Dreamer",
+          "Fortune Teller",
+          "Mathematician",
+          "Snake Charmer",
+          "Cult Leader",
+          "Flowergirl",
+          "Town Crier",
+          "Oracle",
+          "Undertaker",
+          "Innkeeper",
+          "Gambler",
+          "Monk",
+          "Lycanthrope",
+          "Exorcist",
+          "Gossip",
+          "Savant",
+          "Amnesiac",
+          "Juggler",
+          "Nightwatchman",
+          "Engineer",
+          "Artist",
+          "Courtier",
+          "Fisherman",
+          "Slayer",
+          "Professor",
+          "Seamstress",
+          "Philosopher",
+          "Huntsman",
+          "Soldier",
+          "Fool",
+          "Pacifist",
+          "Alchemist",
+          "Tea Lady",
+          "Sage",
+          "Farmer",
+          "Magician",
+          "Ravenkeeper",
+          "Choirboy",
+          "Virgin",
+          "Poppy Grower",
+          "Minstrel",
+          "Mayor",
+          "Atheist",
+          "Cannibal",
+          "Village Idiot"
+        ],
+        "Outsider": [
+          "Snitch",
+          "Butler",
+          "Goon",
+          "Acrobat",
+          "Puzzlemaster",
+          "Tinker",
+          "Saint",
+          "Sweetheart",
+          "Plague Doctor",
+          "Recluse",
+          "Mutant",
+          "Heretic",
+          "Damsel",
+          "Klutz",
+          "Drunk",
+          "Golem",
+          "Moonchild",
+          "Barber",
+          "Politician",
+          "Lunatic",
+          "Hatter"
+        ],
+        "Minion": [
+          "Godfather",
+          "Widow",
+          "Poisoner",
+          "Devil's Advocate",
+          "Harpy",
+          "Witch",
+          "Spy",
+          "Cerenovus",
+          "Fearmonger",
+          "Pit-Hag",
+          "Psychopath",
+          "Assassin",
+          "Baron",
+          "Mezepheles",
+          "Goblin",
+          "Scarlet Woman",
+          "Mastermind",
+          "Evil Twin",
+          "Boomdandy",
+          "Marionette",
+          "Organ Grinder",
+          "Vizier"
+        ],
+        "Demon": [
+          "Pukka",
           "Lil' Monsta",
           "Lleech",
-          "Lunatic",
-          "Lycanthrope"
-        ],
-        "M": [
-          "Magician",
-          "Marionette",
-          "Mastermind",
-          "Mathematician",
-          "Matron",
-          "Mayor",
-          "Mezepheles",
-          "Minstrel",
-          "Monk",
-          "Moonchild",
-          "Mutant",
-          "madness",
-          "mid game",
-          "minion"
-        ],
-        "N": [
-          "Nightwatchman",
           "No Dashii",
-          "Noble",
-          "nomination | nominate"
-        ],
-        "O": [
-          "Ojo",
-          "Oracle",
-          "Organ Grinder",
-          "out of play",
-          "outsider"
-        ],
-        "P": [
-          "Pacifist",
-          "Philosopher",
-          "Pit-Hag",
-          "Pixie",
-          "Plague Doctor",
-          "Po",
-          "Poisoner",
-          "Politician",
-          "Poppy Grower",
-          "Preacher",
-          "Professor",
-          "Psychopath",
-          "Pukka",
-          "Puzzlemaster",
-          "poison",
-          "preached",
-          "protect"
-        ],
-        "R": [
-          "Ravenkeeper",
-          "Recluse",
-          "Revolutionary",
-          "Riot",
-          "red herring",
-          "register | registration",
-          "regurgitate | regurgitation",
-          "resurrect"
-        ],
-        "S": [
-          "Sage",
-          "Sailor",
-          "Saint",
-          "Savant",
-          "Scapegoat",
-          "Scarlet Woman",
-          "Seamstress",
-          "Sentinel",
+          "Imp",
           "Shabaloth",
-          "Slayer",
-          "Snake Charmer",
-          "Snitch",
-          "Soldier",
-          "Spirit of Ivory",
-          "Spy",
-          "Steward",
-          "Storm Catcher",
-          "Sweetheart",
-          "setup",
-          "sober"
-        ],
-        "T": [
-          "Tea Lady",
-          "Thief",
-          "Tinker",
-          "Town Crier",
-          "Toymaker",
-          "townsfolk",
-          "traveller"
-        ],
-        "U": [
-          "Undertaker"
-        ],
-        "V": [
+          "Po",
+          "Zombuul",
+          "Al-Hadikhia",
           "Vigormortis",
-          "Village Idiot",
-          "Virgin",
-          "Vizier",
+          "Fang Gu",
           "Vortox",
-          "Voudon",
-          "vote | voting"
-        ],
-        "W": [
-          "Washerwoman",
-          "Widow",
-          "Witch"
-        ],
-        "Y": [
+          "Legion",
+          "Leviathan",
+          "Riot",
+          "Kazali",
+          "Ojo",
           "Yaggababble"
         ],
-        "Z": [
-          "Zombuul"
+        "Traveller": [
+          "Bureaucrat",
+          "Thief",
+          "Gunslinger",
+          "Scapegoat",
+          "Beggar",
+          "Apprentice",
+          "Matron",
+          "Judge",
+          "Bishop",
+          "Voudon",
+          "Barista",
+          "Harlot",
+          "Butcher",
+          "Deviant",
+          "Bone Collector",
+          "Gangster"
+        ],
+        "Fabled": [
+          "Revolutionary",
+          "Fiddler",
+          "Toymaker",
+          "Fibbin",
+          "Bootlegger",
+          "Spirit of Ivory",
+          "Hell's Librarian",
+          "Djinn",
+          "Duchess",
+          "Storm Catcher",
+          "Sentinel",
+          "Doomsayer",
+          "Angel",
+          "Buddhist",
+          "Ferryman",
+          "Gardener"
+        ],
+        "Extra": [
+          "demon",
+          "minion",
+          "townsfolk",
+          "outsider",
+          "fabled",
+          "traveller",
+          "poison",
+          "drunk",
+          "droisoned",
+          "sober",
+          "healthy",
+          "good",
+          "evil",
+          "alive",
+          "dead",
+          "preached",
+          "nomination | nominate",
+          "execution | execute | executing",
+          "register | registration",
+          "vote | voting",
+          "alignment",
+          "jinx",
+          "resurrect",
+          "regurgitate | regurgitation",
+          "madness",
+          "setup",
+          "protect",
+          "in play",
+          "out of play",
+          "bluff",
+          "mid game",
+          "red herring",
+          "Teenysville"
         ]
       };
+
+
+
       // end of variables and constants</script>
     <script> // functions
 
@@ -15373,7 +15343,7 @@ s
       }
 
       function startsWithCapital(term) {
-        term[0] === term[0].toUpperCase()
+        term[0] === term[0].toUpperCase();
       }
 
       function spinMagnifyingGlass() {
@@ -15391,7 +15361,7 @@ s
         closeSubMenu();
         keywordsIndex.querySelector(`.${letter}`).classList.add("openedMenu");
         currentSubMenuLetter = letter;
-        populateSubMenu(keywords[letter] || []);
+        populateSubMenu(alphabetised_keywords[letter] || []);
         submenu.style.display = "flex";
 
         // Calculate position based on the clicked menu item
@@ -15424,7 +15394,7 @@ s
           letterDiv.textContent = letter;
           letterDiv.id = letter;
 
-          if (letter in keywords) {
+          if (letter in alphabetised_keywords) {
             letterDiv.addEventListener("click", (event) => openSubMenu(letter, event));
           }
           else {
@@ -15449,12 +15419,15 @@ s
         for (let word of wordList) {
           const wordDiv = document.createElement("div");
           wordDiv.classList.add("submenuItem");
-          wordDiv.innerHTML = word.split("|")[0];
+          const wordSpan = document.createElement("span");
+          wordSpan.innerHTML = word.split("|")[0];
           wordDiv.dataset.filter = word;
+          wordSpan.classList.add(searchDictionary(word, keywords));
           wordDiv.addEventListener("click", function(){
             closeSubMenu();
             addToFilter(wordDiv.dataset.filter);
           }); 
+          wordDiv.appendChild(wordSpan);
           submenu.appendChild(wordDiv);
         }
       }
@@ -15558,9 +15531,44 @@ s
         var w = keywordsIndex.offsetWidth;
         selectedKeywords.style.right = w + 'px';
       }
+
+      function processDictionary(dictionary) {
+        var result = {};
+
+        for (var key in dictionary) {
+          var terms = dictionary[key];
+
+          for (var i = 0; i < terms.length; i++) {
+            var firstLetter = terms[i][0].toUpperCase();
+
+            if (!result[firstLetter]) {
+              result[firstLetter] = [];
+            }
+
+            result[firstLetter].push(terms[i]);
+          }
+        }
+
+
+        for (var letter in result) {
+          result[letter].sort(function(a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase());
+          });
+        }
+        return result;
+      }
+      function searchDictionary(word, dictionary) {
+        for (var key in dictionary) {
+          if (dictionary[key].indexOf(word) !== -1) {
+            return key;
+          }
+        }
+        return null;
+      }
     </script>
     <script> // start
-
+      var alphabetised_keywords = processDictionary(keywords);
+      
       correctPositioning();
       createIndexMenu();
 

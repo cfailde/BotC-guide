@@ -237,35 +237,17 @@ def update_index(html, output_path):
     end_index = javascript_code.find("};", start_index) + 1
     keywords_str = javascript_code[start_index-1:end_index]
 
-    sorted_keywords = {}
-
-    # populate the dictionary
-    for name in all_the_words:
-        first_letter = name[0].upper()
-        if first_letter not in sorted_keywords:
-            sorted_keywords[first_letter] = [name]
-        else:
-            sorted_keywords[first_letter].append(name)
-
-    # sort the dictionary alphabetically
-    sorted_keys = sorted(sorted_keywords.keys())
-    sorted_keywords = {key: sorted_keywords[key] for key in sorted_keys}
-    for key in sorted_keywords:
-        sorted_keywords[key] = sorted(sorted_keywords[key])
-
-    new_keyword_count = 0
-    for key, value in sorted_keywords.items():
-        new_keyword_count += len(value)
-    print(f"  Added {new_keyword_count} keywords to index")
-
     # Convert the new dictionary to a JSON string
-    new_keywords_dict_str = json.dumps(sorted_keywords, indent=2)
+    new_keywords_dict_str = json.dumps(all_the_words, indent=2)
 
     # Replace the old index string with the new one
     javascript_code = javascript_code.replace(keywords_str, new_keywords_dict_str)
 
     # Update the <script> tag with the modified JavaScript code
     script_tag.string = javascript_code
+
+    new_keyword_count = sum(len(words) for words in all_the_words.values())
+    print(f"  Added {new_keyword_count} keywords to index")
 
     debug(str(soup), output_path)
     return str(soup)
@@ -389,8 +371,15 @@ Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
-all_the_words = Townsfolk + Outsider + Minion + Demon + Traveller + Fabled + Extra
+Extra += [ "Teenysville" ]
 
+all_the_words = {"Townsfolk":Townsfolk ,
+                 "Outsider":Outsider,
+                 "Minion":Minion,
+                 "Demon":Demon,
+                 "Traveller":Traveller,
+                 "Fabled":Fabled,
+                 "Extra":Extra }
 
 print("Starting update.")
 
