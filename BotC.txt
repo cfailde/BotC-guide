@@ -1560,7 +1560,8 @@ A The Choirboy learns the Demon each time the King is killed by the Demon.
 Q If the King is Barber swapped with a dead player, does the Choirboy get their info?
 A No, the King was not killed by the Demon.
 
-Q If the King is killed by a non Demon (Gossip / Lycanthrope / Virgin / Moonchild / Assassin / Cerenovus / Godfather / Pit-Hag / Witch / Apprentice / Butcher / Gunslinger / Harlot / Judge / ...),
+Q If the King is killed by a non Demon
+  (Gossip / Lycanthrope / Virgin / Moonchild / Assassin / Cerenovus / Godfather / Pit-Hag / Witch / Apprentice / Butcher / Gunslinger / Harlot / Judge / ...),
   does the Choirboy learn the Demon?
 A No, except if the player that kills the King is holding Lil’ Monsta at the time and so registers as the Demon.
 
@@ -1967,9 +1968,12 @@ A _The_ Drunk is actually an Outsider, deceived into thinking that they are a To
 
   However, in a game with a (healthy, sober and alive) Vortox, the drunk or poison status of Townsfolk is irrelevant - their abilities must yield false info.
 
-Q On a script with (say) the Pit-Hag (or even the Barber) 
-  it is legal to tell the Drunk that they have changed character to a different Townsfolk, because it still satisfies the 'you think you are a Townsfolk'-part of 'the Drunk'?
-A Yes, as long as the ST makes them still think that they are a Townsfolk, it is fine to deceive them into thinking they changed. It is real fun to make them think they got turned into the Farmer sometimes.
+Q On a script with character changers (Pit-Hag / Barber / ...) 
+  it is legal to tell the Drunk that they have changed character to a different Townsfolk,
+  because it still satisfies the "you think you are a Townsfolk" part of the Drunk's ability?
+A Yes, as long as the ST makes them still think that they are a Townsfolk,
+  it is fine to deceive them into thinking they changed.
+  It is real fun to make them think they got turned into the Farmer sometimes.
 
 Q Can the ST tell the Drunk that they turned into another Townsfolk character to the one they currently believe they are, to simulate the Pit-Hag?
 A Yes.
@@ -3106,7 +3110,7 @@ A This can be ruled either way:
   * Some STs rule that even if they do not claim Juggler they can still get information.
   * Some STs rule that the "public" aspect of Juggler requires an actual claim in Town Square and no claim means no info.
 
-  These are both legitimate rulings, and can make a difference in a Vortox game.  
+  These are both legitimate rulings, and can make a difference in a Vortox game. 
 
 Q When does the Philosopher Juggler have to juggle to get their info?
 A The day after they picked the Juggler ability.  They are then woken the following night to gain their info.
@@ -3366,7 +3370,8 @@ A Yes.
   Any execution will happen before this time giving the good team the chance to execute the Leviathan.
 
 Q If the Leviathan becomes drunk or poisoned after the first dusk, are the players told that the Leviathan is in play when they become sober and healthy?
-A No, all players already know the Leviathan is in play if they have been already announced it. The extra day notifications are just there for the players to remember the day count.
+A No, all players already know the Leviathan is in play if they have been already announced it.
+  The extra day notifications are just there for the players to remember the day count.
 
 Q On N1 the Poisoner learns two players as the Demon.  Could she poison one to confirm who is the Leviathan and who is the Magician?
 A Yes.
@@ -3664,7 +3669,8 @@ Q What is the ruling for the Lleech being drunked or poisoned when either they o
 A If the Lleech is drunk:
   # they die when executed
   # they do not die when the host dies
-  # they become immortal if the second point happens even when they become sober again, unless the recommended ruling is run that the Lleech dies even if drunk when the host dies.
+  # they become immortal if the second point happens even when they become sober again,
+    unless the recommended ruling is run that the Lleech dies even if drunk when the host dies.
 
 Q Can the Lleech self-host?
 A Yes.  They are self-poisoned for the rest of the game meaning they cannot kill at night and can die.
@@ -3800,7 +3806,8 @@ A No, they do not learn their alignment because their alignment has not changed.
   If it is a new player, it might be helpful for the ST to tell them their alignment, but for experienced players this is not necessary.
   If the Lunatic actually turned evil due to a Fang Gu jump then they would learn they are now evil.
 
-  In general, players only learn when their alignment changes, and if a player were to enquire about their alignment should be told something like "your alignment has not changed".
+  In general, players only learn when their alignment changes,
+  and if a player were to enquire about their alignment should be told something like "your alignment has not changed".
 
   A similar scenario to the pithagged Lunatic is the Marionette who when catching a star pass is not informed they are evil because their alignment has not changed.
 
@@ -3842,7 +3849,8 @@ A No, they are shown the player who the Lunatic Ojo functionally targeted, i.e. 
 Q What is the Demon shown when the Lunatic Ojo picks an out of play role?
 A Nothing.
 
-  The Lunatic says the Demon learns who they picked, and the Ojo says picking an out of play character is the ST's choice not the player's, so the Lunatic Ojo did not pick anyone.
+  The Lunatic says the Demon learns who they picked,
+  and the Ojo says picking an out of play character is the ST's choice not the player's, so the Lunatic Ojo did not pick anyone.
 
 Q If the Hatter dies, can the Lunatic be given the choice to change characters?
 A Yes, this does not even need the actual Hatter to die.
@@ -4080,9 +4088,11 @@ A Yes.
   And it is a N1 +1 to the Mathematician too.
 
 Q Can the Marionette neighbour the Recluse registering as the Demon?
-A Yes. It is still best to inform the actual Demon of the Marionette, not the Recluse, otherwise that would out a player who does not even know that they are evil to a good player.
+A Yes.
+  It is still best to inform the actual Demon of the Marionette,
+  not the Recluse,
+  otherwise that would out a player who does not even know that they are evil to a good player.
   This also tells the Demon that one of the Marionette's neighbours is the Recluse.
-
 
 Q What are the restrictions on who can be the Marionette?
 A Anyone can be the Marionette except:
@@ -4111,7 +4121,8 @@ A Yes, that is a function of the Marionette ability, and all character abilities
 Q Can the Marionette think that she is an Outsider?
 A Yes.
 
-Q The restrictions on the Marionette at setup, namely that they are evil believing they are a good player and they are sat either next to the Demon or the Recluse registering as the Demon ... 
+Q The restrictions on the Marionette at setup,
+  namely that they are evil believing they are a good player and they are sat either next to the Demon or the Recluse registering as the Demon ... 
   do they apply mid game for the purposes of the Barber / Pit-Hag / Engineer / Hatter / ...?
 A No.
   The new Marionette:
@@ -4169,15 +4180,6 @@ Q If an Outsider is made into the Marionette,
   is it still a legal setup?
 A Yes. In this scenario the Marionette has acted like a soft -1 Outsider modifier.
 
-Q If the Demon changes player
-  (Fang Gu jump / new Lil' Monsta babysitter / Imp self-kills / Snake Charmer correctly guesses / Pit-Hag creates a new Demon / Barber swap / Hatter / Scarlet Woman / Engineer / ...),
-  do they learn the Marionette, the Lunatic and the King?
-A Yes.
-
-  These are all "the Demon knows who you are" abilities, which apply while these characters are alive and in play.
-  If the Demon changes player,
-  then the new Demon player must be told who each of them is.
-  If the Demon ever changes back to a previous player, they are not told again.
 
 Q If a dead player becomes the Marionette (Pit-Hag / Barber / ...) does the Demon still learn them?
 A No, the dead Marionette has no ability.
@@ -4218,7 +4220,8 @@ A Yes.
   A F2 day with Mastermind and a "dead" Zombuul is also a typical situation so the players will need to figure out what happened.
 
 Q If there is a Mastermind ability in play and the Demon is executed ending the game, a Mastermind day triggers.
-  If a new demon is created or some other mechanic would allow the game to otherwise continue after the Mastermind day has triggered, does the Mastermind day continue?
+  If a new demon is created or some other mechanic would allow the game to otherwise continue after the Mastermind day has triggered,
+  does the Mastermind day continue?
 A The Mastermind's ability is still in effect even though the game can now continue without it:
   If no one is executed the game would continue but if someone is executed that player loses
 
@@ -4247,7 +4250,9 @@ A Correct.
 ===============
 =Mathematician=
 ===============
-
+Q If the Juggler does not juggle on the first day and the ST decides not to show a number,
+  is the Mathematician pinged?
+A No, since the Juggler not receiving a number is not due to another character ability.
 
 Q If the Barista 1 Townsfolk targeting the unpicked Goon is not made drunk ... does this register to the Mathematician?
 A Yes.  The Goon failing to drunk the first player to pick her means that her ability worked abnormally.
@@ -5353,8 +5358,10 @@ A Either:
   * If they are protected the first night then the Pukka poison is never applied, so there is no "previously poisoned player" the following night, so no Demon kill.
   * If instead they are protected the following night then they do not die and become healthy.
 
-  The Pukka's target does not need to be protected on both nights: if they were protected on the first night, then the Monk is free to protect someone else the following night.
-  From the Monk's perspective they have two good targets available to them, the player targeted the night before or the one targeted tonight - the Monk is super strong in a Pukka game.
+  The Pukka's target does not need to be protected on both nights:
+  if they were protected on the first night, then the Monk is free to protect someone else the following night.
+  From the Monk's perspective they have two good targets available to them,
+  the player targeted the night before or the one targeted tonight - the Monk is super strong in a Pukka game.
 
 Q If the Monk-protected player is picked by the Pukka, are they poisoned that night?
 A No (the ST does not place the Pukka poison token next to them), and they do not die the following night.
@@ -5680,6 +5687,9 @@ A Yes, the SW is woken to learn of those characters before the Snake Charmer act
 ===========
 =Shabaloth=
 ===========
+Q If the Shabaloth sinks a kill into a dead player, can that player be regurgitated the next night even though they were not killed by the Shab?
+A Yes, since the Shab's ability is "a player you chose last night might be regurgitated"; it does not specify needing to be the killer.
+
 Q The Shabaloth dies and the game continues (Scarlet Woman / Mastermind / Evil Twin / ...).  The dead Shabaloth’s kills can no longer be regurgitated, correct?
 A Correct, as the Shabaloth who picked them no longer has an ability, so cannot regurgitate anyone.
 
@@ -6242,7 +6252,8 @@ A ST choice:
   # the nominator is executed and dies by the Virgin ability.
   # the nominator dies to the Witch curse, then their corpse is executed by the Virgin ability. The ST announces "X dies and is executed".
   
-  In both cases the day will be over (barring the Butcher being in play). The first option hides the existence of the Witch, which depending on game state might be better for evil,
+  In both cases the day will be over (barring the Butcher being in play).
+  The first option hides the existence of the Witch, which depending on game state might be better for evil,
   but the second option makes the Witch a little stronger:
   * The Undertaker (who only learns about those who die to execution) would not be woken that night.
   * The Cannibal will not gain the ability of the nominator.
@@ -6250,8 +6261,9 @@ A ST choice:
 ========
 =Vizier=
 ========
-Q The Vizier's ability reads "All players know who you are." Is the droisoned Vizier announced on the first day? Or can the ST make the Vizier believe they are sober/healthy by still announcing them?
-A The Vizier remains unannounced (and cannot force through an execution and can die during the day) until they become healthy/sober.  
+Q The Vizier's ability reads "All players know who you are."
+  Is the drunk / poisoned Vizier still announced on the first day or can the ST make the Vizier believe they are sober/healthy by still announcing them?
+A The Vizier remains unannounced (and cannot force through an execution and can die during the day) until they become healthy and sober.  
   
   Droisoned players can never affect the state of the game,
   even if that means they immediately realize they are droisoned.
@@ -6412,7 +6424,8 @@ A That they were chosen by the Preacher, same as a non Vortox game, as being tol
   If it were an ability where you learnt _who_ picked you (such as when the Exorcist picks the Vortox) then that would part would be falsified.
 
 Q How does the Nightwatchman ability work in a Vortox game?
-A The target of the Nightwatchman / Philosopher Nightwatchman / Cannibal Nightwatchman / Pixie Nightwatchman wakes up and learns they were picked by the Nightwatchman but is shown the wrong player.
+A The target of the Nightwatchman / Philosopher Nightwatchman / Cannibal Nightwatchman / Pixie Nightwatchman wakes up
+  and learns that they were picked by the Nightwatchman but is shown the wrong player.
 
   The Vortox says Townsfolk abilities yield false info
   and info passing characters such as the Nightwatchman are ruled that the ability name/type is not part of the vortoxable information -
@@ -6930,8 +6943,24 @@ A The Demon should be shown three characters that are safe for her to bluff as, 
   Additionally, some STs would consider it illegal to do so; the argument is that the Demon should see three out of play _tokens_.
   But if the group is experienced it could be attempted, perhaps to signal to the Demon who the Drunk is.
 
-Q If a new Demon is made, do they learn about the Marionette / Lunatic / King?
-A A new Demon learns anything the Demon "knows" (Mario, King, etc.) that is currently still in play and active when they are created that they have not already been informed of. 
+Q If the Demon changes player
+  (Fang Gu / Lil' Monsta / Imp / Snake Charmer / Pit-Hag / Barber / Hatter / Scarlet Woman / ...),
+  what do they learn?
+A They learn:
+  * what Demon they are;
+  * that they are evil, if they were previously good.
+  
+  Additionally the are told if applicable:
+  * the King,
+  * the Marionette,
+  * the Lunatic, along with any picks they make each night.
+  
+  The Marionette, the Lunatic and the King are all "the Demon knows who you are" abilities,
+  so the new Demon learns any that are currently in play and active that they have not already been informed of.
+
+  The new Demon does not learn any bluffs or the Minions, as this info was given in the Demon info step which already happened,
+  unless it was skipped because of an in play Poppy Grower,
+  in which case all Minions and Demons learn each other when the last sober and healthy PG ability dies.
 
 Q The Philosopher N1 takes on the ability of an out of play character.
   Since the Philosopher's turn comes before the Demon gets their bluff,
