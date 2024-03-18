@@ -32,14 +32,16 @@ A Because:
 ===========
 =Alchemist=
 ===========
-Q What happens when the Alchemist is drunk or poisoned on their first night? / How does Philosopher picking Alchemist N1 affect the Alchemist?
+Q What happens when the Alchemist is drunk or poisoned on their first night? / How does the Philosopher picking Alchemist N1 affect the Alchemist?
 A Their ability is something the Alchemist starts knowing
   and just as with any start knowing character who is drunk or poisoned
   they can get wrong info on their first night
-  that is not corrected if they become sober / healthy.
+  that is not corrected if they become sober and healthy.
 
-  On N1 the Alchemist is assigned an out of play Minion ability.
-  If they are N1 drunk/poisoned they are told that they have another ability, typically one that is in play,
+  On N1 the ST assigns the Alchemist an out of play Minion ability.
+  But if they are N1 drunk or poisoned then instead of learning their correct ability
+  they are told that they have another ability,
+  typically one that is in play,
   and the ST will treat them as having that ability.
   When the Alchemist becomes sober and healthy, they do not change abilities, their actual ability that they had from setup now functions correctly,
   and the ST treats them as having that ability.
@@ -80,6 +82,10 @@ A Yes.
 
   Technically the ability requires claiming to be the Goblin in order to win when executed,
   but it would be harsh to not treat both as valid claims.
+
+Q Can the Alchemist have the Legion ability?
+A No, Legion is a Demon not a Minion.  Only after the ability is in play can the Legion player register as Minion.
+  Likewise the Alchemist cannot have the Recluse ability.
 
 Q How does the Alchemist who gains the Marionette ability work? / How does the Marionette who thinks that they are the Alchemist work?
 A These pairings should be avoided as it is unfun and uninteresting.
@@ -765,6 +771,9 @@ A If doubled on the first night, the Mez learns two words and the first good pla
   * if they have already used their ability, that is turned someone evil, they can turn another player turned today by getting them to say the word;
   * if they have not already used it, then they can get two people to turn today.
 
+Q How does the Barista doubled Nightwatchman work?
+A Two players can be picked and each is shown the Nightwatchman token.  Each player is told once, not twice.
+
 Q What does a Barista 1 Savant learn?
 A Two true statements.
 
@@ -1227,7 +1236,7 @@ A When a new player dies from execution, the Cannibal loses the Pixie ability,
   and in turn loses any other ability they might have gained (although it is very difficult in the first place
   for the Cannibal to gain an ability via the Pixie ability)
 
-Q If a player gains the Nightwatchman ability (Philosopher / Cannibal / Pixie) what are they shown to other players as?
+Q If a player gains the Nightwatchman ability (Philosopher / Cannibal / Pixie / Apprentice) what are they shown to other players as?
 A Nightwatchman.
 
   The "you" in these kinds of abilities refers to the ability itself.
@@ -1294,7 +1303,7 @@ A They get another three, since there is a new Snitch ability in play.
 Q Could the Spy register as good therefore letting the Cannibal see the Grimoire?
 A Yes.
 
-Q How does the Cannibal intteract  with the Spy
+Q How does the Cannibal interact  with the Spy?
 A The Cannibal cannot legitimately be treated as sober/healthy and having gained the Spy ability without having a legitimately good Spy already.
   The Spy specifically registers as good and as a Townsfolk or Outsider,
   so if the Spy registers as good to the Cannibal, they must also register as a specific Townsfolk/Outsider and the Cannibal would gain that ability instead.
@@ -1401,11 +1410,56 @@ A Yes.
 =============
 =Chambermaid=
 =============
-Q Does the King register to the Chambermaid?
-A Not unitl the dead outnumber the living.  After that point he begins to wake up to receive his info and will start to register to the Chambermaid.
+Q What is the Al-Hadikhia jinx with the Chambermaid?
+A The Al-Hadikhia's targets do not register as waking, if they would not otherwise wake,
+  because it is due to the Al-Hadikhia ability that they are waking.
+
+Q Does the Cannibal gaining a night-waking ability and waking to use it, register to the Chambermaid?
+A Yes.
 
 Q Does the Damsel waking to learn that they have been turned into a Townsfolk register to the Chambermaid?
 A Only if they wake due to their new ability, since players waking to learn that they are a new character is is not waking due to their own ability.  
+
+Q Does waking a Minion to tell them the Damsel is in play register to the Chambermaid?
+A No, that is not waking due to their ability.
+
+Q Do the Drunk, Marionette and the Lunatic, who in reality do not have the ability that they think they have, "wake at night due to their own ability" for the Chambermaid?
+A Yes.
+
+Q If the Demon is selected by the Exorcist, their waking to learn the Exorcist is not reflected in the Chambermaid's number,
+  since they are waking due to the Exorcist's ability.
+  However, if the Recluse registering as the Demon is selected by the Exorcist, 
+  then them waking to see the Exorcist is caused by the Exorcist's ability or their own,
+  since it was their own misregistration that allowed them to wake?
+A They woke to the Exorcist’s ability so it does not register to the Chambermaid.
+  They are not being tricked into believing something fake (like the Lunatic for instance), so it is not their own ability.
+  The Exorcist still did choose them and directly cause their waking.
+
+Q Does a new instance of the Evil Twin learning their twin ping the Chambermaid?
+A Yes.  Learning that they are now the Evil Twin does not ping the Chambermaid,
+  but waking due to their ability to know their twin is a Chambermaid +1.
+
+Q Do "start knowing" roles, like the Grandmother learning their grandchild, register on their first night to the Chambermaid?
+A Yes, they woke up to their own ability.
+
+Q The Lunatic wakes up to falsely learn a player is the Exorcist that selected them. Does this ping the Chambermaid?
+A Yes, as the waking is due to their own ability.
+
+Q Do Minions, the Demon and the Lunatic getting their N1 info count as waking to the Chambermaid?
+A Only in the case of the Lunatic.
+
+  The Chambermaid detects if a player woke up for their character ability, and Minion and Demon info are a function of character type, not character ability.
+  In contrast, the Lunatic, who wakes up to receive Demon info is detected by the Chambermaid
+  because they are not actually a Demon and did wake up due to their own ability.
+
+Q Does the King register to the Chambermaid?
+A Not unitl the dead outnumber the living.  After that point he begins to wake up to receive his info and will start to register to the Chambermaid.
+
+Q If the good Mezepheles turns themselves evil that night, does that count as a +1 to the Chambermaid?
+A Yes, they woke up due to their own ability.
+
+Q Does the player selected by the Nightwatchman register to the Chambermaid?
+A No, as they are waking to the Nightwatchman ability, not their own.
 
 Q Does the Pit-Hag who turns himself into a non-waking character register to the Chambermaid?
 A Yes. That player woke to an ability that they had at some point that night.
@@ -1413,25 +1467,8 @@ A Yes. That player woke to an ability that they had at some point that night.
 Q What number does the Chambermaid learn if they pick the Demon and the Snaker Charmer on the night that they swapped roles?
 A 1. The starting SC woke to charm the Demon, then as the new Demon they killed.  The starting Demon did not wake to their own ability.
 
-Q Does the Cannibal gaining a night-waking ability and waking to use it, register to the Chambermaid?
-A Yes.
-
-Q What is the Al-Hadikhia jinx with the Chambermaid?
-A The Al-Hadikhia's targets do not register as waking, if they would not otherwise wake,
-  because it is due to the Al-Hadikhia ability that they are waking.
-
-Q Do "start knowing" roles, like the Grandmother learning their grandchild, register on their first night to the Chambermaid?
-A Yes, they woke up to their own ability.
-
-Q Does waking a Minion to tell them the Damsel is in play register to the Chambermaid?
-A No, that is not waking due to their ability.
-
-Q If the Chambermaid chooses someone who died that same night, are they told to choose another player?
-A Yes.  That will reveal to the Chambermaid one of their picks died,
-  but the death is declared in the morning before anyone else should be talking so it does not matter.
-
-Q If the good Mezepheles turns themselves evil that night, does that count as a +1 to the Chambermaid?
-A Yes, they woke up due to their own ability.
+Q Does the Scarlet Woman only count for waking for the Chambermaid's ability when they become the Demon?
+A Yes. But the ST might consider their waking up when the Imp self-kills is due to the Imp's ability, not the SW's ability, and not ping the Chambermaid.
 
 Q The Snake Charmer picks the Demon. The Chambermaid checks the new Demon, who did not wake as a part of the Demon's ability, but as a part of the Snake Charmer's ability.
   Is that a +1 to the Chambermaid?
@@ -1440,16 +1477,16 @@ A Yes.
   which counts as waking to your own ability,
   so it is a Chambermaid +1.
 
-Q If the Demon is selected by the Exorcist, their waking to learn the Exorcist is not reflected in the Chambermaid's number,
-  since they are waking due to the Exorcist's ability.
-  However, if the Recluse registering as the Demon is selected by the Exorcist, 
-  then them waking to see the Exorcist is caused by the Exorcist's ability or their own,
-  since it was their own mis-registration that allowed them to wake?
-A They woke to the Exorcist’s ability so it does not register to the Chambermaid.
-  They are not being tricked into believing something fake (like the Lunatic for instance), so it is not their own ability.
-  The Exorcist still did choose them and directly cause their waking.
+Q Who can the Chambermaid pick if they are alive in a final two, where the Zombuul is registering as dead?
+  The Chambermaid must pick two alive players but cannot pick themselves and there is only one other alive player.
+A They do not get any info.
+  There is no need to even wake them.
 
-Q If someone wakes and chooses not to use their ability (Professor / Philosopher / Courtier / ...) does it register to the Chambermaid?
+Q If the Chambermaid chooses someone who died that same night, are they told to choose another player?
+A Yes.  That will reveal to the Chambermaid one of their picks died,
+  but the death is declared in the morning before anyone else should be talking so it does not matter.
+
+Q If someone wakes and chooses not to use their ability (Professor / Philosopher / Courtier / Nightwatchman / ...) does it register to the Chambermaid?
 A Yes, they still woke to their own ability.
   If a player has a once-per-game ability,
   they wake up each night for their own ability so that they can choose to use it or not.
@@ -1462,11 +1499,7 @@ A Yes, they still woke to their own ability.
   - if they are claiming to have used their ability,
   you can check to see if that is true by seeing if they wake up the next night!"
 
-Q Who can the Chambermaid pick if they are alive in a final two, where the Zombuul is registering as dead?
-  The Chambermaid must pick two alive players but cannot pick themselves and there is only one other alive player.
-A They do not get any info.
-  There is no need to even wake them.
-
+------------------ combine?
 Q Does a Minion learning they are now the Imp alert the Chambermaid?
 A No. They are not waking to their own ability.
 
@@ -1474,10 +1507,7 @@ A No. They are not waking to their own ability.
 
 Q Does a Minion / the Demon waking up to learn their new role after an Engineer swap ping the Chambermaid?
 A Only if they wake due to their new ability.
-
-Q Does a new instance of the Evil Twin learning their twin ping the Chambermaid?
-A Yes.  Learning that they are now the Evil Twin does not ping the Chambermaid,
-  but waking due to their ability to know their twin is a Chambermaid +1.
+-------------------------
 
 Q Does any character waking to learn of a change in alignment count for the Chambermaid, or just the Goon and the Cult Leader?
 A The Chambermaid only learns if the character woke due to their own power.
@@ -1499,21 +1529,6 @@ A No, they correctly learn that the Spy wakes and the Recluse does not.
   * The Spy who is alive and sees the Grimoire woke to their own ability, and misregistration cannot change this fact or stop the Chambermaid from getting a correct ping.
   * The Recluse who misregisters as the Demon does not actually wake up to kill and does not incorrectly ping the Chambermaid.
 
-Q Does the Scarlet Woman only count for waking for the Chambermaid's ability when they become the Demon?
-A Yes. But the ST might consider their waking up when the Imp self-kills is due to the Imp's ability, not the SW's ability, and not ping the Chambermaid.
-
-Q Do the Drunk, Marionette and the Lunatic, who in reality do not have the ability that they think they have, "wake at night due to their own ability" for the Chambermaid?
-A Yes.
-
-Q The Lunatic wakes up to falsely learn a player is the Exorcist that selected them. Does this ping the Chambermaid?
-A Yes, as the waking is due to their own ability.
-
-Q Do Minions, the Demon and the Lunatic getting their N1 info count as waking to the Chambermaid?
-A Only in the case of the Lunatic.
-
-  The Chambermaid detects if a player woke up for their character ability, and Minion and Demon info are a function of character type, not character ability.
-  In contrast, the Lunatic, who wakes up to receive Demon info is detected by the Chambermaid
-  because they are not actually a Demon and did wake up due to their own ability.
 
 
 ======
@@ -2691,6 +2706,9 @@ A If the Goon says the Mez word during the day,
   The now evil Goon can still be turned good the same night if a good player is the first to pick them,
   thereby flipping the Goon's alignment twice in the same night.
 
+Q If the Nightwatchman chooses the unpicked Goon, what happens?
+A The Nightwatchman is drunked and the Goon does not learn who the Nightwatchman is.
+
 Q Does the Ojo choosing the unpicked Goon cause no deaths?
 A Yes, additionally the Ojo is drunked and the Goon flipped / remains evil.
   This is consistent with other characters choosing the Goon (Philosopher / Courtier / ...)
@@ -3740,93 +3758,23 @@ A A new Lleech chooses their host as soon as possible, then follows that by choo
 =========
 =Lunatic=
 =========
-Q What does the Demon learn when the Lunatic thinks that they are the Yaggababble?
-A Just who the Lunatic is.
-
-  The Demon learns who the Lunatic picks, and if the Lunatic does not or cannot pick anyone, the Demon learns nothing.
-
-Q What does the Demon learn if their Lunatic Po charges / Lunatic Zombuul does not wake?
-A Nothing.
-
-  The Demon learns who the Lunatic chooses, and if they do not choose anyone for whatever reason then they learn nothing.
-
-Q Does the Lunatic learn that they are evil if they are turned by the Mezepheles?
-A All players learn if they change alignment, even the Lunatic.
-
-Q Does the Demon learn who the Lunatic Lleech chose as their host?
-A The Demon learns who their Lunatic picks on N1 but does not learn what Demon they believe they are,
-  so from the Demon's perspective they could be learning who the Lunatic Pukka picked to poison.
-
-Q What happens when the Lunatic picks the Goon?
-A If the Lunatic is the first to pick the Goon at night then:
-  * the Goon is flipped to good / stays good
-  * the Lunatic is drunked, so the ST deceives them that their ability, that they belive they are the Demon, is still working
-  * the Demon is not informed of the Lunatic's picks that night
-
-  When a player is drunk or poisoned, they are deceived into believing that their ability is working normally.
-  The first part of the Lunatic's ability is a "you think" ability, which means deceiving the player about what they are.  
-  So a drunk or poisoned Lunatic is deceived into believing that their ability is working normally ... which is to believe that they are some other character.
-  So nothing has changed.
-  
-  However, drunkeness or poisoning does shut down the other mechanical part of their ability,
-  which is to inform the Demon of their picks.
-
-Q Can you tell the Lunatic that they have been snake charmed?
-A No, because the Lunatic's ability is that they think that they _are_ the Demon, not that they _were_ the Demon.
-  If they are told that they are the good Snake Charmer then they are no longer being deceived that they are the Demon.
-
-Q Does a drunk or poisoned Lunatic's pick(s) get shown to the Demon?
-A No. They are still deceived into thinking their ability is working, so they are woken to choose if they normally would be,
-  but the Demon will not learn their choices.
-
 Q If the Courtier drinks with the Lunatic, does the Lunatic still believe that they are the Demon?
 A Yes. The Lunatic will have pulled their Demon token out of the bag and learned fake info before the Courtier would be able to drink with them.
 
   While the Lunatic is drunk (by Courtier or otherwise)
-  the ST treats them like the Demon that they think they are, waking them up to get their choices
+  the ST treats them like the Demon that they think they are, waking them up to get their choices,
   but the actual Demon is not informed of their picks.
 
 Q If the Courtier drinks with the Lunatic on day one, would the Demon learn of the Lunatic?
 A Yes.
-  On night one, both the Lunatic waking to learn their fake information and the Demon waking to learn their real information happens before the Courtier acts.
+  N1 both the Lunatic waking to learn their fake information and the Demon waking to learn their real information happens before the Courtier acts.
 
-  However, if a droisoned player is turned into the Lunatic, the Demon would not learn about them until the Lunatic is sober/healthy,
-  When the new Lunatic does become sober/healthy the Demon would be informed as soon as possible.
+  However, if a droisoned player is turned into the Lunatic, the Demon would not learn about them until the Lunatic is sober and healthy.
+  When the new Lunatic does become sober and healthy the Demon would be informed as soon as possible.
 
-Q Does the Lunatic have to think they are an _evil_ Demon?
-A No, if it is believable that there is a troll Pit-Hag in the game,
-  and someone becomes the Lunatic on a later night, a good Demon is reasonable.
-  However, the starting Lunatic needs to think they are the evil Demon character because there is almost no way anything else could happen.
-  It would need a skilled ST to convince the Lunatic that an Amnesiac ability put a good Demon in the bag.
-
-Q Does the Demon learn the Lunatic in Teensyville?
-A Yes, that is a function of the Lunatic ability,
-  and all character abilities function normally in a game with five or six players.
-
-Q The Lleech picks the Lunatic N1.  Does the Lleech learn who the Lunatic picks at night?
-A No, the Lunatic is poisoned.
-
-Q If the Lunatic thinks that they are the Lleech, does the Demon learn who they picked N1?
-A Yes.
-  The Lunatic ability reads "and who you choose at night", so the Demon learns who they picked. 
-  But the Demon does not learn why they picked,
-  so if the Pukka and the Lleech are on the script, then the Demon would not know which token the Lunatic saw, which might cause issues on N2 when deciding who to kill.
-
-Q Can the Lunatic be told that another player is the Lunatic?
-A Yes, but this can lead to the ST controlling the kills:
-  * the ST chooses a kill for the fake Lunatic and informs the Lunatic, 
-  * the Lunatic attacks the fake Lunatic's target to keep up the lie,
-  * the Demon attacks the same target to keep up the lie.
-
-  The ST can do this if their group is cool with the idea
-  or perhaps to ensure seeing the Lunatic token does not confirm someone as the Demon.
-
-  How to simulate the Lunatic to the Lunatic without dictating the kills:
-  * have the Lunatic think that they are, for example, the Po
-  * the actual Demon is the Pukka, and is shown to the Lunatic as their fake Lunatic (Demons never know what Demon their Lunatic thinks they are)
-  * N1, the Pukka (actual Demon) picks player X
-  * N2, the ST tells the Lunatic that their Lunatic (actual Demon) just tried to kill player X
-  * and so on. Because the Pukka kills out of sync, the issue is solved.
+Q What does the Demon learn if the Lunatic Fang Gu picks an Outsider?
+A The Demon learns who the Lunatic chose.
+  The Lunatic has no interaction with Outsiders just because they saw the Fang Gu token.
 
 -----combine
 Q If the Lunatic thinks that they are the Fang Gu and the Fang Gu jumps to them, what are they told?
@@ -3845,6 +3793,57 @@ A Yes. Players learn when their character and alignment have changed,
   So the ST would wake them up and inform tell them "You are the Fang Gu, you are evil." 
 ----
 
+Q Can the ST make the Lunatic who has figured out what they are believe that they have been Fang Gu jumped?
+A Yes.
+
+Q What happens when the Lunatic picks the Goon?
+A If the Lunatic is the first to pick the Goon at night then:
+  * the Goon is flipped to good / stays good
+  * the Lunatic is drunked, so the ST deceives them that their ability, that they belive they are the Demon, is still working
+  * the Demon is not informed of the Lunatic's picks that night
+
+  When a player is drunk or poisoned, they are deceived into believing that their ability is working normally.
+  The first part of the Lunatic's ability is a "you think" ability, which means deceiving the player about what they are.  
+  So a drunk or poisoned Lunatic is deceived into believing that their ability is working normally ... which is to believe that they are some other character.
+  So nothing has changed.
+  
+  However, drunkeness or poisoning does shut down the other mechanical part of their ability,
+  which is to inform the Demon of their picks.
+
+Q If the Hatter dies, can the Lunatic be given the choice to change characters?
+A Yes, this does not even need the actual Hatter to die.
+
+Q Does the Demon learn who the Lunatic Lleech chose as their host?
+A The Demon learns who their Lunatic picks on N1 but does not learn what Demon they believe they are,
+  so from the Demon's perspective they could be learning who the Lunatic Pukka picked to poison.
+
+Q The Lleech picks the Lunatic N1.  Does the Lleech learn who the Lunatic picks at night?
+A No, the Lunatic is poisoned.
+
+Q If the Lunatic thinks that they are the Lleech, does the Demon learn who they picked N1?
+A Yes.
+  The Lunatic ability reads "and who you choose at night", so the Demon learns who they picked. 
+  But the Demon does not learn why they picked,
+  so if the Pukka and the Lleech are on the script, then the Demon would not know which token the Lunatic saw, which might cause issues on N2 when deciding who to kill.
+
+Q Does the Lunatic learn that they are evil if they are turned by the Mezepheles?
+A All players learn if they change alignment, even the Lunatic.
+
+Q Does the Demon learn what character the Lunatic Ojo targeted?
+A No, they are shown the player who the Lunatic Ojo functionally targeted, i.e. the player with that character.
+
+Q What is the Demon shown when the Lunatic Ojo picks an out of play role?
+A Nothing.
+
+  The Lunatic says the Demon learns who they picked,
+  and the Ojo says picking an out of play character is the ST's choice not the player's, so the Lunatic Ojo did not pick anyone.
+
+Q If the Lunatic is Pit-Hagged into the Demon she already thinks she is, what is she told?
+A The new Demon is reinformed of her character, as it changed and she no longer has the Lunatic ability.
+
+Q If the Lunatic is Pit-Hagged into another role, they are told their new role, but are they told that they are in fact good?
+A No, their role has changed, but not their alignment, and players should only be informed of their alignment when it changes.
+
 Q The Lunatic is good but believes they are an evil Demon.
   If the Pit-Hag turns the Lunatic into a Demon, will the Lunatic learn, along with their new role, that they are actually good?
  
@@ -3860,16 +3859,44 @@ A No, they do not learn their alignment because their alignment has not changed.
 
   A similar scenario to the pithagged Lunatic is the Marionette who when catching a star pass is not informed they are evil because their alignment has not changed.
 
-Q If the Lunatic is Pit-Hagged into the Demon she already thinks she is, what is she told?
-A The new Demon is reinformed of her character, as it changed and she no longer has the Lunatic ability.
-
-Q If the Lunatic is Pit-Hagged into another role, they are told their new role, but are they told that they are in fact good?
-A No, their role has changed, but not their alignment, and players should only be informed of their alignment when it changes.
-
 Q If the Pit-Hag turns a player into the Lunatic, does the ST tell that player that they are evil?
 A No.  The Lunatic's ability is "You think you are a Demon, but you are not. The Demon knows who you are and who you choose at night.".
   With the Pit-Hag on the script it is very believable someone could be made a good Demon,
   and that is all that is required of the Lunatic, to believe they are a Demon of some kind.
+
+Q The Pit-Hag changes a player into the Lunatic. Would it be valid to first wake them, tell them they are an Outsider of some type, 
+  put them to sleep and pretend to continue with the night order, then wake them telling them they were Fang Gu jumped?
+A No, their ability does not make them think that they are an Outsider.
+
+Q What does the Demon learn if their Lunatic Po charges / Lunatic Zombuul does not wake?
+A Nothing.
+
+  The Demon learns who the Lunatic chooses, and if they do not choose anyone for whatever reason then they learn nothing.
+
+Q Can you tell the Lunatic that they have been snake charmed?
+A No, because the Lunatic's ability is that they think that they _are_ the Demon, not that they _were_ the Demon.
+  If they are told that they are the good Snake Charmer then they are no longer being deceived that they are the Demon.
+
+Q What does the Demon learn when the Lunatic thinks that they are the Yaggababble?
+A Just who the Lunatic is.
+
+  The Demon learns who the Lunatic picks, and if the Lunatic does not or cannot pick anyone, the Demon learns nothing.
+
+Q Can the Lunatic be told that another player is the Lunatic?
+A Yes, but this can lead to the ST controlling the kills:
+  * the ST chooses a kill for the fake Lunatic and informs the Lunatic, 
+  * the Lunatic attacks the fake Lunatic's target to keep up the lie,
+  * the Demon attacks the same target to keep up the lie.
+
+  The ST can do this if their group is cool with the idea
+  or perhaps to ensure seeing the Lunatic token does not confirm someone as the Demon.
+
+  How to simulate the Lunatic to the Lunatic without dictating the kills:
+  * have the Lunatic think that they are, for example, the Po
+  * the actual Demon is the Pukka, and is shown to the Lunatic as their fake Lunatic (Demons never know what Demon their Lunatic thinks they are)
+  * N1, the Pukka (actual Demon) picks player X
+  * N2, the ST tells the Lunatic that their Lunatic (actual Demon) just tried to kill player X
+  * and so on. Because the Pukka kills out of sync, the issue is solved.
 
 Q Can the ST fake the Poppy Grower is in play and not show fake Minions to the Lunatic?
 A Yes.
@@ -3885,24 +3912,19 @@ A Yes.
 
   The ST is also free to give the Lunatic correct info when these characters are really in play.
 
-Q Can the ST make the Lunatic who has figured out what they are believe that they have been Fang Gu jumped?
-A Yes.
+Q Does a drunk or poisoned Lunatic's pick(s) get shown to the Demon?
+A No. They are still deceived into thinking their ability is working, so they are woken to choose if they normally would be,
+  but the Demon will not learn their choices.
 
-Q The Pit-Hag changes a player into the Lunatic. Would it be valid to first wake them, tell them they are an Outsider of some type, 
-  put them to sleep and pretend to continue with the night order, then wake them telling them they were Fang Gu jumped?
-A No, their ability does not make them think that they are an Outsider.
+Q Does the Lunatic have to think they are an _evil_ Demon?
+A No, if it is believable that there is a troll Pit-Hag in the game,
+  and someone becomes the Lunatic on a later night, a good Demon is reasonable.
+  However, the starting Lunatic needs to think they are the evil Demon character because there is almost no way anything else could happen.
+  It would need a skilled ST to convince the Lunatic that an Amnesiac ability put a good Demon in the bag.
 
-Q Does the Demon learn what character the Lunatic Ojo targeted?
-A No, they are shown the player who the Lunatic Ojo functionally targeted, i.e. the player with that character.
-
-Q What is the Demon shown when the Lunatic Ojo picks an out of play role?
-A Nothing.
-
-  The Lunatic says the Demon learns who they picked,
-  and the Ojo says picking an out of play character is the ST's choice not the player's, so the Lunatic Ojo did not pick anyone.
-
-Q If the Hatter dies, can the Lunatic be given the choice to change characters?
-A Yes, this does not even need the actual Hatter to die.
+Q Does the Demon learn the Lunatic in Teensyville?
+A Yes, that is a function of the Lunatic ability,
+  and all character abilities function normally in a game with five or six players.
 
 
 =============
@@ -4747,7 +4769,8 @@ Q The Philosopher chooses an out of play role. Later the Pit-Hag creates this ro
 A Yes, the drunking is a constant check for if the character is in play.
 
 Q If the Philosopher chooses Snake Charmer and becomes the Demon does the actual Snake Charmer becomes sober?
-A Yes, and the former demon is now the self-poisoned Philosopher.
+A Yes, they are immediately sober as the Philosopher who was drunking them is no longer in play.
+  Additionally the former Demon is now the self-poisoned Philosopher.
 
 Q Could the Recluse not register as the Recluse so avoiding drunking by the Philosopher so that both the Recluse and the Philo-Recluse can both be working?
 A Yes.
@@ -5003,6 +5026,9 @@ A The Spy is the marked player and they must die.  If the Pixie is sufficiently 
   Note:
   * The Spy could have misregistered as an in play role
   * The Spy registering as another character when executed makes no difference to the ability that the Pixie gains
+
+Q What happens if the Townsfolk the Pixie is mad about goes out of play (Pit-Hag)?
+A Nothing. When that player dies, if the Pixie was mad they will get the original ability regardless of their new ability.
 
 
 ===============
@@ -5594,7 +5620,7 @@ Q Could the Imp with no living Minions starpass to the Recluse?
 A Technically, yes; however, this makes the Recluse into the good Imp, meaning that they need only to get themselves killed in order to win.
   So it is not recommended for the Imp to do this.
 
-Q Can the Recluse register as the Spy and trigger a Virgin?
+Q Can the Recluse register as the Spy and trigger the Virgin?
 A No.
 
   The Recluse only registers as the Spy, but does not gain the Spy ability, therefore cannot register as a Townsfolk.
@@ -6013,6 +6039,8 @@ A The ST could show the drunk / poisoned Spy any version of the Grimoire that th
   and showing her a wildly inaccurate Grimoire tips her off that she is getting bad info, 
   the simpler approach is just to show her that different people are malfunctioning,
   then watch her report that the Mayor or the Slayer is powerless, and then surprise!
+  
+  Remember that the Spy cannot misregister as a Townsfolk or Outsider while drunk or poisoned.
 
 Q When showing the (healthy and sober) Spy the Grimoire,
   can the ST replace a (healthy and sober) Recluse's token with any Minion or Demon token, 
@@ -6066,6 +6094,9 @@ A Nothing. The Steward is a start knowing ability, not a constantly knows.
 ===============
 =Storm Catcher=
 ===============
+Q Can the Fang Gu jump to a Storm Caught Outsider?
+A No, as the Fang Gu must be able to kill their target in order to jump to them.
+
 Q If the player favoured by the Storm Catcher is turned evil (Mezepheles) what happens?
 A They are still storm caught meaning they can only die by execution.
 
@@ -6277,7 +6308,7 @@ A Yes, which could end the game.  Vigormortis and SW are not a great pairing.
 
 Q If a Vigormortis killed Minion changes role (Pit-Hag / Engineer/ Hatter)
   does the Minion keep their ability?
-A A Vigor killed Minion keeps their ability and continues to poison a neighbouring Townsfolk as long as they always remain a Minion.
+A A Vigor killed Minion keeps their ability and continues to poison the same neighbouring Townsfolk as long as they always remain a Minion.
 
   If they ever stop being a Minion, they lose their ability and stop poisoning a neighbour, even if they later become a Minion again.
 
@@ -6294,7 +6325,7 @@ A A second kill would have no effect on the Minion: a dead player cannot be kill
 Q If the Vigormortis passes to the Scarlet Woman, do previously killed Minions keep their abilities?
 A No. It is a new instance of the Vigor and this Vigor is not the one who killed those Minions.
 
-Q If the Vigormortis changes places (Snake Charmer / Barber / Hatter ...) does a Minion they have killed keep her ability and continue to poison her neighbour,
+Q If the Vigormortis swaps players (Snake Charmer / Barber / Hatter ...) does a Minion they have killed keep her ability and continue to poison her neighbour,
   or do dead Minions need to be rekilled by the new Vigormortis?
 A Character swaps essentially reset the characters; they are replaced with new instances of the characters.
   In this case the Vigormortis that was giving dead Minions their abilities no longer exists, so those Minions lose their abilities and their neighbours become healthy.
@@ -6855,7 +6886,11 @@ A There is no immediate visible effect.
 ================================================================================================================================
 
 :Fang Gu / Pit-Hag:  
-  
+Q If the Pit-Hag changes the Demon to the Fang Gu,
+  could an arbitrary kill of an Outsider count as a Demon kill causing a jump?
+A If the Fang Gu chooses to kill an Outsider, the ST can allow that to go through.
+  Otherwise players the ST chooses to kill are killed by the Pit-Hag, so no Fang Gu jump.
+
 Q If the Pit-Hag creates a Fang Gu and the arbitrary kill at night kills an Outsider, can that cause the Fang Gu to jump? 
 A If the Fang Gu themselves targeted that Outsider, the ST can choose to allow the kill to go through and thus the Fang Gu to jump.
   The ST can also choose to block the Fang Gu's choice of an Outsider and have them die to the Pit-Hag with no jump.
@@ -7313,6 +7348,14 @@ A Yes.
 
 
 :misc:
+Q Does a Townsfolk or Outsider player flipped evil (Mezepheles / Bounty Hunter / ...) have any affect on character checkers?
+A No, the player turned evil is still whatever character and character type they were previously so, for example:
+  * can be shown to the Balloonist as that type,
+  * can be shown to the Librarian/Washerwoman as that token,
+  * the Juggler can get a number from them,
+  * the Gambler can gamble them as their character and not die,
+  * the Undertaker still sees their character token.
+
 Q Is it possible to play with a group of 20 people?
 A Yes, that is the maximum player count which is not played often: 15 residents and 5 Travellers. 
 
