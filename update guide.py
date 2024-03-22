@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Updates the guide.
-Takes the data from botc.txt
+Takes the data from BotC.txt.
 Injects the appropriate HTML tags and tries to make it pretty.
-Output is an updated BotC Guide.html file
+Output is an updated BotC Guide.html file.
 """
 
 from bs4 import BeautifulSoup
@@ -419,7 +419,6 @@ interim_result = emphasise(interim_result, "emphasised.html")
 
 print("Removing blank paragraphs ...")
 interim_result = remove_empty_paragraphs(interim_result, "removed_empty_paragraphs.html")
-
 
 print("Saving updated guide ...")
 with open(RESULT_FILE, 'w', encoding='utf-8') as output:
