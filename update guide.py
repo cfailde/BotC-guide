@@ -24,7 +24,7 @@ DEBUG_MODE = False
 MAX_BACKUPS = 5
 
 
-def debug(data, output_path):
+def debug(data: str, output_path: str) -> None:
     if not DEBUG_MODE:
         return
 
@@ -35,7 +35,6 @@ def debug(data, output_path):
 
 def sanity_check():
     for f in [BOTC_DATA_FILE, RESULT_FILE]:
-        
         if os.path.exists(f):
             print(f"  {f} exists.")
         else:
@@ -44,7 +43,7 @@ def sanity_check():
     return True
 
 
-def check_file_format(file_path):
+def check_file_format(file_path: str) -> bool:
     with open(file_path, 'r', encoding="utf-8") as file:
         lines = file.readlines()
 
@@ -84,7 +83,7 @@ def check_file_format(file_path):
             return False
 
 
-def manage_backups(filename):
+def manage_backups(filename: str) -> None:
     backup_files = [f for f in os.listdir() if f.startswith(f"Back up of {filename.split('.')[0]}")]
 
     if len(backup_files) >= MAX_BACKUPS:
@@ -100,7 +99,7 @@ def manage_backups(filename):
     print(f"  Created backup: {backup_filename}")
 
 
-def surround_keywords_with_span(html_content, keywords, character_type):
+def surround_keywords_with_span(html_content:str, keywords: 'list[str]', character_type: str) -> str:
     soup = BeautifulSoup(html_content, 'html.parser')
 
     for keyword in keywords:
@@ -115,7 +114,7 @@ def surround_keywords_with_span(html_content, keywords, character_type):
     return str(soup)
 
 
-def text_to_nodes(input_path, output_path):
+def text_to_nodes(input_path: str, output_path: str) -> str:
     output_lines = []
 
     answer_mode = False
@@ -190,7 +189,7 @@ def text_to_nodes(input_path, output_path):
     return '\n'.join(output_lines)
 
 
-def replace_nodes(original, replacement, output_path):
+def replace_nodes(original: str, replacement: str, output_path: str) -> str:
     print("  Opening current version of guide")
     with open(original, 'r', encoding="utf-8") as file:
         html_content = file.read()
@@ -213,7 +212,7 @@ def replace_nodes(original, replacement, output_path):
     return str(soup)
 
 
-def highlight_roles(current_contents, output_path):
+def highlight_roles(current_contents: str, output_path: str) -> str:
     current_contents = surround_keywords_with_span(current_contents, Fabled, "Fabled")
     current_contents = surround_keywords_with_span(current_contents, Townsfolk, "Townsfolk")
     current_contents = surround_keywords_with_span(current_contents, Outsider, "Outsider")
@@ -221,11 +220,11 @@ def highlight_roles(current_contents, output_path):
     current_contents = surround_keywords_with_span(current_contents, Demon, "Demon")
     current_contents = surround_keywords_with_span(current_contents, Traveller, "Traveller")
 
-    debug( current_contents, output_path)
+    debug(current_contents, output_path)
     return current_contents
 
 
-def update_index(html, output_path):
+def update_index(html: str, output_path: str) -> str:
     soup = BeautifulSoup(html, 'html.parser')
     script_tag = soup.find('script')
 
@@ -253,7 +252,7 @@ def update_index(html, output_path):
     return str(soup)
 
 
-def indent_keywords(html):
+def indent_keywords(html: str) -> str:
     updated_content = []
     found_start = False
 
@@ -268,7 +267,7 @@ def indent_keywords(html):
             found_start = False
     return "\n".join(updated_content)
 
-def indent(html, output_path):
+def indent(html: str, output_path: str) -> str:
     nicely_indented = str(yattag_indent(html))
     fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
 
@@ -278,7 +277,7 @@ def indent(html, output_path):
     return updated_content
 
 # Replaces underscores around words with <em></em> tag
-def emphasise(html_content, output_path):
+def emphasise(html_content: str, output_path: str) -> str:
     # Define a regex pattern to find words surrounded by underscores
     pattern = re.compile(r'(_)(\w+)(_)')
 
@@ -287,7 +286,7 @@ def emphasise(html_content, output_path):
     debug(modified_html, output_path)
     return modified_html
 
-def remove_blank_lines(html, output_path):
+def remove_blank_lines(html: str, output_path: str) -> str:
     lines = html.split("\n")
     result = []
     script_encountered = False
@@ -304,7 +303,7 @@ def remove_blank_lines(html, output_path):
     debug(deblanked_content, output_path)
     return deblanked_content
 
-def remove_empty_paragraphs(html, output_path):
+def remove_empty_paragraphs(html: str, output_path: str) -> str:
     lines = html.split("\n")
     result = []
 
@@ -371,7 +370,7 @@ Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
-Extra += [ "Teenysville" ]
+Extra += [ "Teensyville" ]
 
 all_the_words = {"Townsfolk":Townsfolk ,
                  "Outsider":Outsider,
