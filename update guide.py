@@ -342,7 +342,7 @@ Minion     = [ "Godfather", "Widow", "Poisoner", "Devil's Advocate"]
 Minion    += [ "Harpy", "Witch", "Spy", "Cerenovus", "Fearmonger", "Pit-Hag"]
 Minion    += [ "Psychopath", "Assassin", "Baron", "Mezepheles", "Goblin"]
 Minion    += [ "Scarlet Woman", "Mastermind", "Evil Twin", "Boomdandy"]
-Minion    += [ "Marionette", "Organ Grinder", "Vizier"]
+Minion    += [ "Marionette", "Organ Grinder", "Vizier", "Summoner"]
 
 Demon      = [ "Pukka", "Lil' Monsta", "Lleech", "No Dashii", "Imp"]
 Demon     += [ "Shabaloth", "Po", "Zombuul", "Al-Hadikhia", "Vigormortis"]
