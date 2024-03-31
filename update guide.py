@@ -47,34 +47,23 @@ def check_file_format(file_path: str) -> bool:
     with open(file_path, 'r', encoding="utf-8") as file:
         lines = file.readlines()
 
-        # Extract file name from the path
         file_name = file_path.split("/")[-1]
-
-        # Initialize an empty string to store first letters
         first_letters = ""
 
         for line_number, line in enumerate(lines, start=1):
-
-            # Check if the line is not empty
             if line:
                 first_char = line[0]
-
-                # Skip lines that don't start with Q or A
                 if first_char not in {'Q', 'A'}:
                     continue
-
-                # Check for incorrect formatting
                 if first_char == 'A' and 'Q' not in first_letters:
                     print(f"  {file_name} is incorrectly formatted: 'A' detected before 'Q' on line {line_number}.")
                     return False
-                elif first_letters and first_char == first_letters[-1]:
+                if first_letters and first_char == first_letters[-1]:
                     print(f"  {file_name} is incorrectly formatted: '{first_char}' detected after another '{first_char}' on line {line_number}.")
                     return False
 
-                # Add the first character to the string
                 first_letters += first_char
 
-        # Check if the last letter is 'A'
         if first_letters and first_letters[-1] == 'A':
             print(f"  {file_name} is correctly formatted.")
             return True
@@ -194,7 +183,7 @@ def replace_nodes(original: str, replacement: str, output_path: str) -> str:
     with open(original, 'r', encoding="utf-8") as file:
         html_content = file.read()
         soup = BeautifulSoup(html_content, 'html.parser')
-        vault = soup.find('main')
+        main_tag = soup.find('main')
 
     # Parse the replacement content and remove empty paragraphs
     print("  Removing empty divs")
@@ -204,9 +193,9 @@ def replace_nodes(original: str, replacement: str, output_path: str) -> str:
             p_tag.extract()  # Remove the empty paragraph
 
     print("  Replacing nodes")
-    if vault:
-        vault.clear()
-        vault.append(replacement_soup)
+    if main_tag:
+        main_tag.clear()
+        main_tag.append(replacement_soup)
 
     debug(str(soup), output_path)
     return str(soup)
@@ -228,7 +217,6 @@ def update_index(html: str, output_path: str) -> str:
     soup = BeautifulSoup(html, 'html.parser')
     script_tag = soup.find('script')
 
-    # Extract the JavaScript code from the <script> tag
     javascript_code = script_tag.string.strip()
 
     # Locate the 'keywords' dictionary in the JavaScript code
@@ -239,10 +227,8 @@ def update_index(html: str, output_path: str) -> str:
     # Convert the new dictionary to a JSON string
     new_keywords_dict_str = json.dumps(all_the_words, indent=2)
 
-    # Replace the old index string with the new one
+    # Update index
     javascript_code = javascript_code.replace(keywords_str, new_keywords_dict_str)
-
-    # Update the <script> tag with the modified JavaScript code
     script_tag.string = javascript_code
 
     new_keyword_count = sum(len(words) for words in all_the_words.values())
@@ -267,6 +253,7 @@ def indent_keywords(html: str) -> str:
             found_start = False
     return "\n".join(updated_content)
 
+
 def indent(html: str, output_path: str) -> str:
     nicely_indented = str(yattag_indent(html))
     fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
@@ -278,7 +265,6 @@ def indent(html: str, output_path: str) -> str:
 
 # Replaces underscores around words with <em></em> tag
 def emphasise(html_content: str, output_path: str) -> str:
-    # Define a regex pattern to find words surrounded by underscores
     pattern = re.compile(r'(_)(\w+)(_)')
 
     modified_html = pattern.sub(lambda match: f'<em>{match.group(2)}</em>', html_content)
@@ -286,10 +272,11 @@ def emphasise(html_content: str, output_path: str) -> str:
     debug(modified_html, output_path)
     return modified_html
 
+# Crudely removes blanks lines
 def remove_blank_lines(html: str, output_path: str) -> str:
     lines = html.split("\n")
     result = []
-    script_encountered = False
+    script_encountered = False  # skip JavaScript
     for line in lines:
         if not script_encountered:
             if line.strip():  # Check if line is not blank
@@ -302,6 +289,7 @@ def remove_blank_lines(html: str, output_path: str) -> str:
     deblanked_content = "\n".join(result)
     debug(deblanked_content, output_path)
     return deblanked_content
+
 
 def remove_empty_paragraphs(html: str, output_path: str) -> str:
     lines = html.split("\n")
