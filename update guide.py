@@ -353,7 +353,7 @@ Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "traveller"]
 Extra += [ "poison", "drunk", "droisoned", "sober", "healthy"] 
 Extra += [ "good", "evil", "alive", "dead", "preached" ]
 # concepts
-Extra += [ "nomination | nominate","execution | execute | executing"]
+Extra += [ "nomination | nominate","execution | execute | executing", "exile"]
 Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]

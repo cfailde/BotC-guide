@@ -732,9 +732,6 @@ A "The Demon" may be a dead Demon when there are no alive Demons,
   They can use the swap to create a living Demon but only by swapping themself with another living player;
   they cannot revive another Demon as the Barber ability forbids choosing another Demon.
 
-Q Is the Barber able to swap a Traveller and a Townsfolk?
-A The ST can allow it but generally no.
-
 
 =========
 =Barista=
@@ -924,6 +921,13 @@ A No.
 ================
 =Bone Collector=
 ================
+Q The Artist is dead. The Bone Collector targets the Artist at night. Later that same night the BC is poisoned / becomes drunk. 
+  The Artist tries to use their power the next day. Does it work?
+A No; the BC is the only reason the Artist would be able to use their ability while dead and they are poisoned, so their ability is not functioning.
+
+Q Can the dead Fang Gu jump if they are picked by the Bone Collector and choose to attack an Outsider with the one global jump not yet used?
+A Yes.
+
 Q If the Bone Collector picks the Marionette or the Drunk, what happens?
 A They get another day/night of the ability that they think they have.
 
@@ -935,10 +939,6 @@ A Yes.
 
 Q Can the Bone collector ability only be used once or every night?
 A It is a once per game ability.
-
-Q The Artist is dead. The Bone Collector targets the Artist at night. The Pukka poisons the Bone Collector later that same night. 
-  The Artist tries to use their power the next day. Does it work?
-A No; the BC is the only reason the Artist would be able to use their ability while dead and they are poisoned, so their ability is not functioning.
 
 
 ===========
@@ -1575,9 +1575,6 @@ A No, as they are waking due to the Poppy Grower ability and not their own.
 
 Q What number does the Chambermaid learn if they pick the Demon and the Snake Charmer on the night that they swapped roles?
 A 1. The starting SC woke to charm the Demon, then as the new Demon they killed.  The starting Demon did not wake to their own ability.
-
-Q Does the Scarlet Woman only count for waking for the Chambermaid's ability when they become the Demon?
-A Yes. But the ST might consider their waking up when the Imp self-kills is due to the Imp's ability, not the SW's ability, and not ping the Chambermaid.
 
 Q The Snake Charmer picks the Demon. The Chambermaid checks the new Demon, who did not wake as a part of the Demon's ability, but as a part of the Snake Charmer's ability.
   Is that a +1 to the Chambermaid?
@@ -2537,6 +2534,9 @@ A The Fisherman gets whatever the ST wants to give them which can be as specific
 ============
 =Flowergirl=
 ============
+Q Does the Flowergirl still learn that a Demon voted in a Legion game where only Legion voted?
+A Yes, a Demon had their hand up so it counts.
+
 Q If the Flowergirl is dead during the day and resurrected the next night (Al-Hadikhia / Professor / ...),
   are they told if the Demon voted the previous day?
 A Yes.
@@ -2672,6 +2672,12 @@ A No, a Gangster kill is not an execution.
 
 Q Is a Gangster kill an execution?
 A No, a Gangster kill is not an execution. 
+
+Q Can the Gangster use their ability in the middle of a call for their exile?
+A Yes.
+
+  It is something that can happen at anytime
+  but an ST in that moment would probably do things in an order they think is sensible and fair as the Gangster has to announce they are using their ability.
 
 
 ========
@@ -2833,7 +2839,7 @@ A If the Courtier is the first to pick the Goon that night, then the Goon turns 
 Q What happens if the Fang Gu picks the Goon?
 A If they are the first to pick the Goon that night, the Goon becomes evil and the Fang Gu becomes drunk. 
   If someone already picked the Goon, and the Fang Gu has yet to jump this game, the Goon becomes the evil Fang Gu and the current Fang Gu dies.
-  if someone already picked the Goon and there has already been a Fang Gu jump, then the Goon just dies.
+  If someone already picked the Goon and there has already been a Fang Gu jump, then the Goon just dies.
 
 Q If the Gambler gambles the Goon, does this make the Gambler drunk and the Goon turn good,
   or does the Gambler ability not trigger the Goon's ability?
@@ -3007,6 +3013,11 @@ A The Gossip is a backwards-checking ability.
 =============
 =Grandmother=
 =============
+Q The Demon kills the grandchild at night while the Monk protects the Grandmother.
+  Does the Grandmother die, or is she safe enough from the Demon?
+A The Grandmother dies. They die to their own ability, not the Demon's.
+  Now if Grandmother was Innkeeper protected, they would be safe.
+
 Q Can the Spy registering as good be seen by the Grandmother?
 A Yes.
 
@@ -3030,11 +3041,6 @@ Q If the grandchild dies when the Grandmother is protected, drunk or poisoned,
   what happens the next night when the grandchild is still dead and Gran is no longer protected/droisoned?
 A They remain alive.
 
-Q The Demon kills the grandchild at night while the Monk protects the Grandmother.
-  Does the Grandmother die, or is she safe enough from the Demon?
-A The Grandmother dies. They die to their own ability, not the Demon's.
-  Now if Grandmother was Innkeeper protected, they would be safe.
-
 Q If the Demon picks the grandchild Gambler who has died to their own gamble earlier that night, does the Grandmother survive?
 A Yes. The Demon must kill the Grandchild in order for the Grandmother to attack themself. In this case, the Gambler is dead and cannot be killed again.
 
@@ -3047,6 +3053,10 @@ A The ST still marks a good player as the grandchild and can then show a differe
 
 Q Can the Grandmother learn as their grandchild the Townsfolk turned evil by the Bounty Hunter?
 A No, the Grandmother's ability is that they start knowing a _good_ player.
+
+Q Does the Grandmother die before, after or at the same time as their grandchild?
+A Directly after.
+  This would matter if the grandchild was protecting (Tea Lady / Innkeeper / ...) their Grandmother .
 
 
 ============
@@ -3226,18 +3236,21 @@ A No. The game would end instantly as the Demon dies; nothing would happen later
 ================
 =High Priestess=
 ================
-Q Can you show the High Priestess themself?
-A Yes.
-
-Q Can the High Priestess only receive living players?
-A No, you show them dead players too.
-
-Q Who does the drunk / poisoned High Priestess see?
-A Anyone.
+Q Could the High Priestess learn the ST if the Duchess is in play?
+A No, the ST is not a player, so cannot be learned as a player to talk to.
 
 Q Who does the High Priestess see in a Vortox game?
 A The only restriction is that the ST does not give the one player that they would have given if it was not a Vortox game.
   It does not have to be the least helpful player to talk to.
+
+Q Can the High Priestess be shown themself?
+A Yes.
+
+Q Can the High Priestess only receive living players?
+A No, they can be shown dead players too.
+
+Q Who does the drunk or poisoned High Priestess see?
+A Anyone.
 
 
 ==========
@@ -3410,7 +3423,7 @@ Q When the Juggler gets her info, is it the info that is true at the moment she 
 A The info is tied to what was true at the time of the juggle; any role changes since the juggle are ignored.
 
 Q How does a dead Juggler that is resurrected (Professor / Al-Hadikhia / ...) work?
-A She gets a completely fresh ability, so can she juggle the following day and get answers that night.
+A She gets a completely fresh ability, so can she juggle the following day and get a number the following night.
 
 
 ========
@@ -3577,7 +3590,7 @@ A When the Exorcist picks a Legion player,
   that player learns the Exorcist,
   but deaths due to Legion are not prevented that night as Legion does not wake.
 
-Q Does any Legion player voting in a nomination register to the Flower Girl?
+Q Does any Legion player voting in a nomination register to the Flowergirl?
 A Yes, regardless of whether the vote tally ends up being zero.
 
 Q Can the Fortune Teller receive a yes on any Legion player?
@@ -4668,6 +4681,10 @@ A No, because their ability is working normally according to their own ability t
   Besides, even if this was classified as a malfunction,
   it is due to their own ability, and not another character's ability.
 
+Q Does the Alchemist Poisoner / Apprentice Poisoner / ST with the Poisoner ability granted by the Plague Doctor targetting the Poisoner ping the Mathematician?
+A Yes, the Poisoner's ability worked abnormally due to another character's ability.
+  Although they are poisoned by the Poisoner ability, the other player is still another character, the Alchemist / Apprentice / Plague Doctor.
+
 Q The ST Poisoner, made by the Plague Doctor dying, poisons a Townsfolk whose ability then malfunctions. Does it ping the Mathematician?
 A Yes.  Even though the ST is not a player, a player has an ability malfunctioning, and it was technically caused by the Plague Doctor player.
 
@@ -4927,7 +4944,7 @@ Q If a No Dashii poisoned Townsfolk gets protected by the Monk they are temporar
 A No. The No Dashii poison does not skip over safe players, it only skips over non-Townsfolk.
   So just the one Townsfolk on the other side of the No Dashii would be poisoned.
 
-Q Does the No Dashii poisoning move if one of her Townsfolk neighbours becomes a non-Townsfolk, due to the Pit-Hag for example?
+Q Does the No Dashii poisoning move if one of her Townsfolk neighbours becomes a non-Townsfolk (Pit-Hag / Barber / ...)?
 A Yes. It also moves if someone closer than their current Townsfolk neighbour becomes a Townsfolk.
   It is constantly checking for who is the closest Townsfolk to the No Dashii's left and right, and poisoning those two players.
 
@@ -5071,7 +5088,7 @@ Q The Philosopher chooses an out of play role. Later the Pit-Hag creates this ro
 A Yes, the drunkenness is a constant check for if the character is in play.
 
 Q If the Philosopher chooses Snake Charmer and becomes the Demon does the actual Snake Charmer becomes sober?
-A Yes, they are immediately sober as the Philosopher who was drunking them is no longer in play.
+A Yes, they are immediately sober as the Philosopher causing the drunkenness is no longer in play.
   Additionally the former Demon is now the self-poisoned Philosopher.
 
 Q Could the Recluse not register as the Recluse so avoiding drunking by the Philosopher so that both the Recluse and the Philo-Recluse can both be working?
@@ -5760,9 +5777,10 @@ A No as it would still be an invalid target. The ST should shake their head and 
 Q If a player is bluffing as the Psychopath and is executed, can they pretend to play roshambo with their nominator?
 A No, they are not the Psychopath so do not have the ability that allows them to play roshambo.
 
-Q If the Psychopath is protected by the Devil's Advocate do they still play roshambo /
+Q If the Psychopath is protected by the Devil's Advocate do they still play roshambo? /
   Does the Alchemist Psychopath protected by the Tea Lady or Pacifist still play roshambo?
-A Yes, and then it is only if they lose and do not die that the good team discovers they were protected.
+A Yes, outed or otherwise they still play as there is nothing about the DA ability to prevent this.
+  And it is only if the Psychopath loses and does not die that the good team discovers that they were protected.
 
 Q When can the Psychopath choose to kill someone?
 A Each day before nominations begin.  They could kill as soon as the day starts if they wished.
@@ -5798,6 +5816,7 @@ A The Psychopath and their nominator will play roshambo.
 
 Q If the Psychopath who never claimed to be the Psychopath is executed, do they still play roshambo?
 A Yes, with whomever nominated them.
+  This then obviously outs them as the Psychopath.
 
 Q If the Psychopath never claims that they are the Psychopath and are nominated, are they announced?
 A No, the ST does not directly state that they are the Psychopath.
@@ -6147,6 +6166,12 @@ A Yes.
 
   The Demon is still the source of the attack and the ST would place the Demon's dead token.
 
+Q The Pit-Hag creates a second Demon and then the starting Demon targets the Sage.
+  Does the Sage die and learn the Demon that killed them?
+A It is an arbitrary deaths night.
+  If the ST allows the original Demon's kill to go through then the Sage will learn two players, one of whom is the original Demon.
+  If the ST blocks the kill and then kills the Sage with the Pit-Hag ability then the Sage does not receive any info.
+
 
 ========
 =Sailor=
@@ -6246,6 +6271,9 @@ A Yes.
 ===========
 =Shabaloth=
 ===========
+Q Could the Scarlet Woman who becomes the new Shabaloth resurrect the old Shab?
+A The ST should never use the Shab's ability to resurrect another Demon.
+
 Q If the Shabaloth sinks a kill into a dead player, can that player be regurgitated the next night even though they were not killed by the Shab?
 A Yes, since the Shab's ability is "a player you chose last night might be regurgitated"; it does not specify needing to be the killer.
 
@@ -6257,13 +6285,10 @@ A Yes.
 
 Q What if four players go to night with the Shabaloth alive? Does the Shabaloth killing two players happens at the same time as the revival of a previously killed player?
   Or when four players go into the night with the Shabaloth in play is it effectively the end of the game?
-A Regurgitation, if the ST chooses to do it, happens before the Shabaloth's killls, so there would be five alive then two would die, and the game can continue.
+A Regurgitation, if the ST chooses to do it, happens before the Shabaloth's kills, so there would be five alive then two would die, and the game can continue.
 
-Q Can the Shabaloth choose to regurgitate people?
+Q Can the Shabaloth choose to regurgitate players?
 A The Shabaloth does not control whether someone is regurgitated; that choice falls to the Storyteller.
-
-Q Could the Scarlet Woman who becomes the new Shabaloth resurrect the old Shab?
-A The ST should never use the Shab's ability to resurrect another Demon.
 
 Q Does the Shabaloth regurgitate before or after they kill?
 A Before.
@@ -6277,7 +6302,7 @@ A No, the Shabaloth is not told anything about regurgitations.
 
 Q How exactly does the Shabaloth work? When does regurgitation happen?
 A If the Shabaloth chose two people the night before, then just before they attack tonight, one of those people they chose, if they are currently dead, may come back to life.
-  Note that if the Shabaloth is chosen by an Exorcist and does not wake to attack anyone tonight, they can still bring one of their previous night's targets back to life 
+  Note that if the Shabaloth is chosen by the Exorcist and does not wake to attack anyone tonight, they can still bring one of their previous night's targets back to life 
   because regurgitation is not tied to their waking up. 
 
   Note that the Shabaloth's previous targets do not need to have been killed by the Shabaloth's attack in order to be revived,
@@ -6285,6 +6310,9 @@ A If the Shabaloth chose two people the night before, then just before they atta
   This means that the Shabaloth can choose someone who is already dead and revive them the next night,
   or the Shabaloth's target can survive the attack,
   then die the next day and subsequently be revived because they are now dead in time.
+
+Q Does a player regurgitated by the Shabaloth get to use their ability the same night?
+A Shabaloth regurgitations happen just before they choose their next victims, so only roles that act after the Shabaloth get to use their ability tonight.
 
 
 ========
@@ -6401,19 +6429,16 @@ Q Can the sober Soldier die during the night in a Lil' Monsta game?
 A Not to the babysitter, as the source of the kill is still the Demon even when the ST picks the target.
   It is possible for the Soldier to die to non-Demon sources.
 
-Q The Soldier sat next to the No Dashii is not poisoned since they are safe from the Demon.
-  However if they are ever drunk or poisoned from another source (Poisoner / Sailor / ...), they get No Dashii poisoned.
-  Once the drunkenness or poisoning wears off, is the Soldier still No Dashii poisoned?
-A Yes.
+Q Is the Soldier sat next next to the No Dashii poisoned?
+A No. However, should the Soldier become drunk or poisoned from another source (Poisoner / Sailor / ...) then they become No Dashii poisoned.
+  Once the original source of drunkenness or poisoning wears off they will still be No Dashii poisoned.
 
 Q Is the Soldier safe from the Pukka poison and the subsequent kill?
 A Yes.
 
-Q Is the Soldier sat next next to the No Dashii poisoned?
-A No.
-
 Q The Soldier is safe from the No Dashii poison.  Does the poisoning pass through the Soldier to the next Townsfolk?
-A No, the No Dashii only ever skips non-Townsfolk players. If the neighbouring Townsfolk player is immune in some way, like the Soldier, then the poisoning simply stops and has no effect.
+A No, the No Dashii only ever skips non-Townsfolk players.
+  If the neighbouring Townsfolk player is immune in some way, like the Soldier, then the poisoning simply stops and has no effect.
 
 Q Is the Soldier safe from the Summoner?
 A No, because the Summoner is not the Demon.
@@ -6590,13 +6615,17 @@ A No.
   * a player with the Sweetheart ability dies: another player is instantly drunk for the rest of the game;
   * a dead player becomes the Sweetheart: no player becomes drunk.
 
-Q If the Sweetheart is resurrected (Al-Hadikhia) or swapped to a living player, so that there is now a living Sweetheart in the game, 
-  does the player that they previously caused to be drunk become sober?
+Q If the Sweetheart is resurrected (Al-Hadikhia), regurgitated (Shabaloth) or swapped to a living player (Barber),
+  so that there is now a living Sweetheart in the game, 
+  does the player that they previously caused to be drunk become immediately sober?
 A Yes.
 
-  Resurrected and swapped roles are treated as new instances of the role,
+  Resurrected, regurgitated and swapped roles are treated as new instances of the role,
   so as a new instance of the Sweetheart, any drunkenness by the previous instance ceases.
   If the new instance dies, then a player becomes drunk again.
+
+Q If the dead Sweetheart becomes another character (Pit-Hag / Barber / ...) does the drunkenness they are causing end?
+A Yes, any character that is removed from play has all their effects removed.
 
 
 ==========
@@ -6928,7 +6957,7 @@ A They are told the ability of an in play Minion but are treated like the abilit
 
 Q How does the Alchemist Evil Twin work in a Vortox game?
 A The Alchemist Evil Twin incorrectly learns their Minion ability, which has to be an in play Minion ability.
-  Then they learn  as their twin the incorrect character for a good player.
+  Then they learn as their twin the incorrect character for a good player.
   So they have learnt:
   * an in play Minion,
   * a confirmed good player,
@@ -7302,11 +7331,6 @@ A No.
 Q If the Zombuul is registering as dead and there are only two other players are alive, does evil win?
 A No, the Zombuul registering as dead does not count for evil's win condition.
 
-Q If the once-killed Zombuul is drunk or poisoned, does the game end?
-A No, the game continues because importantly the Zombuul has never actually died.
-  Their death shroud is not removed and nothing is announced to town.
-  They no longer register as dead for roles like the Tea Lady and the Oracle that care about living status.
- 
 Q If the Zombuul that has not already died once is killed while drunk or poisoned, what happens?
 A The droisoned Zombuul dies for real even if they have not used their extra life.
 
@@ -7319,7 +7343,7 @@ A Yes, the Zombuul's ability checks whether a player died, and dead players cann
 Q The first time a Zombuul is executed, do they still wake at night to kill, if no other player dies that day?
 A No, their "death" registers even to their own ability so the following night they do not wake.
 
-Q If a dead player becomes the Zombuul (Pit-Hag / Hatter / Engineer /...) do they return to life as a once-killed Zombuul?
+Q If a dead player becomes the Zombuul (Pit-Hag / Hatter / Engineer / Summoner / ...) do they return to life as a registering as dead Zombuul?
 A No, they are the genuinely dead Zombuul.
 
   It is only the Zombuul's ability that allows it to misregister as dead that gives them a second life,
@@ -7368,24 +7392,31 @@ A When the Zombuul dies for the first time they:
   As soon as they start nominating and voting freely they are outed, so they probably do not want to do that.
   The number of votes needed for execution could also tip off town that there is a fake dead Demon somewhere.
 
-Q What happens if the Zombuul registering as dead is drunk or poisoned?
-A There is no immediate visible effect.
-  They are not announced as alive so the town square, which is the players' responsibility, is not updated.
+Q What happens if the Zombuul registering as dead is drunk or poisoned?  Does the game end?
+A There is no immediate visible effect.  The game continues because importantly the Zombuul has never actually died.
+  But they are not announced as alive,
+  so the Town Square, which is the players' responsibility, is not updated by removing their death shroud.
+  
+  But they no longer register as dead to abilities concerned with living status:
+  * the Empath and Tea Lady abilities would no longer skip over them;
+  * they no longer register to the Oracle.
 
-  But they no longer register as dead to any other abilities.
-  For example, the Empath and Tea Lady abilities would no longer skip over them.
   Whether they can now be deliberately targeted by abilities that specify a living player (Chambermaid) as their target is debatable,
   as this strays into the trying to cheat area.
   
   The number of votes required to put someone on the block changes, which may tip off town to the drunk/poisoned Zombuul being in the game.
-  Some STs decide not to alter the number of votes in the case of the drunk / poisoned Zombuul.
+  Some STs decide not to alter the number of votes in the case of the drunk/poisoned Zombuul.
 
 
-================================================================================================================================
-================================================================================================================================
-================================================================================================================================
-================================================================================================================================
-================================================================================================================================
+===============================================================================================================
+==      _____                                 _     _       _                            _                   ==
+==     | ____| __   __   ___   _ __   _   _  | |_  | |__   (_)  _ __     __ _      ___  | |  ___    ___      ==
+==     |  _|   \ \ / /  / _ \ | '__| | | | | | __| | '_ \  | | | '_ \   / _` |    / _ \ | | / __|  / _ \     ==
+==     | |___   \ V /  |  __/ | |    | |_| | | |_  | | | | | | | | | | | (_| |   |  __/ | | \__ \ |  __/     ==
+==     |_____|   \_/    \___| |_|     \__, |  \__| |_| |_| |_| |_| |_|  \__, |    \___| |_| |___/  \___|     ==
+==                                    |___/                             |___/                                ==
+===============================================================================================================
+
 
 :Fang Gu / Pit-Hag:  
 Q If the Pit-Hag changes the Demon to the Fang Gu,
@@ -7507,6 +7538,13 @@ A No, because the ability that caused the droisoning no longer exists.
   * If the Imp self-kills and the Poisoner becomes the new Imp, then the Poisoner is no longer in play and is therefore not poisoning anyone.
   * If the Pit-Hag turns the Philosopher drunking the Savant into the Mutant, then the Philo is no longer in play and is therefore not drunking the Savant.
   * If the Pit-Hag turns the Puzzlemaster into the Klutz, the previously Puzzlemaster-drunk player is now sober.
+
+Q If the Poisoner becomes the Imp after the Imp self-kills, when is the poisoning removed?
+A As soon as the Poisoner becomes the Imp.
+
+  The Poisoner acts early in the night order, before the Imp, so still targets a player.
+  The poison is then removed when the Imp self-kills; the ST removes the reminder token from the Grimoire.
+  If the poisoned player acts between the Poisoner and the Imp that night then the poison still has an effect.
 
 Q If a character is poisoned, they become healthy if the character that is causing them to be poisoned no longer has an active ability. 
   How does this apply to a Snake Charmer, or does it not?
@@ -7632,16 +7670,25 @@ A Including dead players.
   Abilities that specify voting and nominating (Flowergirl / Town Crier / Organ Grinder), are not triggered,
   since the game defines votes as players raising their hands for executions only.
 
-Q The Demon supports a call to exile a Traveller. Is the Flowergirl informed?
+Q Is an exile an execution?
 A No.
 
-  Exiles are not executions:
+  Exiles are not executions so:
   * they do not require or use a vote token;
   * they require a majority of all players, not just living players;
   * do not end the day;
-  * do not interact with any abilities that specify executions/voting/nominating (Town Crier / Flower Girl / Organ Grinder).
 
-Q Does the Flower Girl read the Cult Leader votes as well as votes from nominations?
+  Additionally an exile does not interact with any ability that specifies executions, voting or nominating so:
+  * the Demon supporting an exile does not alert the Flowergirl;
+  * a Vortox win is still possible if there are no executions today;
+  * the Organ Grinder does not force the call for exile to be conducted with eyes closed;
+  * a Minion supporting an exile does not alert the Town Crier.
+
+Q Can Travellers be nominated for execution?
+A No.  Any player can call for the exile of a Traveller but cannot nominate them for execution.
+  The only way for a Traveller to be executed is via a madness break or the Scapegoat.
+
+Q Does the Flowergirl read the Cult Leader votes as well as votes from nominations?
 A No, the Cult Leader does not use votes, only raised hands.
 
 Q If someone dies during the day (Harpy / Tinker / Witch / ...), does this change the number of required votes,
@@ -7694,6 +7741,13 @@ A The ST should not consider this a madness break.
 
 
 :travellers:
+Q Do Travellers get a defence after a call for their exile?
+A Yes.
+
+Q Does the Spy / Widow learn Traveller alignments?
+A Yes, if the Traveller is in play when they see the Grimoire.
+  Traveller tokens are placed normally if they are good aligned otherwise they are placed upside down if they are evil.
+
 Q When can an exile be called for?
 A At any time during the day, though it seems reasonable to wait for players to be assembled in town rather than make them come back from private chats to run the call for exile.
 
@@ -7705,7 +7759,7 @@ A No, an exile is not an execution.
 
 Q What happens if the Apprentice Philosopher Snake Charmer chooses the real Demon?
 A By default, nothing, because normally a Traveller cannot become a non-Traveller, which makes the Snake Charmer a poor choice for the Apprentice.
-  However, if an optional rule mentioned in the rulebook that players can become Travellers and vice versa is used,
+  However, if the optional rule that players can become Travellers and vice versa is used,
   then the Apprentice would become the Demon and publicly lose their Traveller status
   and the Demon would become the Apprentice, which everyone would know and ultimately makes Snake Charmer a poor choice for the Apprentice.
   A good example of why Apprentice is recommended for Bad Moon Rising and not Sects and Violets.
@@ -7826,11 +7880,19 @@ A Yes, if the ability just states player any player is valid.
   Any abilities that do not allow Travellers being chosen will specify it,
   such as the Dreamer's.
 
-  Though the ST might want to shake their head if the Pit-Hag chooses a Traveller,
-  unless the optional rule that Travellers can become non-Travellers is in use and the Traveller is okay to be swapped.
+  Character changing abilities (Pit-Hag/Barber/Summoner/...) are a special case.
+  The default rule is that Travelers cannot become non-Travelers and any ability that would try to change their character gets a headshake no and a prompt to choose again.
+  There is an optional rule that Travellers can become non-Travellers so if the ST, the group and the Traveller are okay with it then the swap can happen,
+  but if it was not discussed prior to the game start then it is best to not allow it.
 
 
 :misc:
+Q Can abilities target dead players?
+A Most can with some exceptions.
+  Where any ability text says "choose a player" a dead player is still a player,
+  so can target the dead the same way as the living.
+  When an ability can only target the living it will explicitly specify this, such as the Chambermaid's.
+
 Q Does the Cannibal or the Philosopher with an "even while dead" ability (Heretic / Politician / Recluse) keep that ability when they die?
 A Yes, they lose the Cannibal/Philosopher ability but keep any "even while dead" ability.
 
@@ -7860,8 +7922,9 @@ A No, only after they have used their ability.
 Q If a "you think you are" character (Lunatic / Marionette / Drunk) is changed (Pit-Hag / Barber / Fang-Gu / ...) to the character that they think they are, are they told?
 A Yes, all players learn when they change their character, including those that think they are something else.
 
-Q Do regurgitated / resurrected players (Shabaloth / Professor / Al-Hadikhia) still act the night that they are brought back?
-A They can if they wake after the ability that brought them back.
+Q Can a regurgitated / resurrected (Shabaloth / Professor / Al-Hadikhia) player still act the night that they are brought back?
+A Yes, if they wake after the ability that brought them back,
+  or they are first night role in which case they wake up after they have had a chance to be potentially made drunk, poisoned or killed.
 
 Q Do regurgitated / resurrected players (Shabaloth / Professor / Al-Hadikhia)
   that have used their once per game ability
