@@ -305,53 +305,68 @@ def remove_empty_paragraphs(html: str, output_path: str) -> str:
 
 
 # List of keywords to highlight
-Townsfolk =  [ "Steward", "Knight", "Noble", "Investigator", "Chef"]
-Townsfolk += [ "Washerwoman", "Clockmaker", "Librarian", "Grandmother"]
-Townsfolk += [ "Pixie", "Bounty Hunter", "Empath", "High Priestess", "Sailor"]
-Townsfolk += [ "General", "Preacher", "Chambermaid", "Balloonist", "King"]
-Townsfolk += [ "Dreamer", "Fortune Teller", "Mathematician", "Snake Charmer"]
-Townsfolk += [ "Cult Leader", "Flowergirl", "Town Crier", "Oracle"]
-Townsfolk += [ "Undertaker", "Innkeeper", "Gambler", "Monk", "Lycanthrope"]
-Townsfolk += [ "Exorcist", "Gossip", "Savant", "Amnesiac", "Juggler"]
-Townsfolk += [ "Nightwatchman", "Engineer", "Artist", "Courtier", "Fisherman"]
-Townsfolk += [ "Slayer", "Professor", "Seamstress", "Philosopher", "Huntsman",]
-Townsfolk += [ "Soldier", "Fool", "Pacifist", "Alchemist", "Tea Lady", "Sage"]
-Townsfolk += [ "Farmer", "Magician", "Ravenkeeper", "Choirboy", "Virgin"]
-Townsfolk += [ "Poppy Grower", "Minstrel", "Mayor", "Atheist", "Cannibal"]
-Townsfolk += [ "Village Idiot"]
+Townsfolk  = [ "Alchemist", "Amnesiac", "Artist", "Atheist"]
+Townsfolk += [ "Balloonist", "Bounty Hunter", "Cannibal"]
+Townsfolk += [ "Chambermaid", "Chef", "Choirboy", "Clockmaker"]
+Townsfolk += [ "Courtier", "Cult Leader", "Dreamer", "Empath"]
+Townsfolk += [ "Engineer", "Exorcist", "Farmer", "Fisherman"]
+Townsfolk += [ "Flowergirl", "Fool", "Fortune Teller"] 
+Townsfolk += [ "Gambler", "General", "Gossip", "Grandmother"]
+Townsfolk += [ "High Priestess", "Huntsman"]
+Townsfolk += [ "Innkeeper", "Investigator", "Juggler"]
+Townsfolk += [ "King", "Knight", "Librarian", "Lycanthrope"]
+Townsfolk += [ "Magician", "Mathematician", "Mayor"]
+Townsfolk += [ "Minstrel", "Monk"]
+Townsfolk += [ "Nightwatchman", "Noble", "Oracle"]
+Townsfolk += [ "Pacifist", "Philosopher", "Pixie" ]
+Townsfolk += [ "Poppy Grower", "Preacher", "Professor"]
+Townsfolk += [ "Ravenkeeper", "Sage", "Sailor"]
+Townsfolk += [ "Savant", "Seamstress", "Shugenja"]
+Townsfolk += [ "Slayer", "Soldier", "Snake Charmer"]
+Townsfolk += [ "Steward", "Tea Lady", "Town Crier"]
+Townsfolk += [ "Undertaker", "Village Idiot", "Virgin", "Washerwoman"]
 
-Outsider  =  [ "Snitch", "Butler", "Goon", "Acrobat"]
-Outsider  += [ "Puzzlemaster", "Tinker", "Saint", "Sweetheart"]
-Outsider  += [ "Plague Doctor", "Recluse", "Mutant", "Heretic"]
-Outsider  += [ "Damsel", "Klutz", "Drunk", "Golem", "Moonchild"]
-Outsider  += [ "Barber", "Politician", "Lunatic", "Hatter"]
+Outsider   = [ "Acrobat", "Barber", "Butler"]
+Outsider  += [ "Damsel",  "Drunk", "Golem"]
+Outsider  +=  [ "Goon", "Hatter", "Heretic" ]
+Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant"]
+Outsider  += [ "Plague Doctor", "Politician", "Puzzlemaster", "Recluse"]
+Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker"]
 
-Minion     = [ "Godfather", "Widow", "Poisoner", "Devil's Advocate"]
-Minion    += [ "Harpy", "Witch", "Spy", "Cerenovus", "Fearmonger", "Pit-Hag"]
-Minion    += [ "Psychopath", "Assassin", "Baron", "Mezepheles", "Goblin"]
-Minion    += [ "Scarlet Woman", "Mastermind", "Evil Twin", "Boomdandy"]
-Minion    += [ "Marionette", "Organ Grinder", "Vizier", "Summoner"]
+Minion     = [ "Assassin", "Baron", "Boomdandy", "Cerenovus"]
+Minion    += [ "Devil's Advocate", "Evil Twin", "Fearmonger"]
+Minion    += [ "Goblin", "Godfather", "Harpy"]
+Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
+Minion    += [ "Organ Grinder" ]
+Minion    += [ "Pit-Hag", "Poisoner","Psychopath"]
+Minion    += [ "Scarlet Woman", "Spy",  "Summoner"]
+Minion    += [ "Vizier", "Widow", "Witch"]
 
-Demon      = [ "Pukka", "Lil' Monsta", "Lleech", "No Dashii", "Imp"]
-Demon     += [ "Shabaloth", "Po", "Zombuul", "Al-Hadikhia", "Vigormortis"]
-Demon     += [ "Fang Gu", "Vortox", "Legion", "Leviathan", "Riot", "Kazali"]
-Demon     += [ "Ojo", "Yaggababble" ]
+Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
+Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
+Demon     += [ "No Dashii", "Ojo", "Po", "Pukka"]
+Demon     += [ "Riot", "Shabaloth"]
+Demon     += [ "Vigormortis", "Vortox", "Yaggababble", "Zombuul"]
 
-Traveller  = [ "Bureaucrat", "Thief", "Gunslinger", "Scapegoat", "Beggar"]
-Traveller += [ "Apprentice", "Matron", "Judge", "Bishop", "Voudon", "Barista"]
-Traveller += [ "Harlot", "Butcher", "Deviant", "Bone Collector", "Gangster"]
+Traveller  = [ "Apprentice", "Barista", "Beggar", "Bishop"]
+Traveller += [ "Bone Collector", "Bureaucrat", "Butcher", "Deviant"]
+Traveller += [ "Gangster", "Gunslinger", "Harlot"]
+Traveller += [ "Judge", "Matron"]
+Traveller += [ "Scapegoat", "Thief", "Voudon"]
 
-Fabled     = [ "Revolutionary", "Fiddler", "Toymaker", "Fibbin", "Bootlegger"]
-Fabled    += [ "Spirit of Ivory", "Hell's Librarian", "Djinn", "Duchess"]
-Fabled    += [ "Storm Catcher", "Sentinel", "Doomsayer", "Angel", "Buddhist"] 
-Fabled    += [ "Ferryman", "Gardener"] 
+Fabled     = [ "Angel", "Bootlegger", "Buddhist"]
+Fabled    += [ "Djinn", "Doomsayer", "Duchess"]
+Fabled    += [ "Ferryman", "Fibbin", "Fiddler", "Gardener"] 
+Fabled    += [ "Hell's Librarian", "Revolutionary", "Sentinel"]
+Fabled    += [ "Spirit of Ivory", "Storm Catcher", "Toymaker"]
+
 
 # All the keywords that are not the names of characters
 # character types
 Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "traveller"] 
 # conditions
 Extra += [ "poison", "drunk", "droisoned", "sober", "healthy"] 
-Extra += [ "good", "evil", "alive", "dead", "preached" ]
+Extra += [ "good", "evil", "alive", "dead"]
 # concepts
 Extra += [ "nomination | nominate","execution | execute | executing", "exile"]
 Extra += [ "register | registration", "vote | voting" ]
@@ -360,9 +375,9 @@ Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 Extra += [ "Teensyville" ]
 
-all_the_words = {"Townsfolk":Townsfolk ,
+all_the_words = {"Townsfolk":['Preacher|preached' if item == 'Preacher' else item for item in Townsfolk],
                  "Outsider":Outsider,
-                 "Minion":Minion,
+                 "Minion": Minion,
                  "Demon":Demon,
                  "Traveller":Traveller,
                  "Fabled":Fabled,
