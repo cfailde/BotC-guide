@@ -304,6 +304,17 @@ def remove_empty_paragraphs(html: str, output_path: str) -> str:
     return content
 
 
+def escape_html(input_string):
+    """
+    Replace '<' and '>' characters with their HTML escaped sequences.
+    """
+    escaped_string = input_string.replace("<", "&lt;")
+    escaped_string = escaped_string.replace(">", "&gt;")
+    return escaped_string
+
+
+
+
 # List of keywords to highlight
 Townsfolk  = [ "Alchemist", "Amnesiac", "Artist", "Atheist"]
 Townsfolk += [ "Balloonist", "Bounty Hunter", "Cannibal"]
