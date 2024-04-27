@@ -103,6 +103,20 @@ def surround_keywords_with_span(html_content:str, keywords: 'list[str]', charact
     return str(soup)
 
 
+def temporarily_escape_unsafe_characters(input_string:str) -> str:
+    escaped_string = input_string.replace("<", "LESS_THAN_SYMBOL")
+    escaped_string = escaped_string.replace(">", "GREATER_THAN_SYMBOL")
+    escaped_string = escaped_string.replace("&", "AMPERSAND_SYMBOL")
+    return escaped_string
+
+
+def use_html_entities(input_string:str) -> str:
+    escaped_string = input_string.replace("LESS_THAN_SYMBOL", "&lt;")
+    escaped_string = escaped_string.replace("GREATER_THAN_SYMBOL", "&gt;")
+    escaped_string = escaped_string.replace("AMPERSAND_SYMBOL", "&amp;")
+    return escaped_string
+
+
 def text_to_nodes(input_path: str, output_path: str) -> str:
     output_lines = []
 
@@ -113,6 +127,7 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
         for line in file:
+            line = temporarily_escape_unsafe_characters(line) 
             # blank lines separate question-answer blocks, but also indicate the end of lists and paragraphs within answers so need to handle this
             if line.strip() == '':
                 if in_list:
@@ -257,8 +272,8 @@ def indent_keywords(html: str) -> str:
 def indent(html: str, output_path: str) -> str:
     nicely_indented = str(yattag_indent(html))
     fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
-
-    updated_content = indent_keywords(fixed_spans)
+    fixed_escaping = use_html_entities(fixed_spans)
+    updated_content = indent_keywords(fixed_escaping)
 
     debug(updated_content, output_path)
     return updated_content
@@ -304,20 +319,9 @@ def remove_empty_paragraphs(html: str, output_path: str) -> str:
     return content
 
 
-def escape_html(input_string):
-    """
-    Replace '<' and '>' characters with their HTML escaped sequences.
-    """
-    escaped_string = input_string.replace("<", "&lt;")
-    escaped_string = escaped_string.replace(">", "&gt;")
-    return escaped_string
-
-
-
-
 # List of keywords to highlight
 Townsfolk  = [ "Alchemist", "Amnesiac", "Artist", "Atheist"]
-Townsfolk += [ "Balloonist", "Bounty Hunter", "Cannibal"]
+Townsfolk += [ "Balloonist", "Banshee", "Bounty Hunter", "Cannibal"]
 Townsfolk += [ "Chambermaid", "Chef", "Choirboy", "Clockmaker"]
 Townsfolk += [ "Courtier", "Cult Leader", "Dreamer", "Empath"]
 Townsfolk += [ "Engineer", "Exorcist", "Farmer", "Fisherman"]
@@ -386,7 +390,8 @@ Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 Extra += [ "Teensyville" ]
 
-all_the_words = {"Townsfolk":['Preacher|preached' if item == 'Preacher' else item for item in Townsfolk],
+all_the_words = {"Townsfolk":[ {"Preacher":"Preacher|preach",
+                                "Exorcist":"Exorcist|exorcise|exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
                  "Minion": Minion,
                  "Demon":Demon,
