@@ -390,13 +390,13 @@ Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 Extra += [ "Teensyville" ]
 
-all_the_words = {"Townsfolk":[ {"Preacher":"Preacher|preach",
-                                "Exorcist":"Exorcist|exorcise|exorcism"}.get(item, item) for item in Townsfolk],
+all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
+                                "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
-                 "Minion": Minion,
+                 "Minion":[ {"Evil Twin":"Evil Twin | good twin | the twins"}.get(item, item) for item in Minion],
                  "Demon":Demon,
                  "Traveller":Traveller,
-                 "Fabled":Fabled,
+                 "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught"}.get(item, item) for item in Fabled],
                  "Extra":Extra }
 
 print("Starting update.")
