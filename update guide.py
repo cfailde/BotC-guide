@@ -127,7 +127,7 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
         for line in file:
-            line = temporarily_escape_unsafe_characters(line) 
+            line = temporarily_escape_unsafe_characters(line)
             # blank lines separate question-answer blocks, but also indicate the end of lists and paragraphs within answers so need to handle this
             if line.strip() == '':
                 if in_list:
@@ -150,15 +150,15 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
                     first_question = False
                 else:
                     output_lines.append('        </p>\n')   # close paragraph
-                    output_lines.append('      </div>\n')     # close answer
-                    output_lines.append('    </div>\n')       # close node
+                    output_lines.append('      </div>\n')   # close answer
+                    output_lines.append('    </div>\n')     # close node
 
                 output_lines.append('    <div class="node">\n')  # open node
                 output_lines.append('      <h4 class="question">' + line[2:])   # open question
 
             elif line.startswith('A '):
                 answer_mode = True
-                output_lines.append('      </h4>\n')              # close question
+                output_lines.append('      </h4>\n')        # close question
                 output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
 
             # skip comments
@@ -393,7 +393,7 @@ Extra += [ "Teensyville" ]
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
-                 "Minion":[ {"Evil Twin":"Evil Twin | good twin | the twins"}.get(item, item) for item in Minion],
+                 "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins"}.get(item, item) for item in Minion],
                  "Demon":Demon,
                  "Traveller":Traveller,
                  "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught"}.get(item, item) for item in Fabled],
