@@ -161,6 +161,10 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
                 output_lines.append('      </h4>\n')        # close question
                 output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
 
+            # citations
+            elif line.startswith('C '):
+                pass
+
             # skip comments
             elif line.startswith('=') or line.startswith('--') or line.startswith(':'):
                 pass
@@ -388,7 +392,7 @@ Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
-Extra += [ "Teensyville" ]
+Extra += [ "Teensyville", "Grimoire" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
@@ -396,7 +400,8 @@ all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                  "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins"}.get(item, item) for item in Minion],
                  "Demon":Demon,
                  "Traveller":Traveller,
-                 "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught"}.get(item, item) for item in Fabled],
+                 "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught",
+                                "Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
                  "Extra":Extra }
 
 print("Starting update.")
