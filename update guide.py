@@ -324,7 +324,7 @@ def remove_empty_paragraphs(html: str, output_path: str) -> str:
 
 
 # List of keywords to highlight
-Townsfolk  = [ "Alchemist", "Amnesiac", "Artist", "Atheist"]
+Townsfolk  = [ "Alchemist", "Alsaahir", "Amnesiac", "Artist", "Atheist"]
 Townsfolk += [ "Balloonist", "Banshee", "Bounty Hunter", "Cannibal"]
 Townsfolk += [ "Chambermaid", "Chef", "Choirboy", "Clockmaker"]
 Townsfolk += [ "Courtier", "Cult Leader", "Dreamer", "Empath"]
@@ -347,8 +347,8 @@ Townsfolk += [ "Undertaker", "Village Idiot", "Virgin", "Washerwoman"]
 
 Outsider   = [ "Acrobat", "Barber", "Butler"]
 Outsider  += [ "Damsel",  "Drunk", "Golem"]
-Outsider  +=  [ "Goon", "Hatter", "Heretic" ]
-Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant"]
+Outsider  += [ "Goon", "Hatter", "Heretic"]
+Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant", "Ogre"]
 Outsider  += [ "Plague Doctor", "Politician", "Puzzlemaster", "Recluse"]
 Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker"]
 
@@ -395,11 +395,13 @@ Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 Extra += [ "Teensyville", "Grimoire" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
+                                "Snake Charmer":"Snake Charmer | snake charmed",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
-                 "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins"}.get(item, item) for item in Minion],
+                 "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins",
+                             "Summoner":"Summoner | summon"}.get(item, item) for item in Minion],
                  "Demon":Demon,
-                 "Traveller":Traveller,
+                 "Traveller":[ {"Bone Collector":"Bone Collector | bone collect"}.get(item, item) for item in Traveller],
                  "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught",
                                 "Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
                  "Extra":Extra }
