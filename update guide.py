@@ -350,7 +350,7 @@ Outsider  += [ "Damsel",  "Drunk", "Golem"]
 Outsider  += [ "Goon", "Hatter", "Heretic"]
 Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant", "Ogre"]
 Outsider  += [ "Plague Doctor", "Politician", "Puzzlemaster", "Recluse"]
-Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker"]
+Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker", "Zealot"]
 
 Minion     = [ "Assassin", "Baron", "Boomdandy", "Cerenovus"]
 Minion    += [ "Devil's Advocate", "Evil Twin", "Fearmonger"]
@@ -363,7 +363,7 @@ Minion    += [ "Vizier", "Widow", "Witch"]
 
 Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
 Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
-Demon     += [ "No Dashii", "Ojo", "Po", "Pukka"]
+Demon     += [ "Lord of Typhon", "No Dashii", "Ojo", "Po", "Pukka"]
 Demon     += [ "Riot", "Shabaloth"]
 Demon     += [ "Vigormortis", "Vortox", "Yaggababble", "Zombuul"]
 
