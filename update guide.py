@@ -352,7 +352,7 @@ Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant", "Ogre"]
 Outsider  += [ "Plague Doctor", "Politician", "Puzzlemaster", "Recluse"]
 Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker", "Zealot"]
 
-Minion     = [ "Assassin", "Baron", "Boomdandy", "Cerenovus"]
+Minion     = [ "Assassin", "Baron", "Boffin", "Boomdandy", "Cerenovus"]
 Minion    += [ "Devil's Advocate", "Evil Twin", "Fearmonger"]
 Minion    += [ "Goblin", "Godfather", "Harpy"]
 Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
@@ -395,12 +395,13 @@ Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
 Extra += [ "Teensyville", "Grimoire" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
+                                "Grandmother":"Grandmother | grandchild",
                                 "Snake Charmer":"Snake Charmer | snake charmed",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
                  "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins",
                              "Summoner":"Summoner | summon"}.get(item, item) for item in Minion],
-                 "Demon":Demon,
+                 "Demon":[ {"Lil' Monsta":"Lil' Monsta | babysit"}.get(item, item) for item in Demon],
                  "Traveller":[ {"Bone Collector":"Bone Collector | bone collect"}.get(item, item) for item in Traveller],
                  "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught",
                                 "Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
