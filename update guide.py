@@ -43,6 +43,19 @@ def sanity_check():
     return True
 
 
+def check_output_file_format(input_file: str) -> bool:
+    with open(input_file, 'r', encoding='utf-8') as f:
+        soup = BeautifulSoup(f, 'html.parser')
+    
+    main = soup.find('main')
+    
+    if main is None:
+        print("  " + RESULT_FILE + "is incorrectly formatted: No <main> element found.")
+        return False
+    print("  " + RESULT_FILE + " is correctly formatted.")
+    return True
+
+
 def check_file_format(file_path: str) -> bool:
     with open(file_path, 'r', encoding="utf-8") as file:
         lines = file.readlines()
@@ -97,7 +110,7 @@ def surround_keywords_with_span(html_content:str, keywords: 'list[str]', charact
         matches = soup.find_all(string=re.compile(r'\b' + re.escape(keyword) + r'\b'))
         for match in matches:
             content = str(match)
-            replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
+            replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type} indexable">{keyword}</span>', content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
 
     return str(soup)
@@ -323,6 +336,35 @@ def remove_empty_paragraphs(html: str, output_path: str) -> str:
     return content
 
 
+def reorder_nodes(input_html: str, output_path: str) -> str:
+    soup = BeautifulSoup(input_html, 'html.parser')
+
+    main = soup.find('main')
+
+    # Find all nodes
+    nodes = main.find_all('div', class_='node')
+    
+    # Create a list to store (node, count) tuples
+    node_counts = []
+
+    # Count spans for each node
+    for node in nodes:
+        count = len(node.find_all('span', class_=['Townsfolk', 'Outsider', 'Minion', 'Demon', 'Fabled', 'Traveller']))
+        node_counts.append((node, count))
+
+    # Sort nodes based on the count (ascending order)
+    node_counts.sort(key=lambda x: x[1])
+
+    # Clear existing nodes in main and append sorted nodes
+    main.clear()
+    for node, count in node_counts:
+        main.append(node)
+
+    content = str(soup)
+    debug(content, output_path)
+    return content
+
+
 # List of keywords to highlight
 Townsfolk  = [ "Alchemist", "Alsaahir", "Amnesiac", "Artist", "Atheist"]
 Townsfolk += [ "Balloonist", "Banshee", "Bounty Hunter", "Cannibal"]
@@ -417,6 +459,13 @@ print("Checking " + BOTC_DATA_FILE)
 if not check_file_format(BOTC_DATA_FILE):
     sys.exit("  Oh dear!")
 
+
+print("Checking " + RESULT_FILE)
+if not check_output_file_format(RESULT_FILE):
+    sys.exit("  Oh dear!")
+
+
+
 if DEBUG_MODE:
     print("Backing up ...")
     manage_backups(RESULT_FILE)
@@ -430,6 +479,9 @@ interim_result = replace_nodes(RESULT_FILE, nodes, 'nodified content.html')
 print("Highlighting roles ...")
 interim_result = highlight_roles(interim_result, 'highlighted.html')
 print("  Done highlighting.                                                              ")
+
+print("Ordering nodes ...")
+interim_result = reorder_nodes(interim_result, 'reordered_nodes.html')
 
 print("Updating index ...")
 interim_result = update_index(interim_result, 'updated index.html')
