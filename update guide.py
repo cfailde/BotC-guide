@@ -349,11 +349,21 @@ def reorder_nodes(input_html: str, output_path: str) -> str:
 
     # Count spans for each node
     for node in nodes:
-        count = len(node.find_all('span', class_=['Townsfolk', 'Outsider', 'Minion', 'Demon', 'Fabled', 'Traveller']))
-        node_counts.append((node, count))
+        unique_spans = set()
+        spans = node.find_all('span', class_=['Townsfolk', 'Outsider', 'Minion', 'Demon', 'Fabled', 'Traveller'])
+        for span in spans:
+            unique_spans.add(str(span))
+        unique_count = len(unique_spans)
+        node_counts.append((node, unique_count))
 
     # Sort nodes based on the count (ascending order)
     node_counts.sort(key=lambda x: x[1])
+
+    # Debug 
+    #for node, count in node_counts:
+    #    text_content = node.get_text()
+    #    if 'Al-Hadikhia' in node.get_text():
+    #        print(text_content[:25] + " ... [" + str(count) + "]")
 
     # Clear existing nodes in main and append sorted nodes
     main.clear()
@@ -366,9 +376,10 @@ def reorder_nodes(input_html: str, output_path: str) -> str:
 
 
 # List of keywords to highlight
-Townsfolk  = [ "Alchemist", "Alsaahir", "Amnesiac", "Artist", "Atheist"]
-Townsfolk += [ "Balloonist", "Banshee", "Bounty Hunter", "Cannibal"]
-Townsfolk += [ "Chambermaid", "Chef", "Choirboy", "Clockmaker"]
+Townsfolk  = [ "Acrobat", "Alchemist", "Alsaahir", "Amnesiac"]
+Townsfolk += [ "Artist", "Atheist", "Balloonist", "Banshee"]
+Townsfolk += [ "Bounty Hunter", "Cannibal", "Chambermaid"]
+Townsfolk += [ "Chef", "Choirboy", "Clockmaker"]
 Townsfolk += [ "Courtier", "Cult Leader", "Dreamer", "Empath"]
 Townsfolk += [ "Engineer", "Exorcist", "Farmer", "Fisherman"]
 Townsfolk += [ "Flowergirl", "Fool", "Fortune Teller"] 
@@ -387,7 +398,7 @@ Townsfolk += [ "Slayer", "Soldier", "Snake Charmer"]
 Townsfolk += [ "Steward", "Tea Lady", "Town Crier"]
 Townsfolk += [ "Undertaker", "Village Idiot", "Virgin", "Washerwoman"]
 
-Outsider   = [ "Acrobat", "Barber", "Butler"]
+Outsider   = [ "Barber", "Butler"]
 Outsider  += [ "Damsel",  "Drunk", "Golem"]
 Outsider  += [ "Goon", "Hatter", "Heretic"]
 Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant", "Ogre"]
@@ -411,7 +422,7 @@ Demon     += [ "Vigormortis", "Vortox", "Yaggababble", "Zombuul"]
 
 Traveller  = [ "Apprentice", "Barista", "Beggar", "Bishop"]
 Traveller += [ "Bone Collector", "Bureaucrat", "Butcher", "Deviant"]
-Traveller += [ "Gangster", "Gunslinger", "Harlot"]
+Traveller += [ "Gangster", "Gnome", "Gunslinger", "Harlot"]
 Traveller += [ "Judge", "Matron"]
 Traveller += [ "Scapegoat", "Thief", "Voudon"]
 
