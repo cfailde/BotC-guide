@@ -110,7 +110,7 @@ def surround_keywords_with_span(html_content:str, keywords: 'list[str]', charact
         matches = soup.find_all(string=re.compile(r'\b' + re.escape(keyword) + r'\b'))
         for match in matches:
             content = str(match)
-            replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type} indexable">{keyword}</span>', content)
+            replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
 
     return str(soup)
@@ -136,6 +136,7 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
     answer_mode = False
     in_list = False
     in_ordered_list = False
+    deprecation_mode = False
     first_question = True
     id = 0
     with open(input_path, 'r', encoding="utf-8") as file:
@@ -164,6 +165,10 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
                 else:
                     output_lines.append('        </p>\n')   # close paragraph
                     output_lines.append('      </div>\n')   # close answer
+                    if deprecation_mode:
+                        deprecation_mode = False
+                        output_lines.append('    </div>\n')     # close deprecation
+
                     output_lines.append('    </div>\n')     # close node
 
                 output_lines.append('    <div class="node">\n')  # open node
@@ -173,6 +178,12 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
                 answer_mode = True
                 output_lines.append('      </h4>\n')        # close question
                 output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
+
+            # deprecated info
+            elif line.startswith('D '):
+                deprecation_mode = True
+                output_lines.append('          </p>\n')      # close paragraph
+                output_lines.append('          <div class="deprecated">            <p>' + line[2:])      # open paragraph
 
             # citations
             elif line.startswith('C '):
@@ -412,7 +423,7 @@ Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
 Minion    += [ "Organ Grinder" ]
 Minion    += [ "Pit-Hag", "Poisoner","Psychopath"]
 Minion    += [ "Scarlet Woman", "Spy",  "Summoner"]
-Minion    += [ "Vizier", "Widow", "Witch"]
+Minion    += [ "Vizier", "Widow", "Witch", "Xann"]
 
 Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
 Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
