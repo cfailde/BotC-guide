@@ -423,7 +423,7 @@ Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
 Minion    += [ "Organ Grinder" ]
 Minion    += [ "Pit-Hag", "Poisoner","Psychopath"]
 Minion    += [ "Scarlet Woman", "Spy",  "Summoner"]
-Minion    += [ "Vizier", "Widow", "Witch", "Xann"]
+Minion    += [ "Vizier", "Widow", "Witch", "Xaan"]
 
 Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
 Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
@@ -455,21 +455,25 @@ Extra += [ "nomination | nominate","execution | execute | executing", "exile"]
 Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
-Extra += [ "in play", "out of play", "bluff", "mid game", "red herring"]
-Extra += [ "Teensyville", "Grimoire" ]
+Extra += [ "in play", "out of play", "bluff", "mid game"]
+Extra += [ "Teensyville", "Grimoire", "Storyteller" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                                 "Grandmother":"Grandmother | grandchild",
                                 "Snake Charmer":"Snake Charmer | snake charmed",
+                                "Lycanthrope":"Lycanthrope | faux paw",
+                                "Fortune Teller":"Fortune Teller | red herring",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
                  "Outsider":Outsider,
                  "Minion":[ {"Evil Twin":"Evil Twin | Good Twin | the Twins",
-                             "Summoner":"Summoner | summon"}.get(item, item) for item in Minion],
+                             "Summoner":"Summoner | summon",
+                             "Xaan":"Xaan | night X"}.get(item, item) for item in Minion],
                  "Demon":[ {"Lil' Monsta":"Lil' Monsta | babysit"}.get(item, item) for item in Demon],
                  "Traveller":[ {"Bone Collector":"Bone Collector | bone collect"}.get(item, item) for item in Traveller],
                  "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught",
                                 "Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
-                 "Extra":Extra }
+                 "Extra":[ {"Storyteller":"Storyteller | ST"}.get(item, item) for item in Extra]
+                 }
 
 print("Starting update.")
 
