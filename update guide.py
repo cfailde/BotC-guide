@@ -423,7 +423,7 @@ Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
 Minion    += [ "Organ Grinder" ]
 Minion    += [ "Pit-Hag", "Poisoner","Psychopath"]
 Minion    += [ "Scarlet Woman", "Spy",  "Summoner"]
-Minion    += [ "Vizier", "Widow", "Witch", "Xaan"]
+Minion    += [ "Vizier", "Widow", "Witch", "Wizard", "Xaan"]
 
 Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
 Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
