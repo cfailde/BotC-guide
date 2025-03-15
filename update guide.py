@@ -104,13 +104,19 @@ def manage_backups(filename: str) -> None:
 def surround_keywords_with_span(html_content:str, keywords: 'list[str]', character_type: str) -> str:
     soup = BeautifulSoup(html_content, 'html.parser')
 
+    def replace_match(match):
+        word = match.group(0)
+        if word.endswith('s') and word[:-1] in keywords:
+            return f'<span class="{character_type}">{word[:-1]}</span>s'
+        return f'<span class="{character_type}">{word}</span>'
+
     for keyword in keywords:
         print("  Highlighting: " + keyword + "                               ", end='\r')
 
-        matches = soup.find_all(string=re.compile(r'\b' + re.escape(keyword) + r'\b'))
+        matches = soup.find_all(string=re.compile(r'\b' + re.escape(keyword) + 's?' + r'\b'))
         for match in matches:
             content = str(match)
-            replaced_content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{character_type}">{keyword}</span>', content)
+            replaced_content = re.sub(r'\b' + re.escape(keyword) + r's?' + r'\b', replace_match, content)
             match.replace_with(BeautifulSoup(replaced_content, 'html.parser'))
 
     return str(soup)
@@ -308,9 +314,11 @@ def indent(html: str, output_path: str) -> str:
 
 # Replaces underscores around words with <em></em> tag
 def emphasise(html_content: str, output_path: str) -> str:
-    pattern = re.compile(r'(_)(\w+)(_)')
-
-    modified_html = pattern.sub(lambda match: f'<em>{match.group(2)}</em>', html_content)
+    # Match all the text between a pair of underscores
+    pattern = r'_(\S(?:.*?\S)?)_'
+    
+    # Replace matches with <em> tags
+    modified_html = re.sub(pattern, r'<em>\1</em>', html_content)
 
     debug(modified_html, output_path)
     return modified_html
@@ -456,7 +464,7 @@ Extra += [ "register | registration", "vote | voting" ]
 Extra += [ "alignment", "jinx", "resurrect", "regurgitate | regurgitation"]
 Extra += [ "madness", "setup", "protect" ]
 Extra += [ "in play", "out of play", "bluff", "mid game"]
-Extra += [ "Teensyville", "Grimoire", "Storyteller" ]
+Extra += [ "Teensyville", "grimoire", "storyteller | ST" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                                 "Grandmother":"Grandmother | grandchild",
