@@ -15,6 +15,7 @@ import shutil
 from datetime import datetime
 
 # pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pip install yattag
+# pip install beautifulsoup4
 from yattag import indent as yattag_indent
 
 
@@ -251,6 +252,7 @@ def replace_nodes(original: str, replacement: str, output_path: str) -> str:
 
 
 def highlight_roles(current_contents: str, output_path: str) -> str:
+    current_contents = surround_keywords_with_span(current_contents, Loric, "Loric")
     current_contents = surround_keywords_with_span(current_contents, Fabled, "Fabled")
     current_contents = surround_keywords_with_span(current_contents, Townsfolk, "Townsfolk")
     current_contents = surround_keywords_with_span(current_contents, Outsider, "Outsider")
@@ -359,11 +361,7 @@ def reorder_nodes(input_html: str, output_path: str) -> str:
     soup = BeautifulSoup(input_html, 'html.parser')
 
     main = soup.find('main')
-
-    # Find all nodes
     nodes = main.find_all('div', class_='node')
-    
-    # Create a list to store (node, count) tuples
     node_counts = []
 
     # Count spans for each node
@@ -377,12 +375,6 @@ def reorder_nodes(input_html: str, output_path: str) -> str:
 
     # Sort nodes based on the count (ascending order)
     node_counts.sort(key=lambda x: x[1])
-
-    # Debug 
-    #for node, count in node_counts:
-    #    text_content = node.get_text()
-    #    if 'Al-Hadikhia' in node.get_text():
-    #        print(text_content[:25] + " ... [" + str(count) + "]")
 
     # Clear existing nodes in main and append sorted nodes
     main.clear()
@@ -418,8 +410,8 @@ Townsfolk += [ "Steward", "Tea Lady", "Town Crier"]
 Townsfolk += [ "Undertaker", "Village Idiot", "Virgin", "Washerwoman"]
 
 Outsider   = [ "Barber", "Butler"]
-Outsider  += [ "Damsel",  "Drunk", "Golem"]
-Outsider  += [ "Goon", "Hatter", "Heretic"]
+Outsider  += [ "Damsel", "Drunk", "Golem"]
+Outsider  += [ "Goon", "Hatter", "Heretic", "Hermit"]
 Outsider  += [ "Klutz", "Lunatic", "Moonchild", "Mutant", "Ogre"]
 Outsider  += [ "Plague Doctor", "Politician", "Puzzlemaster", "Recluse"]
 Outsider  += [ "Saint", "Snitch", "Sweetheart", "Tinker", "Zealot"]
@@ -431,7 +423,7 @@ Minion    += [ "Marionette", "Mastermind", "Mezepheles"]
 Minion    += [ "Organ Grinder" ]
 Minion    += [ "Pit-Hag", "Poisoner","Psychopath"]
 Minion    += [ "Scarlet Woman", "Spy",  "Summoner"]
-Minion    += [ "Vizier", "Widow", "Witch", "Wizard", "Xaan"]
+Minion    += [ "Vizier", "Widow", "Witch", "Wizard", "Wraith", "Xaan"]
 
 Demon      = [ "Al-Hadikhia", "Fang Gu", "Imp", "Kazali"]
 Demon     += [ "Legion", "Leviathan", "Lil' Monsta", "Lleech"]
@@ -440,16 +432,22 @@ Demon     += [ "Riot", "Shabaloth"]
 Demon     += [ "Vigormortis", "Vortox", "Yaggababble", "Zombuul"]
 
 Traveller  = [ "Apprentice", "Barista", "Beggar", "Bishop"]
-Traveller += [ "Bone Collector", "Bureaucrat", "Butcher", "Deviant"]
+Traveller += [ "Bone Collector", "Bureaucrat", "Butcher"]
+Traveller += [ "Cacklejack", "Deviant"]
 Traveller += [ "Gangster", "Gnome", "Gunslinger", "Harlot"]
 Traveller += [ "Judge", "Matron"]
 Traveller += [ "Scapegoat", "Thief", "Voudon"]
 
-Fabled     = [ "Angel", "Bootlegger", "Buddhist"]
+Fabled     = [ "Angel", "Buddhist", "Deus Ex Fiasco"]
 Fabled    += [ "Djinn", "Doomsayer", "Duchess"]
-Fabled    += [ "Ferryman", "Fibbin", "Fiddler", "Gardener"] 
+Fabled    += [ "Ferryman", "Fibbin", "Fiddler"]
 Fabled    += [ "Hell's Librarian", "Revolutionary", "Sentinel"]
-Fabled    += [ "Spirit of Ivory", "Storm Catcher", "Toymaker"]
+Fabled    += [ "Spirit of Ivory", "Toymaker"]
+
+Loric      = [ "Big Wig", "Bootlegger", "Gardener"]
+Loric     += [ "Hindu", "Pope", "Storm Catcher"]
+Loric     += [ "Tor", "Ventriloquist", "Zenomancer"]
+
 
 
 # All the keywords that are not the names of characters
@@ -467,6 +465,7 @@ Extra += [ "in play", "out of play", "bluff", "mid game"]
 Extra += [ "Teensyville", "grimoire", "storyteller | ST" ]
 
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
+                                "Dreamer":"Dreamer | dream",
                                 "Grandmother":"Grandmother | grandchild",
                                 "Snake Charmer":"Snake Charmer | snake charmed",
                                 "Lycanthrope":"Lycanthrope | faux paw",
@@ -478,9 +477,9 @@ all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                              "Xaan":"Xaan | night X"}.get(item, item) for item in Minion],
                  "Demon":[ {"Lil' Monsta":"Lil' Monsta | babysit"}.get(item, item) for item in Demon],
                  "Traveller":[ {"Bone Collector":"Bone Collector | bone collect"}.get(item, item) for item in Traveller],
-                 "Fabled":[ {"Storm Catcher":"Storm Catcher | storm caught",
-                                "Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
-                 "Extra":[ {"Storyteller":"Storyteller | ST"}.get(item, item) for item in Extra]
+                 "Fabled":[ {"Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
+                 "Extra":[ {"Storyteller":"Storyteller | ST"}.get(item, item) for item in Extra],
+                 "Loric": [ {"Storm Catcher":"Storm Catcher | storm caught"}.get(item, item) for item in Loric]
                  }
 
 print("Starting update.")
@@ -510,7 +509,7 @@ nodes = text_to_nodes(BOTC_DATA_FILE, 'nodefied content.txt')
 print("Placing updated nodes in guide ...")
 interim_result = replace_nodes(RESULT_FILE, nodes, 'nodified content.html')
 
-print("Highlighting roles ...")
+print("Highlighting characters ...")
 interim_result = highlight_roles(interim_result, 'highlighted.html')
 print("  Done highlighting.                                                              ")
 
