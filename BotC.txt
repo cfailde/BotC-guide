@@ -9775,7 +9775,7 @@ A No.
   so the Snake Charmer will have made their choice while drunk.
 
 Q What happens when the Philosopher Snake Charmer charms the Demon?
-A
+A The following:
   # The Philosopher becomes the Demon;
   # the Demon becomes the self-poisoned Philosopher;
   # if the Snake Charmer is in play, they are no longer made drunk by the Philosopher.
@@ -10362,9 +10362,10 @@ Q How does the Spy jinx with the Plague Doctor work?
 A After the Plague Doctor dies, a living Minion gains the Spy ability in addition to their own ability, and learns this.
 
 Q What happens when the ST gains the Widow ability via the Plague Doctor?
-A
+A The following:
   # The ST picks one player to be permanently Widow poisoned.
   # A good player must be informed that the Widow is in play.
+
   If a good player was previously informed of another instance of the Widow and they are still good
   then the Widow's "a good player knows a Widow is in play" is already satisifed.
   Otherwise, the ST wakes any good player and shows them the Widow character token.
@@ -13518,23 +13519,24 @@ D Previously, when it was ruled that they learnt the incorrect Minion ability,
   not according to the ability that they were told.
 
 Q How does the Alchemist Evil Twin work in a Vortox game?
-A The Alchemist Evil Twin incorrectly learns that they have another Minion ability.
-  Then they learn as their twin the incorrect character for a good player.
-  From this they will deduce that:
-  * they actually have the Evil Twin ability;
-  * the player they were shown is confirmed good;
-  * the Demon is a Vortox.
+A Only information is affected in a Vortox game, not the mechanics,
+  so, in common with a non-Vortox game:
+  # The Alchemist is woken to learn that they have the Evil Twin ability,
+  since the Alchemist learning their ability is no longer considered to be falsifiable information;
+  # An evil player is assigned as the evil aligned "Good Twin";
+  # Evil wins if the Alchemist is executed;
+  # Good cannot win while the Twins are alive.
 
-  Note that only the information is affected in a Vortox game, not the mechanics,
-  so:
-  * an oppositely aligned twin is still correctly assigned,
-  which in this situation is an evil aligned Good Twin,
-  who wakes to learn any player except the Alchemist as the Evil Twin;
-  * evil wins if the Alchemist is executed,
-  while good cannot win if both of the Twins are alive.
+  The informational part of the Alchemist's ability that becomes falsified:
+  # the Alchemist is pointed at a good player and learns the incorrect character;
+  # the evil aligned "Good Twin" is separately woken and told that any player apart from the Alchemist is the Evil Twin.
 D When the Alchemist was restricted to having an out of play Minion ability,
-  the Alchemist Evil Twin would have falsely learnt an in play Minion ability,
-  so confirming one of the Minions.
+  the Alchemist Evil Twin learnt an amazing amount of information
+  since as they would be told the wrong Minion ability
+  and then pointed to a player and learning their wrong character,
+  would have deduced that they had the Evil Twin ability,
+  that it was definitely a Vortox game
+  and that they had confirmation of one good player!
 
 Q What does the Alchemist Godfather learn in a Vortox game?
 A Firstly, they learn they have a different Minion ability.
