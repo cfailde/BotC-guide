@@ -184,7 +184,10 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
             elif line.startswith('A '):
                 answer_mode = True
                 output_lines.append('      </h4>\n')        # close question
-                output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
+                if line[2:].strip() == '':
+                    output_lines.append('      <div class="answer">\n          <p>')                # fix for when answer starts on next line
+                else:
+                    output_lines.append('      <div class="answer">\n          <p>' + line[2:])     # open answer and open first paragraph
 
             # deprecated info
             elif line.startswith('D '):
@@ -402,7 +405,7 @@ Townsfolk += [ "Magician", "Mathematician", "Mayor"]
 Townsfolk += [ "Minstrel", "Monk"]
 Townsfolk += [ "Nightwatchman", "Noble", "Oracle"]
 Townsfolk += [ "Pacifist", "Philosopher", "Pixie" ]
-Townsfolk += [ "Poppy Grower", "Preacher", "Professor"]
+Townsfolk += [ "Poppy Grower", "Preacher", "Princess", "Professor"]
 Townsfolk += [ "Ravenkeeper", "Sage", "Sailor"]
 Townsfolk += [ "Savant", "Seamstress", "Shugenja"]
 Townsfolk += [ "Slayer", "Soldier", "Snake Charmer"]
