@@ -16,3 +16,4 @@ w/ Annotations & Updates](https://docs.google.com/document/d/17hcUxGqjGP0nlxNdPS
 - [Clocktower Compendium](https://botc.me)
 
 [How does the Alchemist Evil Twin work in a Vortox game?](https://cfailde.github.io/BotC-guide/BotC%20Guide.html?keywords=Alchemist%2CEvil%20Twin%2CVortox)
+[What happens when the Snake Charmer picks the Recluse? ](https://cfailde.github.io/BotC-guide/BotC%20Guide.html?keywords=Recluse%2CSnake%20Charmer%20%7C%20snake%20charmed)

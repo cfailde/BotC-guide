@@ -455,7 +455,7 @@ Loric     += [ "Tor", "Ventriloquist", "Zenomancer"]
 
 # All the keywords that are not the names of characters
 # character types
-Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "traveller"] 
+Extra  = [ "demon", "minion", "townsfolk", "outsider", "fabled", "loric", "traveller"]
 # conditions
 Extra += [ "poison", "drunk", "droisoned", "sober", "healthy"] 
 Extra += [ "good", "evil", "alive", "dead"]
