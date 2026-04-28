@@ -448,7 +448,8 @@ Fabled    += [ "Hell's Librarian", "Revolutionary", "Sentinel"]
 Fabled    += [ "Spirit of Ivory", "Toymaker"]
 
 Loric      = [ "Big Wig", "Bootlegger", "Gardener"]
-Loric     += [ "Hindu", "Pope", "Storm Catcher"]
+Loric     += [ "God of Ug", "Hindu", "Knaves"]
+Loric     += [ "Pope", "Storm Catcher"]
 Loric     += [ "Tor", "Ventriloquist", "Zenomancer"]
 
 
@@ -470,7 +471,7 @@ Extra += [ "Teensyville", "grimoire", "storyteller | ST" ]
 all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                                 "Dreamer":"Dreamer | dream",
                                 "Grandmother":"Grandmother | grandchild",
-                                "Snake Charmer":"Snake Charmer | snake charmed",
+                                "Snake Charmer":"Snake Charmer | snake charm",
                                 "Lycanthrope":"Lycanthrope | faux paw",
                                 "Fortune Teller":"Fortune Teller | red herring",
                                 "Exorcist":"Exorcist | exorcise | exorcism"}.get(item, item) for item in Townsfolk],
@@ -479,7 +480,8 @@ all_the_words = {"Townsfolk":[ {"Preacher":"Preacher | preach",
                              "Summoner":"Summoner | summon",
                              "Xaan":"Xaan | night X"}.get(item, item) for item in Minion],
                  "Demon":[ {"Lil' Monsta":"Lil' Monsta | babysit"}.get(item, item) for item in Demon],
-                 "Traveller":[ {"Bone Collector":"Bone Collector | bone collect"}.get(item, item) for item in Traveller],
+                 "Traveller":[ {"Bone Collector":"Bone Collector | bone collect",
+                                "Ghome":"Gnome | amigo"}.get(item, item) for item in Traveller],
                  "Fabled":[ {"Doomsayer":"Doomsayer | doomsay"}.get(item, item) for item in Fabled],
                  "Extra":[ {"Storyteller":"Storyteller | ST"}.get(item, item) for item in Extra],
                  "Loric": [ {"Storm Catcher":"Storm Catcher | storm caught"}.get(item, item) for item in Loric]
