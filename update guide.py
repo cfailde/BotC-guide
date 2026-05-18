@@ -20,6 +20,7 @@ from yattag import indent as yattag_indent
 
 
 BOTC_DATA_FILE = "BotC.txt"
+#BOTC_DATA_FILE = "test_botc.txt"
 RESULT_FILE = "BotC Guide.html"
 DEBUG_MODE = False
 MAX_BACKUPS = 5
@@ -124,16 +125,16 @@ def surround_keywords_with_span(html_content:str, keywords: 'list[str]', charact
 
 
 def temporarily_escape_unsafe_characters(input_string:str) -> str:
-    escaped_string = input_string.replace("<", "LESS_THAN_SYMBOL")
-    escaped_string = escaped_string.replace(">", "GREATER_THAN_SYMBOL")
-    escaped_string = escaped_string.replace("&", "AMPERSAND_SYMBOL")
+    escaped_string = input_string.replace("<", "LessThanSymbol")
+    escaped_string = escaped_string.replace(">", "GreaterThanSymbol")
+    escaped_string = escaped_string.replace("&", "AmpersandSymbol")
     return escaped_string
 
 
 def use_html_entities(input_string:str) -> str:
-    escaped_string = input_string.replace("LESS_THAN_SYMBOL", "&lt;")
-    escaped_string = escaped_string.replace("GREATER_THAN_SYMBOL", "&gt;")
-    escaped_string = escaped_string.replace("AMPERSAND_SYMBOL", "&amp;")
+    escaped_string = input_string.replace("LessThanSymbol", "&lt;")
+    escaped_string = escaped_string.replace("GreaterThanSymbol", "&gt;")
+    escaped_string = escaped_string.replace("AmpersandSymbol", "&amp;")
     return escaped_string
 
 
@@ -307,12 +308,12 @@ def indent_keywords(html: str) -> str:
             found_start = False
     return "\n".join(updated_content)
 
-
 def indent(html: str, output_path: str) -> str:
     nicely_indented = str(yattag_indent(html))
     fixed_spans = nicely_indented.replace("</span><span", "</span> <span")
     fixed_escaping = use_html_entities(fixed_spans)
-    updated_content = indent_keywords(fixed_escaping)
+    fixed_spaces = remove_excess_spaces(fixed_escaping)
+    updated_content = indent_keywords(fixed_spaces)
 
     debug(updated_content, output_path)
     return updated_content
@@ -323,10 +324,15 @@ def emphasise(html_content: str, output_path: str) -> str:
     pattern = r'_(\S(?:.*?\S)?)_'
     
     # Replace matches with <em> tags
-    modified_html = re.sub(pattern, r'<em>\1</em>', html_content)
+    modified_html = re.sub(pattern, r'<em> \1 </em>', html_content)
 
     debug(modified_html, output_path)
     return modified_html
+
+# Remove extraneous spaces introduced by emphasising
+def remove_excess_spaces(input_string:str) -> str:
+    stripped_string = input_string.replace(" </em>", "</em>")
+    return stripped_string
 
 # Crudely removes blanks lines
 def remove_blank_lines(html: str, output_path: str) -> str:
@@ -514,6 +520,9 @@ nodes = text_to_nodes(BOTC_DATA_FILE, 'nodefied content.txt')
 print("Placing updated nodes in guide ...")
 interim_result = replace_nodes(RESULT_FILE, nodes, 'nodified content.html')
 
+print("Adding emphasis ...")
+interim_result = emphasise(interim_result, "emphasised.html")
+
 print("Highlighting characters ...")
 interim_result = highlight_roles(interim_result, 'highlighted.html')
 print("  Done highlighting.                                                              ")
@@ -529,9 +538,6 @@ interim_result = remove_blank_lines(interim_result, "removed_blank_lines.html")
 
 print("Prettifying ...")
 interim_result = indent(interim_result, 'pretty.html')
-
-print("Adding emphasis ...")
-interim_result = emphasise(interim_result, "emphasised.html")
 
 print("Removing blank paragraphs ...")
 interim_result = remove_empty_paragraphs(interim_result, "removed_empty_paragraphs.html")
