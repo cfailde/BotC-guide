@@ -1,6 +1,6 @@
 **[A guide to the Blood on the Clocktower](https://cfailde.github.io/BotC-guide/BotC%20Guide.html)**
 
-Pulls all the clarifications, comments, concensus, descriptions, advice and guidance
+Pulls all the clarifications, comments, consensus, descriptions, advice and guidance
 from:
 - [Discord](https://discord.com/channels/569683781800296501/719898820942626817),
 - [Reddit](https://old.reddit.com/r/bloodontheclocktower),

@@ -206,6 +206,9 @@ def text_to_nodes(input_path: str, output_path: str) -> str:
 
             # ordered_list
             elif line.strip().startswith('#'):
+                if in_list:
+                    output_lines.append("</li></ul>")
+                    in_list = False
                 if not in_ordered_list:
                     output_lines.append('<ol><li>')
                     in_ordered_list = True
@@ -324,14 +327,15 @@ def emphasise(html_content: str, output_path: str) -> str:
     pattern = r'_(\S(?:.*?\S)?)_'
     
     # Replace matches with <em> tags
-    modified_html = re.sub(pattern, r'<em> \1 </em>', html_content)
+    modified_html = re.sub(pattern, r'<em> \1 </em> ', html_content)
 
     debug(modified_html, output_path)
     return modified_html
 
 # Remove extraneous spaces introduced by emphasising
 def remove_excess_spaces(input_string:str) -> str:
-    stripped_string = input_string.replace(" </em>", "</em>")
+    input_string = input_string.replace(" </em>", "</em> ")
+    stripped_string = re.sub(r'</em>\s+([.,!?])', r'</em>\1', input_string)
     return stripped_string
 
 # Crudely removes blanks lines
