@@ -296,6 +296,21 @@ def update_index(html: str, output_path: str) -> str:
     return str(soup)
 
 
+def update_creation_date(html: str, output_path: str) -> str:
+    soup = BeautifulSoup(html, 'html.parser')
+    script_tag = soup.find('script')
+
+    javascript_code = script_tag.string.strip()
+    start_index = javascript_code.find('const creationDate = "') + len('const creationDate = "')
+    end_index = javascript_code.find('";', start_index) + 1
+    date_str = javascript_code[start_index-1:end_index]
+    new_date_str = datetime.now().strftime("%Y-%m-%d")
+    javascript_code = javascript_code.replace(date_str, '"' + new_date_str + '"', 1)
+    script_tag.string = javascript_code
+
+    print(f"  " + new_date_str)
+    return str(soup)
+
 def indent_keywords(html: str) -> str:
     updated_content = []
     found_start = False
@@ -380,7 +395,7 @@ def reorder_nodes(input_html: str, output_path: str) -> str:
     # Count spans for each node
     for node in nodes:
         unique_spans = set()
-        spans = node.find_all('span', class_=['Townsfolk', 'Outsider', 'Minion', 'Demon', 'Fabled', 'Traveller'])
+        spans = node.find_all('span', class_=['Townsfolk', 'Outsider', 'Minion', 'Demon', 'Fabled', 'Traveller', 'Loric'])
         for span in spans:
             unique_spans.add(str(span))
         unique_count = len(unique_spans)
@@ -545,6 +560,9 @@ interim_result = indent(interim_result, 'pretty.html')
 
 print("Removing blank paragraphs ...")
 interim_result = remove_empty_paragraphs(interim_result, "removed_empty_paragraphs.html")
+
+print("Updating creation date ...")
+interim_result = update_creation_date(interim_result, "removed_empty_paragraphs.html")
 
 print("Saving updated guide ...")
 with open(RESULT_FILE, 'w', encoding='utf-8') as output:
