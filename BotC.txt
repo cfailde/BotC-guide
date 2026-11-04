@@ -18163,7 +18163,7 @@ A No, there is just one execution per day that always immediately ends the day, 
 Q Does the Faux Paw misregister as evil to the Vizier?
 A Yes.
 
-  Should the Faux Paw be the only player to vote on a nomination
+  Should the Faux Paw be the only good player to vote on a nomination
   then the Vizier will fail if they attempt to force through the execution.
 
 Q How does the Vizier work when the Organ Grinder is in play?
